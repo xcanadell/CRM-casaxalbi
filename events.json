@@ -1,5 +1,49 @@
 [
   {
+    "data": "2026-05-30",
+    "lloc": "Casa Xalbi",
+    "notes": "Cena cumple Juan con sus hermanas",
+    "comensals": [
+      {
+        "nom": "Juan",
+        "preu_menjar": 35,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Hermana Juan A",
+        "preu_menjar": 35,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Hermana Juan B",
+        "preu_menjar": 35,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Leire",
+        "preu_menjar": 35,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      }
+    ],
+    "total": 140
+  },
+  {
     "data": "2026-05-29",
     "lloc": "Casa Xalbi",
     "notes": "",
