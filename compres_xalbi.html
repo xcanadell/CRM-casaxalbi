@@ -234,55 +234,60 @@ table.products td input.center{text-align:center} table.products td input.right{
     <small>Guardada localment. Obtén-la a <a href="https://console.anthropic.com/settings/keys" target="_blank">console.anthropic.com</a></small>
   </div>
   <div class="tabs">
-    <button class="tab active" onclick="showTab('scan')">📷 Nou ticket</button>
-    <button class="tab" onclick="showTab('history')">📋 Historial</button>
+    <button class="tab active" onclick="showTab('history')">🛒 Compres</button>
     <button class="tab" onclick="showTab('plats')">🍽️ Plats</button>
     <button class="tab" onclick="showTab('bodega')">🍷 Bodega</button>
     <button class="tab" onclick="showTab('clients')">👥 Clients</button>
     <button class="tab" onclick="showTab('events')">📅 Esdeveniments</button>
   </div>
-  <div id="panel-scan" class="panel active">
-    <div class="upload-zone" id="dropZone" onclick="document.getElementById('fileInput').click()" ondragover="event.preventDefault()" ondrop="doDrop(event)">
-      <div class="upload-icon">📸</div>
-      <h3>Selecciona o arrossega una foto del ticket</h3>
-      <p>JPG · PNG · WEBP · HEIC</p>
-    </div>
-    <input type="file" id="fileInput" accept="image/*" onchange="handleFile(event)">
-    <div class="preview-wrap" id="previewWrap" style="display:none">
-      <div class="preview-img-box"><img id="imgPreview" alt=""></div>
-      <div class="preview-actions">
-        <button class="btn btn-primary" id="analyzeBtn" onclick="analyzeTicket()">✨ Analitzar</button>
-        <button class="btn" onclick="resetUpload()">Canviar foto</button>
-        <span class="status" id="statusMsg"></span>
+  <div id="panel-history" class="panel active">
+    <!-- Nou ticket (col·lapsable) -->
+    <div style="margin-bottom:16px">
+      <button class="btn btn-primary" style="width:100%;justify-content:center;gap:8px" onclick="toggleNouTicket()">
+        <span id="nou-ticket-btn-icon">📷</span> <span id="nou-ticket-btn-text">Afegir nou ticket</span>
+      </button>
+      <div id="nou-ticket-panel" style="display:none;margin-top:12px">
+        <div class="upload-zone" id="dropZone" onclick="document.getElementById('fileInput').click()" ondragover="event.preventDefault()" ondrop="doDrop(event)">
+          <div class="upload-icon">📸</div>
+          <h3>Selecciona o arrossega una foto del ticket</h3>
+          <p>JPG · PNG · WEBP · HEIC</p>
+        </div>
+        <input type="file" id="fileInput" accept="image/*" onchange="handleFile(event)">
+        <div class="preview-wrap" id="previewWrap" style="display:none">
+          <div class="preview-img-box"><img id="imgPreview" alt=""></div>
+          <div class="preview-actions">
+            <button class="btn btn-primary" id="analyzeBtn" onclick="analyzeTicket()">✨ Analitzar</button>
+            <button class="btn" onclick="resetUpload()">Canviar foto</button>
+            <span class="status" id="statusMsg"></span>
+          </div>
+        </div>
+        <div class="result-card" id="resultCard">
+          <div class="section-label">Establiment</div>
+          <div class="shop-row">
+            <div style="flex:1"><input class="editable shop-name-input" id="shopName" placeholder="Nom de l'establiment"></div>
+            <span class="badge" id="shopType">—</span>
+          </div>
+          <div class="info-grid">
+            <div class="info-field"><label>Data</label><input class="editable" id="shopDate" placeholder="dd/mm/aaaa"></div>
+            <div class="info-field"><label>Adreça</label><input class="editable" id="shopAddr" placeholder="—"></div>
+            <div class="info-field"><label>NIF / CIF</label><input class="editable" id="shopNIF" placeholder="—"></div>
+            <div class="info-field"><label>Telèfon</label><input class="editable" id="shopTel" placeholder="—"></div>
+          </div>
+          <hr class="divider">
+          <div class="section-label">Productes</div>
+          <table class="products">
+            <thead><tr><th class="col-d">Descripció</th><th class="col-q">Qt</th><th class="col-p">P.unit</th><th class="col-t">Total</th><th class="col-u">Ús</th><th class="col-x"></th></tr></thead>
+            <tbody id="productsBody"></tbody>
+            <tfoot><tr class="total-row"><td colspan="4" style="text-align:right;color:#888;font-weight:500">TOTAL</td><td id="totalAmount">—</td><td></td></tr></tfoot>
+          </table>
+          <div style="margin-top:8px"><button class="add-row" onclick="addProductRow()">+ Afegir producte</button></div>
+          <div class="save-row">
+            <button class="btn btn-danger btn-sm" onclick="resetAll()">Descartar</button>
+            <button class="btn btn-primary" id="saveBtn" onclick="saveTicket()">💾 Desar</button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="result-card" id="resultCard">
-      <div class="section-label">Establiment</div>
-      <div class="shop-row">
-        <div style="flex:1"><input class="editable shop-name-input" id="shopName" placeholder="Nom de l'establiment"></div>
-        <span class="badge" id="shopType">—</span>
-      </div>
-      <div class="info-grid">
-        <div class="info-field"><label>Data</label><input class="editable" id="shopDate" placeholder="dd/mm/aaaa"></div>
-        <div class="info-field"><label>Adreça</label><input class="editable" id="shopAddr" placeholder="—"></div>
-        <div class="info-field"><label>NIF / CIF</label><input class="editable" id="shopNIF" placeholder="—"></div>
-        <div class="info-field"><label>Telèfon</label><input class="editable" id="shopTel" placeholder="—"></div>
-      </div>
-      <hr class="divider">
-      <div class="section-label">Productes</div>
-      <table class="products">
-        <thead><tr><th class="col-d">Descripció</th><th class="col-q">Qt</th><th class="col-p">P.unit</th><th class="col-t">Total</th><th class="col-u">Ús</th><th class="col-x"></th></tr></thead>
-        <tbody id="productsBody"></tbody>
-        <tfoot><tr class="total-row"><td colspan="4" style="text-align:right;color:#888;font-weight:500">TOTAL</td><td id="totalAmount">—</td><td></td></tr></tfoot>
-      </table>
-      <div style="margin-top:8px"><button class="add-row" onclick="addProductRow()">+ Afegir producte</button></div>
-      <div class="save-row">
-        <button class="btn btn-danger btn-sm" onclick="resetAll()">Descartar</button>
-        <button class="btn btn-primary" id="saveBtn" onclick="saveTicket()">💾 Desar</button>
-      </div>
-    </div>
-  </div>
-  <div id="panel-history" class="panel">
     <div class="stats">
       <div class="stat"><div class="n" id="statTickets">0</div><div class="l">Tickets</div></div>
       <div class="stat"><div class="n" id="statTotal">—</div><div class="l">Total gastat</div></div>
@@ -665,7 +670,7 @@ async function init(){
   await initBodega();
   await initClients();
   await initEvents();
-  renderHistory();showTab('history');
+  renderHistory();showTab('history');document.getElementById('nou-ticket-panel').style.display='none';
 }
 
 function setBanner(t,m){const b=document.getElementById('banner');b.className='banner '+t;b.innerHTML=m;}
@@ -687,19 +692,31 @@ function saveApiKey(){localStorage.setItem('xalbi_apikey',document.getElementByI
 function getApiKey(){return document.getElementById('apiKeyInput').value.trim();}
 let imgB64=null,imgMime='image/jpeg';
 function showTab(tab){
-  const tabs=['scan','history','plats','bodega','clients','events'];
+  const tabs=['history','plats','bodega','clients','events'];
   document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',tabs[i]===tab));
-  document.getElementById('panel-scan').classList.toggle('active',tab==='scan');
   document.getElementById('panel-history').classList.toggle('active',tab==='history');
   document.getElementById('panel-plats').classList.toggle('active',tab==='plats');
   document.getElementById('panel-bodega').classList.toggle('active',tab==='bodega');
   document.getElementById('panel-clients').classList.toggle('active',tab==='clients');
   document.getElementById('panel-events').classList.toggle('active',tab==='events');
-  if(tab==='history')renderHistory();
+  if(tab==='history'){renderHistory();}
   if(tab==='plats')renderPlats();
   if(tab==='bodega')renderBodega();
   if(tab==='clients')renderClients();
   if(tab==='events')renderEventsList();
+}
+function toggleNouTicket(){
+  const panel=document.getElementById('nou-ticket-panel');
+  const open=panel.style.display==='none';
+  panel.style.display=open?'block':'none';
+  document.getElementById('nou-ticket-btn-icon').textContent=open?'✕':'📷';
+  document.getElementById('nou-ticket-btn-text').textContent=open?'Cancel·lar':'Afegir nou ticket';
+}
+function closeNouTicket(){
+  document.getElementById('nou-ticket-panel').style.display='none';
+  document.getElementById('nou-ticket-btn-icon').textContent='📷';
+  document.getElementById('nou-ticket-btn-text').textContent='Afegir nou ticket';
+  renderHistory();
 }
 function doDrop(e){e.preventDefault();const f=e.dataTransfer.files[0];if(f)processFile(f);}
 function handleFile(e){const f=e.target.files[0];if(f)processFile(f);}
@@ -740,7 +757,7 @@ function getFormData(){
 function saveTicket(){
   const t=getFormData();if(!t.establiment){alert('Afegeix el nom de l\'establiment.');return;}
   const btn=document.getElementById('saveBtn');btn.disabled=true;btn.textContent='Desant...';
-  tickets.unshift(t);persist().then(()=>{btn.disabled=false;btn.innerHTML='💾 Desar';resetAll();showTab('history');});
+  tickets.unshift(t);persist().then(()=>{btn.disabled=false;btn.innerHTML='💾 Desar';resetAll();closeNouTicket();});
 }
 function resetUpload(){imgB64=null;document.getElementById('imgPreview').src='';document.getElementById('previewWrap').style.display='none';document.getElementById('dropZone').style.display='block';document.getElementById('fileInput').value='';setStatus('','');}
 function resetAll(){resetUpload();document.getElementById('resultCard').classList.remove('show');}
