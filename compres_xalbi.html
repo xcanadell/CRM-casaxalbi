@@ -148,7 +148,7 @@ table.products td input.center{text-align:center} table.products td input.right{
 .bodega-search input:focus{border-color:#1a1a1a}
 .bodega-search select{padding:8px 12px;border:1px solid #ddd;border-radius:8px;font-size:12px;font-family:inherit;background:#fff}
 .bodega-actions td{padding:6px 12px}
-.th-nom{width:18%}.th-any{width:6%;text-align:center}.th-bodega{width:13%}.th-tipus{width:11%}.th-do{width:13%}.th-cost{width:8%;text-align:right}.th-pvp{width:8%;text-align:right}.th-marge{width:8%;text-align:right}.th-act{width:9%;text-align:center}
+.th-nom{width:14%}.th-any{width:5%;text-align:center}.th-bodega{width:10%}.th-tipus{width:9%}.th-do{width:10%}.th-cost{width:6%;text-align:right}.th-pvp{width:6%;text-align:right}.th-marge{width:6%;text-align:right}.th-dcompra{width:8%;text-align:center}.th-dvenda{width:8%;text-align:center}.th-act{width:8%;text-align:center}
 .marge-ok{color:#2e7d32;font-weight:600}.marge-low{color:#e65100;font-weight:600}
 .bodega-empty{text-align:center;padding:40px 20px;color:#aaa}
 .modal-field{margin-bottom:12px}
@@ -429,6 +429,16 @@ table.products td input.center{text-align:center} table.products td input.right{
       <div class="modal-field">
         <label>P.V.P (€)</label>
         <input id="bod-pvp" type="number" step="0.01" min="0" placeholder="0.00" oninput="calcBodegaMarge()">
+      </div>
+    </div>
+    <div class="modal-grid-2" style="margin-bottom:10px">
+      <div class="modal-field">
+        <label>Data de compra</label>
+        <input id="bod-data-compra" type="date">
+      </div>
+      <div class="modal-field">
+        <label>Data de venda</label>
+        <input id="bod-data-venda" type="date">
       </div>
     </div>
     <div style="background:#f9f9f9;border-radius:8px;padding:10px 14px;font-size:13px;display:flex;gap:20px;margin-bottom:4px">
@@ -919,6 +929,8 @@ function renderBodega(){
       <td style="text-align:right">${cost?cost.toFixed(2)+' €':'—'}</td>
       <td style="text-align:right;font-weight:600">${pvp?pvp.toFixed(2)+' €':'—'}</td>
       <td style="text-align:right">${margeHtml}</td>
+      <td style="text-align:center;font-size:12px;color:#888">${v.data_compra||'—'}</td>
+      <td style="text-align:center;font-size:12px;color:#888">${v.data_venda||'—'}</td>
       <td style="text-align:center;white-space:nowrap">
         <button class="btn btn-sm btn-edit" style="padding:3px 8px;margin-right:4px" onclick="openBodegaModal(${ri})">✏️</button>
         <button class="btn btn-sm btn-danger" style="padding:3px 8px" onclick="deleteBodega(${ri})">🗑</button>
@@ -935,6 +947,8 @@ function renderBodega(){
       <th class="th-cost">Cost</th>
       <th class="th-pvp">P.V.P</th>
       <th class="th-marge">Marge</th>
+      <th class="th-dcompra">Compra</th>
+      <th class="th-dvenda">Venda</th>
       <th class="th-act"></th>
     </tr></thead>
     <tbody>${rows}</tbody>
@@ -952,6 +966,8 @@ function openBodegaModal(idx){
   document.getElementById('bod-do').value=v.do||'';
   document.getElementById('bod-cost').value=v.cost||'';
   document.getElementById('bod-pvp').value=v.pvp||'';
+  document.getElementById('bod-data-compra').value=v.data_compra||'';
+  document.getElementById('bod-data-venda').value=v.data_venda||'';
   calcBodegaMarge();
   document.getElementById('bodegaModal').classList.add('show');
   document.getElementById('bod-nom').focus();
@@ -987,6 +1003,8 @@ async function saveBodega(){
     do:document.getElementById('bod-do').value.trim(),
     cost:parseFloat(document.getElementById('bod-cost').value)||0,
     pvp:parseFloat(document.getElementById('bod-pvp').value)||0,
+    data_compra:document.getElementById('bod-data-compra').value||'',
+    data_venda:document.getElementById('bod-data-venda').value||'',
     updated_at:new Date().toISOString()
   };
   if(bodegaEditIdx!==null){bodega[bodegaEditIdx]=vi;}else{bodega.push(vi);}
