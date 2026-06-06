@@ -286,5 +286,17 @@
     "data_compra": "2026-04-22",
     "data_venda": "",
     "updated_at": "2026-06-06T15:42:15.737Z"
+  },
+  {
+    "nom": "VDN Alicante Casa",
+    "any": "",
+    "bodega": "",
+    "tipus": "Vi negre",
+    "do": "",
+    "cost": 13.37,
+    "pvp": 0,
+    "data_compra": "2026-04-22",
+    "data_venda": "",
+    "updated_at": "2026-06-06T15:42:48.774Z"
   }
 ]
