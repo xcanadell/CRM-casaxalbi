@@ -224,14 +224,8 @@ table.products td input.center{text-align:center} table.products td input.right{
 <body>
 <div class="app">
   <div class="header">
-    <h1>🧾 Compres Casa Xalbi</h1>
+    <h1>🏡 CRM — Casa Xalbi</h1>
     <p>Registre personal — Xavi</p>
-  </div>
-  <div class="banner ok" id="banner">✅ Llest</div>
-  <div class="api-setup">
-    <p><strong>🔑 Clau API d'Anthropic</strong> — per analitzar tickets amb IA</p>
-    <input type="password" id="apiKeyInput" placeholder="sk-ant-api03-..." oninput="saveApiKey()">
-    <small>Guardada localment. Obtén-la a <a href="https://console.anthropic.com/settings/keys" target="_blank">console.anthropic.com</a></small>
   </div>
   <div class="tabs">
     <button class="tab active" onclick="showTab('history')">🛒 Compres</button>
@@ -241,6 +235,12 @@ table.products td input.center{text-align:center} table.products td input.right{
     <button class="tab" onclick="showTab('events')">📅 Esdeveniments</button>
   </div>
   <div id="panel-history" class="panel active">
+    <!-- Clau API (dins Compres) -->
+    <div class="api-setup" style="margin-bottom:14px">
+      <p><strong>🔑 Clau API d'Anthropic</strong> — per analitzar tickets amb IA</p>
+      <input type="password" id="apiKeyInput" placeholder="sk-ant-api03-..." oninput="saveApiKey()">
+      <small>Guardada localment. Obtén-la a <a href="https://console.anthropic.com/settings/keys" target="_blank">console.anthropic.com</a></small>
+    </div>
     <!-- Nou ticket (col·lapsable) -->
     <div style="margin-bottom:16px">
       <button class="btn btn-primary" style="width:100%;justify-content:center;gap:8px" onclick="toggleNouTicket()">
@@ -674,7 +674,7 @@ async function init(){
   renderHistory();showTab('history');document.getElementById('nou-ticket-panel').style.display='none';
 }
 
-function setBanner(t,m){const b=document.getElementById('banner');b.className='banner '+t;b.innerHTML=m;}
+function setBanner(t,m){} // banner eliminat, funció mantinguda per compatibilitat
 
 async function persist(){
   try{
