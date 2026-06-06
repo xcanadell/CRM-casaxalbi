@@ -1,6 +1,6 @@
 [
   {
-    "data": "",
+    "data": "2026-02-15",
     "lloc": "Catering",
     "notes": "Cata més catering casa Helena (50 aniversari)",
     "comensals": [
@@ -17,6 +17,24 @@
         "nom": "Novio Alba",
         "preu_menjar": 0,
         "preu_beguda": 15,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Amic 1 Alba",
+        "preu_menjar": 0,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Amic 2 Alba",
+        "preu_menjar": 0,
+        "preu_beguda": 0,
         "preu_altres": 0,
         "plats": [],
         "vins": [],
