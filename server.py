@@ -21,6 +21,7 @@ TICKETS_FILE = os.path.join(BASE_DIR, "tickets.json")
 PLATS_FILE   = os.path.join(BASE_DIR, "plats.json")
 BODEGA_FILE  = os.path.join(BASE_DIR, "bodega.json")
 CLIENTS_FILE = os.path.join(BASE_DIR, "clients.json")
+EVENTS_FILE  = os.path.join(BASE_DIR, "events.json")
 HTML_FILE    = os.path.join(BASE_DIR, "compres_xalbi.html")
 
 
@@ -88,6 +89,8 @@ class Handler(BaseHTTPRequestHandler):
             self.send_json(200, read_json(BODEGA_FILE))
         elif self.path == "/clients":
             self.send_json(200, read_json(CLIENTS_FILE))
+        elif self.path == "/events":
+            self.send_json(200, read_json(EVENTS_FILE))
         elif self.path in ("/", "/index.html", "/compres_xalbi.html"):
             try:
                 with open(HTML_FILE, "rb") as f:
@@ -128,6 +131,10 @@ class Handler(BaseHTTPRequestHandler):
         elif self.path == "/clients":
             write_json(CLIENTS_FILE, data)
             git_save(["clients.json"], "auto: actualitzacio clients")
+            self.send_json(200, {"ok": True, "count": len(data)})
+        elif self.path == "/events":
+            write_json(EVENTS_FILE, data)
+            git_save(["events.json"], "auto: actualitzacio events")
             self.send_json(200, {"ok": True, "count": len(data)})
         else:
             self.send_response(404)

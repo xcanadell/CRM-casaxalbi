@@ -157,6 +157,53 @@ table.products td input.center{text-align:center} table.products td input.right{
 .modal-field input:focus,.modal-field select:focus{border-color:#1a1a1a}
 .modal-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .modal-grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+/* ── Events ── */
+.ev-list-card{background:#fff;border:1px solid #e0e0e0;border-radius:10px;margin-bottom:8px;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+.ev-list-card:hover{background:#fafafa}
+.ev-list-card .ev-title{font-size:15px;font-weight:600}
+.ev-list-card .ev-meta{font-size:12px;color:#888;margin-top:3px}
+.ev-list-card .ev-right{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.ev-total-badge{font-size:15px;font-weight:700;color:#1a1a1a}
+.ev-lloc-pill{font-size:11px;padding:2px 9px;border-radius:20px;background:#e8f5e9;color:#2e7d32;border:1px solid #c8e6c9}
+.ev-empty{text-align:center;padding:40px 20px;color:#aaa}
+.editor-header{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid #eee}
+.editor-header h2{font-size:17px;font-weight:600;flex:1}
+.editor-meta{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.editor-meta label{display:block;font-size:11px;color:#888;margin-bottom:4px;font-weight:500}
+.editor-meta input,.editor-meta select{width:100%;padding:8px 10px;border:1px solid #ddd;border-radius:7px;font-size:14px;font-family:inherit;outline:none}
+.editor-meta input:focus,.editor-meta select:focus{border-color:#1a1a1a}
+.comensal-card{background:#fff;border:1px solid #e0e0e0;border-radius:10px;margin-bottom:10px;overflow:hidden}
+.comensal-header{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;cursor:pointer;background:#fafafa}
+.comensal-header:hover{background:#f0f0f0}
+.comensal-nom{font-size:14px;font-weight:600}
+.comensal-subtotal{font-size:13px;font-weight:600;color:#1565c0}
+.comensal-body{display:none;padding:14px;border-top:1px solid #eee}
+.comensal-card.open .comensal-body{display:block}
+.comensal-card.open .chevron{transform:rotate(180deg)}
+.preus-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:12px}
+.preu-field label{display:block;font-size:11px;color:#888;margin-bottom:3px}
+.preu-field input{width:100%;padding:6px 8px;border:1px solid #ddd;border-radius:6px;font-size:14px;font-weight:600;font-family:inherit;outline:none;text-align:right}
+.preu-field input:focus{border-color:#1565c0}
+.chips-area{margin-bottom:10px}
+.chips-area label{font-size:11px;color:#888;font-weight:500;display:block;margin-bottom:5px}
+.chips-wrap{display:flex;flex-wrap:wrap;gap:6px;min-height:28px;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;padding:3px 8px;border-radius:20px;background:#e8f5e9;color:#2e7d32;border:1px solid #c8e6c9}
+.chip.vi{background:#ede7f6;color:#512da8;border-color:#ce93d8}
+.chip-del{cursor:pointer;font-size:13px;line-height:1;color:inherit;opacity:0.6}
+.chip-del:hover{opacity:1}
+.chip-add{font-size:11px;padding:3px 10px;border-radius:20px;border:1px dashed #bbb;background:transparent;color:#888;cursor:pointer;font-family:inherit}
+.chip-add:hover{border-color:#1a1a1a;color:#1a1a1a}
+.comensal-notes input{width:100%;padding:6px 8px;border:1px solid #ddd;border-radius:6px;font-size:13px;font-family:inherit;outline:none}
+.billing-summary{background:#1a1a1a;color:#fff;border-radius:10px;padding:16px 20px;margin-top:16px}
+.billing-summary h3{font-size:13px;font-weight:500;opacity:0.7;margin-bottom:12px}
+.billing-row{display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px;opacity:0.85}
+.billing-total{display:flex;justify-content:space-between;font-size:18px;font-weight:700;margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.2)}
+.picker-list{max-height:320px;overflow-y:auto;margin-top:8px}
+.picker-item{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:7px;cursor:pointer;font-size:13px}
+.picker-item:hover{background:#f5f5f5}
+.picker-item input[type=checkbox]{width:16px;height:16px;cursor:pointer;flex-shrink:0}
+.picker-search{width:100%;padding:7px 10px;border:1px solid #ddd;border-radius:7px;font-size:13px;font-family:inherit;outline:none;margin-bottom:4px}
+.picker-search:focus{border-color:#1a1a1a}
 /* ── Clients ── */
 .clients-table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid #e0e0e0;font-size:13px}
 .clients-table th{text-align:left;color:#888;font-weight:500;font-size:11px;padding:10px 12px;border-bottom:2px solid #eee;background:#fafafa;white-space:nowrap}
@@ -192,6 +239,7 @@ table.products td input.center{text-align:center} table.products td input.right{
     <button class="tab" onclick="showTab('plats')">🍽️ Plats</button>
     <button class="tab" onclick="showTab('bodega')">🍷 Bodega</button>
     <button class="tab" onclick="showTab('clients')">👥 Clients</button>
+    <button class="tab" onclick="showTab('events')">📅 Esdeveniments</button>
   </div>
   <div id="panel-scan" class="panel active">
     <div class="upload-zone" id="dropZone" onclick="document.getElementById('fileInput').click()" ondragover="event.preventDefault()" ondrop="doDrop(event)">
@@ -259,6 +307,56 @@ table.products td input.center{text-align:center} table.products td input.right{
       <div class="data-mgmt-row">
         <label class="btn btn-sm" style="cursor:pointer">📂 Importar JSON<input type="file" accept=".json" style="display:none" onchange="importJSON(event)"></label>
         <button class="btn btn-sm btn-danger" onclick="clearAllData()">🗑 Esborrar tot</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panel Esdeveniments -->
+  <div id="panel-events" class="panel">
+    <!-- Vista llista -->
+    <div id="ev-list-view">
+      <div class="plats-header-row">
+        <h2>📅 Esdeveniments</h2>
+        <button class="btn btn-primary" onclick="newEvent()">+ Nou event</button>
+      </div>
+      <div id="eventsList"></div>
+    </div>
+    <!-- Vista editor -->
+    <div id="ev-editor-view" style="display:none">
+      <div class="editor-header">
+        <button class="btn btn-sm" onclick="closeEventEditor()">← Tornar</button>
+        <h2 id="ev-editor-title">Nou event</h2>
+        <button class="btn btn-primary" onclick="saveEvent()">💾 Desar event</button>
+      </div>
+      <div class="editor-meta">
+        <div>
+          <label>Data de l'event</label>
+          <input type="date" id="ev-data">
+        </div>
+        <div>
+          <label>Lloc</label>
+          <select id="ev-lloc">
+            <option value="Casa Xalbi">🏡 Casa Xalbi</option>
+            <option value="Fragua">🔥 Fragua</option>
+            <option value="Altres">📍 Altres</option>
+          </select>
+        </div>
+        <div style="grid-column:1/-1">
+          <label>Notes generals</label>
+          <input type="text" id="ev-notes" placeholder="Observacions de l'event...">
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        <div class="section-label" style="margin:0">Comensals</div>
+        <button class="btn btn-sm" onclick="openClientPicker()">+ Afegir comensal</button>
+      </div>
+      <div id="ev-comensals"></div>
+      <div class="billing-summary" id="ev-billing" style="display:none">
+        <h3>FACTURACIÓ</h3>
+        <div class="billing-row"><span>Menjar</span><span id="bill-menjar">0.00 €</span></div>
+        <div class="billing-row"><span>Beguda</span><span id="bill-beguda">0.00 €</span></div>
+        <div class="billing-row"><span>Altres</span><span id="bill-altres">0.00 €</span></div>
+        <div class="billing-total"><span>TOTAL</span><span id="bill-total">0.00 €</span></div>
       </div>
     </div>
   </div>
@@ -505,6 +603,44 @@ table.products td input.center{text-align:center} table.products td input.right{
   </div>
 </div>
 
+<!-- Modal: selecció de client per event -->
+<div class="modal-overlay" id="clientPickerModal" onclick="if(event.target===this)closeClientPicker()">
+  <div class="modal-box" style="max-width:440px">
+    <h2>👤 Afegir comensal</h2>
+    <input class="picker-search" id="clientPickerSearch" placeholder="🔍 Cercar client..." oninput="filterClientPicker()">
+    <div class="picker-list" id="clientPickerList"></div>
+    <div class="modal-footer" style="margin-top:12px">
+      <button class="btn btn-sm btn-danger" onclick="closeClientPicker()">Cancel·lar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: selecció de plats per comensal -->
+<div class="modal-overlay" id="platPickerModal" onclick="if(event.target===this)closePlatPicker()">
+  <div class="modal-box" style="max-width:440px">
+    <h2>🍽️ Seleccionar plats</h2>
+    <input class="picker-search" id="platPickerSearch" placeholder="🔍 Cercar plat..." oninput="filterPlatPicker()">
+    <div class="picker-list" id="platPickerList"></div>
+    <div class="modal-footer" style="margin-top:12px">
+      <button class="btn btn-sm btn-danger" onclick="closePlatPicker()">Cancel·lar</button>
+      <button class="btn btn-primary btn-sm" onclick="confirmPlatPicker()">Confirmar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: selecció de vins per comensal -->
+<div class="modal-overlay" id="viPickerModal" onclick="if(event.target===this)closeViPicker()">
+  <div class="modal-box" style="max-width:440px">
+    <h2>🍷 Seleccionar vins</h2>
+    <input class="picker-search" id="viPickerSearch" placeholder="🔍 Cercar vi..." oninput="filterViPicker()">
+    <div class="picker-list" id="viPickerList"></div>
+    <div class="modal-footer" style="margin-top:12px">
+      <button class="btn btn-sm btn-danger" onclick="closeViPicker()">Cancel·lar</button>
+      <button class="btn btn-primary btn-sm" onclick="confirmViPicker()">Confirmar</button>
+    </div>
+  </div>
+</div>
+
 <script>
 const API='http://localhost:8765';
 const LS='xalbi-v4'; // fallback localStorage
@@ -528,6 +664,7 @@ async function init(){
   await initPlats();
   await initBodega();
   await initClients();
+  await initEvents();
   renderHistory();showTab('history');
 }
 
@@ -550,17 +687,19 @@ function saveApiKey(){localStorage.setItem('xalbi_apikey',document.getElementByI
 function getApiKey(){return document.getElementById('apiKeyInput').value.trim();}
 let imgB64=null,imgMime='image/jpeg';
 function showTab(tab){
-  const tabs=['scan','history','plats','bodega','clients'];
+  const tabs=['scan','history','plats','bodega','clients','events'];
   document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',tabs[i]===tab));
   document.getElementById('panel-scan').classList.toggle('active',tab==='scan');
   document.getElementById('panel-history').classList.toggle('active',tab==='history');
   document.getElementById('panel-plats').classList.toggle('active',tab==='plats');
   document.getElementById('panel-bodega').classList.toggle('active',tab==='bodega');
   document.getElementById('panel-clients').classList.toggle('active',tab==='clients');
+  document.getElementById('panel-events').classList.toggle('active',tab==='events');
   if(tab==='history')renderHistory();
   if(tab==='plats')renderPlats();
   if(tab==='bodega')renderBodega();
   if(tab==='clients')renderClients();
+  if(tab==='events')renderEventsList();
 }
 function doDrop(e){e.preventDefault();const f=e.dataTransfer.files[0];if(f)processFile(f);}
 function handleFile(e){const f=e.target.files[0];if(f)processFile(f);}
@@ -1148,6 +1287,292 @@ async function deleteClient(i){
   clients.splice(i,1);
   await persistClients();
   renderClients();
+}
+
+// ── Esdeveniments ────────────────────────────────────────────────
+let events=[];
+let currentEvent=null;   // event en edició
+let currentEventIdx=null;
+let pickerComensalIdx=null; // quin comensal estem editant
+
+async function initEvents(){
+  try{
+    const r=await fetch(API+'/events');
+    if(!r.ok)throw new Error();
+    events=await r.json();
+  }catch(e){
+    try{const s=localStorage.getItem('xalbi-events');events=s?JSON.parse(s):[];}catch(e2){events=[];}
+  }
+}
+
+async function persistEvents(){
+  try{
+    await fetch(API+'/events',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(events)});
+  }catch(e){
+    try{localStorage.setItem('xalbi-events',JSON.stringify(events));}catch(e2){}
+  }
+}
+
+// ── Llista d'events ──
+function renderEventsList(){
+  const list=document.getElementById('eventsList');
+  if(!events.length){
+    list.innerHTML='<div class="ev-empty">Cap event registrat. Clica "+ Nou event" per crear-ne un.</div>';
+    return;
+  }
+  const sorted=[...events].sort((a,b)=>(b.data||'').localeCompare(a.data||''));
+  list.innerHTML=sorted.map(ev=>{
+    const ri=events.indexOf(ev);
+    const ncom=(ev.comensals||[]).length;
+    const lloc=ev.lloc||'—';
+    const total=(ev.total||0).toFixed(2);
+    const dataFmt=ev.data?new Date(ev.data+'T12:00:00').toLocaleDateString('ca-ES',{day:'numeric',month:'long',year:'numeric'}):'Sense data';
+    return`<div class="ev-list-card" onclick="openEventEditor(${ri})">
+      <div>
+        <div class="ev-title">📅 ${dataFmt}</div>
+        <div class="ev-meta"><span class="ev-lloc-pill">${esc(lloc)}</span> &nbsp;·&nbsp; ${ncom} comensal${ncom!==1?'s':''} ${ev.notes?'· '+esc(ev.notes):''}</div>
+      </div>
+      <div class="ev-right">
+        <div class="ev-total-badge">${total} €</div>
+        <button class="btn btn-sm btn-danger" style="padding:3px 8px" onclick="event.stopPropagation();deleteEvent(${ri})">🗑</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── Editor d'event ──
+function newEvent(){
+  currentEventIdx=null;
+  currentEvent={data:'',lloc:'Casa Xalbi',notes:'',comensals:[],total:0};
+  openEditorView();
+}
+
+function openEventEditor(idx){
+  currentEventIdx=idx;
+  currentEvent=JSON.parse(JSON.stringify(events[idx]));
+  openEditorView();
+}
+
+function openEditorView(){
+  document.getElementById('ev-list-view').style.display='none';
+  document.getElementById('ev-editor-view').style.display='block';
+  document.getElementById('ev-editor-title').textContent=currentEventIdx!==null?'Editar event':'Nou event';
+  document.getElementById('ev-data').value=currentEvent.data||'';
+  document.getElementById('ev-lloc').value=currentEvent.lloc||'Casa Xalbi';
+  document.getElementById('ev-notes').value=currentEvent.notes||'';
+  renderComensals();
+  updateBilling();
+}
+
+function closeEventEditor(){
+  document.getElementById('ev-list-view').style.display='block';
+  document.getElementById('ev-editor-view').style.display='none';
+  currentEvent=null;currentEventIdx=null;
+}
+
+async function saveEvent(){
+  currentEvent.data=document.getElementById('ev-data').value;
+  currentEvent.lloc=document.getElementById('ev-lloc').value;
+  currentEvent.notes=document.getElementById('ev-notes').value;
+  // recalc total
+  currentEvent.total=(currentEvent.comensals||[]).reduce((s,c)=>
+    s+(parseFloat(c.preu_menjar)||0)+(parseFloat(c.preu_beguda)||0)+(parseFloat(c.preu_altres)||0),0);
+  if(currentEventIdx!==null){events[currentEventIdx]=currentEvent;}
+  else{events.unshift(currentEvent);}
+  await persistEvents();
+  closeEventEditor();
+  renderEventsList();
+}
+
+async function deleteEvent(i){
+  if(!confirm('Eliminar aquest event?'))return;
+  events.splice(i,1);
+  await persistEvents();
+  renderEventsList();
+}
+
+// ── Comensals dins l'editor ──
+function renderComensals(){
+  const com=currentEvent.comensals||[];
+  const el=document.getElementById('ev-comensals');
+  if(!com.length){
+    el.innerHTML='<div class="ev-empty" style="padding:20px">Cap comensal. Clica "+ Afegir comensal".</div>';
+    document.getElementById('ev-billing').style.display='none';
+    return;
+  }
+  document.getElementById('ev-billing').style.display='block';
+  el.innerHTML=com.map((c,i)=>{
+    const sub=((parseFloat(c.preu_menjar)||0)+(parseFloat(c.preu_beguda)||0)+(parseFloat(c.preu_altres)||0)).toFixed(2);
+    const platsChips=(c.plats||[]).map((p,pi)=>`<span class="chip">${esc(p)}<span class="chip-del" onclick="removeComensalPlat(${i},${pi})">✕</span></span>`).join('');
+    const vinsChips=(c.vins||[]).map((v,vi)=>`<span class="chip vi">${esc(v)}<span class="chip-del" onclick="removeComensalVi(${i},${vi})">✕</span></span>`).join('');
+    return`<div class="comensal-card" id="com-card-${i}">
+      <div class="comensal-header" onclick="toggleComensal(${i})">
+        <div>
+          <div class="comensal-nom">👤 ${esc(c.nom)}</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <span class="comensal-subtotal">${sub} €</span>
+          <button class="btn btn-sm btn-danger" style="padding:2px 7px" onclick="event.stopPropagation();removeComensal(${i})">✕</button>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="comensal-body">
+        <div class="preus-grid">
+          <div class="preu-field"><label>🍽️ Menjar (€)</label><input type="number" step="0.01" min="0" value="${c.preu_menjar||''}" placeholder="0.00" oninput="updateComensalPreu(${i},'preu_menjar',this.value)"></div>
+          <div class="preu-field"><label>🍷 Beguda (€)</label><input type="number" step="0.01" min="0" value="${c.preu_beguda||''}" placeholder="0.00" oninput="updateComensalPreu(${i},'preu_beguda',this.value)"></div>
+          <div class="preu-field"><label>➕ Altres (€)</label><input type="number" step="0.01" min="0" value="${c.preu_altres||''}" placeholder="0.00" oninput="updateComensalPreu(${i},'preu_altres',this.value)"></div>
+        </div>
+        <div class="chips-area">
+          <label>🍽️ Plats</label>
+          <div class="chips-wrap">${platsChips}<button class="chip-add" onclick="openPlatPicker(${i})">+ Afegir plat</button></div>
+        </div>
+        <div class="chips-area">
+          <label>🍷 Vins</label>
+          <div class="chips-wrap">${vinsChips}<button class="chip-add" onclick="openViPicker(${i})">+ Afegir vi</button></div>
+        </div>
+        <div class="comensal-notes"><label style="font-size:11px;color:#888;display:block;margin-bottom:3px">Notes</label><input type="text" placeholder="Observacions..." value="${esc(c.notes||'')}" oninput="updateComensalNotes(${i},this.value)"></div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function toggleComensal(i){
+  document.getElementById('com-card-'+i).classList.toggle('open');
+}
+
+function updateComensalPreu(i,field,val){
+  currentEvent.comensals[i][field]=parseFloat(val)||0;
+  updateBillingOnly();
+}
+
+function updateComensalNotes(i,val){
+  currentEvent.comensals[i].notes=val;
+}
+
+function removeComensal(i){
+  currentEvent.comensals.splice(i,1);
+  renderComensals();updateBilling();
+}
+
+function removeComensalPlat(ci,pi){
+  currentEvent.comensals[ci].plats.splice(pi,1);
+  renderComensals();
+}
+
+function removeComensalVi(ci,vi){
+  currentEvent.comensals[ci].vins.splice(vi,1);
+  renderComensals();
+}
+
+function updateBillingOnly(){
+  const com=currentEvent.comensals||[];
+  const tm=com.reduce((s,c)=>s+(parseFloat(c.preu_menjar)||0),0);
+  const tb=com.reduce((s,c)=>s+(parseFloat(c.preu_beguda)||0),0);
+  const ta=com.reduce((s,c)=>s+(parseFloat(c.preu_altres)||0),0);
+  document.getElementById('bill-menjar').textContent=tm.toFixed(2)+' €';
+  document.getElementById('bill-beguda').textContent=tb.toFixed(2)+' €';
+  document.getElementById('bill-altres').textContent=ta.toFixed(2)+' €';
+  document.getElementById('bill-total').textContent=(tm+tb+ta).toFixed(2)+' €';
+}
+
+function updateBilling(){
+  const com=currentEvent.comensals||[];
+  document.getElementById('ev-billing').style.display=com.length?'block':'none';
+  if(com.length)updateBillingOnly();
+}
+
+// ── Client picker ──
+function openClientPicker(){
+  document.getElementById('clientPickerSearch').value='';
+  filterClientPicker();
+  document.getElementById('clientPickerModal').classList.add('show');
+}
+function closeClientPicker(){
+  document.getElementById('clientPickerModal').classList.remove('show');
+}
+function filterClientPicker(){
+  const q=document.getElementById('clientPickerSearch').value.toLowerCase();
+  const existing=new Set((currentEvent.comensals||[]).map(c=>c.nom));
+  const items=clients.filter(c=>{
+    const nom=(c.nom+' '+c.cognom).trim();
+    return(!q||nom.toLowerCase().includes(q));
+  });
+  document.getElementById('clientPickerList').innerHTML=items.length
+    ?items.map((c,i)=>{
+        const nom=(c.nom+' '+(c.cognom||'')).trim();
+        const ja=existing.has(nom);
+        return`<div class="picker-item" onclick="${ja?'':('addComensalFromClient('+clients.indexOf(c)+')')}" style="${ja?'opacity:0.4;cursor:not-allowed':''}">
+          <span style="flex:1">${esc(nom)}</span>
+          ${ja?'<span style="font-size:11px;color:#aaa">ja afegit</span>':'<span style="font-size:11px;color:#2e7d32">Afegir →</span>'}
+        </div>`;
+      }).join('')
+    :'<div style="padding:20px;text-align:center;color:#aaa">Sense resultats</div>';
+}
+function addComensalFromClient(idx){
+  const c=clients[idx];
+  const nom=(c.nom+' '+(c.cognom||'')).trim();
+  currentEvent.comensals=currentEvent.comensals||[];
+  currentEvent.comensals.push({nom,preu_menjar:0,preu_beguda:0,preu_altres:0,plats:[],vins:[],notes:''});
+  closeClientPicker();
+  renderComensals();
+  updateBilling();
+  // obre el comensal nou
+  setTimeout(()=>document.getElementById('com-card-'+(currentEvent.comensals.length-1))?.classList.add('open'),50);
+}
+
+// ── Plat picker ──
+function openPlatPicker(comensalIdx){
+  pickerComensalIdx=comensalIdx;
+  document.getElementById('platPickerSearch').value='';
+  filterPlatPicker();
+  document.getElementById('platPickerModal').classList.add('show');
+}
+function closePlatPicker(){document.getElementById('platPickerModal').classList.remove('show');pickerComensalIdx=null;}
+function filterPlatPicker(){
+  const q=document.getElementById('platPickerSearch').value.toLowerCase();
+  const sel=new Set((currentEvent.comensals[pickerComensalIdx]?.plats)||[]);
+  const items=plats.filter(p=>!q||p.titol.toLowerCase().includes(q));
+  document.getElementById('platPickerList').innerHTML=items.length
+    ?items.map(p=>`<label class="picker-item">
+        <input type="checkbox" value="${esc(p.titol)}" ${sel.has(p.titol)?'checked':''}>
+        <span>${esc(p.titol)}</span>
+      </label>`).join('')
+    :'<div style="padding:20px;text-align:center;color:#aaa">Sense plats</div>';
+}
+function confirmPlatPicker(){
+  const checked=[...document.querySelectorAll('#platPickerList input:checked')].map(i=>i.value);
+  currentEvent.comensals[pickerComensalIdx].plats=checked;
+  closePlatPicker();
+  renderComensals();
+}
+
+// ── Vi picker ──
+function openViPicker(comensalIdx){
+  pickerComensalIdx=comensalIdx;
+  document.getElementById('viPickerSearch').value='';
+  filterViPicker();
+  document.getElementById('viPickerModal').classList.add('show');
+}
+function closeViPicker(){document.getElementById('viPickerModal').classList.remove('show');pickerComensalIdx=null;}
+function filterViPicker(){
+  const q=document.getElementById('viPickerSearch').value.toLowerCase();
+  const sel=new Set((currentEvent.comensals[pickerComensalIdx]?.vins)||[]);
+  const items=bodega.filter(v=>!q||(v.nom||'').toLowerCase().includes(q));
+  document.getElementById('viPickerList').innerHTML=items.length
+    ?items.map(v=>{
+        const label=v.nom+(v.any?' ('+v.any+')':'');
+        return`<label class="picker-item">
+          <input type="checkbox" value="${esc(label)}" ${sel.has(label)?'checked':''}>
+          <span>${esc(label)}${v.tipus?` <span style="font-size:10px;color:#aaa">· ${v.tipus}</span>`:''}</span>
+        </label>`;
+      }).join('')
+    :'<div style="padding:20px;text-align:center;color:#aaa">Sense vins a la bodega</div>';
+}
+function confirmViPicker(){
+  const checked=[...document.querySelectorAll('#viPickerList input:checked')].map(i=>i.value);
+  currentEvent.comensals[pickerComensalIdx].vins=checked;
+  closeViPicker();
+  renderComensals();
 }
 
 </script>
