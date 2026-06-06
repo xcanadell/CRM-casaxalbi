@@ -12,10 +12,10 @@
       },
       {
         "nom": "Burrata cremosa",
-        "quantitat": 0.2,
+        "quantitat": 0.5,
         "unitat": "u",
         "cost_unitari": 3,
-        "cost_total": 0.6
+        "cost_total": 1.5
       },
       {
         "nom": "Tomates cherry",
@@ -39,10 +39,10 @@
         "cost_total": 0.15
       }
     ],
-    "cost_mp": 1.19,
+    "cost_mp": 2,
     "cost_prod": 1,
-    "cost_total": 2.19,
-    "updated_at": "2026-06-06T16:13:01.611Z"
+    "cost_total": 3,
+    "updated_at": "2026-06-06T16:20:30.247Z"
   },
   {
     "titol": "Tiradito de Salmón",
