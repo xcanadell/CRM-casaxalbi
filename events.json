@@ -1,5 +1,76 @@
 [
   {
+    "data": "2026-04-18",
+    "lloc": "Casa Xalbi",
+    "notes": "",
+    "comensals": [
+      {
+        "nom": "Koldo",
+        "preu_menjar": 30,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Karmele",
+        "preu_menjar": 30,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Alba",
+        "preu_menjar": 30,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Martin",
+        "preu_menjar": 30,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Maria",
+        "preu_menjar": 30,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Alejandro",
+        "preu_menjar": 30,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Veronica",
+        "preu_menjar": 30,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      }
+    ],
+    "total": 350
+  },
+  {
     "data": "2026-04-02",
     "lloc": "Casa Xalbi",
     "notes": "",
