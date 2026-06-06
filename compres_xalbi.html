@@ -148,7 +148,7 @@ table.products td input.center{text-align:center} table.products td input.right{
 .bodega-search input:focus{border-color:#1a1a1a}
 .bodega-search select{padding:8px 12px;border:1px solid #ddd;border-radius:8px;font-size:12px;font-family:inherit;background:#fff}
 .bodega-actions td{padding:6px 12px}
-.th-nom{width:22%}.th-any{width:7%;text-align:center}.th-tipus{width:12%}.th-do{width:16%}.th-cost{width:10%;text-align:right}.th-pvp{width:10%;text-align:right}.th-marge{width:9%;text-align:right}.th-act{width:10%;text-align:center}
+.th-nom{width:18%}.th-any{width:6%;text-align:center}.th-bodega{width:13%}.th-tipus{width:11%}.th-do{width:13%}.th-cost{width:8%;text-align:right}.th-pvp{width:8%;text-align:right}.th-marge{width:8%;text-align:right}.th-act{width:9%;text-align:center}
 .marge-ok{color:#2e7d32;font-weight:600}.marge-low{color:#e65100;font-weight:600}
 .bodega-empty{text-align:center;padding:40px 20px;color:#aaa}
 .modal-field{margin-bottom:12px}
@@ -357,11 +357,17 @@ table.products td input.center{text-align:center} table.products td input.right{
         <input id="bod-nom" placeholder="Ex: Valdelana Crianza 2020">
       </div>
     </div>
-    <div class="modal-grid-3" style="margin-bottom:10px">
+    <div class="modal-grid-2" style="margin-bottom:10px">
       <div class="modal-field">
         <label>Añada</label>
         <input id="bod-any" placeholder="2021" maxlength="4">
       </div>
+      <div class="modal-field">
+        <label>Bodega / Productor</label>
+        <input id="bod-bodega" placeholder="Ex: Valdelana, Torres...">
+      </div>
+    </div>
+    <div class="modal-grid-2" style="margin-bottom:10px">
       <div class="modal-field">
         <label>Tipus</label>
         <select id="bod-tipus">
@@ -814,6 +820,7 @@ function renderBodega(){
     return`<tr>
       <td style="font-weight:500">${esc(v.nom||'—')}</td>
       <td style="text-align:center;color:#888">${v.any||'—'}</td>
+      <td style="font-size:12px;color:#555">${esc(v.bodega||'—')}</td>
       <td><span class="tipus-pill tipus-${cls}">${icon} ${esc(v.tipus||'—')}</span></td>
       <td style="color:#666;font-size:12px">${esc(v.do||'—')}</td>
       <td style="text-align:right">${cost?cost.toFixed(2)+' €':'—'}</td>
@@ -829,6 +836,7 @@ function renderBodega(){
     <thead><tr>
       <th class="th-nom">Nom</th>
       <th class="th-any">Añada</th>
+      <th class="th-bodega">Bodega</th>
       <th class="th-tipus">Tipus</th>
       <th class="th-do">Denominació</th>
       <th class="th-cost">Cost</th>
@@ -846,6 +854,7 @@ function openBodegaModal(idx){
   const v=bodegaEditIdx!==null?bodega[bodegaEditIdx]:{nom:'',any:'',tipus:'Vi negre',do:'',cost:'',pvp:''};
   document.getElementById('bod-nom').value=v.nom||'';
   document.getElementById('bod-any').value=v.any||'';
+  document.getElementById('bod-bodega').value=v.bodega||'';
   document.getElementById('bod-tipus').value=v.tipus||'Vi negre';
   document.getElementById('bod-do').value=v.do||'';
   document.getElementById('bod-cost').value=v.cost||'';
@@ -880,6 +889,7 @@ async function saveBodega(){
   const vi={
     nom,
     any:document.getElementById('bod-any').value.trim(),
+    bodega:document.getElementById('bod-bodega').value.trim(),
     tipus:document.getElementById('bod-tipus').value,
     do:document.getElementById('bod-do').value.trim(),
     cost:parseFloat(document.getElementById('bod-cost').value)||0,
