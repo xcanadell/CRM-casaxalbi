@@ -444,7 +444,14 @@
         "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [],
-        "vins": [],
+        "vins": [
+          "Toscana Punky Cosines",
+          "Negre Rias Baixes",
+          "Escumos Santro",
+          "Sablaix Castanyer",
+          "Murmuri Priorat",
+          "Vi Dolç Marco Favio"
+        ],
         "notes": ""
       },
       {
