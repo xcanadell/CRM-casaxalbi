@@ -52,13 +52,13 @@
     "total": 60
   },
   {
-    "data": "",
-    "lloc": "Cata de vins",
-    "notes": "Cata amb Alba, el seu novio i un parell més d'amics",
+    "data": "2026-02-07",
+    "lloc": "Catering",
+    "notes": "Fiesta 50 aniversario (40 por cabeza) Cata + arroz",
     "comensals": [
       {
-        "nom": "Alba",
-        "preu_menjar": 0,
+        "nom": "Elena y Nando",
+        "preu_menjar": 400,
         "preu_beguda": 0,
         "preu_altres": 0,
         "plats": [],
@@ -66,7 +66,7 @@
         "notes": ""
       }
     ],
-    "total": 0
+    "total": 400
   },
   {
     "data": "2026-05-30",
