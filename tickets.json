@@ -1,0 +1,1518 @@
+[
+  {
+    "establiment": "Lupa Supermercat",
+    "tipus": "Supermercat",
+    "data": "12/03/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Pan Frances 225 GR.",
+        "quantitat": 1,
+        "preu_unitari": 1.15,
+        "total": 1.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Pan Frances 225 GR.",
+        "quantitat": 1,
+        "preu_unitari": 1.15,
+        "total": 1.15,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 2.3,
+    "saved_at": "2026-03-12T10:00:00.000Z"
+  },
+  {
+    "establiment": "Color Plus Terrassa",
+    "tipus": "Impremta",
+    "data": "24/02/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "ZOOVARIOSSPRINT - 50 Targetes 55x55 mm (4+4) 350g",
+        "quantitat": 1,
+        "preu_unitari": 20,
+        "total": 20,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 20,
+    "saved_at": "2026-02-24T10:00:00.000Z"
+  },
+  {
+    "establiment": "Bolets & Co - Micocuina S.L.",
+    "tipus": "Mercat",
+    "data": "25/02/2026",
+    "adreca": "Mercat Independència, Parada 578, 08221 Terrassa (Barcelona)",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Murgola semi cultiu",
+        "quantitat": 0.075,
+        "preu_unitari": 59,
+        "total": 4.43,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOF. melanosporum trossos",
+        "quantitat": 0.014,
+        "preu_unitari": 1080,
+        "total": 15.12,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Rossinyol Extremadura",
+        "quantitat": 0.34,
+        "preu_unitari": 49,
+        "total": 16.66,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 36.21,
+    "saved_at": "2026-02-25T10:00:00.000Z"
+  },
+  {
+    "establiment": "Lupa Supermercat",
+    "tipus": "Supermercat",
+    "data": "",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Torta de Pan de Aranda 425 gr.",
+        "quantitat": 1,
+        "preu_unitari": 2.75,
+        "total": 2.75,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Torta de Pan de Aranda 425 gr.",
+        "quantitat": 1,
+        "preu_unitari": 2.75,
+        "total": 2.75,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Torta de Pan de Aranda 425 gr. (devolució/descompte)",
+        "quantitat": 1,
+        "preu_unitari": -2.75,
+        "total": -2.75,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Gambón Gigante 20/30",
+        "quantitat": 1,
+        "preu_unitari": 3.76,
+        "total": 3.76,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Pota de Altura",
+        "quantitat": 1,
+        "preu_unitari": 4.73,
+        "total": 4.73,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Mejillón Gigante 25/30 Extra",
+        "quantitat": 1,
+        "preu_unitari": 1.95,
+        "total": 1.95,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 13.19,
+    "saved_at": "2026-02-20T10:00:00.000Z"
+  },
+  {
+    "establiment": "Lupa Supermercat",
+    "tipus": "Supermercat",
+    "data": "16/02/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Rabas de Poton",
+        "quantitat": 1,
+        "preu_unitari": 7.44,
+        "total": 7.44,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Arroz SOS Kilo",
+        "quantitat": 1,
+        "preu_unitari": 1.87,
+        "total": 1.87,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Garbanzo Alteza Coc.Frc. 540 gr",
+        "quantitat": 1,
+        "preu_unitari": 0.85,
+        "total": 0.85,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Garbanzo Alteza Coc.Frc. 540 gr",
+        "quantitat": 1,
+        "preu_unitari": 0.65,
+        "total": 0.65,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Picos Deleitum Rusticos 130 gr",
+        "quantitat": 1,
+        "preu_unitari": 0.79,
+        "total": 0.79,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "L.S E Morcilla Sotopalacios Und",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Sardina Alteza Ac.O.RR-125 84g",
+        "quantitat": 1,
+        "preu_unitari": 1.69,
+        "total": 1.69,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Sardina Alteza Ac.O.RR-125 84g",
+        "quantitat": 1,
+        "preu_unitari": 1.69,
+        "total": 1.69,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Queso Azul Danes, Kilo",
+        "quantitat": 1,
+        "preu_unitari": 2.07,
+        "total": 2.07,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Nata Esp. Cocina 500 ml",
+        "quantitat": 1,
+        "preu_unitari": 1.55,
+        "total": 1.55,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Crema Tahini Eos 200 grs",
+        "quantitat": 1,
+        "preu_unitari": 3.5,
+        "total": 3.5,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Manteq. Margui Pastilla 250 gr",
+        "quantitat": 1,
+        "preu_unitari": 2.69,
+        "total": 2.69,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Tomate Alteza Frito Frasco 560",
+        "quantitat": 1,
+        "preu_unitari": 0.9,
+        "total": 0.9,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Cebolla Tubo, Unidad",
+        "quantitat": 1,
+        "preu_unitari": 1.69,
+        "total": 1.69,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Zanahorias",
+        "quantitat": 1,
+        "preu_unitari": 0.81,
+        "total": 0.81,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Puerro Manojo Unds",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Shiitake Bandeja 200 grs",
+        "quantitat": 1,
+        "preu_unitari": 2.68,
+        "total": 2.68,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 35.05,
+    "saved_at": "2026-02-16T10:00:00.000Z"
+  },
+  {
+    "establiment": "El Colmado de Ezcaray",
+    "tipus": "Mercat / Colmado",
+    "data": "20/02/2026",
+    "adreca": "C/ Sagastia Nº 5, Ezcaray, La Rioja",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Queso Picon Bejes Tresv",
+        "quantitat": 1,
+        "preu_unitari": 6.02,
+        "total": 6.02,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Queso Floral",
+        "quantitat": 1,
+        "preu_unitari": 9.57,
+        "total": 9.57,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Queso Torta Suave Azul",
+        "quantitat": 1,
+        "preu_unitari": 6.48,
+        "total": 6.48,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Queso Tres Leches Castr",
+        "quantitat": 1,
+        "preu_unitari": 8,
+        "total": 8,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 30.07,
+    "saved_at": "2026-02-20T11:00:00.000Z"
+  },
+  {
+    "establiment": "Quesería Valle del Ciloria",
+    "tipus": "Formatgeria",
+    "data": "28/05/2026",
+    "adreca": "Ctra. Ezcaray - Valgañon Nº 71, 26288 Zorraquin, La Rioja",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Queso Curado",
+        "quantitat": 1,
+        "preu_unitari": 9.2,
+        "total": 9.2,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Yogur Natural 450gr",
+        "quantitat": 3,
+        "preu_unitari": 2.3,
+        "total": 6.9,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 16.1,
+    "saved_at": "2026-05-28T10:00:00.000Z"
+  },
+  {
+    "establiment": "Lupa Supermercat",
+    "tipus": "Supermercat",
+    "data": "29/05/2026",
+    "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Leche Alteza Entera Litro",
+        "quantitat": 1,
+        "preu_unitari": 0.96,
+        "total": 0.96,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Caldo Alteza Verduras Brik Lt.",
+        "quantitat": 1,
+        "preu_unitari": 1,
+        "total": 1,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Aceitunas Embrujos 670g",
+        "quantitat": 1,
+        "preu_unitari": 4.09,
+        "total": 4.09,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Burrata Granarolo Fresca 125gr",
+        "quantitat": 5,
+        "preu_unitari": 2.25,
+        "total": 11.25,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Shiitake Bandeja 200g",
+        "quantitat": 1,
+        "preu_unitari": 2.68,
+        "total": 2.68,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Arroz SOS Kilo",
+        "quantitat": 1,
+        "preu_unitari": 1.87,
+        "total": 1.87,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Hogaza Semillas 420g",
+        "quantitat": 1,
+        "preu_unitari": 1.89,
+        "total": 1.89,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Hogaza Centeno 60% M.Ma. 380g",
+        "quantitat": 1,
+        "preu_unitari": 1.91,
+        "total": 1.91,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Huevo Av. Preciado Clase XL Doc",
+        "quantitat": 1,
+        "preu_unitari": 4.4,
+        "total": 4.4,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Patata Lugareño 3 Kilos",
+        "quantitat": 1,
+        "preu_unitari": 4.99,
+        "total": 4.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Lima Bandeja 250g",
+        "quantitat": 1,
+        "preu_unitari": 1.79,
+        "total": 1.79,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Fresa Kilo",
+        "quantitat": 1,
+        "preu_unitari": 1.19,
+        "total": 1.19,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Burrata Granarolo Fresca 125gr",
+        "quantitat": 1,
+        "preu_unitari": 2.25,
+        "total": 2.25,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Limones Malla 1 Kilo",
+        "quantitat": 1,
+        "preu_unitari": 3.25,
+        "total": 3.25,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Cebolla Roja",
+        "quantitat": 1,
+        "preu_unitari": 0.33,
+        "total": 0.33,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 43.85,
+    "saved_at": "2026-05-29T10:00:00.000Z"
+  },
+  {
+    "establiment": "Lupa Supermercat",
+    "tipus": "Supermercat",
+    "data": "23/05/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Crema J.Crowe Depil. Ducha 200",
+        "quantitat": 1,
+        "preu_unitari": 2.8,
+        "total": 2.8,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Perlas Detersolin Bl. Fresh 275",
+        "quantitat": 1,
+        "preu_unitari": 3.99,
+        "total": 3.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Beb. Alteza Avena Baris S/Az Lt",
+        "quantitat": 1,
+        "preu_unitari": 1.09,
+        "total": 1.09,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Donas Hnos. Juan Nata P-2 150gr",
+        "quantitat": 1,
+        "preu_unitari": 1.16,
+        "total": 1.16,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Cafe Dromedario Grano Nat. 500",
+        "quantitat": 1,
+        "preu_unitari": 7.99,
+        "total": 7.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Smoothie Ready Man.+Mara. 250ml",
+        "quantitat": 1,
+        "preu_unitari": 1.65,
+        "total": 1.65,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Beb. Alteza Avena Baris S/Az Lt",
+        "quantitat": 1,
+        "preu_unitari": 1.09,
+        "total": 1.09,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Beb. Alteza Avena Baris S/Az Lt",
+        "quantitat": 1,
+        "preu_unitari": 1.09,
+        "total": 1.09,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 20.86,
+    "saved_at": "2026-05-23T10:00:00.000Z"
+  },
+  {
+    "establiment": "Ametller Origen",
+    "tipus": "Supermercat",
+    "data": "21/05/2026",
+    "adreca": "Passeig 22 de Juliol 399, Terrassa",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Mortadella Bologna Casa Modena 1",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Nespra Essencial safata",
+        "quantitat": 1,
+        "preu_unitari": 3.29,
+        "total": 3.29,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Rossinyol",
+        "quantitat": 0.445,
+        "preu_unitari": 34.9,
+        "total": 15.53,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Tomàquet Morat",
+        "quantitat": 0.725,
+        "preu_unitari": 4.99,
+        "total": 3.62,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 24.73,
+    "saved_at": "2026-05-21T10:00:00.000Z"
+  },
+  {
+    "establiment": "Winepalace Terrassa",
+    "tipus": "Botiga de vins",
+    "data": "22/04/2026",
+    "adreca": "Pol. Ind Emporda Internacional, Terrassa",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Loire Comaine Clos G",
+        "quantitat": 1,
+        "preu_unitari": 8.47,
+        "total": 8.47,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "V D N Alicante Casa",
+        "quantitat": 1,
+        "preu_unitari": 13.37,
+        "total": 13.37,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Rioja Ijalba Crianza",
+        "quantitat": 1,
+        "preu_unitari": 7.24,
+        "total": 7.24,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Montsant Etim Verema",
+        "quantitat": 1,
+        "preu_unitari": 7.96,
+        "total": 7.96,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Valdelana Crianza 201",
+        "quantitat": 1,
+        "preu_unitari": 7.7,
+        "total": 7.7,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "V N Rioja Ad Libitum",
+        "quantitat": 1,
+        "preu_unitari": 9.99,
+        "total": 9.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "V B Penedes Celler C",
+        "quantitat": 1,
+        "preu_unitari": 14.14,
+        "total": 14.14,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 68.87,
+    "saved_at": "2026-04-22T10:00:00.000Z"
+  },
+  {
+    "establiment": "Vivaria",
+    "tipus": "Jardineria",
+    "data": "13/04/2026",
+    "adreca": "Camino Cañicalejo, S/N, 26006 Varea (La Rioja)",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Aromàtica Mediana",
+        "quantitat": 4,
+        "preu_unitari": 3.2,
+        "total": 12.8,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Albahaca / Perejil M-10.5",
+        "quantitat": 1,
+        "preu_unitari": 1,
+        "total": 1,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Rollo 10x1 Manta Suelo",
+        "quantitat": 1,
+        "preu_unitari": 14.5,
+        "total": 14.5,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Sobre Capuchina (Sobre)",
+        "quantitat": 1,
+        "preu_unitari": 2.35,
+        "total": 2.35,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 30.65,
+    "saved_at": "2026-04-13T10:00:00.000Z"
+  },
+  {
+    "establiment": "Lupa Supermercat",
+    "tipus": "Supermercat",
+    "data": "11/04/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Aceite Alteza Girasol Litro",
+        "quantitat": 1,
+        "preu_unitari": 1.75,
+        "total": 1.75,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Patata Granel",
+        "quantitat": 1,
+        "preu_unitari": 1.8,
+        "total": 1.8,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Cebolla Granel",
+        "quantitat": 1,
+        "preu_unitari": 0.72,
+        "total": 0.72,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Clementina Malla 1,5 Kgs Aprox",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "4 Flautas Chocolate",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 9.25,
+    "saved_at": "2026-04-11T10:00:00.000Z"
+  },
+  {
+    "establiment": "Ametller Origen",
+    "tipus": "Supermercat",
+    "data": "19/05/2026",
+    "adreca": "Passeig 22 de Juliol 399, Terrassa",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Fideus nº 4 AO 500g",
+        "quantitat": 1,
+        "preu_unitari": 1.79,
+        "total": 1.79,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Tomàquet concentrat Mutti 130g",
+        "quantitat": 1,
+        "preu_unitari": 2.9,
+        "total": 2.9,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Formatge montagnolo cremós Kaser",
+        "quantitat": 0.199,
+        "preu_unitari": 22.9,
+        "total": 4.56,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Carn de nyores La legua 125g",
+        "quantitat": 2,
+        "preu_unitari": 1.39,
+        "total": 2.78,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 12.03,
+    "saved_at": "2026-05-19T10:00:00.000Z"
+  },
+  {
+    "establiment": "Lupa Supermercat",
+    "tipus": "Supermercat",
+    "data": "17/04/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Patata granel",
+        "quantitat": 1,
+        "preu_unitari": 2.54,
+        "total": 2.54,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Anchoa La Baliza A.G. 1/8 RR-45",
+        "quantitat": 1,
+        "preu_unitari": 1.19,
+        "total": 1.19,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Huevo AV. Preciado Campero 1/2D",
+        "quantitat": 1,
+        "preu_unitari": 2.28,
+        "total": 2.28,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Dorada Crianza 300-400 grs.",
+        "quantitat": 2,
+        "preu_unitari": 4.85,
+        "total": 9.7,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Puerro manojo unds",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Cebolla granel",
+        "quantitat": 1,
+        "preu_unitari": 0.68,
+        "total": 0.68,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Carrillera de cerdo, kilo",
+        "quantitat": 1,
+        "preu_unitari": 18.24,
+        "total": 18.24,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Caldo G. Blanca Cas. Carne B. Lt.",
+        "quantitat": 1,
+        "preu_unitari": 2.19,
+        "total": 2.19,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Cogollos bandeja 3 und. 350 gr.",
+        "quantitat": 1,
+        "preu_unitari": 1.29,
+        "total": 1.29,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Cogollos bandeja 3 und. 350 gr.",
+        "quantitat": 1,
+        "preu_unitari": 1.29,
+        "total": 1.29,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Brioche trenzado 400 grs.",
+        "quantitat": 1,
+        "preu_unitari": 4.15,
+        "total": 4.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Cebolla roja",
+        "quantitat": 1,
+        "preu_unitari": 0.55,
+        "total": 0.55,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Zanahorias",
+        "quantitat": 1,
+        "preu_unitari": 0.49,
+        "total": 0.49,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 46.58,
+    "saved_at": "2026-04-17T10:00:00.000Z"
+  },
+  {
+    "establiment": "Flying Tiger Copenhagen",
+    "tipus": "Botiga de varietats",
+    "data": "13/04/2026",
+    "adreca": "Calle Arenal 5, 48005 Bilbao, España",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Vela LED Flores 10cm",
+        "quantitat": 1,
+        "preu_unitari": 5,
+        "total": 5,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Vela LED Flores 15cm",
+        "quantitat": 1,
+        "preu_unitari": 6,
+        "total": 6,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Botes Viaje 4uds",
+        "quantitat": 1,
+        "preu_unitari": 4,
+        "total": 4,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Bote de Borosilicato",
+        "quantitat": 8,
+        "preu_unitari": 1,
+        "total": 8,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Cesta Cuerda 7x15cm",
+        "quantitat": 4,
+        "preu_unitari": 3,
+        "total": 12,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 35,
+    "saved_at": "2026-04-13T11:00:00.000Z"
+  },
+  {
+    "establiment": "Muy Mucho Logroño",
+    "tipus": "Decoració i llar",
+    "data": "13/04/2026",
+    "adreca": "C/ San Prudencio, 32, 01005 Vitoria",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Tarro cocina pequeño",
+        "quantitat": 4,
+        "preu_unitari": 1.99,
+        "total": 7.96,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Aceite esencial Calm",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Aceite refrescante S",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Aceite esencial Slee",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Aceite Cherry Blossom",
+        "quantitat": 1,
+        "preu_unitari": 8.99,
+        "total": 8.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Bolsa pequeña Kraft",
+        "quantitat": 1,
+        "preu_unitari": 0.15,
+        "total": 0.15,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 26.07,
+    "saved_at": "2026-04-13T12:00:00.000Z"
+  },
+  {
+    "establiment": "Lupa Supermercat",
+    "tipus": "Supermercat",
+    "data": "18/04/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Cerveza Mahou 5 Estrellas Lata 33cl",
+        "quantitat": 1,
+        "preu_unitari": 0.86,
+        "total": 0.86,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Cerveza Alhambra Especial Pack 6x25cl",
+        "quantitat": 1,
+        "preu_unitari": 3.89,
+        "total": 3.89,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Cerveza Alhambra Especial Pack 6x25cl",
+        "quantitat": 1,
+        "preu_unitari": 3.89,
+        "total": 3.89,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 8.64,
+    "saved_at": "2026-04-18T10:00:00.000Z"
+  },
+  {
+    "establiment": "Super Bazar Micro Vecino",
+    "tipus": "Bazar",
+    "data": "12/01/2026",
+    "adreca": "C/San Felipe Neri 2-4, 26280 Ezcaray (La Rioja)",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Artículos Varios",
+        "quantitat": 1,
+        "preu_unitari": 5.95,
+        "total": 5.95,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 5.95,
+    "saved_at": "2026-01-12T10:00:00.000Z"
+  },
+  {
+    "establiment": "La Sirena",
+    "tipus": "Supermercat de congelats",
+    "data": "19/05/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Llom de salmó ASC noruec Premium",
+        "quantitat": 4,
+        "preu_unitari": 4.99,
+        "total": 19.96,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Verdura per a sofregit",
+        "quantitat": 1,
+        "preu_unitari": 1.49,
+        "total": 1.49,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Ceba trossejada",
+        "quantitat": 2,
+        "preu_unitari": 1.49,
+        "total": 2.98,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Gamba Austral crua 20/30 peces",
+        "quantitat": 1,
+        "preu_unitari": 21.99,
+        "total": 21.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Descompte exclusiu club",
+        "quantitat": 1,
+        "preu_unitari": -2,
+        "total": -2,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Gyoza de carn vici",
+        "quantitat": 1,
+        "preu_unitari": 4.49,
+        "total": 4.49,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Minestra Reina Premium",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 51.9,
+    "saved_at": "2026-05-19T11:00:00.000Z"
+  },
+  {
+    "establiment": "Lupa Supermercat",
+    "tipus": "Supermercat",
+    "data": "22/05/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Zanahorias",
+        "quantitat": 1,
+        "preu_unitari": 0.9,
+        "total": 0.9,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Carrillera de Cerdo (Carniceria), kilo",
+        "quantitat": 1,
+        "preu_unitari": 36.95,
+        "total": 36.95,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Puerro Manojo Unds",
+        "quantitat": 1,
+        "preu_unitari": 1.39,
+        "total": 1.39,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Pan del Norte 265 gr.",
+        "quantitat": 1,
+        "preu_unitari": 1.38,
+        "total": 1.38,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Pan del Norte 265 gr.",
+        "quantitat": 1,
+        "preu_unitari": 1.38,
+        "total": 1.38,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Caldo G. Blanca de Puchero 1 Lt",
+        "quantitat": 1,
+        "preu_unitari": 2.15,
+        "total": 2.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Caldo G. Blanca Cas. Carne B. Lt.",
+        "quantitat": 1,
+        "preu_unitari": 2.15,
+        "total": 2.15,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 46.3,
+    "saved_at": "2026-05-22T10:00:00.000Z"
+  },
+  {
+    "establiment": "Autoservicio Mari S.C",
+    "tipus": "Supermercat",
+    "data": "17/04/2026",
+    "adreca": "C/ Sagastia 17, 26280 Ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "LECH/VERD/PA",
+        "quantitat": 1,
+        "preu_unitari": 4.85,
+        "total": 4.85,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 4.85,
+    "saved_at": "2026-04-17T11:00:00.000Z"
+  },
+  {
+    "establiment": "Autoservicio Mary",
+    "tipus": "Supermercat",
+    "data": "17/04/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Producte a pes (pesols)",
+        "quantitat": 1.095,
+        "preu_unitari": 7.98,
+        "total": 8.74,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 8.74,
+    "saved_at": "2026-04-17T12:00:00.000Z"
+  },
+  {
+    "establiment": "Puyol Carns i Embotits",
+    "tipus": "Carnisseria",
+    "data": "20/05/2026",
+    "adreca": "Avda. Barcelona, 231",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Embotits (NP 4 unitats)",
+        "quantitat": 4,
+        "preu_unitari": 7.5,
+        "total": 30,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Fuet",
+        "quantitat": 0.425,
+        "preu_unitari": 21.3,
+        "total": 9.05,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Botifarra Negra",
+        "quantitat": 0.91,
+        "preu_unitari": 14.65,
+        "total": 13.33,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Papada",
+        "quantitat": 0.525,
+        "preu_unitari": 9.2,
+        "total": 4.83,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Xoriço Casolà",
+        "quantitat": 0.135,
+        "preu_unitari": 22.75,
+        "total": 3.07,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Pa de Fetge",
+        "quantitat": 0.6,
+        "preu_unitari": 24.15,
+        "total": 14.49,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Parmigiano",
+        "quantitat": 0.365,
+        "preu_unitari": 37.95,
+        "total": 13.85,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Dolç Cuixa",
+        "quantitat": 0.235,
+        "preu_unitari": 20.95,
+        "total": 4.92,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Anxova G. (NP)",
+        "quantitat": 1,
+        "preu_unitari": 17.4,
+        "total": 17.4,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Trinxat V.",
+        "quantitat": 0.42,
+        "preu_unitari": 19,
+        "total": 7.98,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Bistec A",
+        "quantitat": 1.225,
+        "preu_unitari": 24,
+        "total": 29.4,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Llom",
+        "quantitat": 0.555,
+        "preu_unitari": 14.2,
+        "total": 7.88,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Xistorra",
+        "quantitat": 0.18,
+        "preu_unitari": 15.35,
+        "total": 2.76,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Costella",
+        "quantitat": 0.365,
+        "preu_unitari": 14.2,
+        "total": 5.18,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Pollastre",
+        "quantitat": 1.765,
+        "preu_unitari": 6.15,
+        "total": 10.85,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Conill",
+        "quantitat": 0.545,
+        "preu_unitari": 13.8,
+        "total": 7.52,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Botifarra",
+        "quantitat": 0.46,
+        "preu_unitari": 13.5,
+        "total": 6.21,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Bistec A",
+        "quantitat": 0.66,
+        "preu_unitari": 24,
+        "total": 15.84,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Espalmada Ibèrica",
+        "quantitat": 0.225,
+        "preu_unitari": 130,
+        "total": 29.25,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 233.81,
+    "saved_at": "2026-05-20T10:00:00.000Z"
+  },
+  {
+    "establiment": "Lupa Supermercat",
+    "tipus": "Supermercat",
+    "data": "28/04/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Producte sense nom",
+        "quantitat": 1,
+        "preu_unitari": 0.3,
+        "total": 0.3,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Zanahorias",
+        "quantitat": 1,
+        "preu_unitari": 1.85,
+        "total": 1.85,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Nata Esp. Cocina 3x200ml",
+        "quantitat": 1,
+        "preu_unitari": 1.39,
+        "total": 1.39,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Pasta Gallo Macarron XL Br. 450",
+        "quantitat": 1,
+        "preu_unitari": 5.45,
+        "total": 5.45,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Aceite La Masia Coco V.Ex. E430",
+        "quantitat": 1,
+        "preu_unitari": 2.19,
+        "total": 2.19,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Caldo G. Blanca Cas. Carne B.Lt.",
+        "quantitat": 1,
+        "preu_unitari": 1.1,
+        "total": 1.1,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Jabon Crowe Manos Glicer. 125gr",
+        "quantitat": 1,
+        "preu_unitari": 1.1,
+        "total": 1.1,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 12.28,
+    "saved_at": "2026-04-28T10:00:00.000Z"
+  },
+  {
+    "establiment": "Lupa Supermercat",
+    "tipus": "Supermercat",
+    "data": "24/04/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Rollo Coc. Foxy 3Cap. Asso. UL 2U",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Cerveza Estrella Damm Lat. 33CL 6x",
+        "quantitat": 6,
+        "preu_unitari": 0.88,
+        "total": 5.28,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Tomate Orlando Fr. Brik P3x350G",
+        "quantitat": 1,
+        "preu_unitari": 2.55,
+        "total": 2.55,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Masa Pizza Buitoni Fini. BQ. 260",
+        "quantitat": 1,
+        "preu_unitari": 2.35,
+        "total": 2.35,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Tomate Rosa",
+        "quantitat": 1,
+        "preu_unitari": 3.39,
+        "total": 3.39,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Bebida Alpro Avena Barista Lt.",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Aceite Abrilsol Girasol Litro",
+        "quantitat": 1,
+        "preu_unitari": 1.72,
+        "total": 1.72,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Pepino Corto",
+        "quantitat": 1,
+        "preu_unitari": 0.46,
+        "total": 0.46,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Limones Granel",
+        "quantitat": 1,
+        "preu_unitari": 1.69,
+        "total": 1.69,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Picos Deleitum Rusticos 130 GR",
+        "quantitat": 1,
+        "preu_unitari": 0.89,
+        "total": 0.89,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Pera Rincon de Soto",
+        "quantitat": 1,
+        "preu_unitari": 2.26,
+        "total": 2.26,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Burrata Granarolo Fresca 125GR",
+        "quantitat": 1,
+        "preu_unitari": 2.25,
+        "total": 2.25,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Jamon Cocido Bonnatur Argal, Kilo",
+        "quantitat": 1,
+        "preu_unitari": 2.53,
+        "total": 2.53,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Berenjena Negra",
+        "quantitat": 1,
+        "preu_unitari": 1.14,
+        "total": 1.14,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Bonito Alteza N.Ac.Ol. 73GR. PE.",
+        "quantitat": 1,
+        "preu_unitari": 1.6,
+        "total": 1.6,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Huevo Av. Preciado Campero 1/2D",
+        "quantitat": 1,
+        "preu_unitari": 2.28,
+        "total": 2.28,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Crema Queso Alteza Camemb. 125G",
+        "quantitat": 1,
+        "preu_unitari": 1.5,
+        "total": 1.5,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Yogur Danone Natural P-4x120GR",
+        "quantitat": 1,
+        "preu_unitari": 1,
+        "total": 1,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Tomate Cherry-Pera-Kumato 250",
+        "quantitat": 1,
+        "preu_unitari": 2.49,
+        "total": 2.49,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Pan Tost. Franjuba Pasas 100 GR",
+        "quantitat": 1,
+        "preu_unitari": 1,
+        "total": 1,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 40.66,
+    "saved_at": "2026-04-24T10:00:00.000Z"
+  }
+]
