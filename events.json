@@ -522,7 +522,11 @@
         "preu_beguda": 7.5,
         "preu_altres": 0,
         "plats": [],
-        "vins": [],
+        "vins": [
+          "Escumos blanc",
+          "Les Cousins (rosat)",
+          "Negre Alemany"
+        ],
         "notes": ""
       },
       {
