@@ -262,5 +262,17 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-06-06T15:07:43.040Z"
+  },
+  {
+    "nom": "Temerario Garnacha Viñas Viejas",
+    "any": "2024",
+    "bodega": "Temerario",
+    "tipus": "Vi negre",
+    "do": "Rioja",
+    "cost": 9.5,
+    "pvp": 28,
+    "data_compra": "2026-05-23",
+    "data_venda": "2026-05-29",
+    "updated_at": "2026-06-06T15:10:51.913Z"
   }
 ]
