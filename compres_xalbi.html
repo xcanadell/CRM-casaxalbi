@@ -256,7 +256,7 @@ function populateResult(r){
 function addProductRow(p){
   p=p||{descripcio:'',quantitat:1,preu_unitari:0,total:0,us:'Casa Xalbi'};const us=p.us||'Casa Xalbi';
   const tr=document.createElement('tr');
-  tr.innerHTML=`<td class="col-d"><input value="${esc(p.descripcio)}" placeholder="Producte"></td><td class="col-q"><input class="center" value="${p.quantitat}" style="width:38px"></td><td class="col-p"><input class="right" value="${fmt(p.preu_unitari)}" style="width:50px"> €</td><td class="col-t"><input class="right" value="${fmt(p.total)}" style="width:50px"> €</td><td class="col-u"><select><option value="Casa Xalbi" ${us==='Casa Xalbi'?'selected':''}>🏠 Casa Xalbi</option><option value="Ús propi" ${us==='Ús propi'?'selected':''}>👤 Ús propi</option></select></td><td class="col-x"><button class="del-btn" onclick="this.closest('tr').remove()">✕</button></td>`;
+  tr.innerHTML=`<td class="col-d"><input value="${esc(p.descripcio)}" placeholder="Producte"></td><td class="col-q"><input class="center" value="${p.quantitat}" style="width:38px"></td><td class="col-p"><input class="right" value="${fmt(p.preu_unitari)}" style="width:50px"> €</td><td class="col-t"><input class="right" value="${fmt(p.total)}" style="width:50px"> €</td><td class="col-u"><select><option value="Casa Xalbi" ${us==='Casa Xalbi'?'selected':''}>🏠 Casa Xalbi</option><option value="Ús propi" ${us==='Ús propi'?'selected':''}>👤 Ús propi</option><option value="Gastro XP" ${us==='Gastro XP'?'selected':''}>👨‍🍳 Gastro XP</option></select></td><td class="col-x"><button class="del-btn" onclick="this.closest('tr').remove()">✕</button></td>`;
   document.getElementById('productsBody').appendChild(tr);
 }
 function getFormData(){
