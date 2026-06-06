@@ -106,14 +106,21 @@
   {
     "data": "2026-05-29",
     "lloc": "Sopar Casa Xalbi",
-    "notes": "",
+    "notes": "Una vegetariana y uno que no le gusta el salmon",
     "comensals": [
       {
         "nom": "Nando",
         "preu_menjar": 35,
         "preu_beguda": 20,
         "preu_altres": 5,
-        "plats": [],
+        "plats": [
+          "Ensalada del Huerto Xalbi",
+          "Tiradito de Salmón",
+          "Rebozuelos Salteados",
+          "Risotto de Verduras",
+          "Carrillera a Baja Temperatura",
+          "Yogur de Ezcaray"
+        ],
         "vins": [
           "Alto Otero",
           "Espantaburros Clarete (2020)",
@@ -129,7 +136,14 @@
         "preu_menjar": 35,
         "preu_beguda": 20,
         "preu_altres": 0,
-        "plats": [],
+        "plats": [
+          "Ensalada del Huerto Xalbi",
+          "Tiradito de Salmón",
+          "Rebozuelos Salteados",
+          "Risotto de Verduras",
+          "Yogur de Ezcaray",
+          "Tartar de Gamba"
+        ],
         "vins": [
           "Alto Otero",
           "Espantaburros Clarete (2020)",
@@ -145,7 +159,14 @@
         "preu_menjar": 35,
         "preu_beguda": 20,
         "preu_altres": 5,
-        "plats": [],
+        "plats": [
+          "Ensalada del Huerto Xalbi",
+          "Tiradito de Salmón",
+          "Rebozuelos Salteados",
+          "Risotto de Verduras",
+          "Carrillera a Baja Temperatura",
+          "Yogur de Ezcaray"
+        ],
         "vins": [
           "Alto Otero",
           "Espantaburros Clarete (2020)",
@@ -161,7 +182,14 @@
         "preu_menjar": 35,
         "preu_beguda": 20,
         "preu_altres": 0,
-        "plats": [],
+        "plats": [
+          "Ensalada del Huerto Xalbi",
+          "Tiradito de Salmón",
+          "Rebozuelos Salteados",
+          "Risotto de Verduras",
+          "Carrillera a Baja Temperatura",
+          "Yogur de Ezcaray"
+        ],
         "vins": [
           "Alto Otero",
           "Espantaburros Clarete (2020)",
@@ -177,7 +205,14 @@
         "preu_menjar": 35,
         "preu_beguda": 20,
         "preu_altres": 5,
-        "plats": [],
+        "plats": [
+          "Ensalada del Huerto Xalbi",
+          "Rebozuelos Salteados",
+          "Risotto de Verduras",
+          "Carrillera a Baja Temperatura",
+          "Yogur de Ezcaray",
+          "Tartar de Gamba"
+        ],
         "vins": [
           "Alto Otero",
           "Espantaburros Clarete (2020)",
@@ -193,7 +228,14 @@
         "preu_menjar": 35,
         "preu_beguda": 20,
         "preu_altres": 5,
-        "plats": [],
+        "plats": [
+          "Ensalada del Huerto Xalbi",
+          "Tiradito de Salmón",
+          "Rebozuelos Salteados",
+          "Risotto de Verduras",
+          "Carrillera a Baja Temperatura",
+          "Yogur de Ezcaray"
+        ],
         "vins": [
           "Alto Otero",
           "Espantaburros Clarete (2020)",
@@ -209,7 +251,14 @@
         "preu_menjar": 35,
         "preu_beguda": 20,
         "preu_altres": 5,
-        "plats": [],
+        "plats": [
+          "Ensalada del Huerto Xalbi",
+          "Tiradito de Salmón",
+          "Rebozuelos Salteados",
+          "Risotto de Verduras",
+          "Carrillera a Baja Temperatura",
+          "Yogur de Ezcaray"
+        ],
         "vins": [
           "Alto Otero",
           "Espantaburros Clarete (2020)",
@@ -225,7 +274,14 @@
         "preu_menjar": 35,
         "preu_beguda": 20,
         "preu_altres": 5,
-        "plats": [],
+        "plats": [
+          "Ensalada del Huerto Xalbi",
+          "Tiradito de Salmón",
+          "Rebozuelos Salteados",
+          "Risotto de Verduras",
+          "Carrillera a Baja Temperatura",
+          "Yogur de Ezcaray"
+        ],
         "vins": [
           "Alto Otero",
           "Espantaburros Clarete (2020)",
@@ -241,7 +297,14 @@
         "preu_menjar": 35,
         "preu_beguda": 20,
         "preu_altres": 5,
-        "plats": [],
+        "plats": [
+          "Ensalada del Huerto Xalbi",
+          "Tiradito de Salmón",
+          "Rebozuelos Salteados",
+          "Risotto de Verduras",
+          "Carrillera a Baja Temperatura",
+          "Yogur de Ezcaray"
+        ],
         "vins": [
           "Alto Otero",
           "Espantaburros Clarete (2020)",
