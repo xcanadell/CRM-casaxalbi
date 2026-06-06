@@ -342,7 +342,9 @@
         "preu_beguda": 15,
         "preu_altres": 0,
         "plats": [],
-        "vins": [],
+        "vins": [
+          "Dolç Garnacha Blanca Montsant"
+        ],
         "notes": ""
       },
       {
