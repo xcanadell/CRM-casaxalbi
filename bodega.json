@@ -274,5 +274,17 @@
     "data_compra": "2026-05-23",
     "data_venda": "2026-05-29",
     "updated_at": "2026-06-06T15:10:51.913Z"
+  },
+  {
+    "nom": "Loire Comaine Clos G",
+    "any": "",
+    "bodega": "",
+    "tipus": "Vi negre",
+    "do": "",
+    "cost": 8.47,
+    "pvp": 0,
+    "data_compra": "2026-05-20",
+    "data_venda": "",
+    "updated_at": "2026-06-06T15:41:47.138Z"
   }
 ]
