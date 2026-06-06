@@ -1,5 +1,31 @@
 [
   {
+    "data": "2026-05-01",
+    "lloc": "Casa Xalbi",
+    "notes": "",
+    "comensals": [
+      {
+        "nom": "Angel",
+        "preu_menjar": 0,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Laura",
+        "preu_menjar": 0,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      }
+    ],
+    "total": 0
+  },
+  {
     "data": "2026-04-18",
     "lloc": "Casa Xalbi",
     "notes": "",
