@@ -1361,8 +1361,8 @@ function renderEventsList(){
     return`<div class="ev-list-card" onclick="openEventEditor(${ri})" style="flex-direction:column;align-items:stretch;gap:8px">
       <div style="display:flex;justify-content:space-between;align-items:center">
         <div>
-          <div class="ev-title">📅 ${dataFmt}</div>
-          <div class="ev-meta"><span class="ev-lloc-pill">${esc(lloc)}</span> &nbsp;·&nbsp; ${ncom} comensal${ncom!==1?'s':''} ${ev.notes?'· '+esc(ev.notes):''}</div>
+          <div class="ev-title">📅 ${dataFmt} &nbsp;<span class="ev-lloc-pill" style="font-size:12px;font-weight:400">${esc(lloc)}</span></div>
+          <div class="ev-meta">${ncom} comensal${ncom!==1?'s':''}${ev.notes?' · '+esc(ev.notes):''}</div>
         </div>
         <div class="ev-right">
           <div class="ev-total-badge">${total} €</div>
