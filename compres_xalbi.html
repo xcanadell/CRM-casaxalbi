@@ -358,11 +358,33 @@ table.products td input.center{text-align:center} table.products td input.right{
       </div>
       <div id="ev-comensals"></div>
       <div class="billing-summary" id="ev-billing" style="display:none">
-        <h3>FACTURACIÓ</h3>
-        <div class="billing-row"><span>Menjar</span><span id="bill-menjar">0.00 €</span></div>
-        <div class="billing-row"><span>Beguda</span><span id="bill-beguda">0.00 €</span></div>
-        <div class="billing-row"><span>Altres</span><span id="bill-altres">0.00 €</span></div>
-        <div class="billing-total"><span>TOTAL</span><span id="bill-total">0.00 €</span></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 24px">
+          <!-- Ingressos -->
+          <div>
+            <h3>INGRESSOS</h3>
+            <div class="billing-row"><span>Menjar</span><span id="bill-menjar">0.00 €</span></div>
+            <div class="billing-row"><span>Beguda</span><span id="bill-beguda">0.00 €</span></div>
+            <div class="billing-row"><span>Altres</span><span id="bill-altres">0.00 €</span></div>
+          </div>
+          <!-- Costos -->
+          <div>
+            <h3>COSTOS</h3>
+            <div class="billing-row"><span>Menjar</span><span id="bill-cost-menjar">—</span></div>
+            <div class="billing-row"><span>Beguda</span><span id="bill-cost-beguda">—</span></div>
+            <div class="billing-row" style="opacity:0.4"><span>Altres</span><span>—</span></div>
+          </div>
+          <!-- Marges -->
+          <div>
+            <h3>MARGE</h3>
+            <div class="billing-row"><span>Menjar</span><span id="bill-marge-menjar">—</span></div>
+            <div class="billing-row"><span>Beguda</span><span id="bill-marge-beguda">—</span></div>
+            <div class="billing-row" style="opacity:0.4"><span>Altres</span><span>—</span></div>
+          </div>
+        </div>
+        <div class="billing-total" style="margin-top:12px;padding-top:12px">
+          <span>TOTAL INGRESSOS</span>
+          <span id="bill-total">0.00 €</span>
+        </div>
       </div>
     </div>
   </div>
@@ -1535,6 +1557,8 @@ function removeComensalVi(ci,vi){
 
 function updateBillingOnly(){
   const com=currentEvent.comensals||[];
+
+  // ── Ingressos ──
   const tm=com.reduce((s,c)=>s+(parseFloat(c.preu_menjar)||0),0);
   const tb=com.reduce((s,c)=>s+(parseFloat(c.preu_beguda)||0),0);
   const ta=com.reduce((s,c)=>s+(parseFloat(c.preu_altres)||0),0);
@@ -1542,6 +1566,35 @@ function updateBillingOnly(){
   document.getElementById('bill-beguda').textContent=tb.toFixed(2)+' €';
   document.getElementById('bill-altres').textContent=ta.toFixed(2)+' €';
   document.getElementById('bill-total').textContent=(tm+tb+ta).toFixed(2)+' €';
+
+  // ── Cost Menjar: cost_mp de cada plat × nº vegades que apareix ──
+  const platCount={};
+  com.forEach(c=>(c.plats||[]).forEach(p=>platCount[p]=(platCount[p]||0)+1));
+  let costMenjar=0;
+  Object.entries(platCount).forEach(([nom,qty])=>{
+    const plat=plats.find(p=>p.titol===nom);
+    if(plat) costMenjar+=(parseFloat(plat.cost_mp)||0)*qty;
+  });
+
+  // ── Cost Beguda: cost d'1 ampolla per referència única ──
+  const vinsUnics=new Set(com.flatMap(c=>c.vins||[]));
+  let costBeguda=0;
+  vinsUnics.forEach(nomVi=>{
+    // El nom al picker té format "Nom (any)" — busquem per nom base
+    const vi=bodega.find(v=>{
+      const label=v.nom+(v.any?' ('+v.any+')':'');
+      return label===nomVi||v.nom===nomVi;
+    });
+    if(vi) costBeguda+=(parseFloat(vi.cost)||0);
+  });
+
+  // ── Mostrar costos i marges ──
+  const fmtCost=v=>v>0?v.toFixed(2)+' €':'—';
+  const fmtMarge=(ing,cost)=>cost>0?((ing-cost)/ing*100).toFixed(0)+'%':'—';
+  document.getElementById('bill-cost-menjar').textContent=fmtCost(costMenjar);
+  document.getElementById('bill-cost-beguda').textContent=fmtCost(costBeguda);
+  document.getElementById('bill-marge-menjar').textContent=tm>0&&costMenjar>0?fmtMarge(tm,costMenjar):'—';
+  document.getElementById('bill-marge-beguda').textContent=tb>0&&costBeguda>0?fmtMarge(tb,costBeguda):'—';
 }
 
 function updateBilling(){
