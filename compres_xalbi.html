@@ -381,9 +381,14 @@ table.products td input.center{text-align:center} table.products td input.right{
             <div class="billing-row" style="opacity:0.4"><span>Altres</span><span>—</span></div>
           </div>
         </div>
-        <div class="billing-total" style="margin-top:12px;padding-top:12px">
-          <span>TOTAL INGRESSOS</span>
-          <span id="bill-total">0.00 €</span>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 24px;margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.2)">
+          <div class="billing-total" style="border:none;padding:0"><span>TOTAL INGRESSOS</span><span id="bill-total">0.00 €</span></div>
+          <div class="billing-total" style="border:none;padding:0"><span>TOTAL COSTOS</span><span id="bill-total-cost">—</span></div>
+          <div class="billing-total" style="border:none;padding:0"><span>MARGE MIG</span><span id="bill-marge-avg">—</span></div>
+        </div>
+        <div class="billing-total" style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.2);font-size:20px">
+          <span>💰 BENEFICI NET</span>
+          <span id="bill-benefici">—</span>
         </div>
       </div>
     </div>
@@ -1588,13 +1593,31 @@ function updateBillingOnly(){
     if(vi) costBeguda+=(parseFloat(vi.cost)||0);
   });
 
-  // ── Mostrar costos i marges ──
+  // ── Mostrar costos i marges per línia ──
   const fmtCost=v=>v>0?v.toFixed(2)+' €':'—';
-  const fmtMarge=(ing,cost)=>cost>0?((ing-cost)/ing*100).toFixed(0)+'%':'—';
+  const calcMarge=(ing,cost)=>ing>0&&cost>0?((ing-cost)/ing*100):null;
+  const margeMenjar=calcMarge(tm,costMenjar);
+  const margeBeguda=calcMarge(tb,costBeguda);
+
   document.getElementById('bill-cost-menjar').textContent=fmtCost(costMenjar);
   document.getElementById('bill-cost-beguda').textContent=fmtCost(costBeguda);
-  document.getElementById('bill-marge-menjar').textContent=tm>0&&costMenjar>0?fmtMarge(tm,costMenjar):'—';
-  document.getElementById('bill-marge-beguda').textContent=tb>0&&costBeguda>0?fmtMarge(tb,costBeguda):'—';
+  document.getElementById('bill-marge-menjar').textContent=margeMenjar!==null?margeMenjar.toFixed(0)+'%':'—';
+  document.getElementById('bill-marge-beguda').textContent=margeBeguda!==null?margeBeguda.toFixed(0)+'%':'—';
+
+  // ── Totals finals ──
+  const totalCost=costMenjar+costBeguda;
+  const totalIng=tm+tb+ta;
+  const benefici=totalIng-totalCost;
+
+  // Marge mig ponderat (només línies amb cost definit)
+  const marges=[margeMenjar,margeBeguda].filter(m=>m!==null);
+  const margeAvg=marges.length?marges.reduce((s,m)=>s+m,0)/marges.length:null;
+
+  document.getElementById('bill-total-cost').textContent=totalCost>0?totalCost.toFixed(2)+' €':'—';
+  document.getElementById('bill-marge-avg').textContent=margeAvg!==null?margeAvg.toFixed(0)+'%':'—';
+  const bEl=document.getElementById('bill-benefici');
+  bEl.textContent=totalCost>0?benefici.toFixed(2)+' €':'—';
+  bEl.style.color=benefici>0?'#69f0ae':benefici<0?'#ff5252':'#fff';
 }
 
 function updateBilling(){
