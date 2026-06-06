@@ -334,5 +334,17 @@
     "data_compra": "2026-04-22",
     "data_venda": "",
     "updated_at": "2026-06-06T15:43:51.214Z"
+  },
+  {
+    "nom": "Valdelana Crianza 201",
+    "any": "",
+    "bodega": "",
+    "tipus": "Vi negre",
+    "do": "",
+    "cost": 7.7,
+    "pvp": 0,
+    "data_compra": "2026-04-22",
+    "data_venda": "",
+    "updated_at": "2026-06-06T15:44:37.788Z"
   }
 ]
