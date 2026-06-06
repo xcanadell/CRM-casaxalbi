@@ -5,37 +5,44 @@
     "ingredients": [
       {
         "nom": "Lechuga fresca",
-        "quantitat": 1,
+        "quantitat": 0.2,
         "unitat": "u",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "cost_unitari": 0.2,
+        "cost_total": 0.04
       },
       {
         "nom": "Burrata cremosa",
-        "quantitat": 1,
+        "quantitat": 0.2,
         "unitat": "u",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "cost_unitari": 3,
+        "cost_total": 0.6
       },
       {
         "nom": "Tomates cherry",
         "quantitat": 1,
         "unitat": "ració",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "cost_unitari": 0.2,
+        "cost_total": 0.2
       },
       {
         "nom": "Nísperos caramelizados",
         "quantitat": 1,
         "unitat": "ració",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "cost_unitari": 0.2,
+        "cost_total": 0.2
+      },
+      {
+        "nom": "Salsa Pesto",
+        "quantitat": 0.05,
+        "unitat": "g",
+        "cost_unitari": 3,
+        "cost_total": 0.15
       }
     ],
-    "cost_mp": 2,
+    "cost_mp": 1.19,
     "cost_prod": 1,
-    "cost_total": 3,
-    "updated_at": "2026-06-06T16:10:44.954Z"
+    "cost_total": 2.19,
+    "updated_at": "2026-06-06T16:13:01.611Z"
   },
   {
     "titol": "Tiradito de Salmón",
