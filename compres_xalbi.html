@@ -40,6 +40,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .btn-sm { padding: 5px 12px; font-size: 12px; }
 .btn-danger { color: #c0392b; border-color: #e8c0bc; }
 .btn-danger:hover { background: #fdf0ef; }
+.btn-edit { color: #1565c0; border-color: #c0d8f0; }
+.btn-edit:hover { background: #eef4fb; }
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:100;align-items:flex-start;justify-content:center;padding:24px 16px;overflow-y:auto}
+.modal-overlay.show{display:flex}
+.modal-box{background:#fff;border-radius:14px;padding:20px;width:100%;max-width:680px;margin:auto}
+.modal-box h2{font-size:16px;font-weight:600;margin-bottom:14px}
+.modal-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.modal-info-grid .info-field label{display:block;font-size:11px;color:#888;margin-bottom:2px}
+.modal-footer{display:flex;justify-content:space-between;margin-top:14px;align-items:center}
+.uso-badge{display:inline-block;font-size:10px;padding:1px 7px;border-radius:20px;border:1px solid #e0e0e0;background:#f5f5f5;color:#555;white-space:nowrap}
 .status { font-size: 13px; color: #666; }
 .status.loading { color: #1565c0; }
 .status.error { color: #c0392b; }
@@ -180,6 +190,31 @@ table.products td input.center{text-align:center} table.products td input.right{
     </div>
   </div>
 </div>
+
+<!-- Modal d'edició de ticket -->
+<div class="modal-overlay" id="editModal" onclick="if(event.target===this)closeEditModal()">
+  <div class="modal-box">
+    <h2>✏️ Editar ticket</h2>
+    <div class="modal-info-grid">
+      <div class="info-field" style="grid-column:1/-1"><label>Establiment</label><input class="editable shop-name-input" id="edit-nom" placeholder="Nom"></div>
+      <div class="info-field"><label>Data</label><input class="editable" id="edit-data" placeholder="dd/mm/aaaa"></div>
+      <div class="info-field"><label>Tipus</label><input class="editable" id="edit-tipus" placeholder="Supermercat..."></div>
+      <div class="info-field" style="grid-column:1/-1"><label>Adreça</label><input class="editable" id="edit-adreca" placeholder="—"></div>
+    </div>
+    <div class="section-label">Productes</div>
+    <table class="products">
+      <thead><tr><th class="col-d">Descripció</th><th class="col-q">Qt</th><th class="col-p">P.unit</th><th class="col-t">Total</th><th class="col-u">Ús</th><th class="col-x"></th></tr></thead>
+      <tbody id="edit-productsBody"></tbody>
+      <tfoot><tr class="total-row"><td colspan="4" style="text-align:right;color:#888;font-weight:500">TOTAL</td><td id="edit-total">—</td><td></td></tr></tfoot>
+    </table>
+    <div style="margin-top:8px"><button class="add-row" onclick="addEditProductRow()">+ Afegir producte</button></div>
+    <div class="modal-footer">
+      <button class="btn btn-danger btn-sm" onclick="closeEditModal()">Cancel·lar</button>
+      <button class="btn btn-primary" onclick="saveEditTicket()">💾 Desar canvis</button>
+    </div>
+  </div>
+</div>
+
 <script>
 const API='http://localhost:8765';
 const LS='xalbi-v4'; // fallback localStorage
@@ -284,8 +319,9 @@ function renderHistory(){
   if(!filtered.length){list.innerHTML='<div class="history-empty">Cap resultat.</div>';return;}
   list.innerHTML=filtered.map((t,fi)=>{
     const ri=tickets.indexOf(t);
-    const prods=(t.productes||[]).map(p=>`<tr><td style="padding:4px;font-size:12px">${esc(p.descripcio)}</td><td style="padding:4px;font-size:12px;text-align:center">${p.quantitat}</td><td style="padding:4px;font-size:12px;text-align:right">${fmt(p.preu_unitari)} €</td><td style="padding:4px;font-size:12px;text-align:right;font-weight:600">${fmt(p.total)} €</td></tr>`).join('');
-    return`<div class="ticket-card" id="tc-${fi}"><div class="ticket-header" onclick="toggleCard(${fi})"><div><div class="t-name">${esc(t.establiment||'Sense nom')} <span class="badge">${esc(t.tipus||'')}</span></div><div class="t-meta">${t.data||'—'} · ${(t.productes||[]).length} productes</div></div><div class="t-right"><div class="t-total">${fmt(t.total)} €</div><span class="chevron">▾</span></div></div><div class="ticket-body">${t.adreca?`<div style="font-size:11px;color:#888;margin-bottom:8px">📍 ${esc(t.adreca)}</div>`:''}<table style="width:100%;border-collapse:collapse"><thead><tr><th style="text-align:left;font-size:11px;color:#888;padding:3px 4px 6px;border-bottom:1px solid #eee">Producte</th><th style="text-align:center;font-size:11px;color:#888;padding:3px 4px 6px;border-bottom:1px solid #eee">Qt</th><th style="text-align:right;font-size:11px;color:#888;padding:3px 4px 6px;border-bottom:1px solid #eee">P.unit</th><th style="text-align:right;font-size:11px;color:#888;padding:3px 4px 6px;border-bottom:1px solid #eee">Total</th></tr></thead><tbody>${prods}</tbody></table><div style="display:flex;justify-content:space-between;margin-top:10px;align-items:center"><button class="btn btn-sm btn-danger" onclick="deleteTicket(${ri})">🗑 Eliminar</button><strong>TOTAL: ${fmt(t.total)} €</strong></div></div></div>`;
+    const usIcon={'Casa Xalbi':'🏠','Ús propi':'👤','Gastro XP':'👨‍🍳'};
+    const prods=(t.productes||[]).map(p=>`<tr><td style="padding:4px;font-size:12px">${esc(p.descripcio)}</td><td style="padding:4px;font-size:12px;text-align:center">${p.quantitat}</td><td style="padding:4px;font-size:12px;text-align:right">${fmt(p.preu_unitari)} €</td><td style="padding:4px;font-size:12px;text-align:right;font-weight:600">${fmt(p.total)} €</td><td style="padding:4px;font-size:11px"><span class="uso-badge">${usIcon[p.us]||'❓'} ${esc(p.us||'—')}</span></td></tr>`).join('');
+    return`<div class="ticket-card" id="tc-${fi}"><div class="ticket-header" onclick="toggleCard(${fi})"><div><div class="t-name">${esc(t.establiment||'Sense nom')} <span class="badge">${esc(t.tipus||'')}</span></div><div class="t-meta">${t.data||'—'} · ${(t.productes||[]).length} productes</div></div><div class="t-right"><div class="t-total">${fmt(t.total)} €</div><span class="chevron">▾</span></div></div><div class="ticket-body">${t.adreca?`<div style="font-size:11px;color:#888;margin-bottom:8px">📍 ${esc(t.adreca)}</div>`:''}<table style="width:100%;border-collapse:collapse"><thead><tr><th style="text-align:left;font-size:11px;color:#888;padding:3px 4px 6px;border-bottom:1px solid #eee">Producte</th><th style="text-align:center;font-size:11px;color:#888;padding:3px 4px 6px;border-bottom:1px solid #eee">Qt</th><th style="text-align:right;font-size:11px;color:#888;padding:3px 4px 6px;border-bottom:1px solid #eee">P.unit</th><th style="text-align:right;font-size:11px;color:#888;padding:3px 4px 6px;border-bottom:1px solid #eee">Total</th><th style="text-align:left;font-size:11px;color:#888;padding:3px 4px 6px;border-bottom:1px solid #eee">Ús</th></tr></thead><tbody>${prods}</tbody></table><div style="display:flex;justify-content:space-between;margin-top:10px;align-items:center"><button class="btn btn-sm btn-danger" onclick="deleteTicket(${ri})">🗑 Eliminar</button><button class="btn btn-sm btn-edit" onclick="openEditModal(${ri})">✏️ Editar</button><strong>TOTAL: ${fmt(t.total)} €</strong></div></div></div>`;
   }).join('');
 }
 function toggleCard(i){document.getElementById('tc-'+i).classList.toggle('open');}
@@ -306,6 +342,66 @@ async function importJSON(event){
   }catch(e){alert('Error: '+e.message);}event.target.value='';
 }
 async function clearAllData(){if(!confirm(`Eliminar TOTS els ${tickets.length} tickets?`))return;if(!confirm('Segur?'))return;tickets=[];await persist();renderHistory();}
+
+// ── Modal d'edició ──────────────────────────────────────────────
+let editIdx=null;
+
+function openEditModal(ri){
+  editIdx=ri;
+  const t=tickets[ri];
+  document.getElementById('edit-nom').value=t.establiment||'';
+  document.getElementById('edit-data').value=t.data||'';
+  document.getElementById('edit-tipus').value=t.tipus||'';
+  document.getElementById('edit-adreca').value=t.adreca||'';
+  const body=document.getElementById('edit-productsBody');
+  body.innerHTML='';
+  (t.productes||[]).forEach(p=>addEditProductRow(p));
+  updateEditTotal();
+  document.getElementById('editModal').classList.add('show');
+}
+
+function closeEditModal(){
+  document.getElementById('editModal').classList.remove('show');
+  editIdx=null;
+}
+
+function addEditProductRow(p){
+  p=p||{descripcio:'',quantitat:1,preu_unitari:0,total:0,us:'Casa Xalbi'};
+  const us=p.us||'Casa Xalbi';
+  const tr=document.createElement('tr');
+  tr.innerHTML=`<td class="col-d"><input value="${esc(p.descripcio)}" placeholder="Producte" oninput="updateEditTotal()"></td><td class="col-q"><input class="center" value="${p.quantitat}" style="width:38px" oninput="updateEditTotal()"></td><td class="col-p"><input class="right" value="${fmt(p.preu_unitari)}" style="width:50px" oninput="updateEditTotal()"> €</td><td class="col-t"><input class="right" value="${fmt(p.total)}" style="width:50px" oninput="updateEditTotal()"> €</td><td class="col-u"><select><option value="Casa Xalbi" ${us==='Casa Xalbi'?'selected':''}>🏠 Casa Xalbi</option><option value="Ús propi" ${us==='Ús propi'?'selected':''}>👤 Ús propi</option><option value="Gastro XP" ${us==='Gastro XP'?'selected':''}>👨‍🍳 Gastro XP</option></select></td><td class="col-x"><button class="del-btn" onclick="this.closest('tr').remove();updateEditTotal()">✕</button></td>`;
+  document.getElementById('edit-productsBody').appendChild(tr);
+}
+
+function updateEditTotal(){
+  let sum=0;
+  document.querySelectorAll('#edit-productsBody tr').forEach(tr=>{
+    const ins=tr.querySelectorAll('input');
+    sum+=parseFloat(ins[3]?.value)||0;
+  });
+  document.getElementById('edit-total').textContent=sum.toFixed(2)+' €';
+}
+
+async function saveEditTicket(){
+  if(editIdx===null)return;
+  const prods=[];
+  document.querySelectorAll('#edit-productsBody tr').forEach(tr=>{
+    const ins=tr.querySelectorAll('input'),sel=tr.querySelector('select');
+    prods.push({descripcio:ins[0].value,quantitat:parseFloat(ins[1].value)||1,preu_unitari:parseFloat(ins[2].value)||0,total:parseFloat(ins[3].value)||0,us:sel?sel.value:'Casa Xalbi'});
+  });
+  const total=prods.reduce((s,p)=>s+p.total,0);
+  tickets[editIdx]={...tickets[editIdx],
+    establiment:document.getElementById('edit-nom').value,
+    data:document.getElementById('edit-data').value,
+    tipus:document.getElementById('edit-tipus').value,
+    adreca:document.getElementById('edit-adreca').value,
+    productes:prods,
+    total:parseFloat(total.toFixed(2))
+  };
+  await persist();
+  renderHistory();
+  closeEditModal();
+}
 
 </script>
 </body>
