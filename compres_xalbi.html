@@ -1574,7 +1574,7 @@ function closeViPicker(){document.getElementById('viPickerModal').classList.remo
 function filterViPicker(){
   const q=document.getElementById('viPickerSearch').value.toLowerCase();
   const sel=new Set((currentEvent.comensals[pickerComensalIdx]?.vins)||[]);
-  const items=bodega.filter(v=>!q||(v.nom||'').toLowerCase().includes(q));
+  const items=bodega.filter(v=>!v.data_venda && (!q||(v.nom||'').toLowerCase().includes(q)));
   document.getElementById('viPickerList').innerHTML=items.length
     ?items.map(v=>{
         const label=v.nom+(v.any?' ('+v.any+')':'');
