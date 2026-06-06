@@ -6,6 +6,8 @@ Servidor local per a Compres Casa Xalbi.
 - POST /tickets      → desa tickets.json + git commit + push
 - GET  /plats        → llegeix plats.json
 - POST /plats        → desa plats.json + git commit + push
+- GET  /bodega       → llegeix bodega.json
+- POST /bodega       → desa bodega.json + git commit + push
 """
 
 import json
@@ -17,6 +19,7 @@ PORT = 8765
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TICKETS_FILE = os.path.join(BASE_DIR, "tickets.json")
 PLATS_FILE   = os.path.join(BASE_DIR, "plats.json")
+BODEGA_FILE  = os.path.join(BASE_DIR, "bodega.json")
 HTML_FILE    = os.path.join(BASE_DIR, "compres_xalbi.html")
 
 
@@ -80,6 +83,8 @@ class Handler(BaseHTTPRequestHandler):
             self.send_json(200, read_json(TICKETS_FILE))
         elif self.path == "/plats":
             self.send_json(200, read_json(PLATS_FILE))
+        elif self.path == "/bodega":
+            self.send_json(200, read_json(BODEGA_FILE))
         elif self.path in ("/", "/index.html", "/compres_xalbi.html"):
             try:
                 with open(HTML_FILE, "rb") as f:
@@ -112,6 +117,10 @@ class Handler(BaseHTTPRequestHandler):
         elif self.path == "/plats":
             write_json(PLATS_FILE, data)
             git_save(["plats.json"], "auto: actualitzacio plats")
+            self.send_json(200, {"ok": True, "count": len(data)})
+        elif self.path == "/bodega":
+            write_json(BODEGA_FILE, data)
+            git_save(["bodega.json"], "auto: actualitzacio bodega")
             self.send_json(200, {"ok": True, "count": len(data)})
         else:
             self.send_response(404)

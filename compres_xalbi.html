@@ -130,6 +130,33 @@ table.products td input.center{text-align:center} table.products td input.right{
 .plat-empty{text-align:center;padding:40px 20px;color:#aaa}
 .plats-header-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
 .plats-header-row h2{font-size:16px;font-weight:600}
+/* ── Bodega ── */
+.bodega-table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid #e0e0e0;font-size:13px}
+.bodega-table th{text-align:left;color:#888;font-weight:500;font-size:11px;padding:10px 12px;border-bottom:2px solid #eee;background:#fafafa;white-space:nowrap}
+.bodega-table td{padding:10px 12px;border-bottom:1px solid #f5f5f5;vertical-align:middle}
+.bodega-table tr:last-child td{border-bottom:none}
+.bodega-table tr:hover td{background:#fafafa}
+.tipus-pill{display:inline-block;font-size:11px;padding:2px 9px;border-radius:20px;font-weight:500;white-space:nowrap}
+.tipus-blanc{background:#fffde7;color:#f57f17;border:1px solid #ffe082}
+.tipus-rosat{background:#fce4ec;color:#c2185b;border:1px solid #f48fb1}
+.tipus-negre{background:#ede7f6;color:#512da8;border:1px solid #ce93d8}
+.tipus-escumos{background:#e3f2fd;color:#1565c0;border:1px solid #90caf9}
+.tipus-orange{background:#fff3e0;color:#e65100;border:1px solid #ffcc80}
+.tipus-altres{background:#f5f5f5;color:#555;border:1px solid #ddd}
+.bodega-search{margin-bottom:14px;display:flex;gap:8px;flex-wrap:wrap}
+.bodega-search input{flex:1;min-width:160px;padding:8px 12px;border:1px solid #ddd;border-radius:8px;font-size:13px;font-family:inherit;outline:none}
+.bodega-search input:focus{border-color:#1a1a1a}
+.bodega-search select{padding:8px 12px;border:1px solid #ddd;border-radius:8px;font-size:12px;font-family:inherit;background:#fff}
+.bodega-actions td{padding:6px 12px}
+.th-nom{width:22%}.th-any{width:7%;text-align:center}.th-tipus{width:12%}.th-do{width:16%}.th-cost{width:10%;text-align:right}.th-pvp{width:10%;text-align:right}.th-marge{width:9%;text-align:right}.th-act{width:10%;text-align:center}
+.marge-ok{color:#2e7d32;font-weight:600}.marge-low{color:#e65100;font-weight:600}
+.bodega-empty{text-align:center;padding:40px 20px;color:#aaa}
+.modal-field{margin-bottom:12px}
+.modal-field label{display:block;font-size:11px;color:#888;margin-bottom:4px;font-weight:500}
+.modal-field input,.modal-field select,.modal-field textarea{width:100%;padding:8px 10px;border:1px solid #ddd;border-radius:7px;font-size:13px;font-family:inherit;outline:none;color:#1a1a1a}
+.modal-field input:focus,.modal-field select:focus{border-color:#1a1a1a}
+.modal-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.modal-grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
 </style>
 </head>
 <body>
@@ -148,6 +175,7 @@ table.products td input.center{text-align:center} table.products td input.right{
     <button class="tab active" onclick="showTab('scan')">📷 Nou ticket</button>
     <button class="tab" onclick="showTab('history')">📋 Historial</button>
     <button class="tab" onclick="showTab('plats')">🍽️ Plats</button>
+    <button class="tab" onclick="showTab('bodega')">🍷 Bodega</button>
   </div>
   <div id="panel-scan" class="panel active">
     <div class="upload-zone" id="dropZone" onclick="document.getElementById('fileInput').click()" ondragover="event.preventDefault()" ondrop="doDrop(event)">
@@ -217,6 +245,27 @@ table.products td input.center{text-align:center} table.products td input.right{
         <button class="btn btn-sm btn-danger" onclick="clearAllData()">🗑 Esborrar tot</button>
       </div>
     </div>
+  </div>
+
+  <!-- Panel Bodega -->
+  <div id="panel-bodega" class="panel">
+    <div class="plats-header-row">
+      <h2>🍷 Bodega</h2>
+      <button class="btn btn-primary" onclick="openBodegaModal()">+ Afegir vi</button>
+    </div>
+    <div class="bodega-search">
+      <input type="text" id="bodega-search" placeholder="🔍 Cercar per nom, denominació..." oninput="renderBodega()">
+      <select id="bodega-filter" onchange="renderBodega()">
+        <option value="">Tots els tipus</option>
+        <option value="Vi blanc">🍋 Vi blanc</option>
+        <option value="Vi rosat">🌸 Vi rosat</option>
+        <option value="Vi negre">🍇 Vi negre</option>
+        <option value="Escumós">🥂 Escumós</option>
+        <option value="Orange">🍊 Orange</option>
+        <option value="Altres">· Altres</option>
+      </select>
+    </div>
+    <div id="bodegaList"></div>
   </div>
 
   <!-- Panel Plats -->
@@ -298,6 +347,58 @@ table.products td input.center{text-align:center} table.products td input.right{
   </div>
 </div>
 
+<!-- Modal Bodega -->
+<div class="modal-overlay" id="bodegaModal" onclick="if(event.target===this)closeBodegaModal()">
+  <div class="modal-box" style="max-width:560px">
+    <h2 id="bodegaModalTitle">🍷 Afegir vi</h2>
+    <div class="modal-grid-2" style="margin-bottom:10px">
+      <div class="modal-field" style="grid-column:1/-1">
+        <label>Nom del vi</label>
+        <input id="bod-nom" placeholder="Ex: Valdelana Crianza 2020">
+      </div>
+    </div>
+    <div class="modal-grid-3" style="margin-bottom:10px">
+      <div class="modal-field">
+        <label>Añada</label>
+        <input id="bod-any" placeholder="2021" maxlength="4">
+      </div>
+      <div class="modal-field">
+        <label>Tipus</label>
+        <select id="bod-tipus">
+          <option value="Vi blanc">🍋 Vi blanc</option>
+          <option value="Vi rosat">🌸 Vi rosat</option>
+          <option value="Vi negre">🍇 Vi negre</option>
+          <option value="Escumós">🥂 Escumós</option>
+          <option value="Orange">🍊 Orange</option>
+          <option value="Altres">· Altres</option>
+        </select>
+      </div>
+      <div class="modal-field">
+        <label>Denominació d'Origen</label>
+        <input id="bod-do" placeholder="Ex: Rioja, Penedès...">
+      </div>
+    </div>
+    <div class="modal-grid-2" style="margin-bottom:10px">
+      <div class="modal-field">
+        <label>Preu cost (€)</label>
+        <input id="bod-cost" type="number" step="0.01" min="0" placeholder="0.00" oninput="calcBodegaMarge()">
+      </div>
+      <div class="modal-field">
+        <label>P.V.P (€)</label>
+        <input id="bod-pvp" type="number" step="0.01" min="0" placeholder="0.00" oninput="calcBodegaMarge()">
+      </div>
+    </div>
+    <div style="background:#f9f9f9;border-radius:8px;padding:10px 14px;font-size:13px;display:flex;gap:20px;margin-bottom:4px">
+      <span>Marge brut: <strong id="bod-marge-val">—</strong></span>
+      <span>Markup: <strong id="bod-markup-val">—</strong></span>
+    </div>
+    <div class="modal-footer" style="margin-top:14px">
+      <button class="btn btn-danger btn-sm" onclick="closeBodegaModal()">Cancel·lar</button>
+      <button class="btn btn-primary" onclick="saveBodega()">💾 Desar</button>
+    </div>
+  </div>
+</div>
+
 <script>
 const API='http://localhost:8765';
 const LS='xalbi-v4'; // fallback localStorage
@@ -319,6 +420,7 @@ async function init(){
     }catch(e2){tickets=[];}
   }
   await initPlats();
+  await initBodega();
   renderHistory();showTab('history');
 }
 
@@ -341,13 +443,15 @@ function saveApiKey(){localStorage.setItem('xalbi_apikey',document.getElementByI
 function getApiKey(){return document.getElementById('apiKeyInput').value.trim();}
 let imgB64=null,imgMime='image/jpeg';
 function showTab(tab){
-  const tabs=['scan','history','plats'];
+  const tabs=['scan','history','plats','bodega'];
   document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',tabs[i]===tab));
   document.getElementById('panel-scan').classList.toggle('active',tab==='scan');
   document.getElementById('panel-history').classList.toggle('active',tab==='history');
   document.getElementById('panel-plats').classList.toggle('active',tab==='plats');
+  document.getElementById('panel-bodega').classList.toggle('active',tab==='bodega');
   if(tab==='history')renderHistory();
   if(tab==='plats')renderPlats();
+  if(tab==='bodega')renderBodega();
 }
 function doDrop(e){e.preventDefault();const f=e.dataTransfer.files[0];if(f)processFile(f);}
 function handleFile(e){const f=e.target.files[0];if(f)processFile(f);}
@@ -652,6 +756,147 @@ async function deletePlat(i){
   plats.splice(i,1);
   await persistPlats();
   renderPlats();
+}
+
+
+// ── Bodega ───────────────────────────────────────────────────────
+let bodega=[];
+let bodegaEditIdx=null;
+
+const TIPUS_CLASS={'Vi blanc':'blanc','Vi rosat':'rosat','Vi negre':'negre','Escumós':'escumos','Orange':'orange','Altres':'altres'};
+const TIPUS_ICON={'Vi blanc':'🍋','Vi rosat':'🌸','Vi negre':'🍇','Escumós':'🥂','Orange':'🍊','Altres':'·'};
+
+async function initBodega(){
+  try{
+    const r=await fetch(API+'/bodega');
+    if(!r.ok)throw new Error();
+    bodega=await r.json();
+  }catch(e){
+    try{const s=localStorage.getItem('xalbi-bodega');bodega=s?JSON.parse(s):[];}catch(e2){bodega=[];}
+  }
+}
+
+async function persistBodega(){
+  try{
+    await fetch(API+'/bodega',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(bodega)});
+  }catch(e){
+    try{localStorage.setItem('xalbi-bodega',JSON.stringify(bodega));}catch(e2){}
+  }
+}
+
+function renderBodega(){
+  const q=(document.getElementById('bodega-search').value||'').toLowerCase();
+  const tf=document.getElementById('bodega-filter').value;
+  let filtered=bodega.filter(v=>{
+    if(tf&&v.tipus!==tf)return false;
+    if(!q)return true;
+    return(v.nom+v.do+v.tipus).toLowerCase().includes(q);
+  });
+  const container=document.getElementById('bodegaList');
+  if(!bodega.length){
+    container.innerHTML='<div class="bodega-empty">Cap vi registrat. Clica "+ Afegir vi" per començar.</div>';
+    return;
+  }
+  if(!filtered.length){
+    container.innerHTML='<div class="bodega-empty">Cap resultat per a la cerca.</div>';
+    return;
+  }
+  const rows=filtered.map(v=>{
+    const ri=bodega.indexOf(v);
+    const cls=TIPUS_CLASS[v.tipus]||'altres';
+    const icon=TIPUS_ICON[v.tipus]||'·';
+    const cost=parseFloat(v.cost)||0;
+    const pvp=parseFloat(v.pvp)||0;
+    const marge=pvp>0?((pvp-cost)/pvp*100).toFixed(0):null;
+    const margeHtml=marge!==null
+      ?`<span class="${parseFloat(marge)>=50?'marge-ok':'marge-low'}">${marge}%</span>`
+      :'—';
+    return`<tr>
+      <td style="font-weight:500">${esc(v.nom||'—')}</td>
+      <td style="text-align:center;color:#888">${v.any||'—'}</td>
+      <td><span class="tipus-pill tipus-${cls}">${icon} ${esc(v.tipus||'—')}</span></td>
+      <td style="color:#666;font-size:12px">${esc(v.do||'—')}</td>
+      <td style="text-align:right">${cost?cost.toFixed(2)+' €':'—'}</td>
+      <td style="text-align:right;font-weight:600">${pvp?pvp.toFixed(2)+' €':'—'}</td>
+      <td style="text-align:right">${margeHtml}</td>
+      <td style="text-align:center;white-space:nowrap">
+        <button class="btn btn-sm btn-edit" style="padding:3px 8px;margin-right:4px" onclick="openBodegaModal(${ri})">✏️</button>
+        <button class="btn btn-sm btn-danger" style="padding:3px 8px" onclick="deleteBodega(${ri})">🗑</button>
+      </td>
+    </tr>`;
+  }).join('');
+  container.innerHTML=`<table class="bodega-table">
+    <thead><tr>
+      <th class="th-nom">Nom</th>
+      <th class="th-any">Añada</th>
+      <th class="th-tipus">Tipus</th>
+      <th class="th-do">Denominació</th>
+      <th class="th-cost">Cost</th>
+      <th class="th-pvp">P.V.P</th>
+      <th class="th-marge">Marge</th>
+      <th class="th-act"></th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+}
+
+function openBodegaModal(idx){
+  bodegaEditIdx=(idx!==undefined)?idx:null;
+  document.getElementById('bodegaModalTitle').textContent=bodegaEditIdx!==null?'✏️ Editar vi':'🍷 Afegir vi';
+  const v=bodegaEditIdx!==null?bodega[bodegaEditIdx]:{nom:'',any:'',tipus:'Vi negre',do:'',cost:'',pvp:''};
+  document.getElementById('bod-nom').value=v.nom||'';
+  document.getElementById('bod-any').value=v.any||'';
+  document.getElementById('bod-tipus').value=v.tipus||'Vi negre';
+  document.getElementById('bod-do').value=v.do||'';
+  document.getElementById('bod-cost').value=v.cost||'';
+  document.getElementById('bod-pvp').value=v.pvp||'';
+  calcBodegaMarge();
+  document.getElementById('bodegaModal').classList.add('show');
+  document.getElementById('bod-nom').focus();
+}
+
+function closeBodegaModal(){
+  document.getElementById('bodegaModal').classList.remove('show');
+  bodegaEditIdx=null;
+}
+
+function calcBodegaMarge(){
+  const cost=parseFloat(document.getElementById('bod-cost').value)||0;
+  const pvp=parseFloat(document.getElementById('bod-pvp').value)||0;
+  const mEl=document.getElementById('bod-marge-val');
+  const mkEl=document.getElementById('bod-markup-val');
+  if(pvp>0){
+    const marge=((pvp-cost)/pvp*100).toFixed(1);
+    const markup=cost>0?((pvp-cost)/cost*100).toFixed(1):'—';
+    mEl.textContent=marge+'%';
+    mEl.style.color=parseFloat(marge)>=50?'#2e7d32':'#e65100';
+    mkEl.textContent=markup!=='—'?markup+'%':'—';
+  }else{mEl.textContent='—';mkEl.textContent='—';}
+}
+
+async function saveBodega(){
+  const nom=document.getElementById('bod-nom').value.trim();
+  if(!nom){alert('Afegeix el nom del vi.');return;}
+  const vi={
+    nom,
+    any:document.getElementById('bod-any').value.trim(),
+    tipus:document.getElementById('bod-tipus').value,
+    do:document.getElementById('bod-do').value.trim(),
+    cost:parseFloat(document.getElementById('bod-cost').value)||0,
+    pvp:parseFloat(document.getElementById('bod-pvp').value)||0,
+    updated_at:new Date().toISOString()
+  };
+  if(bodegaEditIdx!==null){bodega[bodegaEditIdx]=vi;}else{bodega.push(vi);}
+  await persistBodega();
+  renderBodega();
+  closeBodegaModal();
+}
+
+async function deleteBodega(i){
+  if(!confirm('Eliminar aquest vi de la bodega?'))return;
+  bodega.splice(i,1);
+  await persistBodega();
+  renderBodega();
 }
 
 </script>
