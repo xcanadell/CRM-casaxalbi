@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "data": "2026-04-02",
+    "lloc": "Casa Xalbi",
+    "notes": "",
+    "comensals": [
+      {
+        "nom": "Laura",
+        "preu_menjar": 30,
+        "preu_beguda": 7.5,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Angel",
+        "preu_menjar": 30,
+        "preu_beguda": 7.5,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Carlos",
+        "preu_menjar": 30,
+        "preu_beguda": 7.5,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Ester",
+        "preu_menjar": 30,
+        "preu_beguda": 7.5,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Miriam",
+        "preu_menjar": 30,
+        "preu_beguda": 7.5,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Xavi Orgien",
+        "preu_menjar": 30,
+        "preu_beguda": 7.5,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Fill Xavi i Miriam",
+        "preu_menjar": 30,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Filla Xavi i Miriam",
+        "preu_menjar": 30,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      }
+    ],
+    "total": 285
+  }
+]
