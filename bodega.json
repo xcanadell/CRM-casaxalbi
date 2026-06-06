@@ -28,12 +28,12 @@
     "any": "",
     "bodega": "",
     "tipus": "Vi negre",
-    "do": "",
-    "cost": 0,
-    "pvp": 0,
+    "do": "Alemania",
+    "cost": 12,
+    "pvp": 15,
     "data_compra": "",
-    "data_venda": "",
-    "updated_at": "2026-06-06T00:00:00.000Z"
+    "data_venda": "2026-04-02",
+    "updated_at": "2026-06-06T17:10:13.819Z"
   },
   {
     "nom": "Toscana Punky Cosines",
