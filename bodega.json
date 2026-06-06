@@ -101,11 +101,11 @@
     "bodega": "",
     "tipus": "Vi blanc",
     "do": "",
-    "cost": 0.01,
+    "cost": 1,
     "pvp": 23.3,
     "data_compra": "",
     "data_venda": "2026-04-18",
-    "updated_at": "2026-06-06T17:07:09.598Z"
+    "updated_at": "2026-06-06T17:07:24.645Z"
   },
   {
     "nom": "Pedregar",
