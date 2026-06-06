@@ -157,6 +157,21 @@ table.products td input.center{text-align:center} table.products td input.right{
 .modal-field input:focus,.modal-field select:focus{border-color:#1a1a1a}
 .modal-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .modal-grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+/* ── Dashboard ── */
+.dash-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
+.dash-card{background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:18px 20px}
+.dash-card .dash-icon{font-size:22px;margin-bottom:8px}
+.dash-card .dash-val{font-size:28px;font-weight:700;line-height:1;margin-bottom:4px}
+.dash-card .dash-label{font-size:12px;color:#888}
+.dash-card.accent{background:#1a1a1a;color:#fff;border-color:#1a1a1a}
+.dash-card.accent .dash-label{color:rgba(255,255,255,0.6)}
+.dash-section{margin-bottom:20px}
+.dash-section h3{font-size:13px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:12px}
+.dash-events-table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid #e0e0e0;font-size:13px}
+.dash-events-table th{text-align:left;color:#888;font-weight:500;font-size:11px;padding:9px 14px;border-bottom:2px solid #eee;background:#fafafa}
+.dash-events-table td{padding:10px 14px;border-bottom:1px solid #f5f5f5}
+.dash-events-table tr:last-child td{border-bottom:none}
+.dash-events-table tr:hover td{background:#fafafa}
 /* ── Events ── */
 .ev-list-card{background:#fff;border:1px solid #e0e0e0;border-radius:10px;margin-bottom:8px;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
 .ev-list-card:hover{background:#fafafa}
@@ -228,13 +243,55 @@ table.products td input.center{text-align:center} table.products td input.right{
     <p>Registre personal — Xavi</p>
   </div>
   <div class="tabs">
-    <button class="tab active" onclick="showTab('history')">🛒 Compres</button>
-    <button class="tab" onclick="showTab('plats')">🍽️ Plats</button>
-    <button class="tab" onclick="showTab('bodega')">🍷 Bodega</button>
-    <button class="tab" onclick="showTab('clients')">👥 Clients</button>
+    <button class="tab active" onclick="showTab('dashboard')">📊 Dashboard</button>
     <button class="tab" onclick="showTab('events')">📅 Esdeveniments</button>
+    <button class="tab" onclick="showTab('bodega')">🍷 Bodega</button>
+    <button class="tab" onclick="showTab('plats')">🍽️ Plats</button>
+    <button class="tab" onclick="showTab('clients')">👥 Clients</button>
+    <button class="tab" onclick="showTab('history')">🛒 Compres</button>
   </div>
-  <div id="panel-history" class="panel active">
+
+  <!-- Panel Dashboard -->
+  <div id="panel-dashboard" class="panel active">
+    <div class="dash-grid">
+      <div class="dash-card accent">
+        <div class="dash-icon">📅</div>
+        <div class="dash-val" id="dash-n-events">—</div>
+        <div class="dash-label">Esdeveniments</div>
+      </div>
+      <div class="dash-card accent">
+        <div class="dash-icon">💰</div>
+        <div class="dash-val" id="dash-total-events">—</div>
+        <div class="dash-label">Total ingressos events</div>
+      </div>
+      <div class="dash-card accent">
+        <div class="dash-icon">📉</div>
+        <div class="dash-val" id="dash-total-cost">—</div>
+        <div class="dash-label">Total costos events</div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-icon">👥</div>
+        <div class="dash-val" id="dash-n-clients">—</div>
+        <div class="dash-label">Clients</div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-icon">🍽️</div>
+        <div class="dash-val" id="dash-n-plats">—</div>
+        <div class="dash-label">Plats a la carta</div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-icon">🍷</div>
+        <div class="dash-val" id="dash-n-vins">—</div>
+        <div class="dash-label">Vins a la bodega</div>
+      </div>
+    </div>
+    <div class="dash-section">
+      <h3>Últims esdeveniments</h3>
+      <div id="dash-events-list"></div>
+    </div>
+  </div>
+
+  <div id="panel-history" class="panel">
     <!-- Clau API (dins Compres) -->
     <div class="api-setup" style="margin-bottom:14px">
       <p><strong>🔑 Clau API d'Anthropic</strong> — per analitzar tickets amb IA</p>
@@ -715,7 +772,7 @@ async function init(){
   await initBodega();
   await initClients();
   await initEvents();
-  renderHistory();showTab('history');document.getElementById('nou-ticket-panel').style.display='none';
+  renderHistory();showTab('dashboard');
 }
 
 function setBanner(t,m){} // banner eliminat, funció mantinguda per compatibilitat
@@ -737,14 +794,12 @@ function saveApiKey(){localStorage.setItem('xalbi_apikey',document.getElementByI
 function getApiKey(){return document.getElementById('apiKeyInput').value.trim();}
 let imgB64=null,imgMime='image/jpeg';
 function showTab(tab){
-  const tabs=['history','plats','bodega','clients','events'];
+  const tabs=['dashboard','events','bodega','plats','clients','history'];
   document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',tabs[i]===tab));
-  document.getElementById('panel-history').classList.toggle('active',tab==='history');
-  document.getElementById('panel-plats').classList.toggle('active',tab==='plats');
-  document.getElementById('panel-bodega').classList.toggle('active',tab==='bodega');
-  document.getElementById('panel-clients').classList.toggle('active',tab==='clients');
-  document.getElementById('panel-events').classList.toggle('active',tab==='events');
-  if(tab==='history'){renderHistory();}
+  ['dashboard','events','bodega','plats','clients','history'].forEach(p=>
+    document.getElementById('panel-'+p).classList.toggle('active',tab===p));
+  if(tab==='dashboard')renderDashboard();
+  if(tab==='history')renderHistory();
   if(tab==='plats')renderPlats();
   if(tab==='bodega')renderBodega();
   if(tab==='clients')renderClients();
@@ -1718,6 +1773,77 @@ function confirmViPicker(){
   currentEvent.comensals[pickerComensalIdx].vins=checked;
   closeViPicker();
   renderComensals();
+}
+
+// ── Dashboard ─────────────────────────────────────────────────────
+function renderDashboard(){
+  // Mètriques simples
+  document.getElementById('dash-n-events').textContent=events.length;
+  document.getElementById('dash-n-clients').textContent=clients.length;
+  document.getElementById('dash-n-plats').textContent=plats.length;
+  document.getElementById('dash-n-vins').textContent=bodega.length;
+
+  // Total ingressos i costos dels events
+  const totalIng=events.reduce((s,ev)=>s+(ev.total||0),0);
+  document.getElementById('dash-total-events').textContent=totalIng.toFixed(2)+' €';
+
+  // Costos: recalcular per cada event
+  let totalCost=0;
+  events.forEach(ev=>{
+    const com=ev.comensals||[];
+    // Cost menjar
+    const platCount={};
+    com.forEach(c=>(c.plats||[]).forEach(p=>platCount[p]=(platCount[p]||0)+1));
+    Object.entries(platCount).forEach(([nom,qty])=>{
+      const plat=plats.find(p=>p.titol===nom);
+      if(plat) totalCost+=(parseFloat(plat.cost_mp)||0)*qty;
+    });
+    // Cost beguda
+    const vinsUnics=new Set(com.flatMap(c=>c.vins||[]));
+    vinsUnics.forEach(nomVi=>{
+      const vi=bodega.find(v=>(v.nom+(v.any?' ('+v.any+')':''))===nomVi||v.nom===nomVi);
+      if(vi) totalCost+=(parseFloat(vi.cost)||0);
+    });
+  });
+  document.getElementById('dash-total-cost').textContent=totalCost>0?totalCost.toFixed(2)+' €':'—';
+
+  // Últims 5 events
+  const sorted=[...events].sort((a,b)=>(b.data||'').localeCompare(a.data||'')).slice(0,5);
+  const listEl=document.getElementById('dash-events-list');
+  if(!sorted.length){
+    listEl.innerHTML='<div class="ev-empty">Sense esdeveniments registrats.</div>';
+    return;
+  }
+  listEl.innerHTML=`<table class="dash-events-table">
+    <thead><tr>
+      <th>Data</th><th>Tipus</th><th>Comensals</th>
+      <th style="text-align:right">Ingressos</th>
+      <th style="text-align:right">Costos</th>
+      <th style="text-align:right">Benefici</th>
+    </tr></thead>
+    <tbody>${sorted.map(ev=>{
+      const dataFmt=ev.data?new Date(ev.data+'T12:00:00').toLocaleDateString('ca-ES',{day:'numeric',month:'short',year:'numeric'}):'—';
+      const ncom=(ev.comensals||[]).length;
+      const ing=(ev.total||0);
+      // cost event
+      let cost=0;
+      const com=ev.comensals||[];
+      const pc={};com.forEach(c=>(c.plats||[]).forEach(p=>pc[p]=(pc[p]||0)+1));
+      Object.entries(pc).forEach(([n,q])=>{const pl=plats.find(p=>p.titol===n);if(pl)cost+=(parseFloat(pl.cost_mp)||0)*q;});
+      const vu=new Set(com.flatMap(c=>c.vins||[]));
+      vu.forEach(nv=>{const vi=bodega.find(v=>(v.nom+(v.any?' ('+v.any+')':''))===nv||v.nom===nv);if(vi)cost+=(parseFloat(vi.cost)||0);});
+      const ben=ing-cost;
+      const benColor=ben>0?'#2e7d32':ben<0?'#c0392b':'#888';
+      return`<tr>
+        <td style="font-weight:500">${dataFmt}</td>
+        <td><span class="ev-lloc-pill">${esc(ev.lloc||'—')}</span></td>
+        <td style="text-align:center;color:#888">${ncom}</td>
+        <td style="text-align:right;font-weight:600">${ing.toFixed(2)} €</td>
+        <td style="text-align:right;color:#888">${cost>0?cost.toFixed(2)+' €':'—'}</td>
+        <td style="text-align:right;font-weight:700;color:${benColor}">${cost>0?ben.toFixed(2)+' €':'—'}</td>
+      </tr>`;
+    }).join('')}</tbody>
+  </table>`;
 }
 
 </script>
