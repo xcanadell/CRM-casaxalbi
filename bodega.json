@@ -241,15 +241,15 @@
   },
   {
     "nom": "Naturaleza Salvaje",
-    "any": "",
+    "any": "2020",
     "bodega": "Azul y Garanza",
     "tipus": "Altres",
-    "do": "",
+    "do": "Castilla",
     "cost": 0,
-    "pvp": 0,
+    "pvp": 30,
     "data_compra": "",
     "data_venda": "",
-    "updated_at": "2026-06-06T00:00:00.000Z"
+    "updated_at": "2026-06-06T15:07:20.311Z"
   },
   {
     "nom": "Colet Gran Cuvée Rosé",
