@@ -3,23 +3,65 @@
     "titol": "Ensalada del Huerto Xalbi",
     "descripcio": "Lechuga fresca, burrata cremosa, tomates cherry asados y nísperos caramelizados.",
     "ingredients": [
-      { "nom": "Lechuga fresca", "quantitat": 1, "unitat": "u", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Burrata cremosa", "quantitat": 1, "unitat": "u", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Tomates cherry", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Nísperos caramelizados", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 }
+      {
+        "nom": "Lechuga fresca",
+        "quantitat": 1,
+        "unitat": "u",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Burrata cremosa",
+        "quantitat": 1,
+        "unitat": "u",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Tomates cherry",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Nísperos caramelizados",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      }
     ],
-    "cost_mp": 0,
-    "cost_prod": 0,
-    "cost_total": 0,
-    "updated_at": "2026-06-06T00:00:00.000Z"
+    "cost_mp": 2,
+    "cost_prod": 1,
+    "cost_total": 3,
+    "updated_at": "2026-06-06T16:10:44.954Z"
   },
   {
     "titol": "Tiradito de Salmón",
     "descripcio": "Con fresas, cítricos y un toque fresco y vibrante.",
     "ingredients": [
-      { "nom": "Salmón", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Fresas", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Cítricos (lima, limón)", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 }
+      {
+        "nom": "Salmón",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Fresas",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Cítricos (lima, limón)",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      }
     ],
     "cost_mp": 0,
     "cost_prod": 0,
@@ -30,8 +72,20 @@
     "titol": "Rebozuelos Salteados",
     "descripcio": "Con yema de huevo curada.",
     "ingredients": [
-      { "nom": "Rebozuelos", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Yema de huevo curada", "quantitat": 1, "unitat": "u", "cost_unitari": 0, "cost_total": 0 }
+      {
+        "nom": "Rebozuelos",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Yema de huevo curada",
+        "quantitat": 1,
+        "unitat": "u",
+        "cost_unitari": 0,
+        "cost_total": 0
+      }
     ],
     "cost_mp": 0,
     "cost_prod": 0,
@@ -42,10 +96,34 @@
     "titol": "Risotto de Verduras",
     "descripcio": "Meloso, vegetal y lleno de sabor.",
     "ingredients": [
-      { "nom": "Arroz arborio", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Verduras de temporada", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Caldo de verduras", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Parmesano", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 }
+      {
+        "nom": "Arroz arborio",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Verduras de temporada",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Caldo de verduras",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Parmesano",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      }
     ],
     "cost_mp": 0,
     "cost_prod": 0,
@@ -56,11 +134,41 @@
     "titol": "Carrillera a Baja Temperatura",
     "descripcio": "Con parmentier trufada.",
     "ingredients": [
-      { "nom": "Carrillera de cerdo", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Patata", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Trufa", "quantitat": 1, "unitat": "g", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Nata", "quantitat": 1, "unitat": "ml", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Mantequilla", "quantitat": 1, "unitat": "g", "cost_unitari": 0, "cost_total": 0 }
+      {
+        "nom": "Carrillera de cerdo",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Patata",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Trufa",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Nata",
+        "quantitat": 1,
+        "unitat": "ml",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Mantequilla",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      }
     ],
     "cost_mp": 0,
     "cost_prod": 0,
@@ -71,8 +179,20 @@
     "titol": "Yogur de Ezcaray",
     "descripcio": "Con fruta confitada.",
     "ingredients": [
-      { "nom": "Yogur natural Ezcaray", "quantitat": 1, "unitat": "u", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Fruta confitada", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 }
+      {
+        "nom": "Yogur natural Ezcaray",
+        "quantitat": 1,
+        "unitat": "u",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Fruta confitada",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      }
     ],
     "cost_mp": 0,
     "cost_prod": 0,
@@ -83,8 +203,20 @@
     "titol": "Tartar de Gamba",
     "descripcio": "Con aromáticas del huerto.",
     "ingredients": [
-      { "nom": "Gamba", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Aromáticas del huerto", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 }
+      {
+        "nom": "Gamba",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Aromáticas del huerto",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      }
     ],
     "cost_mp": 0,
     "cost_prod": 0,
@@ -95,10 +227,34 @@
     "titol": "Ensalada del Huerto Dipear",
     "descripcio": "Lechuga fresca, burrata cremosa, tomates cherry asados y Pesto.",
     "ingredients": [
-      { "nom": "Lechuga fresca", "quantitat": 1, "unitat": "u", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Burrata cremosa", "quantitat": 1, "unitat": "u", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Tomates cherry asados", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Pesto", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 }
+      {
+        "nom": "Lechuga fresca",
+        "quantitat": 1,
+        "unitat": "u",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Burrata cremosa",
+        "quantitat": 1,
+        "unitat": "u",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Tomates cherry asados",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Pesto",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      }
     ],
     "cost_mp": 0,
     "cost_prod": 0,
@@ -109,11 +265,41 @@
     "titol": "Steak Tartar de Vedella de Girona",
     "descripcio": "Carne de ternera de Girona, brioche, agua de humo, pepinillo, soja.",
     "ingredients": [
-      { "nom": "Ternera de Girona", "quantitat": 1, "unitat": "ració", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Brioche", "quantitat": 1, "unitat": "u", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Agua de humo", "quantitat": 1, "unitat": "ml", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Pepinillo", "quantitat": 1, "unitat": "u", "cost_unitari": 0, "cost_total": 0 },
-      { "nom": "Soja", "quantitat": 1, "unitat": "ml", "cost_unitari": 0, "cost_total": 0 }
+      {
+        "nom": "Ternera de Girona",
+        "quantitat": 1,
+        "unitat": "ració",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Brioche",
+        "quantitat": 1,
+        "unitat": "u",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Agua de humo",
+        "quantitat": 1,
+        "unitat": "ml",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Pepinillo",
+        "quantitat": 1,
+        "unitat": "u",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Soja",
+        "quantitat": 1,
+        "unitat": "ml",
+        "cost_unitari": 0,
+        "cost_total": 0
+      }
     ],
     "cost_mp": 0,
     "cost_prod": 0,
