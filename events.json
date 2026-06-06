@@ -25,7 +25,7 @@
       {
         "nom": "Amic 1 Alba",
         "preu_menjar": 0,
-        "preu_beguda": 0,
+        "preu_beguda": 15,
         "preu_altres": 0,
         "plats": [],
         "vins": [],
@@ -34,14 +34,14 @@
       {
         "nom": "Amic 2 Alba",
         "preu_menjar": 0,
-        "preu_beguda": 0,
+        "preu_beguda": 15,
         "preu_altres": 0,
         "plats": [],
         "vins": [],
         "notes": ""
       }
     ],
-    "total": 30
+    "total": 60
   },
   {
     "data": "",
