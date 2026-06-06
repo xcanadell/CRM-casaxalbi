@@ -1,1 +1,242 @@
-[]
+[
+  {
+    "nom": "Alba",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Veí Zaldierna",
+    "notes": "",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Alejandro",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Casa rural",
+    "notes": "Ex policia judicial",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Amic Koldo i Karmele",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Acompanyant de veí",
+    "notes": "",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Amiga Koldo i Karmele",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Acompanyant de veí",
+    "notes": "",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Angel",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Veí Zaldierna",
+    "notes": "Encanta la trufa, no le motiva massa la pasta",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Carlos",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Veí Zaldierna",
+    "notes": "",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Carmen",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Veí Zaldierna",
+    "notes": "Parella de Miguel",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Cristian",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Acompanyant de veí",
+    "notes": "Amics d'Angel i Laura",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Ester",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Veí Zaldierna",
+    "notes": "Le encanta los Baos",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Fill Xavi i Miriam",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Client Origen",
+    "notes": "",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Filla Xavi i Miriam",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Client Origen",
+    "notes": "",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Hermana Juan A",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Acompanyant de veí",
+    "notes": "Al·lèrgia fruits secs, poma i préssec",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Hermana Juan B",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Acompanyant de veí",
+    "notes": "",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Javi",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Veí Zaldierna",
+    "notes": "Casa Rural",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Jose Maria (Txema)",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Veí Zaldierna",
+    "notes": "No li agrada el salmó",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Juan",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "Ezcaray",
+    "origen": "Veí Ezcaray",
+    "notes": "",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Karmele",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Veí Zaldierna",
+    "notes": "",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Koldo",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Veí Zaldierna",
+    "notes": "",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Laura",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Veí Zaldierna",
+    "notes": "Li encanta la pasta i l'estic",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Leire",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "Ezcaray",
+    "origen": "Veí Ezcaray",
+    "notes": "",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Maria",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Veí Zaldierna",
+    "notes": "",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Martin",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Veí Zaldierna",
+    "notes": "Diabètic",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Miguel",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "València",
+    "origen": "Veí Zaldierna",
+    "notes": "Metge de València",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "nom": "Miriam",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Client Origen",
+    "notes": "",
+    "updated_at": "2026-06-06T00:00:00.000Z"
+  }
+]
