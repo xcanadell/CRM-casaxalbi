@@ -1345,15 +1345,30 @@ function renderEventsList(){
     const lloc=ev.lloc||'—';
     const total=(ev.total||0).toFixed(2);
     const dataFmt=ev.data?new Date(ev.data+'T12:00:00').toLocaleDateString('ca-ES',{day:'numeric',month:'long',year:'numeric'}):'Sense data';
-    return`<div class="ev-list-card" onclick="openEventEditor(${ri})">
-      <div>
-        <div class="ev-title">📅 ${dataFmt}</div>
-        <div class="ev-meta"><span class="ev-lloc-pill">${esc(lloc)}</span> &nbsp;·&nbsp; ${ncom} comensal${ncom!==1?'s':''} ${ev.notes?'· '+esc(ev.notes):''}</div>
+    // plats i vins únics de tots els comensals
+    const platsUnics=[...new Set((ev.comensals||[]).flatMap(c=>c.plats||[]))];
+    const vinsUnics=[...new Set((ev.comensals||[]).flatMap(c=>c.vins||[]))];
+    const platsHtml=platsUnics.length
+      ?platsUnics.map(p=>`<span class="chip" style="font-size:11px">${esc(p)}</span>`).join('')
+      :'';
+    const vinsHtml=vinsUnics.length
+      ?vinsUnics.map(v=>`<span class="chip vi" style="font-size:11px">${esc(v)}</span>`).join('')
+      :'';
+    const resumHtml=(platsUnics.length||vinsUnics.length)
+      ?`<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px">${platsHtml}${vinsHtml}</div>`
+      :'';
+    return`<div class="ev-list-card" onclick="openEventEditor(${ri})" style="flex-direction:column;align-items:stretch;gap:8px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <div class="ev-title">📅 ${dataFmt}</div>
+          <div class="ev-meta"><span class="ev-lloc-pill">${esc(lloc)}</span> &nbsp;·&nbsp; ${ncom} comensal${ncom!==1?'s':''} ${ev.notes?'· '+esc(ev.notes):''}</div>
+        </div>
+        <div class="ev-right">
+          <div class="ev-total-badge">${total} €</div>
+          <button class="btn btn-sm btn-danger" style="padding:3px 8px" onclick="event.stopPropagation();deleteEvent(${ri})">🗑</button>
+        </div>
       </div>
-      <div class="ev-right">
-        <div class="ev-total-badge">${total} €</div>
-        <button class="btn btn-sm btn-danger" style="padding:3px 8px" onclick="event.stopPropagation();deleteEvent(${ri})">🗑</button>
-      </div>
+      ${resumHtml}
     </div>`;
   }).join('');
 }
