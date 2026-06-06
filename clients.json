@@ -238,5 +238,15 @@
     "origen": "Client Origen",
     "notes": "",
     "updated_at": "2026-06-06T13:27:11.637Z"
+  },
+  {
+    "nom": "Nando",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "Calahorra",
+    "origen": "Veí Zaldierna",
+    "notes": "Marit de Sara",
+    "updated_at": "2026-06-06T13:28:03.262Z"
   }
 ]
