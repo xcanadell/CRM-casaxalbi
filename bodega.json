@@ -346,17 +346,5 @@
     "data_compra": "2026-04-22",
     "data_venda": "",
     "updated_at": "2026-06-06T15:44:37.788Z"
-  },
-  {
-    "nom": "Celler C",
-    "any": "",
-    "bodega": "Penedes",
-    "tipus": "Vi blanc",
-    "do": "",
-    "cost": 14.14,
-    "pvp": 0,
-    "data_compra": "2026-04-22",
-    "data_venda": "",
-    "updated_at": "2026-06-06T15:46:13.153Z"
   }
 ]
