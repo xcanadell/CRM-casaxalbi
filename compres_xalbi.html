@@ -102,6 +102,34 @@ table.products td input.center{text-align:center} table.products td input.right{
 .data-mgmt{background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:14px;margin-top:16px}
 .data-mgmt h3{font-size:13px;font-weight:600;margin-bottom:10px;color:#555}
 .data-mgmt-row{display:flex;gap:8px;flex-wrap:wrap}
+/* ── Plats ── */
+.plat-card{background:#fff;border:1px solid #e0e0e0;border-radius:10px;margin-bottom:10px;overflow:hidden}
+.plat-header{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;cursor:pointer}
+.plat-header:hover{background:#fafafa}
+.plat-title{font-size:15px;font-weight:600}
+.plat-desc{font-size:12px;color:#888;margin-top:2px}
+.plat-costs{display:flex;gap:14px;align-items:center}
+.cost-pill{font-size:12px;padding:3px 10px;border-radius:20px;font-weight:500}
+.cost-mp{background:#e8f5e9;color:#2e7d32;border:1px solid #c8e6c9}
+.cost-prod{background:#e3f2fd;color:#1565c0;border:1px solid #bbdefb}
+.cost-total{background:#1a1a1a;color:#fff;font-size:13px;padding:4px 12px;border-radius:20px}
+.plat-body{display:none;border-top:1px solid #f0f0f0;padding:14px 16px}
+.plat-card.open .plat-body{display:block}
+.plat-card.open .chevron{transform:rotate(180deg)}
+.ing-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:12px}
+.ing-table th{text-align:left;color:#888;font-weight:500;font-size:11px;padding:4px 6px 7px;border-bottom:1px solid #eee}
+.ing-table td{padding:5px 6px;border-bottom:1px solid #f5f5f5;vertical-align:middle}
+.ing-table td input{width:100%;border:none;border-bottom:1px dashed transparent;background:transparent;font-family:inherit;font-size:13px;outline:none;padding:1px 2px}
+.ing-table td input:focus{border-bottom-color:#1a1a1a}
+.ing-table td input.right{text-align:right}
+.col-ing{width:35%}.col-qt{width:12%;text-align:center}.col-un{width:13%}.col-cu{width:14%;text-align:right}.col-ct{width:14%;text-align:right}.col-dx{width:6%;text-align:center}
+.plat-costs-edit{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px;background:#f9f9f9;border-radius:8px;padding:12px}
+.plat-costs-edit label{display:block;font-size:11px;color:#888;margin-bottom:3px}
+.plat-costs-edit input{width:100%;border:none;border-bottom:1px dashed #ccc;background:transparent;font-family:inherit;font-size:14px;font-weight:600;outline:none;padding:2px 0}
+.plat-costs-edit input:focus{border-bottom-color:#1a1a1a}
+.plat-empty{text-align:center;padding:40px 20px;color:#aaa}
+.plats-header-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.plats-header-row h2{font-size:16px;font-weight:600}
 </style>
 </head>
 <body>
@@ -119,6 +147,7 @@ table.products td input.center{text-align:center} table.products td input.right{
   <div class="tabs">
     <button class="tab active" onclick="showTab('scan')">📷 Nou ticket</button>
     <button class="tab" onclick="showTab('history')">📋 Historial</button>
+    <button class="tab" onclick="showTab('plats')">🍽️ Plats</button>
   </div>
   <div id="panel-scan" class="panel active">
     <div class="upload-zone" id="dropZone" onclick="document.getElementById('fileInput').click()" ondragover="event.preventDefault()" ondrop="doDrop(event)">
@@ -189,6 +218,15 @@ table.products td input.center{text-align:center} table.products td input.right{
       </div>
     </div>
   </div>
+
+  <!-- Panel Plats -->
+  <div id="panel-plats" class="panel">
+    <div class="plats-header-row">
+      <h2>🍽️ Carta de plats</h2>
+      <button class="btn btn-primary" onclick="openPlatModal()">+ Nou plat</button>
+    </div>
+    <div id="platsList"></div>
+  </div>
 </div>
 
 <!-- Modal d'edició de ticket -->
@@ -215,6 +253,51 @@ table.products td input.center{text-align:center} table.products td input.right{
   </div>
 </div>
 
+<!-- Modal de plat -->
+<div class="modal-overlay" id="platModal" onclick="if(event.target===this)closePlatModal()">
+  <div class="modal-box" style="max-width:720px">
+    <h2 id="platModalTitle">🍽️ Nou plat</h2>
+    <div class="modal-info-grid" style="margin-bottom:12px">
+      <div class="info-field" style="grid-column:1/-1">
+        <label>Títol del plat</label>
+        <input class="editable shop-name-input" id="plat-titol" placeholder="Ex: Carrilleres de porc al vi negre">
+      </div>
+      <div class="info-field" style="grid-column:1/-1">
+        <label>Descripció</label>
+        <textarea id="plat-desc" placeholder="Descripció del plat, elaboració, presentació..." style="width:100%;border:none;border-bottom:1px dashed #ccc;background:transparent;font-family:inherit;font-size:13px;outline:none;padding:4px 0;resize:vertical;min-height:56px;color:#1a1a1a"></textarea>
+      </div>
+    </div>
+    <div class="section-label">Ingredients</div>
+    <table class="ing-table">
+      <thead><tr>
+        <th class="col-ing">Ingredient</th>
+        <th class="col-qt">Quantitat</th>
+        <th class="col-un">Unitat</th>
+        <th class="col-cu">Cost unit.</th>
+        <th class="col-ct">Cost total</th>
+        <th class="col-dx"></th>
+      </tr></thead>
+      <tbody id="plat-ingsBody"></tbody>
+      <tfoot><tr class="total-row">
+        <td colspan="3" style="text-align:right;color:#888;font-weight:500;font-size:12px">COST MATÈRIA PRIMERA</td>
+        <td></td>
+        <td id="plat-subtotal" style="font-size:13px">0.00 €</td>
+        <td></td>
+      </tr></tfoot>
+    </table>
+    <div style="margin-top:8px"><button class="add-row" onclick="addIngRow()">+ Afegir ingredient</button></div>
+    <div class="plat-costs-edit">
+      <div><label>Cost matèria primera</label><input id="plat-cmp" class="right" placeholder="0.00" oninput="syncPlatCosts()" style="color:#2e7d32"> €</div>
+      <div><label>Cost de producció</label><input id="plat-cprod" class="right" placeholder="0.00" oninput="syncPlatCosts()"> €</div>
+      <div><label>Cost total</label><input id="plat-ctotal" class="right" placeholder="0.00" readonly style="font-weight:700;border-bottom-style:solid;border-bottom-color:#ddd"> €</div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-danger btn-sm" onclick="closePlatModal()">Cancel·lar</button>
+      <button class="btn btn-primary" onclick="savePlat()">💾 Desar plat</button>
+    </div>
+  </div>
+</div>
+
 <script>
 const API='http://localhost:8765';
 const LS='xalbi-v4'; // fallback localStorage
@@ -235,6 +318,7 @@ async function init(){
       setBanner('warn',`⚠️ Servidor no actiu — dades locals (${tickets.length} tickets). Obre <b>start.sh</b> per activar el backup a GitHub`);
     }catch(e2){tickets=[];}
   }
+  await initPlats();
   renderHistory();showTab('history');
 }
 
@@ -257,10 +341,13 @@ function saveApiKey(){localStorage.setItem('xalbi_apikey',document.getElementByI
 function getApiKey(){return document.getElementById('apiKeyInput').value.trim();}
 let imgB64=null,imgMime='image/jpeg';
 function showTab(tab){
-  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',['scan','history'][i]===tab));
+  const tabs=['scan','history','plats'];
+  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',tabs[i]===tab));
   document.getElementById('panel-scan').classList.toggle('active',tab==='scan');
   document.getElementById('panel-history').classList.toggle('active',tab==='history');
+  document.getElementById('panel-plats').classList.toggle('active',tab==='plats');
   if(tab==='history')renderHistory();
+  if(tab==='plats')renderPlats();
 }
 function doDrop(e){e.preventDefault();const f=e.dataTransfer.files[0];if(f)processFile(f);}
 function handleFile(e){const f=e.target.files[0];if(f)processFile(f);}
@@ -401,6 +488,170 @@ async function saveEditTicket(){
   await persist();
   renderHistory();
   closeEditModal();
+}
+
+// ── Plats ────────────────────────────────────────────────────────
+let plats=[];
+let platEditIdx=null;
+
+async function initPlats(){
+  try{
+    const r=await fetch(API+'/plats');
+    if(!r.ok)throw new Error();
+    plats=await r.json();
+  }catch(e){
+    try{const s=localStorage.getItem('xalbi-plats');plats=s?JSON.parse(s):[];}catch(e2){plats=[];}
+  }
+}
+
+async function persistPlats(){
+  try{
+    await fetch(API+'/plats',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(plats)});
+  }catch(e){
+    try{localStorage.setItem('xalbi-plats',JSON.stringify(plats));}catch(e2){}
+  }
+}
+
+function renderPlats(){
+  const list=document.getElementById('platsList');
+  if(!plats.length){list.innerHTML='<div class="plat-empty">Cap plat registrat. Clica "+ Nou plat" per afegir-ne un.</div>';return;}
+  list.innerHTML=plats.map((p,i)=>{
+    const ings=(p.ingredients||[]).map(ing=>`
+      <tr>
+        <td style="font-size:12px;padding:4px 6px">${esc(ing.nom)}</td>
+        <td style="font-size:12px;padding:4px 6px;text-align:center">${ing.quantitat} ${esc(ing.unitat||'')}</td>
+        <td style="font-size:12px;padding:4px 6px;text-align:right">${fmt(ing.cost_unitari)} €</td>
+        <td style="font-size:12px;padding:4px 6px;text-align:right;font-weight:600">${fmt(ing.cost_total)} €</td>
+      </tr>`).join('');
+    return`<div class="plat-card" id="plat-${i}">
+      <div class="plat-header" onclick="togglePlat(${i})">
+        <div>
+          <div class="plat-title">${esc(p.titol||'Sense títol')}</div>
+          ${p.descripcio?`<div class="plat-desc">${esc(p.descripcio)}</div>`:''}
+        </div>
+        <div class="plat-costs">
+          <span class="cost-pill cost-mp" title="Cost matèria primera">🥕 ${fmt(p.cost_mp)} €</span>
+          <span class="cost-pill cost-prod" title="Cost producció">⚙️ ${fmt(p.cost_prod)} €</span>
+          <span class="cost-total">Total: ${fmt(p.cost_total)} €</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="plat-body">
+        ${(p.ingredients||[]).length?`
+        <div class="section-label" style="margin-bottom:8px">Ingredients</div>
+        <table style="width:100%;border-collapse:collapse">
+          <thead><tr>
+            <th style="text-align:left;font-size:11px;color:#888;padding:3px 6px 6px;border-bottom:1px solid #eee">Ingredient</th>
+            <th style="text-align:center;font-size:11px;color:#888;padding:3px 6px 6px;border-bottom:1px solid #eee">Quantitat</th>
+            <th style="text-align:right;font-size:11px;color:#888;padding:3px 6px 6px;border-bottom:1px solid #eee">Cost unit.</th>
+            <th style="text-align:right;font-size:11px;color:#888;padding:3px 6px 6px;border-bottom:1px solid #eee">Cost total</th>
+          </tr></thead>
+          <tbody>${ings}</tbody>
+        </table>`:'<div style="color:#aaa;font-size:13px;margin-bottom:8px">Sense ingredients registrats</div>'}
+        <div style="display:flex;justify-content:space-between;margin-top:12px;align-items:center">
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-sm btn-danger" onclick="deletePlat(${i})">🗑 Eliminar</button>
+            <button class="btn btn-sm btn-edit" onclick="openPlatModal(${i})">✏️ Editar</button>
+          </div>
+          <div style="font-size:12px;color:#888">
+            🥕 MP: <strong>${fmt(p.cost_mp)} €</strong> &nbsp;·&nbsp;
+            ⚙️ Prod: <strong>${fmt(p.cost_prod)} €</strong> &nbsp;·&nbsp;
+            <strong style="font-size:14px">Total: ${fmt(p.cost_total)} €</strong>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function togglePlat(i){document.getElementById('plat-'+i).classList.toggle('open');}
+
+function openPlatModal(idx){
+  platEditIdx=(idx!==undefined)?idx:null;
+  document.getElementById('platModalTitle').textContent=platEditIdx!==null?'✏️ Editar plat':'🍽️ Nou plat';
+  const p=platEditIdx!==null?plats[platEditIdx]:{titol:'',descripcio:'',ingredients:[],cost_mp:0,cost_prod:0,cost_total:0};
+  document.getElementById('plat-titol').value=p.titol||'';
+  document.getElementById('plat-desc').value=p.descripcio||'';
+  document.getElementById('plat-cmp').value=p.cost_mp||'';
+  document.getElementById('plat-cprod').value=p.cost_prod||'';
+  document.getElementById('plat-ctotal').value=p.cost_total||'';
+  document.getElementById('plat-ingsBody').innerHTML='';
+  (p.ingredients||[]).forEach(ing=>addIngRow(ing));
+  updatePlatSubtotal();
+  document.getElementById('platModal').classList.add('show');
+}
+
+function closePlatModal(){
+  document.getElementById('platModal').classList.remove('show');
+  platEditIdx=null;
+}
+
+function addIngRow(ing){
+  ing=ing||{nom:'',quantitat:1,unitat:'g',cost_unitari:0,cost_total:0};
+  const tr=document.createElement('tr');
+  tr.innerHTML=`
+    <td class="col-ing"><input value="${esc(ing.nom)}" placeholder="Ingredient" oninput="updatePlatSubtotal()"></td>
+    <td class="col-qt"><input class="right" value="${ing.quantitat||1}" style="width:52px" oninput="recalcIngRow(this);updatePlatSubtotal()"></td>
+    <td class="col-un"><input value="${esc(ing.unitat||'g')}" style="width:44px"></td>
+    <td class="col-cu"><input class="right" value="${fmt(ing.cost_unitari)}" style="width:56px" oninput="recalcIngRow(this);updatePlatSubtotal()"> €</td>
+    <td class="col-ct"><input class="right" value="${fmt(ing.cost_total)}" style="width:56px" readonly style="color:#555"> €</td>
+    <td class="col-dx"><button class="del-btn" onclick="this.closest('tr').remove();updatePlatSubtotal()">✕</button></td>`;
+  document.getElementById('plat-ingsBody').appendChild(tr);
+}
+
+function recalcIngRow(inp){
+  const tr=inp.closest('tr');
+  const ins=tr.querySelectorAll('input');
+  const qt=parseFloat(ins[1].value)||0;
+  const cu=parseFloat(ins[3].value)||0;
+  ins[4].value=(qt*cu).toFixed(2);
+}
+
+function updatePlatSubtotal(){
+  let sum=0;
+  document.querySelectorAll('#plat-ingsBody tr').forEach(tr=>{
+    const ins=tr.querySelectorAll('input');
+    sum+=parseFloat(ins[4]?.value)||0;
+  });
+  document.getElementById('plat-subtotal').textContent=sum.toFixed(2)+' €';
+  document.getElementById('plat-cmp').value=sum.toFixed(2);
+  syncPlatCosts();
+}
+
+function syncPlatCosts(){
+  const mp=parseFloat(document.getElementById('plat-cmp').value)||0;
+  const prod=parseFloat(document.getElementById('plat-cprod').value)||0;
+  document.getElementById('plat-ctotal').value=(mp+prod).toFixed(2);
+}
+
+async function savePlat(){
+  const ings=[];
+  document.querySelectorAll('#plat-ingsBody tr').forEach(tr=>{
+    const ins=tr.querySelectorAll('input');
+    if(!ins[0].value.trim())return;
+    ings.push({nom:ins[0].value.trim(),quantitat:parseFloat(ins[1].value)||1,unitat:ins[2].value.trim()||'g',cost_unitari:parseFloat(ins[3].value)||0,cost_total:parseFloat(ins[4].value)||0});
+  });
+  const plat={
+    titol:document.getElementById('plat-titol').value.trim(),
+    descripcio:document.getElementById('plat-desc').value.trim(),
+    ingredients:ings,
+    cost_mp:parseFloat(document.getElementById('plat-cmp').value)||0,
+    cost_prod:parseFloat(document.getElementById('plat-cprod').value)||0,
+    cost_total:parseFloat(document.getElementById('plat-ctotal').value)||0,
+    updated_at:new Date().toISOString()
+  };
+  if(!plat.titol){alert('Afegeix el títol del plat.');return;}
+  if(platEditIdx!==null){plats[platEditIdx]=plat;}else{plats.unshift(plat);}
+  await persistPlats();
+  renderPlats();
+  closePlatModal();
+}
+
+async function deletePlat(i){
+  if(!confirm('Eliminar aquest plat?'))return;
+  plats.splice(i,1);
+  await persistPlats();
+  renderPlats();
 }
 
 </script>

@@ -4,6 +4,8 @@ Servidor local per a Compres Casa Xalbi.
 - Serveix el HTML a http://localhost:8765
 - GET  /tickets      → llegeix tickets.json
 - POST /tickets      → desa tickets.json + git commit + push
+- GET  /plats        → llegeix plats.json
+- POST /plats        → desa plats.json + git commit + push
 """
 
 import json
@@ -14,28 +16,42 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 PORT = 8765
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TICKETS_FILE = os.path.join(BASE_DIR, "tickets.json")
-HTML_FILE = os.path.join(BASE_DIR, "compres_xalbi.html")
+PLATS_FILE   = os.path.join(BASE_DIR, "plats.json")
+HTML_FILE    = os.path.join(BASE_DIR, "compres_xalbi.html")
 
 
-def git_save():
-    """Commit i push automàtic del tickets.json."""
+def git_save(files, message):
+    """Commit i push automàtic dels fitxers indicats."""
     try:
-        subprocess.run(["git", "add", "tickets.json"], cwd=BASE_DIR, check=True)
+        subprocess.run(["git", "add"] + files, cwd=BASE_DIR, check=True)
         result = subprocess.run(
             ["git", "diff", "--cached", "--quiet"],
             cwd=BASE_DIR
         )
-        if result.returncode != 0:  # hi ha canvis
+        if result.returncode != 0:
             subprocess.run(
-                ["git", "commit", "-m", "auto: actualització tickets"],
+                ["git", "commit", "-m", message],
                 cwd=BASE_DIR, check=True
             )
             subprocess.run(["git", "push"], cwd=BASE_DIR, check=True)
-            print("✅ Git push fet correctament")
+            print(f"✅ Git push: {message}")
         else:
             print("ℹ️  Sense canvis nous, no cal push")
     except subprocess.CalledProcessError as e:
         print(f"⚠️  Error git: {e}")
+
+
+def read_json(path):
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return []
+
+
+def write_json(path, data):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -61,13 +77,9 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         if self.path == "/tickets":
-            try:
-                with open(TICKETS_FILE, "r", encoding="utf-8") as f:
-                    tickets = json.load(f)
-                self.send_json(200, tickets)
-            except FileNotFoundError:
-                self.send_json(200, [])
-
+            self.send_json(200, read_json(TICKETS_FILE))
+        elif self.path == "/plats":
+            self.send_json(200, read_json(PLATS_FILE))
         elif self.path in ("/", "/index.html", "/compres_xalbi.html"):
             try:
                 with open(HTML_FILE, "rb") as f:
@@ -85,17 +97,22 @@ class Handler(BaseHTTPRequestHandler):
             self.end_headers()
 
     def do_POST(self):
+        length = int(self.headers.get("Content-Length", 0))
+        body = self.rfile.read(length)
+        try:
+            data = json.loads(body.decode("utf-8"))
+        except Exception as e:
+            self.send_json(400, {"ok": False, "error": str(e)})
+            return
+
         if self.path == "/tickets":
-            length = int(self.headers.get("Content-Length", 0))
-            body = self.rfile.read(length)
-            try:
-                tickets = json.loads(body.decode("utf-8"))
-                with open(TICKETS_FILE, "w", encoding="utf-8") as f:
-                    json.dump(tickets, f, ensure_ascii=False, indent=2)
-                git_save()
-                self.send_json(200, {"ok": True, "count": len(tickets)})
-            except Exception as e:
-                self.send_json(500, {"ok": False, "error": str(e)})
+            write_json(TICKETS_FILE, data)
+            git_save(["tickets.json"], "auto: actualitzacio tickets")
+            self.send_json(200, {"ok": True, "count": len(data)})
+        elif self.path == "/plats":
+            write_json(PLATS_FILE, data)
+            git_save(["plats.json"], "auto: actualitzacio plats")
+            self.send_json(200, {"ok": True, "count": len(data)})
         else:
             self.send_response(404)
             self.end_headers()
@@ -104,7 +121,6 @@ class Handler(BaseHTTPRequestHandler):
 if __name__ == "__main__":
     server = HTTPServer(("localhost", PORT), Handler)
     print(f"🚀 Servidor iniciat a http://localhost:{PORT}")
-    print(f"   Dades a: {TICKETS_FILE}")
     print(f"   Prem Ctrl+C per aturar\n")
     try:
         server.serve_forever()
