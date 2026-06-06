@@ -9,7 +9,9 @@
         "preu_menjar": 0,
         "preu_beguda": 15,
         "preu_altres": 0,
-        "plats": [],
+        "plats": [
+          "Pica pica per cata vins"
+        ],
         "vins": [],
         "notes": ""
       },
@@ -18,7 +20,9 @@
         "preu_menjar": 0,
         "preu_beguda": 15,
         "preu_altres": 0,
-        "plats": [],
+        "plats": [
+          "Pica pica per cata vins"
+        ],
         "vins": [],
         "notes": ""
       },
@@ -27,7 +31,9 @@
         "preu_menjar": 0,
         "preu_beguda": 15,
         "preu_altres": 0,
-        "plats": [],
+        "plats": [
+          "Pica pica per cata vins"
+        ],
         "vins": [],
         "notes": ""
       },
@@ -36,7 +42,9 @@
         "preu_menjar": 0,
         "preu_beguda": 15,
         "preu_altres": 0,
-        "plats": [],
+        "plats": [
+          "Pica pica per cata vins"
+        ],
         "vins": [],
         "notes": ""
       }
