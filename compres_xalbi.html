@@ -157,6 +157,21 @@ table.products td input.center{text-align:center} table.products td input.right{
 .modal-field input:focus,.modal-field select:focus{border-color:#1a1a1a}
 .modal-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .modal-grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+/* ── Clients ── */
+.clients-table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid #e0e0e0;font-size:13px}
+.clients-table th{text-align:left;color:#888;font-weight:500;font-size:11px;padding:10px 12px;border-bottom:2px solid #eee;background:#fafafa;white-space:nowrap}
+.clients-table td{padding:10px 12px;border-bottom:1px solid #f5f5f5;vertical-align:middle}
+.clients-table tr:last-child td{border-bottom:none}
+.clients-table tr:hover td{background:#fafafa}
+.origen-pill{display:inline-block;font-size:11px;padding:2px 9px;border-radius:20px;font-weight:500;white-space:nowrap;background:#f0f0f0;color:#555;border:1px solid #e0e0e0}
+.origen-vei-zal{background:#e8f5e9;color:#2e7d32;border-color:#c8e6c9}
+.origen-vei-ezc{background:#e3f2fd;color:#1565c0;border-color:#90caf9}
+.origen-acomp{background:#fff3e0;color:#e65100;border-color:#ffcc80}
+.origen-rural{background:#f3e5f5;color:#6a1b9a;border-color:#ce93d8}
+.origen-rrss{background:#fce4ec;color:#c2185b;border-color:#f48fb1}
+.origen-origen{background:#e8eaf6;color:#283593;border-color:#9fa8da}
+.clients-empty{text-align:center;padding:40px 20px;color:#aaa}
+.notes-preview{max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#888;font-size:12px}
 </style>
 </head>
 <body>
@@ -176,6 +191,7 @@ table.products td input.center{text-align:center} table.products td input.right{
     <button class="tab" onclick="showTab('history')">📋 Historial</button>
     <button class="tab" onclick="showTab('plats')">🍽️ Plats</button>
     <button class="tab" onclick="showTab('bodega')">🍷 Bodega</button>
+    <button class="tab" onclick="showTab('clients')">👥 Clients</button>
   </div>
   <div id="panel-scan" class="panel active">
     <div class="upload-zone" id="dropZone" onclick="document.getElementById('fileInput').click()" ondragover="event.preventDefault()" ondrop="doDrop(event)">
@@ -245,6 +261,27 @@ table.products td input.center{text-align:center} table.products td input.right{
         <button class="btn btn-sm btn-danger" onclick="clearAllData()">🗑 Esborrar tot</button>
       </div>
     </div>
+  </div>
+
+  <!-- Panel Clients -->
+  <div id="panel-clients" class="panel">
+    <div class="plats-header-row">
+      <h2>👥 Clients</h2>
+      <button class="btn btn-primary" onclick="openClientModal()">+ Nou client</button>
+    </div>
+    <div class="bodega-search">
+      <input type="text" id="clients-search" placeholder="🔍 Cercar per nom, email, població..." oninput="renderClients()">
+      <select id="clients-filter" onchange="renderClients()">
+        <option value="">Tots els orígens</option>
+        <option value="Veí Zaldierna">Veí Zaldierna</option>
+        <option value="Veí Ezcaray">Veí Ezcaray</option>
+        <option value="Acompanyant de veí">Acompanyant de veí</option>
+        <option value="Casa rural">Casa rural</option>
+        <option value="RRSS">RRSS</option>
+        <option value="Client Origen">Client Origen</option>
+      </select>
+    </div>
+    <div id="clientsList"></div>
   </div>
 
   <!-- Panel Bodega -->
@@ -405,6 +442,59 @@ table.products td input.center{text-align:center} table.products td input.right{
   </div>
 </div>
 
+<!-- Modal Client -->
+<div class="modal-overlay" id="clientModal" onclick="if(event.target===this)closeClientModal()">
+  <div class="modal-box" style="max-width:560px">
+    <h2 id="clientModalTitle">👤 Nou client</h2>
+    <div class="modal-grid-2" style="margin-bottom:10px">
+      <div class="modal-field">
+        <label>Nom</label>
+        <input id="cli-nom" placeholder="Nom">
+      </div>
+      <div class="modal-field">
+        <label>Cognom</label>
+        <input id="cli-cognom" placeholder="Cognom">
+      </div>
+    </div>
+    <div class="modal-grid-2" style="margin-bottom:10px">
+      <div class="modal-field">
+        <label>Telèfon</label>
+        <input id="cli-tel" type="tel" placeholder="+34 600 000 000">
+      </div>
+      <div class="modal-field">
+        <label>Email</label>
+        <input id="cli-email" type="email" placeholder="correu@exemple.com">
+      </div>
+    </div>
+    <div class="modal-grid-2" style="margin-bottom:10px">
+      <div class="modal-field">
+        <label>Població</label>
+        <input id="cli-poblacio" placeholder="Ex: Ezcaray, Barcelona...">
+      </div>
+      <div class="modal-field">
+        <label>Origen del contacte</label>
+        <select id="cli-origen">
+          <option value="">— Selecciona —</option>
+          <option value="Veí Zaldierna">Veí Zaldierna</option>
+          <option value="Veí Ezcaray">Veí Ezcaray</option>
+          <option value="Acompanyant de veí">Acompanyant de veí</option>
+          <option value="Casa rural">Casa rural</option>
+          <option value="RRSS">RRSS</option>
+          <option value="Client Origen">Client Origen</option>
+        </select>
+      </div>
+    </div>
+    <div class="modal-field">
+      <label>Notes</label>
+      <textarea id="cli-notes" placeholder="Comentaris, preferències, al·lèrgies, dates de visita..." style="width:100%;padding:8px 10px;border:1px solid #ddd;border-radius:7px;font-size:13px;font-family:inherit;outline:none;resize:vertical;min-height:72px;color:#1a1a1a"></textarea>
+    </div>
+    <div class="modal-footer" style="margin-top:14px">
+      <button class="btn btn-danger btn-sm" onclick="closeClientModal()">Cancel·lar</button>
+      <button class="btn btn-primary" onclick="saveClient()">💾 Desar</button>
+    </div>
+  </div>
+</div>
+
 <script>
 const API='http://localhost:8765';
 const LS='xalbi-v4'; // fallback localStorage
@@ -427,6 +517,7 @@ async function init(){
   }
   await initPlats();
   await initBodega();
+  await initClients();
   renderHistory();showTab('history');
 }
 
@@ -449,15 +540,17 @@ function saveApiKey(){localStorage.setItem('xalbi_apikey',document.getElementByI
 function getApiKey(){return document.getElementById('apiKeyInput').value.trim();}
 let imgB64=null,imgMime='image/jpeg';
 function showTab(tab){
-  const tabs=['scan','history','plats','bodega'];
+  const tabs=['scan','history','plats','bodega','clients'];
   document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',tabs[i]===tab));
   document.getElementById('panel-scan').classList.toggle('active',tab==='scan');
   document.getElementById('panel-history').classList.toggle('active',tab==='history');
   document.getElementById('panel-plats').classList.toggle('active',tab==='plats');
   document.getElementById('panel-bodega').classList.toggle('active',tab==='bodega');
+  document.getElementById('panel-clients').classList.toggle('active',tab==='clients');
   if(tab==='history')renderHistory();
   if(tab==='plats')renderPlats();
   if(tab==='bodega')renderBodega();
+  if(tab==='clients')renderClients();
 }
 function doDrop(e){e.preventDefault();const f=e.dataTransfer.files[0];if(f)processFile(f);}
 function handleFile(e){const f=e.target.files[0];if(f)processFile(f);}
@@ -907,6 +1000,136 @@ async function deleteBodega(i){
   bodega.splice(i,1);
   await persistBodega();
   renderBodega();
+}
+
+// ── Clients ──────────────────────────────────────────────────────
+let clients=[];
+let clientEditIdx=null;
+
+const ORIGEN_CLASS={
+  'Veí Zaldierna':'vei-zal','Veí Ezcaray':'vei-ezc',
+  'Acompanyant de veí':'acomp','Casa rural':'rural',
+  'RRSS':'rrss','Client Origen':'origen'
+};
+const ORIGEN_ICON={
+  'Veí Zaldierna':'🏘️','Veí Ezcaray':'🏡',
+  'Acompanyant de veí':'👫','Casa rural':'🌿',
+  'RRSS':'📱','Client Origen':'⭐'
+};
+
+async function initClients(){
+  try{
+    const r=await fetch(API+'/clients');
+    if(!r.ok)throw new Error();
+    clients=await r.json();
+  }catch(e){
+    try{const s=localStorage.getItem('xalbi-clients');clients=s?JSON.parse(s):[];}catch(e2){clients=[];}
+  }
+}
+
+async function persistClients(){
+  try{
+    await fetch(API+'/clients',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(clients)});
+  }catch(e){
+    try{localStorage.setItem('xalbi-clients',JSON.stringify(clients));}catch(e2){}
+  }
+}
+
+function renderClients(){
+  const q=(document.getElementById('clients-search').value||'').toLowerCase();
+  const of=document.getElementById('clients-filter').value;
+  let filtered=clients.filter(c=>{
+    if(of&&c.origen!==of)return false;
+    if(!q)return true;
+    return(c.nom+' '+c.cognom+' '+c.email+' '+c.poblacio+' '+c.notes).toLowerCase().includes(q);
+  });
+  const container=document.getElementById('clientsList');
+  if(!clients.length){
+    container.innerHTML='<div class="clients-empty">Cap client registrat. Clica "+ Nou client" per afegir-ne un.</div>';
+    return;
+  }
+  if(!filtered.length){
+    container.innerHTML='<div class="clients-empty">Cap resultat per a la cerca.</div>';
+    return;
+  }
+  const rows=filtered.map(c=>{
+    const ri=clients.indexOf(c);
+    const cls=ORIGEN_CLASS[c.origen]||'origen';
+    const icon=ORIGEN_ICON[c.origen]||'👤';
+    const nomComplet=([c.nom,c.cognom].filter(Boolean).join(' '))||'—';
+    const telLink=c.tel?`<a href="tel:${c.tel}" style="color:inherit;text-decoration:none">${esc(c.tel)}</a>`:'—';
+    const emailLink=c.email?`<a href="mailto:${c.email}" style="color:#1565c0;text-decoration:none">${esc(c.email)}</a>`:'—';
+    return`<tr>
+      <td style="font-weight:500">${esc(nomComplet)}</td>
+      <td>${telLink}</td>
+      <td>${emailLink}</td>
+      <td style="color:#666;font-size:12px">${esc(c.poblacio||'—')}</td>
+      <td>${c.origen?`<span class="origen-pill origen-${cls}">${icon} ${esc(c.origen)}</span>`:'—'}</td>
+      <td class="notes-preview" title="${esc(c.notes||'')}">${esc(c.notes||'—')}</td>
+      <td style="text-align:center;white-space:nowrap">
+        <button class="btn btn-sm btn-edit" style="padding:3px 8px;margin-right:4px" onclick="openClientModal(${ri})">✏️</button>
+        <button class="btn btn-sm btn-danger" style="padding:3px 8px" onclick="deleteClient(${ri})">🗑</button>
+      </td>
+    </tr>`;
+  }).join('');
+  container.innerHTML=`<table class="clients-table">
+    <thead><tr>
+      <th style="width:18%">Nom i cognom</th>
+      <th style="width:13%">Telèfon</th>
+      <th style="width:18%">Email</th>
+      <th style="width:12%">Població</th>
+      <th style="width:15%">Origen</th>
+      <th style="width:16%">Notes</th>
+      <th style="width:8%;text-align:center"></th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+}
+
+function openClientModal(idx){
+  clientEditIdx=(idx!==undefined)?idx:null;
+  document.getElementById('clientModalTitle').textContent=clientEditIdx!==null?'✏️ Editar client':'👤 Nou client';
+  const c=clientEditIdx!==null?clients[clientEditIdx]:{nom:'',cognom:'',tel:'',email:'',poblacio:'',origen:'',notes:''};
+  document.getElementById('cli-nom').value=c.nom||'';
+  document.getElementById('cli-cognom').value=c.cognom||'';
+  document.getElementById('cli-tel').value=c.tel||'';
+  document.getElementById('cli-email').value=c.email||'';
+  document.getElementById('cli-poblacio').value=c.poblacio||'';
+  document.getElementById('cli-origen').value=c.origen||'';
+  document.getElementById('cli-notes').value=c.notes||'';
+  document.getElementById('clientModal').classList.add('show');
+  document.getElementById('cli-nom').focus();
+}
+
+function closeClientModal(){
+  document.getElementById('clientModal').classList.remove('show');
+  clientEditIdx=null;
+}
+
+async function saveClient(){
+  const nom=document.getElementById('cli-nom').value.trim();
+  if(!nom){alert('Afegeix el nom del client.');return;}
+  const client={
+    nom,
+    cognom:document.getElementById('cli-cognom').value.trim(),
+    tel:document.getElementById('cli-tel').value.trim(),
+    email:document.getElementById('cli-email').value.trim(),
+    poblacio:document.getElementById('cli-poblacio').value.trim(),
+    origen:document.getElementById('cli-origen').value,
+    notes:document.getElementById('cli-notes').value.trim(),
+    updated_at:new Date().toISOString()
+  };
+  if(clientEditIdx!==null){clients[clientEditIdx]=client;}else{clients.push(client);}
+  await persistClients();
+  renderClients();
+  closeClientModal();
+}
+
+async function deleteClient(i){
+  if(!confirm('Eliminar aquest client?'))return;
+  clients.splice(i,1);
+  await persistClients();
+  renderClients();
 }
 
 </script>
