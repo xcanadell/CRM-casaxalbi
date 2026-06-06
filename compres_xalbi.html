@@ -1345,15 +1345,16 @@ function renderEventsList(){
     const lloc=ev.lloc||'—';
     const total=(ev.total||0).toFixed(2);
     const dataFmt=ev.data?new Date(ev.data+'T12:00:00').toLocaleDateString('ca-ES',{day:'numeric',month:'long',year:'numeric'}):'Sense data';
-    // plats i vins únics de tots els comensals
-    const platsUnics=[...new Set((ev.comensals||[]).flatMap(c=>c.plats||[]))];
-    const vinsUnics=[...new Set((ev.comensals||[]).flatMap(c=>c.vins||[]))];
-    const platsHtml=platsUnics.length
-      ?platsUnics.map(p=>`<span class="chip" style="font-size:11px">${esc(p)}</span>`).join('')
-      :'';
-    const vinsHtml=vinsUnics.length
-      ?vinsUnics.map(v=>`<span class="chip vi" style="font-size:11px">${esc(v)}</span>`).join('')
-      :'';
+    // plats i vins amb recompte
+    const platCount={},viCount={};
+    (ev.comensals||[]).forEach(c=>{
+      (c.plats||[]).forEach(p=>platCount[p]=(platCount[p]||0)+1);
+      (c.vins||[]).forEach(v=>viCount[v]=(viCount[v]||0)+1);
+    });
+    const platsHtml=Object.entries(platCount)
+      .map(([p,n])=>`<span class="chip" style="font-size:11px">${esc(p)}${n>1?` <strong>×${n}</strong>`:''}</span>`).join('');
+    const vinsHtml=Object.entries(viCount)
+      .map(([v,n])=>`<span class="chip vi" style="font-size:11px">${esc(v)}${n>1?` <strong>×${n}</strong>`:''}</span>`).join('');
     const resumHtml=(platsUnics.length||vinsUnics.length)
       ?`<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px">${platsHtml}${vinsHtml}</div>`
       :'';
