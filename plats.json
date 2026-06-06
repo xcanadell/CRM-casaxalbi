@@ -1,5 +1,36 @@
 [
   {
+    "titol": "Pica pica per cata vins",
+    "descripcio": "",
+    "ingredients": [
+      {
+        "nom": "picos",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "fruits secs",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "formatges",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      }
+    ],
+    "cost_mp": 1,
+    "cost_prod": 0,
+    "cost_total": 1,
+    "updated_at": "2026-06-06T17:26:32.360Z"
+  },
+  {
     "titol": "Ensalada del Huerto Xalbi",
     "descripcio": "Lechuga fresca, burrata cremosa, tomates cherry asados y nísperos caramelizados.",
     "ingredients": [
