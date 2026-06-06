@@ -375,6 +375,11 @@ table.products td input.center{text-align:center} table.products td input.right{
     </div>
     <div class="bodega-search">
       <input type="text" id="clients-search" placeholder="🔍 Cercar per nom, email, població..." oninput="renderClients()">
+      <select id="clients-sort" onchange="renderClients()">
+        <option value="nom_asc">A → Z</option>
+        <option value="nom_desc">Z → A</option>
+        <option value="origen">Per origen</option>
+      </select>
       <select id="clients-filter" onchange="renderClients()">
         <option value="">Tots els orígens</option>
         <option value="Veí Zaldierna">Veí Zaldierna</option>
@@ -396,6 +401,11 @@ table.products td input.center{text-align:center} table.products td input.right{
     </div>
     <div class="bodega-search">
       <input type="text" id="bodega-search" placeholder="🔍 Cercar per nom, denominació..." oninput="renderBodega()">
+      <select id="bodega-sort" onchange="renderBodega()">
+        <option value="nom_asc">A → Z</option>
+        <option value="nom_desc">Z → A</option>
+        <option value="tipus">Per tipus</option>
+      </select>
       <select id="bodega-filter" onchange="renderBodega()">
         <option value="">Tots els tipus</option>
         <option value="Vi blanc">🍋 Vi blanc</option>
@@ -413,7 +423,14 @@ table.products td input.center{text-align:center} table.products td input.right{
   <div id="panel-plats" class="panel">
     <div class="plats-header-row">
       <h2>🍽️ Carta de plats</h2>
-      <button class="btn btn-primary" onclick="openPlatModal()">+ Nou plat</button>
+      <div style="display:flex;gap:8px;align-items:center">
+        <select id="plats-sort" onchange="renderPlats()" style="padding:7px 10px;border:1px solid #ddd;border-radius:8px;font-size:12px;font-family:inherit;background:#fff">
+          <option value="ordre">Ordre d'entrada</option>
+          <option value="nom_asc">A → Z</option>
+          <option value="nom_desc">Z → A</option>
+        </select>
+        <button class="btn btn-primary" onclick="openPlatModal()">+ Nou plat</button>
+      </div>
     </div>
     <div id="platsList"></div>
   </div>
@@ -885,7 +902,13 @@ async function persistPlats(){
 function renderPlats(){
   const list=document.getElementById('platsList');
   if(!plats.length){list.innerHTML='<div class="plat-empty">Cap plat registrat. Clica "+ Nou plat" per afegir-ne un.</div>';return;}
-  list.innerHTML=plats.map((p,i)=>{
+  const sort=document.getElementById('plats-sort')?.value||'ordre';
+  const sorted=[...plats].map((p,i)=>({...p,_i:i})).sort((a,b)=>{
+    if(sort==='nom_asc')return(a.titol||'').localeCompare(b.titol||'','ca',{sensitivity:'base'});
+    if(sort==='nom_desc')return(b.titol||'').localeCompare(a.titol||'','ca',{sensitivity:'base'});
+    return 0; // ordre d'entrada
+  });
+  list.innerHTML=sorted.map((p,i)=>{const ri=p._i;
     const ings=(p.ingredients||[]).map(ing=>`
       <tr>
         <td style="font-size:12px;padding:4px 6px">${esc(ing.nom)}</td>
@@ -920,8 +943,8 @@ function renderPlats(){
         </table>`:'<div style="color:#aaa;font-size:13px;margin-bottom:8px">Sense ingredients registrats</div>'}
         <div style="display:flex;justify-content:space-between;margin-top:12px;align-items:center">
           <div style="display:flex;gap:8px">
-            <button class="btn btn-sm btn-danger" onclick="deletePlat(${i})">🗑 Eliminar</button>
-            <button class="btn btn-sm btn-edit" onclick="openPlatModal(${i})">✏️ Editar</button>
+            <button class="btn btn-sm btn-danger" onclick="deletePlat(${ri})">🗑 Eliminar</button>
+            <button class="btn btn-sm btn-edit" onclick="openPlatModal(${ri})">✏️ Editar</button>
           </div>
           <div style="font-size:12px;color:#888">
             🥕 MP: <strong>${fmt(p.cost_mp)} €</strong> &nbsp;·&nbsp;
@@ -1053,10 +1076,16 @@ async function persistBodega(){
 function renderBodega(){
   const q=(document.getElementById('bodega-search').value||'').toLowerCase();
   const tf=document.getElementById('bodega-filter').value;
+  const sort=document.getElementById('bodega-sort')?.value||'nom_asc';
   let filtered=bodega.filter(v=>{
     if(tf&&v.tipus!==tf)return false;
     if(!q)return true;
     return(v.nom+v.do+v.tipus).toLowerCase().includes(q);
+  });
+  filtered.sort((a,b)=>{
+    if(sort==='nom_desc')return(b.nom||'').localeCompare(a.nom||'','ca',{sensitivity:'base'});
+    if(sort==='tipus')return(a.tipus||'').localeCompare(b.tipus||'','ca',{sensitivity:'base'})||(a.nom||'').localeCompare(b.nom||'','ca',{sensitivity:'base'});
+    return(a.nom||'').localeCompare(b.nom||'','ca',{sensitivity:'base'}); // nom_asc per defecte
   });
   const container=document.getElementById('bodegaList');
   if(!bodega.length){
@@ -1213,10 +1242,16 @@ async function persistClients(){
 function renderClients(){
   const q=(document.getElementById('clients-search').value||'').toLowerCase();
   const of=document.getElementById('clients-filter').value;
+  const sort=document.getElementById('clients-sort')?.value||'nom_asc';
   let filtered=clients.filter(c=>{
     if(of&&c.origen!==of)return false;
     if(!q)return true;
     return(c.nom+' '+c.cognom+' '+c.email+' '+c.poblacio+' '+c.notes).toLowerCase().includes(q);
+  });
+  filtered.sort((a,b)=>{
+    if(sort==='nom_desc')return(b.nom||'').localeCompare(a.nom||'','ca',{sensitivity:'base'});
+    if(sort==='origen')return(a.origen||'').localeCompare(b.origen||'','ca',{sensitivity:'base'})||(a.nom||'').localeCompare(b.nom||'','ca',{sensitivity:'base'});
+    return(a.nom||'').localeCompare(b.nom||'','ca',{sensitivity:'base'}); // nom_asc per defecte
   });
   const container=document.getElementById('clientsList');
   if(!clients.length){
