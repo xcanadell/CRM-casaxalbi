@@ -1,5 +1,49 @@
 [
   {
+    "data": "2026-05-02",
+    "lloc": "Casa Xalbi",
+    "notes": "",
+    "comensals": [
+      {
+        "nom": "Koldo",
+        "preu_menjar": 30,
+        "preu_beguda": 15,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Karmele",
+        "preu_menjar": 30,
+        "preu_beguda": 15,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Amic Koldo i Karmele",
+        "preu_menjar": 30,
+        "preu_beguda": 15,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      },
+      {
+        "nom": "Amiga Koldo i Karmele",
+        "preu_menjar": 30,
+        "preu_beguda": 15,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "notes": ""
+      }
+    ],
+    "total": 180
+  },
+  {
     "data": "2026-05-01",
     "lloc": "Casa Xalbi",
     "notes": "",
