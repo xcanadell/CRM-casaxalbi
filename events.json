@@ -187,7 +187,11 @@
           "Naturaleza Salvaje (2020)",
           "Colet Gran Cuvée Rosé (2019)"
         ],
-        "notes": "Gintonic gordons"
+        "notes": "Gintonic gordons",
+        "varios": [
+          "Pan",
+          "Combinado"
+        ]
       },
       {
         "nom": "Sara",
@@ -211,7 +215,10 @@
           "Naturaleza Salvaje (2020)",
           "Colet Gran Cuvée Rosé (2019)"
         ],
-        "notes": ""
+        "notes": "",
+        "varios": [
+          "Pan"
+        ]
       },
       {
         "nom": "Angel",
@@ -234,7 +241,11 @@
           "Naturaleza Salvaje (2020)",
           "Colet Gran Cuvée Rosé (2019)"
         ],
-        "notes": "Gintonic Gordons"
+        "notes": "Gintonic Gordons",
+        "varios": [
+          "Pan",
+          "Gintonic"
+        ]
       },
       {
         "nom": "Laura",
@@ -257,7 +268,10 @@
           "Naturaleza Salvaje (2020)",
           "Colet Gran Cuvée Rosé (2019)"
         ],
-        "notes": ""
+        "notes": "",
+        "varios": [
+          "Pan"
+        ]
       },
       {
         "nom": "Jose Maria (Txema)",
@@ -280,7 +294,11 @@
           "Naturaleza Salvaje (2020)",
           "Colet Gran Cuvée Rosé (2019)"
         ],
-        "notes": "Jack Daniels - Va menjar 2 carrilleres"
+        "notes": "Jack Daniels - Va menjar 2 carrilleres",
+        "varios": [
+          "Pan",
+          "Licor solo"
+        ]
       },
       {
         "nom": "Javi",
@@ -303,7 +321,11 @@
           "Naturaleza Salvaje (2020)",
           "Colet Gran Cuvée Rosé (2019)"
         ],
-        "notes": "Jack Daniels"
+        "notes": "Jack Daniels",
+        "varios": [
+          "Pan",
+          "Licor solo"
+        ]
       },
       {
         "nom": "Noe",
@@ -326,7 +348,11 @@
           "Naturaleza Salvaje (2020)",
           "Colet Gran Cuvée Rosé (2019)"
         ],
-        "notes": "Gintonic Gordons"
+        "notes": "Gintonic Gordons",
+        "varios": [
+          "Pan",
+          "Gintonic"
+        ]
       },
       {
         "nom": "Javier",
@@ -349,7 +375,11 @@
           "Naturaleza Salvaje (2020)",
           "Colet Gran Cuvée Rosé (2019)"
         ],
-        "notes": "Gintoninc Gordons"
+        "notes": "Gintoninc Gordons",
+        "varios": [
+          "Pan",
+          "Gintonic"
+        ]
       },
       {
         "nom": "Rocio",
@@ -372,7 +402,10 @@
           "Naturaleza Salvaje (2020)",
           "Colet Gran Cuvée Rosé (2019)"
         ],
-        "notes": "No copas 5 propina"
+        "notes": "No copas 5 propina",
+        "varios": [
+          "Pan"
+        ]
       }
     ],
     "total": 530
