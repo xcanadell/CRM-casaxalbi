@@ -219,6 +219,13 @@ table.products td input.center{text-align:center} table.products td input.right{
 .picker-item input[type=checkbox]{width:16px;height:16px;cursor:pointer;flex-shrink:0}
 .picker-search{width:100%;padding:7px 10px;border:1px solid #ddd;border-radius:7px;font-size:13px;font-family:inherit;outline:none;margin-bottom:4px}
 .picker-search:focus{border-color:#1a1a1a}
+/* ── Varios ── */
+.varios-table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid #e0e0e0;font-size:13px}
+.varios-table th{text-align:left;color:#888;font-weight:500;font-size:11px;padding:10px 14px;border-bottom:2px solid #eee;background:#fafafa}
+.varios-table td{padding:10px 14px;border-bottom:1px solid #f5f5f5;vertical-align:middle}
+.varios-table tr:last-child td{border-bottom:none}
+.varios-table tr:hover td{background:#fafafa}
+.varios-empty{text-align:center;padding:40px 20px;color:#aaa}
 /* ── Clients ── */
 .clients-table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid #e0e0e0;font-size:13px}
 .clients-table th{text-align:left;color:#888;font-weight:500;font-size:11px;padding:10px 12px;border-bottom:2px solid #eee;background:#fafafa;white-space:nowrap}
@@ -246,6 +253,7 @@ table.products td input.center{text-align:center} table.products td input.right{
     <button class="tab active" onclick="showTab('dashboard')">📊 Dashboard</button>
     <button class="tab" onclick="showTab('events')">📅 Esdeveniments</button>
     <button class="tab" onclick="showTab('bodega')">🍷 Bodega</button>
+    <button class="tab" onclick="showTab('varios')">🧂 Altres</button>
     <button class="tab" onclick="showTab('plats')">🍽️ Plats</button>
     <button class="tab" onclick="showTab('clients')">👥 Clients</button>
     <button class="tab" onclick="showTab('history')">🛒 Compres</button>
@@ -449,6 +457,15 @@ table.products td input.center{text-align:center} table.products td input.right{
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Panel Varios -->
+  <div id="panel-varios" class="panel">
+    <div class="plats-header-row">
+      <h2>🧂 Altres (cafès, pa, copes...)</h2>
+      <button class="btn btn-primary" onclick="openVariosModal()">+ Nou article</button>
+    </div>
+    <div id="variosList"></div>
   </div>
 
   <!-- Panel Clients -->
@@ -657,6 +674,48 @@ table.products td input.center{text-align:center} table.products td input.right{
   </div>
 </div>
 
+<!-- Modal Varios -->
+<div class="modal-overlay" id="variosModal" onclick="if(event.target===this)closeVariosModal()">
+  <div class="modal-box" style="max-width:440px">
+    <h2 id="variosModalTitle">🧂 Nou article</h2>
+    <div class="modal-field">
+      <label>Nom</label>
+      <input id="var-nom" placeholder="Ex: Cafè, Pa, Copa extra...">
+    </div>
+    <div class="modal-field">
+      <label>Descripció (opcional)</label>
+      <input id="var-desc" placeholder="Detalls...">
+    </div>
+    <div class="modal-grid-2" style="margin-bottom:4px">
+      <div class="modal-field">
+        <label>Preu cost (€)</label>
+        <input id="var-cost" type="number" step="0.01" min="0" placeholder="0.00">
+      </div>
+      <div class="modal-field">
+        <label>P.V.P (€)</label>
+        <input id="var-pvp" type="number" step="0.01" min="0" placeholder="0.00">
+      </div>
+    </div>
+    <div class="modal-footer" style="margin-top:14px">
+      <button class="btn btn-danger btn-sm" onclick="closeVariosModal()">Cancel·lar</button>
+      <button class="btn btn-primary" onclick="saveVarios()">💾 Desar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal picker Varios per event -->
+<div class="modal-overlay" id="variosPickerModal" onclick="if(event.target===this)closeVariosPicker()">
+  <div class="modal-box" style="max-width:440px">
+    <h2>🧂 Seleccionar articles</h2>
+    <input class="picker-search" id="variosPickerSearch" placeholder="🔍 Cercar..." oninput="filterVariosPicker()">
+    <div class="picker-list" id="variosPickerList"></div>
+    <div class="modal-footer" style="margin-top:12px">
+      <button class="btn btn-sm btn-danger" onclick="closeVariosPicker()">Cancel·lar</button>
+      <button class="btn btn-primary btn-sm" onclick="confirmVariosPicker()">Confirmar</button>
+    </div>
+  </div>
+</div>
+
 <!-- Modal Client -->
 <div class="modal-overlay" id="clientModal" onclick="if(event.target===this)closeClientModal()">
   <div class="modal-box" style="max-width:560px">
@@ -772,6 +831,7 @@ async function init(){
   await initBodega();
   await initClients();
   await initEvents();
+  await initVarios();
   renderHistory();showTab('dashboard');
 }
 
@@ -794,14 +854,15 @@ function saveApiKey(){localStorage.setItem('xalbi_apikey',document.getElementByI
 function getApiKey(){return document.getElementById('apiKeyInput').value.trim();}
 let imgB64=null,imgMime='image/jpeg';
 function showTab(tab){
-  const tabs=['dashboard','events','bodega','plats','clients','history'];
+  const tabs=['dashboard','events','bodega','varios','plats','clients','history'];
   document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',tabs[i]===tab));
-  ['dashboard','events','bodega','plats','clients','history'].forEach(p=>
+  ['dashboard','events','bodega','varios','plats','clients','history'].forEach(p=>
     document.getElementById('panel-'+p).classList.toggle('active',tab===p));
   if(tab==='dashboard')renderDashboard();
   if(tab==='history')renderHistory();
   if(tab==='plats')renderPlats();
   if(tab==='bodega')renderBodega();
+  if(tab==='varios')renderVarios();
   if(tab==='clients')renderClients();
   if(tab==='events')renderEventsList();
 }
@@ -1556,6 +1617,7 @@ function renderComensals(){
     const sub=((parseFloat(c.preu_menjar)||0)+(parseFloat(c.preu_beguda)||0)+(parseFloat(c.preu_altres)||0)).toFixed(2);
     const platsChips=(c.plats||[]).map((p,pi)=>`<span class="chip">${esc(p)}<span class="chip-del" onclick="removeComensalPlat(${i},${pi})">✕</span></span>`).join('');
     const vinsChips=(c.vins||[]).map((v,vi)=>`<span class="chip vi">${esc(v)}<span class="chip-del" onclick="removeComensalVi(${i},${vi})">✕</span></span>`).join('');
+    const variosChips=(c.varios||[]).map((va,vai)=>`<span class="chip" style="background:#fff3e0;color:#e65100;border-color:#ffcc80">${esc(va)}<span class="chip-del" onclick="removeComensalVari(${i},${vai})">✕</span></span>`).join('');
     return`<div class="comensal-card" id="com-card-${i}">
       <div class="comensal-header" onclick="toggleComensal(${i})">
         <div>
@@ -1580,6 +1642,10 @@ function renderComensals(){
         <div class="chips-area">
           <label>🍷 Vins</label>
           <div class="chips-wrap">${vinsChips}<button class="chip-add" onclick="openViPicker(${i})">+ Afegir vi</button></div>
+        </div>
+        <div class="chips-area">
+          <label>🧂 Altres (cafès, pa...)</label>
+          <div class="chips-wrap">${variosChips}<button class="chip-add" onclick="openVariosPicker(${i})">+ Afegir article</button></div>
         </div>
         <div class="comensal-notes"><label style="font-size:11px;color:#888;display:block;margin-bottom:3px">Notes</label><input type="text" placeholder="Observacions..." value="${esc(c.notes||'')}" oninput="updateComensalNotes(${i},this.value)"></div>
       </div>
@@ -1612,6 +1678,10 @@ function removeComensalPlat(ci,pi){
 
 function removeComensalVi(ci,vi){
   currentEvent.comensals[ci].vins.splice(vi,1);
+  renderComensals();
+}
+function removeComensalVari(ci,vai){
+  currentEvent.comensals[ci].varios.splice(vai,1);
   renderComensals();
 }
 
@@ -1712,7 +1782,7 @@ function addComensalFromClient(idx){
   const c=clients[idx];
   const nom=(c.nom+' '+(c.cognom||'')).trim();
   currentEvent.comensals=currentEvent.comensals||[];
-  currentEvent.comensals.push({nom,preu_menjar:0,preu_beguda:0,preu_altres:0,plats:[],vins:[],notes:''});
+  currentEvent.comensals.push({nom,preu_menjar:0,preu_beguda:0,preu_altres:0,plats:[],vins:[],varios:[],notes:''});
   closeClientPicker();
   renderComensals();
   updateBilling();
@@ -1844,6 +1914,126 @@ function renderDashboard(){
       </tr>`;
     }).join('')}</tbody>
   </table>`;
+}
+
+// ── Varios ────────────────────────────────────────────────────────
+let varios=[];
+let variosEditIdx=null;
+
+async function initVarios(){
+  try{
+    const r=await fetch(API+'/varios');
+    if(!r.ok)throw new Error();
+    varios=await r.json();
+  }catch(e){
+    try{const s=localStorage.getItem('xalbi-varios');varios=s?JSON.parse(s):[];}catch(e2){varios=[];}
+  }
+}
+
+async function persistVarios(){
+  try{
+    await fetch(API+'/varios',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(varios)});
+  }catch(e){
+    try{localStorage.setItem('xalbi-varios',JSON.stringify(varios));}catch(e2){}
+  }
+}
+
+function renderVarios(){
+  const el=document.getElementById('variosList');
+  if(!varios.length){
+    el.innerHTML='<div class="varios-empty">Cap article registrat. Clica "+ Nou article" per afegir-ne un.<br><br><small style="color:#bbb">Exemples: Cafè, Pa, Copa extra, Còctel...</small></div>';
+    return;
+  }
+  const sorted=[...varios].sort((a,b)=>(a.nom||'').localeCompare(b.nom||'','ca',{sensitivity:'base'}));
+  el.innerHTML=`<table class="varios-table">
+    <thead><tr>
+      <th style="width:35%">Article</th>
+      <th style="width:35%">Descripció</th>
+      <th style="width:12%;text-align:right">Cost</th>
+      <th style="width:12%;text-align:right">P.V.P</th>
+      <th style="width:6%;text-align:center"></th>
+    </tr></thead>
+    <tbody>${sorted.map(v=>{
+      const ri=varios.indexOf(v);
+      return`<tr>
+        <td style="font-weight:500">${esc(v.nom||'—')}</td>
+        <td style="color:#888;font-size:12px">${esc(v.desc||'—')}</td>
+        <td style="text-align:right">${v.cost?v.cost.toFixed(2)+' €':'—'}</td>
+        <td style="text-align:right;font-weight:600">${v.pvp?v.pvp.toFixed(2)+' €':'—'}</td>
+        <td style="text-align:center;white-space:nowrap">
+          <button class="btn btn-sm btn-edit" style="padding:3px 8px;margin-right:4px" onclick="openVariosModal(${ri})">✏️</button>
+          <button class="btn btn-sm btn-danger" style="padding:3px 8px" onclick="deleteVarios(${ri})">🗑</button>
+        </td>
+      </tr>`;
+    }).join('')}</tbody>
+  </table>`;
+}
+
+function openVariosModal(idx){
+  variosEditIdx=(idx!==undefined)?idx:null;
+  document.getElementById('variosModalTitle').textContent=variosEditIdx!==null?'✏️ Editar article':'🧂 Nou article';
+  const v=variosEditIdx!==null?varios[variosEditIdx]:{nom:'',desc:'',cost:'',pvp:''};
+  document.getElementById('var-nom').value=v.nom||'';
+  document.getElementById('var-desc').value=v.desc||'';
+  document.getElementById('var-cost').value=v.cost||'';
+  document.getElementById('var-pvp').value=v.pvp||'';
+  document.getElementById('variosModal').classList.add('show');
+  document.getElementById('var-nom').focus();
+}
+
+function closeVariosModal(){
+  document.getElementById('variosModal').classList.remove('show');
+  variosEditIdx=null;
+}
+
+async function saveVarios(){
+  const nom=document.getElementById('var-nom').value.trim();
+  if(!nom){alert('Afegeix el nom de l\'article.');return;}
+  const item={
+    nom,
+    desc:document.getElementById('var-desc').value.trim(),
+    cost:parseFloat(document.getElementById('var-cost').value)||0,
+    pvp:parseFloat(document.getElementById('var-pvp').value)||0,
+    updated_at:new Date().toISOString()
+  };
+  if(variosEditIdx!==null){varios[variosEditIdx]=item;}else{varios.push(item);}
+  await persistVarios();
+  renderVarios();
+  closeVariosModal();
+}
+
+async function deleteVarios(i){
+  if(!confirm('Eliminar aquest article?'))return;
+  varios.splice(i,1);
+  await persistVarios();
+  renderVarios();
+}
+
+// ── Varios picker (per events) ──
+function openVariosPicker(comensalIdx){
+  pickerComensalIdx=comensalIdx;
+  document.getElementById('variosPickerSearch').value='';
+  filterVariosPicker();
+  document.getElementById('variosPickerModal').classList.add('show');
+}
+function closeVariosPicker(){document.getElementById('variosPickerModal').classList.remove('show');pickerComensalIdx=null;}
+function filterVariosPicker(){
+  const q=document.getElementById('variosPickerSearch').value.toLowerCase();
+  const sel=new Set((currentEvent.comensals[pickerComensalIdx]?.varios)||[]);
+  const items=varios.filter(v=>!q||(v.nom||'').toLowerCase().includes(q));
+  document.getElementById('variosPickerList').innerHTML=items.length
+    ?items.map(v=>`<label class="picker-item">
+        <input type="checkbox" value="${esc(v.nom)}" ${sel.has(v.nom)?'checked':''}>
+        <span style="flex:1">${esc(v.nom)}${v.desc?` <span style="color:#aaa;font-size:11px">· ${esc(v.desc)}</span>`:''}</span>
+        ${v.pvp?`<span style="font-size:12px;font-weight:600;color:#1565c0">${v.pvp.toFixed(2)} €</span>`:''}
+      </label>`).join('')
+    :'<div style="padding:20px;text-align:center;color:#aaa">Sense articles. Afegeix-ne a la secció Altres.</div>';
+}
+function confirmVariosPicker(){
+  const checked=[...document.querySelectorAll('#variosPickerList input:checked')].map(i=>i.value);
+  currentEvent.comensals[pickerComensalIdx].varios=checked;
+  closeVariosPicker();
+  renderComensals();
 }
 
 </script>
