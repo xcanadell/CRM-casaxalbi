@@ -89,7 +89,11 @@
         "vins": [
           "Temerario Garnacha Viñas Viejas (2024)"
         ],
-        "notes": ""
+        "notes": "",
+        "varios": [
+          "Pan",
+          "Xupito"
+        ]
       },
       {
         "nom": "Hermana Juan A",
@@ -107,7 +111,10 @@
         "vins": [
           "Temerario Garnacha Viñas Viejas (2024)"
         ],
-        "notes": ""
+        "notes": "",
+        "varios": [
+          "Pan"
+        ]
       },
       {
         "nom": "Hermana Juan B",
@@ -125,7 +132,10 @@
         "vins": [
           "Temerario Garnacha Viñas Viejas (2024)"
         ],
-        "notes": ""
+        "notes": "",
+        "varios": [
+          "Pan"
+        ]
       },
       {
         "nom": "Leire",
@@ -143,7 +153,10 @@
         "vins": [
           "Temerario Garnacha Viñas Viejas (2024)"
         ],
-        "notes": ""
+        "notes": "",
+        "varios": [
+          "Pan"
+        ]
       }
     ],
     "total": 168
