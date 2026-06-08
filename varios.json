@@ -33,5 +33,12 @@
     "cost": 2.5,
     "pvp": 6,
     "updated_at": "2026-06-08T19:41:34.713Z"
+  },
+  {
+    "nom": "Licor solo",
+    "desc": "",
+    "cost": 1.5,
+    "pvp": 5,
+    "updated_at": "2026-06-08T19:42:02.055Z"
   }
 ]
