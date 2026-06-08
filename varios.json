@@ -26,5 +26,12 @@
     "cost": 1,
     "pvp": 3,
     "updated_at": "2026-06-08T19:41:02.265Z"
+  },
+  {
+    "nom": "Combinado",
+    "desc": "",
+    "cost": 2.5,
+    "pvp": 6,
+    "updated_at": "2026-06-08T19:41:34.713Z"
   }
 ]
