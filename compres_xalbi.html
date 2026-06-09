@@ -1524,17 +1524,20 @@ function renderEventsList(){
     const total=(ev.total||0).toFixed(2);
     const dataFmt=ev.data?new Date(ev.data+'T12:00:00').toLocaleDateString('ca-ES',{day:'numeric',month:'long',year:'numeric'}):'Sense data';
     // plats i vins amb recompte
-    const platCount={},viCount={};
+    const platCount={},viCount={},variCount={};
     (ev.comensals||[]).forEach(c=>{
       (c.plats||[]).forEach(p=>platCount[p]=(platCount[p]||0)+1);
       (c.vins||[]).forEach(v=>viCount[v]=(viCount[v]||0)+1);
+      (c.varios||[]).forEach(va=>variCount[va]=(variCount[va]||0)+1);
     });
     const platsHtml=Object.entries(platCount)
       .map(([p,n])=>`<span class="chip" style="font-size:11px">${esc(p)}${n>1?` <strong>×${n}</strong>`:''}</span>`).join('');
-    const vinsHtml=Object.entries(viCount)
-      .map(([v,n])=>`<span class="chip vi" style="font-size:11px">${esc(v)}${n>1?' <strong>×'+n+'</strong>':''}</span>`).join('');
-    const resumHtml=(Object.keys(platCount).length||Object.keys(viCount).length)
-      ?`<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px">${platsHtml}${vinsHtml}</div>`
+    const vinsHtml=Object.keys(viCount)
+      .map(v=>`<span class="chip vi" style="font-size:11px">${esc(v)}</span>`).join('');
+    const variosHtml=Object.entries(variCount)
+      .map(([va,n])=>`<span class="chip" style="font-size:11px;background:#fff3e0;color:#e65100;border-color:#ffcc80">${esc(va)}${n>1?` <strong>×${n}</strong>`:''}</span>`).join('');
+    const resumHtml=(Object.keys(platCount).length||Object.keys(viCount).length||Object.keys(variCount).length)
+      ?`<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px">${platsHtml}${vinsHtml}${variosHtml}</div>`
       :'';
     return`<div class="ev-list-card" onclick="openEventEditor(${ri})" style="flex-direction:column;align-items:stretch;gap:8px">
       <div style="display:flex;justify-content:space-between;align-items:center">
