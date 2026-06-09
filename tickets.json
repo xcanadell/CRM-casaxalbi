@@ -1,5 +1,52 @@
 [
   {
+    "establiment": "SUPER BAZAR MICRO VECINO",
+    "tipus": "Supermercat/Bazar",
+    "data": "09/06/2026",
+    "adreca": "C/SAN FELIPE NERI 2-4, 26280 EZCARAY (LA RIOJA)",
+    "nif": "Y1840985X",
+    "telefon": "622837543",
+    "productes": [
+      {
+        "descripcio": "Pintura blanca",
+        "quantitat": 1,
+        "preu_unitari": 2.35,
+        "total": 2.35,
+        "us": "Gastro XP"
+      },
+      {
+        "descripcio": "Retulador daurat",
+        "quantitat": 1,
+        "preu_unitari": 3.25,
+        "total": 3.25,
+        "us": "Gastro XP"
+      },
+      {
+        "descripcio": "Pinsells",
+        "quantitat": 1,
+        "preu_unitari": 3.65,
+        "total": 3.65,
+        "us": "Gastro XP"
+      },
+      {
+        "descripcio": "Cola blanca",
+        "quantitat": 1,
+        "preu_unitari": 4.5,
+        "total": 4.5,
+        "us": "Gastro XP"
+      },
+      {
+        "descripcio": "Pot 3 litres",
+        "quantitat": 1,
+        "preu_unitari": 8.5,
+        "total": 8.5,
+        "us": "Gastro XP"
+      }
+    ],
+    "total": 22.25,
+    "saved_at": "2026-06-09T20:39:24.590Z"
+  },
+  {
     "establiment": "BM",
     "tipus": "Alimentació i Drogueria",
     "data": "09/06/2026",
