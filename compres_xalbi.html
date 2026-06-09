@@ -891,7 +891,10 @@ async function analyzeTicket(){
     const resp=await fetch(API+"/analyze",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({api_key:k,payload:{model:"claude-opus-4-5",max_tokens:2000,messages:[{role:"user",content:[{type:"image",source:{type:"base64",media_type:imgMime,data:imgB64}},{type:"text",text:prompt}]}]}})});
     if(!resp.ok){const e=await resp.json();throw new Error(e.error||'Error API');}
     const data=await resp.json();const text=data.content.map(i=>i.text||'').join('');
-    const result=JSON.parse(text.replace(/```json|```/g,'').trim());
+    // Extreure el JSON tant si ve pur com dins de ```json ... ```
+    const jsonMatch=text.match(/```(?:json)?\s*([\s\S]*?)```/);
+    const jsonStr=jsonMatch?jsonMatch[1].trim():text.trim();
+    const result=JSON.parse(jsonStr);
     populateResult(result);setStatus('✓ Analitzat','success');
   }catch(err){setStatus('Error: '+err.message,'error');}
   btn.disabled=false;
