@@ -13,6 +13,7 @@ Servidor local per a Compres Casa Xalbi.
 import json
 import os
 import subprocess
+import urllib.request
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 PORT = 8765
@@ -82,6 +83,32 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
+        if self.path == "/analyze":
+            # Proxy cap a l'API d'Anthropic per evitar CORS
+            api_key = data.get("api_key", "")
+            payload = data.get("payload", {})
+            try:
+                req_body = json.dumps(payload).encode("utf-8")
+                req = urllib.request.Request(
+                    "https://api.anthropic.com/v1/messages",
+                    data=req_body,
+                    headers={
+                        "Content-Type": "application/json",
+                        "x-api-key": api_key,
+                        "anthropic-version": "2023-06-01",
+                    },
+                    method="POST"
+                )
+                with urllib.request.urlopen(req) as res:
+                    result = json.loads(res.read().decode("utf-8"))
+                self.send_json(200, result)
+            except urllib.error.HTTPError as e:
+                err_body = e.read().decode("utf-8")
+                self.send_json(e.code, {"error": err_body})
+            except Exception as e:
+                self.send_json(500, {"error": str(e)})
+            return
+
         if self.path == "/tickets":
             self.send_json(200, read_json(TICKETS_FILE))
         elif self.path == "/plats":

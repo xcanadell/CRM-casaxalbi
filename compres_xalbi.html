@@ -888,8 +888,8 @@ async function analyzeTicket(){
   const btn=document.getElementById('analyzeBtn');btn.disabled=true;setStatus('Analitzant...','loading');
   const prompt=`Analitza aquest ticket i extreu les dades en JSON. Respon ÚNICAMENT amb el JSON, sense markdown.\nFormat: {"establiment":"","tipus":"","data":"dd/mm/aaaa","adreca":"","nif":"","telefon":"","productes":[{"descripcio":"","quantitat":1,"preu_unitari":0.00,"total":0.00}],"total":0.00}\nRegles: preus sense €, inclou TOTS els productes.`;
   try{
-    const resp=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json","x-api-key":k,"anthropic-version":"2023-06-01"},body:JSON.stringify({model:"claude-opus-4-5",max_tokens:2000,messages:[{role:"user",content:[{type:"image",source:{type:"base64",media_type:imgMime,data:imgB64}},{type:"text",text:prompt}]}]})});
-    if(!resp.ok){const e=await resp.json();throw new Error(e.error?.message||'Error API');}
+    const resp=await fetch(API+"/analyze",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({api_key:k,payload:{model:"claude-opus-4-5",max_tokens:2000,messages:[{role:"user",content:[{type:"image",source:{type:"base64",media_type:imgMime,data:imgB64}},{type:"text",text:prompt}]}]}})});
+    if(!resp.ok){const e=await resp.json();throw new Error(e.error||'Error API');}
     const data=await resp.json();const text=data.content.map(i=>i.text||'').join('');
     const result=JSON.parse(text.replace(/```json|```/g,'').trim());
     populateResult(result);setStatus('✓ Analitzat','success');
