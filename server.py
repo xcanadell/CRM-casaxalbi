@@ -12,6 +12,7 @@ Servidor local per a Compres Casa Xalbi.
 
 import json
 import os
+import ssl
 import subprocess
 import urllib.request
 from http.server import BaseHTTPRequestHandler, HTTPServer
@@ -136,7 +137,10 @@ class Handler(BaseHTTPRequestHandler):
                     },
                     method="POST"
                 )
-                with urllib.request.urlopen(req) as res:
+                ctx = ssl.create_default_context()
+                ctx.check_hostname = False
+                ctx.verify_mode = ssl.CERT_NONE
+                with urllib.request.urlopen(req, context=ctx) as res:
                     raw = res.read().decode("utf-8")
                     print(f"[analyze] resposta API (primers 300 cars): {raw[:300]}")
                     result = json.loads(raw)
