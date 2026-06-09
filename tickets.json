@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "BM",
+    "tipus": "Alimentació i Drogueria",
+    "data": "09/06/2026",
+    "adreca": "C/Sagastia 28 B, 26280 Ezcaray",
+    "nif": "B26516799",
+    "telefon": "900 555 300",
+    "productes": [
+      {
+        "descripcio": "Choc. Valor Puro Almendra 250",
+        "quantitat": 1,
+        "preu_unitari": 5.25,
+        "total": 5.25,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Bonito Ortiz Eche 112G Lito",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Jabon Lixone Glicerina 3 Pas",
+        "quantitat": 1,
+        "preu_unitari": 3.33,
+        "total": 3.33,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 12.52,
+    "saved_at": "2026-06-09T20:34:33.699Z"
+  },
+  {
     "establiment": "Lupa Supermercat",
     "tipus": "Supermercat",
     "data": "12/03/2026",
