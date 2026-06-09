@@ -1531,8 +1531,8 @@ function renderEventsList(){
     });
     const platsHtml=Object.entries(platCount)
       .map(([p,n])=>`<span class="chip" style="font-size:11px">${esc(p)}${n>1?` <strong>×${n}</strong>`:''}</span>`).join('');
-    const vinsHtml=Object.keys(viCount)
-      .map(v=>`<span class="chip vi" style="font-size:11px">${esc(v)}</span>`).join('');
+    const vinsHtml=Object.entries(viCount)
+      .map(([v,n])=>`<span class="chip vi" style="font-size:11px">${esc(v)}${n>1?' <strong>×'+n+'</strong>':''}</span>`).join('');
     const resumHtml=(Object.keys(platCount).length||Object.keys(viCount).length)
       ?`<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px">${platsHtml}${vinsHtml}</div>`
       :'';
