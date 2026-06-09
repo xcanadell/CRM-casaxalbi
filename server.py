@@ -83,32 +83,6 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
-        if self.path == "/analyze":
-            # Proxy cap a l'API d'Anthropic per evitar CORS
-            api_key = data.get("api_key", "")
-            payload = data.get("payload", {})
-            try:
-                req_body = json.dumps(payload).encode("utf-8")
-                req = urllib.request.Request(
-                    "https://api.anthropic.com/v1/messages",
-                    data=req_body,
-                    headers={
-                        "Content-Type": "application/json",
-                        "x-api-key": api_key,
-                        "anthropic-version": "2023-06-01",
-                    },
-                    method="POST"
-                )
-                with urllib.request.urlopen(req) as res:
-                    result = json.loads(res.read().decode("utf-8"))
-                self.send_json(200, result)
-            except urllib.error.HTTPError as e:
-                err_body = e.read().decode("utf-8")
-                self.send_json(e.code, {"error": err_body})
-            except Exception as e:
-                self.send_json(500, {"error": str(e)})
-            return
-
         if self.path == "/tickets":
             self.send_json(200, read_json(TICKETS_FILE))
         elif self.path == "/plats":
@@ -144,6 +118,34 @@ class Handler(BaseHTTPRequestHandler):
             data = json.loads(body.decode("utf-8"))
         except Exception as e:
             self.send_json(400, {"ok": False, "error": str(e)})
+            return
+
+        if self.path == "/analyze":
+            # Proxy cap a l'API d'Anthropic per evitar CORS
+            api_key = data.get("api_key", "")
+            payload = data.get("payload", {})
+            try:
+                req_body = json.dumps(payload).encode("utf-8")
+                req = urllib.request.Request(
+                    "https://api.anthropic.com/v1/messages",
+                    data=req_body,
+                    headers={
+                        "Content-Type": "application/json",
+                        "x-api-key": api_key,
+                        "anthropic-version": "2023-06-01",
+                    },
+                    method="POST"
+                )
+                with urllib.request.urlopen(req) as res:
+                    raw = res.read().decode("utf-8")
+                    print(f"[analyze] resposta API (primers 300 cars): {raw[:300]}")
+                    result = json.loads(raw)
+                self.send_json(200, result)
+            except urllib.error.HTTPError as e:
+                err_body = e.read().decode("utf-8")
+                self.send_json(e.code, {"error": err_body})
+            except Exception as e:
+                self.send_json(500, {"error": str(e)})
             return
 
         if self.path == "/tickets":
