@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "WAN MARKET IMPORT S.L.",
+    "tipus": "Supermercat/Importació",
+    "data": "10/06/2026",
+    "adreca": "AV GRAN VIA JUAN CARLOS I 65, LOGROÑO 26005 LA RIOJA",
+    "nif": "B70845003",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "PASTA WANTUN MASTE VERDE",
+        "quantitat": 2,
+        "preu_unitari": 2.75,
+        "total": 5.5,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 5.5,
+    "saved_at": "2026-06-11T09:09:48.126Z"
+  },
+  {
     "establiment": "don@opión reprografía - TIENDA GRAN VIA",
     "tipus": "Factura simplificada",
     "data": "10/06/2026",
