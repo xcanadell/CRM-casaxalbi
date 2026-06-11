@@ -1,5 +1,52 @@
 [
   {
+    "establiment": "Sun City - Caijun Wang",
+    "tipus": "Botiga de productes diversos",
+    "data": "10/06/2026",
+    "adreca": "C/Labradores 3 Bajo, 26005 Logroño",
+    "nif": "X4058430B",
+    "telefon": "698567777",
+    "productes": [
+      {
+        "descripcio": "Bolsa camiseta reciclado",
+        "quantitat": 1,
+        "preu_unitari": 0.1,
+        "total": 0.1,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "Tarro vidrio mult 140cc",
+        "quantitat": 4,
+        "preu_unitari": 0.8,
+        "total": 3.2,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "Pulverizador 50ml",
+        "quantitat": 4,
+        "preu_unitari": 0.75,
+        "total": 3,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "Tarro 15g*2pcs",
+        "quantitat": 3,
+        "preu_unitari": 0.75,
+        "total": 2.25,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "200ml Cromo oro 18kl 200m",
+        "quantitat": 1,
+        "preu_unitari": 2.95,
+        "total": 2.95,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 11.5,
+    "saved_at": "2026-06-11T09:10:57.728Z"
+  },
+  {
     "establiment": "WAN MARKET IMPORT S.L.",
     "tipus": "Supermercat/Importació",
     "data": "10/06/2026",
