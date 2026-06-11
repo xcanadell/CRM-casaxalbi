@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "LEROY MERLIN LOGROÑO",
+    "tipus": "FACTURA SIMPLIFICADA",
+    "data": "10/06/2026",
+    "adreca": "Calle Prada Viejo, 26007 Logroño",
+    "nif": "B84818442",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "BIZCOCHO PINO 18X4X2400MM",
+        "quantitat": 1,
+        "preu_unitari": 2.4,
+        "total": 2.4,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Contribución a la gestión del residuo",
+        "quantitat": 1,
+        "preu_unitari": 0.01,
+        "total": 0.01,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "GUIA P/PTA CORR FIZZ DOBLE NEGRA 186CM",
+        "quantitat": 1,
+        "preu_unitari": 103.99,
+        "total": 103.99,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 106.39,
+    "saved_at": "2026-06-11T09:22:17.157Z"
+  },
+  {
     "establiment": "INDIGO GRAN VÍA - ACVIL APARCAMIENTOS S.L.",
     "tipus": "Aparcament",
     "data": "10/06/2026",
