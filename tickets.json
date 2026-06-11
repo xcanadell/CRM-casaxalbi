@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "Muy Mucho Logroño",
+    "tipus": "Comerç / Decoració",
+    "data": "10/06/2026",
+    "adreca": "C/ San Prudencio, 32, 01005 VITORIA",
+    "nif": "B62165659",
+    "telefon": "941483556",
+    "productes": [
+      {
+        "descripcio": "SERVILLETA TRACEYS C",
+        "quantitat": 1,
+        "preu_unitari": 3.99,
+        "total": 3.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ACEITE ESENCIAL 7 CH",
+        "quantitat": 1,
+        "preu_unitari": 12.99,
+        "total": 12.99,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 16.98,
+    "saved_at": "2026-06-11T09:11:37.894Z"
+  },
+  {
     "establiment": "Sun City - Caijun Wang",
     "tipus": "Botiga de productes diversos",
     "data": "10/06/2026",
