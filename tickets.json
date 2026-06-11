@@ -1,5 +1,52 @@
 [
   {
+    "establiment": "don@opión reprografía - TIENDA GRAN VIA",
+    "tipus": "Factura simplificada",
+    "data": "10/06/2026",
+    "adreca": "Avd. Navarra nº 12 Bajo, 6001 Logroño La Rioja",
+    "nif": "B26.215.558",
+    "telefon": "941-21-37-16",
+    "productes": [
+      {
+        "descripcio": "Fotoc/Impres A4 COLOR",
+        "quantitat": 10,
+        "preu_unitari": 0.6,
+        "total": 6,
+        "us": "Gastro XP"
+      },
+      {
+        "descripcio": "Fotoc/Impres A4 COLOR",
+        "quantitat": 4,
+        "preu_unitari": 0.6,
+        "total": 2.4,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Fotoc/Impres A4 COLOR",
+        "quantitat": 1,
+        "preu_unitari": 0.6,
+        "total": 0.6,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Fotoc/Impres A4 COLOR",
+        "quantitat": 1,
+        "preu_unitari": 0.6,
+        "total": 0.6,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Varios Papelería",
+        "quantitat": 1,
+        "preu_unitari": 0.6,
+        "total": 0.6,
+        "us": "Gastro XP"
+      }
+    ],
+    "total": 10.2,
+    "saved_at": "2026-06-11T09:07:23.574Z"
+  },
+  {
     "establiment": "SUPER BAZAR MICRO VECINO",
     "tipus": "Supermercat/Bazar",
     "data": "09/06/2026",
