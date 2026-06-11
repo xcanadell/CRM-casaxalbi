@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "INDIGO GRAN VÍA - ACVIL APARCAMIENTOS S.L.",
+    "tipus": "Aparcament",
+    "data": "10/06/2026",
+    "adreca": "Torre Ombú C/Ombú nº3 Pl. 10 Dcha, 28045 MADRID",
+    "nif": "B73454134",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Estancia aparcamiento (2h 37m)",
+        "quantitat": 1,
+        "preu_unitari": 7.1,
+        "total": 7.1,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 7.1,
+    "saved_at": "2026-06-11T09:15:03.198Z"
+  },
+  {
     "establiment": "Flying Tiger Copenhagen",
     "tipus": "Factura simplificada",
     "data": "10/06/2026",
