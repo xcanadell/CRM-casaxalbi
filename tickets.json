@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "Vivero Santo Domingo",
+    "tipus": "—",
+    "data": "12/06/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "lechugas",
+        "quantitat": 10,
+        "preu_unitari": 0.15,
+        "total": 1.5,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "brocoli",
+        "quantitat": 10,
+        "preu_unitari": 0.15,
+        "total": 1.5,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Tomaqueras",
+        "quantitat": 10,
+        "preu_unitari": 0.15,
+        "total": 1.5,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-06-12T11:22:30.905Z"
+  },
+  {
     "establiment": "LEROY MERLIN LOGROÑO",
     "tipus": "FACTURA SIMPLIFICADA",
     "data": "10/06/2026",
