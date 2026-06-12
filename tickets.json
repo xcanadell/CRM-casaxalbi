@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "SUPER BAZAR MICRO VECINO",
+    "tipus": "—",
+    "data": "12/06/2026",
+    "adreca": "C/SAN FELIPE NERI 2-4, 26280 EZCARAY (LA RIOJA)",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "",
+        "quantitat": 6,
+        "preu_unitari": 0.65,
+        "total": 0,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-06-12T11:23:38.272Z"
+  },
+  {
     "establiment": "Vivero Santo Domingo",
     "tipus": "—",
     "data": "12/06/2026",
