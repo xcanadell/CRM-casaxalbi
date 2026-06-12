@@ -308,9 +308,14 @@ table.products td input.center{text-align:center} table.products td input.right{
     </div>
     <!-- Nou ticket (col·lapsable) -->
     <div style="margin-bottom:16px">
-      <button class="btn btn-primary" style="width:100%;justify-content:center;gap:8px" onclick="toggleNouTicket()">
-        <span id="nou-ticket-btn-icon">📷</span> <span id="nou-ticket-btn-text">Afegir nou ticket</span>
-      </button>
+      <div style="display:flex;gap:10px">
+        <button class="btn btn-primary" style="flex:1;justify-content:center;gap:8px" onclick="toggleNouTicket()">
+          <span id="nou-ticket-btn-icon">📷</span> <span id="nou-ticket-btn-text">Ticket amb foto</span>
+        </button>
+        <button class="btn" style="flex:1;justify-content:center;gap:8px;background:#f5f5f5;color:#333;border:1px solid #ddd" onclick="nouTicketManual()">
+          ✏️ Ticket manual
+        </button>
+      </div>
       <div id="nou-ticket-panel" style="display:none;margin-top:12px">
         <div class="upload-zone" id="dropZone" onclick="document.getElementById('fileInput').click()" ondragover="event.preventDefault()" ondrop="doDrop(event)">
           <div class="upload-icon">📸</div>
@@ -871,13 +876,38 @@ function toggleNouTicket(){
   const open=panel.style.display==='none';
   panel.style.display=open?'block':'none';
   document.getElementById('nou-ticket-btn-icon').textContent=open?'✕':'📷';
-  document.getElementById('nou-ticket-btn-text').textContent=open?'Cancel·lar':'Afegir nou ticket';
+  document.getElementById('nou-ticket-btn-text').textContent=open?'Cancel·lar':'Ticket amb foto';
 }
 function closeNouTicket(){
   document.getElementById('nou-ticket-panel').style.display='none';
   document.getElementById('nou-ticket-btn-icon').textContent='📷';
-  document.getElementById('nou-ticket-btn-text').textContent='Afegir nou ticket';
+  document.getElementById('nou-ticket-btn-text').textContent='Ticket amb foto';
   renderHistory();
+}
+function nouTicketManual(){
+  // Amaga el panell de foto si estava obert
+  document.getElementById('nou-ticket-panel').style.display='none';
+  document.getElementById('nou-ticket-btn-icon').textContent='📷';
+  document.getElementById('nou-ticket-btn-text').textContent='Ticket amb foto';
+  // Omple el formulari buit i mostra'l directament
+  const today=new Date();
+  const dd=String(today.getDate()).padStart(2,'0');
+  const mm=String(today.getMonth()+1).padStart(2,'0');
+  const yyyy=today.getFullYear();
+  document.getElementById('shopName').value='';
+  document.getElementById('shopType').textContent='—';
+  document.getElementById('shopDate').value=`${dd}/${mm}/${yyyy}`;
+  document.getElementById('shopAddr').value='';
+  document.getElementById('shopNIF').value='';
+  document.getElementById('shopTel').value='';
+  document.getElementById('productsBody').innerHTML='';
+  addProductRow();
+  document.getElementById('totalAmount').textContent='—';
+  document.getElementById('previewWrap').style.display='none';
+  document.getElementById('dropZone').style.display='none';
+  document.getElementById('resultCard').style.display='block';
+  document.getElementById('nou-ticket-panel').style.display='block';
+  document.getElementById('shopName').focus();
 }
 function doDrop(e){e.preventDefault();const f=e.dataTransfer.files[0];if(f)processFile(f);}
 function handleFile(e){const f=e.target.files[0];if(f)processFile(f);}
@@ -924,7 +954,7 @@ function saveTicket(){
   tickets.unshift(t);persist().then(()=>{btn.disabled=false;btn.innerHTML='💾 Desar';resetAll();closeNouTicket();});
 }
 function resetUpload(){imgB64=null;document.getElementById('imgPreview').src='';document.getElementById('previewWrap').style.display='none';document.getElementById('dropZone').style.display='block';document.getElementById('fileInput').value='';setStatus('','');}
-function resetAll(){resetUpload();document.getElementById('resultCard').classList.remove('show');}
+function resetAll(){resetUpload();document.getElementById('resultCard').classList.remove('show');document.getElementById('dropZone').style.display='block';closeNouTicket();}
 function deleteTicket(i){if(!confirm('Eliminar aquest ticket?'))return;tickets.splice(i,1);persist();renderHistory();}
 function renderHistory(){
   const q=(document.getElementById('searchInput').value||'').toLowerCase();const sort=document.getElementById('sortSelect').value;
