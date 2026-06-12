@@ -53,7 +53,7 @@
   },
   {
     "establiment": "LEROY MERLIN LOGROÑO",
-    "tipus": "FACTURA SIMPLIFICADA",
+    "tipus": "Contrucción/reformas",
     "data": "10/06/2026",
     "adreca": "Calle Prada Viejo, 26007 Logroño",
     "nif": "B84818442",
@@ -81,7 +81,7 @@
         "us": "Casa Xalbi"
       }
     ],
-    "total": 106.39,
+    "total": 106.4,
     "saved_at": "2026-06-11T09:22:17.157Z"
   },
   {
