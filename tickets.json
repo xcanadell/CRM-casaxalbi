@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Ademanda pastelería artesana",
+    "tipus": "Factura Simplificada",
+    "data": "12/06/2026",
+    "adreca": "C/Marisa Sanchez nº2 Local 10, 26280 - Ezcaray - La Rioja",
+    "nif": "",
+    "telefon": "941 427554 - 635 298342",
+    "productes": [
+      {
+        "descripcio": "rosas de cabello de angel",
+        "quantitat": 2,
+        "preu_unitari": 1.65,
+        "total": 3.3,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 5.9,
+    "saved_at": "2026-06-12T11:29:02.825Z"
+  },
+  {
     "establiment": "SUPER BAZAR MICRO VECINO",
     "tipus": "Supermercat/Bazar",
     "data": "12/06/2026",
