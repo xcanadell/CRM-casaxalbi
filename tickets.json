@@ -1,5 +1,164 @@
 [
   {
+    "establiment": "BM",
+    "tipus": "Supermercat",
+    "data": "12/06/2026",
+    "adreca": "C/SAGASTIA 28 B, 26280 EZCARAY",
+    "nif": "B26516799",
+    "telefon": "900 555 300",
+    "productes": [
+      {
+        "descripcio": "COCKTAIL BM+ F.SECOS C/ARAND",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PATATA GRANEL",
+        "quantitat": 0.99,
+        "preu_unitari": 1.79,
+        "total": 1.77,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Oferta PATATA GRANEL",
+        "quantitat": 1,
+        "preu_unitari": -0.26,
+        "total": -0.26,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PIZZA TARRADELLAS CARBONARA",
+        "quantitat": 1,
+        "preu_unitari": 3.25,
+        "total": 3.25,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CAFE BM GRANO NATURAL 1K",
+        "quantitat": 1,
+        "preu_unitari": 12.65,
+        "total": 12.65,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BEBIDA BM AVENA CALCIO 1L",
+        "quantitat": 1,
+        "preu_unitari": 1.2,
+        "total": 1.2,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BEBIDA AVENA YOSOY 1L",
+        "quantitat": 1,
+        "preu_unitari": 1.65,
+        "total": 1.65,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "DANONE NATURAL 4X120G",
+        "quantitat": 1,
+        "preu_unitari": 1,
+        "total": 1,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "COCKTAIL APERITIVOS BM 90G",
+        "quantitat": 1,
+        "preu_unitari": 0.99,
+        "total": 0.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "AQUARIUS L/33CL",
+        "quantitat": 1,
+        "preu_unitari": 0.99,
+        "total": 0.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "COCA COLA BT.500 ML",
+        "quantitat": 2,
+        "preu_unitari": 1.5,
+        "total": 3,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BONITO ORTIZ ACT 112G LITO",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Oferta BONITO ORTIZ",
+        "quantitat": 1,
+        "preu_unitari": -0.51,
+        "total": -0.51,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "SAL MARINA ESCAMAS MALDON 12",
+        "quantitat": 1,
+        "preu_unitari": 3.55,
+        "total": 3.55,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ESTROP.BM ESPONJA 2U",
+        "quantitat": 1,
+        "preu_unitari": 0.69,
+        "total": 0.69,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAPEL HIG.BM 8ROLLOS DECORAD",
+        "quantitat": 1,
+        "preu_unitari": 3.65,
+        "total": 3.65,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "VAJILLAS BM MANO ULTR.CONC.V",
+        "quantitat": 1,
+        "preu_unitari": 2.19,
+        "total": 2.19,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERVEZA ESTRELLA GALICIA 6X",
+        "quantitat": 2,
+        "preu_unitari": 3.45,
+        "total": 6.9,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Oferta CERVEZA ESTRELLA GALICIA",
+        "quantitat": 1,
+        "preu_unitari": -1,
+        "total": -1,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "HUEVOS CAMPEROS",
+        "quantitat": 1,
+        "preu_unitari": 2.6,
+        "total": 2.6,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Vale Descuento",
+        "quantitat": 1,
+        "preu_unitari": -7,
+        "total": -7,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 45.06,
+    "saved_at": "2026-06-13T08:40:27.473Z"
+  },
+  {
     "establiment": "AUTOSERVICIO MARY",
     "tipus": "Autoservei",
     "data": "12/06/2026",
