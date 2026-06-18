@@ -298,39 +298,6 @@
     "telefon": "941354212",
     "productes": [
       {
-        "descripcio": "Producte 1 (0.765 kg)",
-        "quantitat": 1,
-        "preu_unitari": 4.98,
-        "total": 3.81,
-        "us": "Casa Xalbi"
-      },
-      {
-        "descripcio": "Producte 2 (0.430 kg)",
-        "quantitat": 1,
-        "preu_unitari": 6.98,
-        "total": 3,
-        "us": "Casa Xalbi"
-      },
-      {
-        "descripcio": "Pasta para amanifa",
-        "quantitat": 1,
-        "preu_unitari": 2.5,
-        "total": 2.5,
-        "us": "Casa Xalbi"
-      }
-    ],
-    "total": 6.81,
-    "saved_at": "2026-06-13T08:38:09.445Z"
-  },
-  {
-    "establiment": "AUTOSERVICIO MARY",
-    "tipus": "Autoservei",
-    "data": "12/06/2026",
-    "adreca": "",
-    "nif": "",
-    "telefon": "941354212",
-    "productes": [
-      {
         "descripcio": "Producte 1 (0.765 kg) Tomates",
         "quantitat": 1,
         "preu_unitari": 4.98,
