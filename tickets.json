@@ -1,5 +1,136 @@
 [
   {
+    "establiment": "Lupa",
+    "tipus": "Supermercat",
+    "data": "29/05/2026",
+    "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
+    "nif": "A39050349",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "PAN ESPIGA FAMILIAR 280 GR.PR",
+        "quantitat": 1,
+        "preu_unitari": 1,
+        "total": 1,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PAN ESPIGA FAMILIAR 280 GR.PR",
+        "quantitat": 1,
+        "preu_unitari": 1,
+        "total": 1,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BOLSA LUPA RECICLABLE GRANDE",
+        "quantitat": 1,
+        "preu_unitari": 0.15,
+        "total": 0.15,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 0,0 TOST.LT.33CL",
+        "quantitat": 1,
+        "preu_unitari": 0.59,
+        "total": 0.59,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 0,0 TOST.LT.33CL",
+        "quantitat": 1,
+        "preu_unitari": 0.59,
+        "total": 0.59,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 0,0 TOST.LT.33CL",
+        "quantitat": 1,
+        "preu_unitari": 0.59,
+        "total": 0.59,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "MAIZ BONDUELLE DULCE P-3 225GR",
+        "quantitat": 1,
+        "preu_unitari": 2.59,
+        "total": 2.59,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CALDO G.BLANCA 100% POLLO+8V.L",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ARROZ SOS KILO",
+        "quantitat": 1,
+        "preu_unitari": 1.87,
+        "total": 1.87,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BEBIDA ALPRO AVENA BARISTA LT.",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "YEMAS ESP.ALTEZA EXT.GRUE.F190",
+        "quantitat": 1,
+        "preu_unitari": 1.89,
+        "total": 1.89,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ACEITU.M.ACEITUN.EMBRUJOS 670G",
+        "quantitat": 1,
+        "preu_unitari": 4.09,
+        "total": 4.09,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "TOMATE CHERRY-PERA-KUMATO 250",
+        "quantitat": 1,
+        "preu_unitari": 2.49,
+        "total": 2.49,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CEBOLLA IBSA FRITA A.OL.FR.225",
+        "quantitat": 1,
+        "preu_unitari": 2.2,
+        "total": 2.2,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "SANDIA FASHION AL CORTE",
+        "quantitat": 1,
+        "preu_unitari": 3.81,
+        "total": 3.81,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "TOMATE MUT.CONC.POMODORO 130GR",
+        "quantitat": 1,
+        "preu_unitari": 2.9,
+        "total": 2.9,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "SHIITAKE BANDEJA 200 GRS",
+        "quantitat": 1,
+        "preu_unitari": 2.68,
+        "total": 2.68,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 33.02,
+    "saved_at": "2026-06-18T10:38:27.864Z"
+  },
+  {
     "establiment": "BM",
     "tipus": "Supermercat",
     "data": "12/06/2026",
