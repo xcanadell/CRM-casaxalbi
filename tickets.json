@@ -1,5 +1,108 @@
 [
   {
+    "establiment": "SUPERMERCADOS ERCORECA, S.A.",
+    "tipus": "FACTURA SIMPLIFICADA",
+    "data": "22/06/2026",
+    "adreca": "C/ NAFARROA 5, 48920 PORTUGALETE",
+    "nif": "A48092985",
+    "telefon": "900 555 300",
+    "productes": [
+      {
+        "descripcio": "AGUACATE BANDEJA",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "P.FRESCA RANA RAV JAM-QUES 2",
+        "quantitat": 1,
+        "preu_unitari": 3.59,
+        "total": 3.59,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "GALLETA ARTIACH FILIPINOS NE",
+        "quantitat": 1,
+        "preu_unitari": 1.6,
+        "total": 1.6,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "BIMBO BAGELS SEMILLAS 4U",
+        "quantitat": 1,
+        "preu_unitari": 2.85,
+        "total": 2.85,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "SNATT'S PALITOS 62G",
+        "quantitat": 1,
+        "preu_unitari": 1.46,
+        "total": 1.46,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "PECHUGA PAVO LONCH FINISIMI1",
+        "quantitat": 1,
+        "preu_unitari": 2.15,
+        "total": 2.15,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "PECHUGA PAVO LONCH ARTESAN 28",
+        "quantitat": 1,
+        "preu_unitari": 2.95,
+        "total": 2.95,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "SALSA TOMATE ANKO SNACK 100G",
+        "quantitat": 1,
+        "preu_unitari": 1.65,
+        "total": 1.65,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "COCTEL ORIGINAL",
+        "quantitat": 1,
+        "preu_unitari": 0.25,
+        "total": 0.25,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "AGUA AQUABONA BT 1,5L",
+        "quantitat": 1,
+        "preu_unitari": 0.25,
+        "total": 0.25,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "CAFE FORTALEZA MOL-MEZCLA 25",
+        "quantitat": 1,
+        "preu_unitari": 4.89,
+        "total": 4.89,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "CERVEZA AGUILA L/33CL",
+        "quantitat": 6,
+        "preu_unitari": 0.89,
+        "total": 5.34,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "BOLSA CAMISETA 51X60 BM CAST",
+        "quantitat": 1,
+        "preu_unitari": 0.16,
+        "total": 0.16,
+        "us": "Viatges"
+      }
+    ],
+    "total": 29.38,
+    "saved_at": "2026-06-26T11:58:22.157Z"
+  },
+  {
     "establiment": "LA FABRICA DE JUAN, S.L.",
     "tipus": "Restaurant",
     "data": "22/06/2026",
