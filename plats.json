@@ -1,5 +1,36 @@
 [
   {
+    "titol": "Puerros con queso fresco y frutos secos",
+    "descripcio": "",
+    "ingredients": [
+      {
+        "nom": "puerros",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Queso fresco",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Frutos secos",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      }
+    ],
+    "cost_mp": 0,
+    "cost_prod": 0,
+    "cost_total": 0,
+    "updated_at": "2026-06-26T12:11:20.769Z"
+  },
+  {
     "titol": "Brandada de Bacalao con flores de calabacin",
     "descripcio": "",
     "ingredients": [
