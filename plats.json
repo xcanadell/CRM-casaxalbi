@@ -1,5 +1,29 @@
 [
   {
+    "titol": "Panceta baja temperatura con Baba Ganoush",
+    "descripcio": "",
+    "ingredients": [
+      {
+        "nom": "Panceta",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Berenjena",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      }
+    ],
+    "cost_mp": 0,
+    "cost_prod": 0,
+    "cost_total": 0,
+    "updated_at": "2026-06-26T12:12:35.849Z"
+  },
+  {
     "titol": "Puerros con queso fresco y frutos secos",
     "descripcio": "",
     "ingredients": [
