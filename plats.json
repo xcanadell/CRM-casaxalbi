@@ -1,5 +1,36 @@
 [
   {
+    "titol": "Brandada de Bacalao con flores de calabacin",
+    "descripcio": "",
+    "ingredients": [
+      {
+        "nom": "Flor de calabacin",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Leche",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Bacalao",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      }
+    ],
+    "cost_mp": 0,
+    "cost_prod": 0,
+    "cost_total": 0,
+    "updated_at": "2026-06-26T12:10:48.438Z"
+  },
+  {
     "titol": "Carpatxo de Gamba",
     "descripcio": "",
     "ingredients": [
