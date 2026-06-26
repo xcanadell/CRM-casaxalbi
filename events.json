@@ -1,5 +1,23 @@
 [
   {
+    "data": "2026-06-26",
+    "lloc": "Sopar Casa Xalbi",
+    "notes": "Sopar sota les estrelles ",
+    "comensals": [
+      {
+        "nom": "Jose Maria Navarro",
+        "preu_menjar": 0,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "varios": [],
+        "notes": ""
+      }
+    ],
+    "total": 0
+  },
+  {
     "data": "2026-02-15",
     "lloc": "Cata de vins",
     "notes": "Cata Alba i amics a Casa Xalbi",
