@@ -1,5 +1,255 @@
 [
   {
+    "establiment": "LUPA - SEMARK AC GROUP S.A.",
+    "tipus": "Supermercat",
+    "data": "",
+    "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
+    "nif": "A39050349",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "PIMIENTO ROJO CAT.1ª",
+        "quantitat": 1,
+        "preu_unitari": 4.05,
+        "total": 4.05,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "TOMATE ROSA",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "REPOLLO ENTERO, KILO",
+        "quantitat": 1,
+        "preu_unitari": 1.82,
+        "total": 1.82,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BERENJENA NEGRA",
+        "quantitat": 1,
+        "preu_unitari": 3.39,
+        "total": 3.39,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PEPINO CORTO",
+        "quantitat": 1,
+        "preu_unitari": 0.82,
+        "total": 0.82,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CALDO ALTEZA VERDURAS BRIK LT.",
+        "quantitat": 1,
+        "preu_unitari": 0.95,
+        "total": 0.95,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "COCA COLA NORMAL 1,25 LITROS",
+        "quantitat": 1,
+        "preu_unitari": 1.55,
+        "total": 1.55,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ZANAHORIAS",
+        "quantitat": 1,
+        "preu_unitari": 1.24,
+        "total": 1.24,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "GARBANZO LUENGO PEDROS.COC.570",
+        "quantitat": 1,
+        "preu_unitari": 1.49,
+        "total": 1.49,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "TOSTADAS DIAT LIG.AR/Q.S/G.100",
+        "quantitat": 1,
+        "preu_unitari": 2.59,
+        "total": 2.59,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ANGURIÑAS PESCANOVA 2X100GR.U",
+        "quantitat": 1,
+        "preu_unitari": 2.59,
+        "total": 2.59,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "HUEVO AV.PRECIADO CLASE L DOC.",
+        "quantitat": 1,
+        "preu_unitari": 3.19,
+        "total": 3.19,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "HUEVO AV.PRECIADO CLASE L DOC.",
+        "quantitat": 1,
+        "preu_unitari": 3.19,
+        "total": 3.19,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PUERRO MANOJO UNDS",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PUERRO MANOJO UNDS",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BRIOCHE TRENZADO 400 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 4.15,
+        "total": 4.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ACEITE ABRILSOL GIRASOL LITRO",
+        "quantitat": 1,
+        "preu_unitari": 1.72,
+        "total": 1.72,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BRIOCHE TRENZADO 400 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 4.15,
+        "total": 4.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CERV.ESTR.GALIC.BOT.25 CL P6",
+        "quantitat": 1,
+        "preu_unitari": 4.12,
+        "total": 4.12,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CERV.ESTR.GALIC.BOT.25 CL P6",
+        "quantitat": 1,
+        "preu_unitari": 4.12,
+        "total": 4.12,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "LECHE ALTEZA ENTERA LITRO",
+        "quantitat": 1,
+        "preu_unitari": 0.96,
+        "total": 0.96,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BEBIDA ALPRO AVENA BARISTA LT.",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PATATA LUGAREÑO 3 KILOS",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "NATA ESP.COCINA 3X200ML",
+        "quantitat": 1,
+        "preu_unitari": 1.85,
+        "total": 1.85,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOMATE CHERRY ATIGRADO 250 GRS",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "LIMA, BANDEJA 250 GR",
+        "quantitat": 1,
+        "preu_unitari": 1.79,
+        "total": 1.79,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MOZZAREL.CASA AZZURRA FR.100GR",
+        "quantitat": 1,
+        "preu_unitari": 0.9,
+        "total": 0.9,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "AJO BLANCO 250",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MANTEQ.MARGUI PASTILLA 250 GR.",
+        "quantitat": 1,
+        "preu_unitari": 2.7,
+        "total": 2.7,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "JENGIBRE BANDEJA 200 GRS",
+        "quantitat": 1,
+        "preu_unitari": 1.69,
+        "total": 1.69,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CAFE FORTALEZA GRN.NATURAL 500",
+        "quantitat": 1,
+        "preu_unitari": 10.45,
+        "total": 10.45,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "SHIITAKE BANDEJA 200 GRS",
+        "quantitat": 1,
+        "preu_unitari": 2.68,
+        "total": 2.68,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Cheque Descuento (124682100397)",
+        "quantitat": 1,
+        "preu_unitari": -3.97,
+        "total": -3.97,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Cupón (9462560004576)",
+        "quantitat": 1,
+        "preu_unitari": -1.57,
+        "total": -1.57,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 78.74,
+    "saved_at": "2026-06-26T12:06:53.747Z"
+  },
+  {
     "establiment": "Ademanda pastelería artesana",
     "tipus": "—",
     "data": "26/06/2026",
