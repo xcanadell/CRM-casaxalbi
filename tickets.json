@@ -2,6 +2,67 @@
   {
     "establiment": "LUPA - SEMARK AC GROUP S.A.",
     "tipus": "Supermercat",
+    "data": "26/06/2026",
+    "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "DORADA CRIANZA 300-400 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 4.85,
+        "total": 4.85,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LUBINA CRIANZA 300-400 GRS.UND",
+        "quantitat": 1,
+        "preu_unitari": 3.69,
+        "total": 3.69,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "MEJILLON MEDIANO MALLA 1 KG.",
+        "quantitat": 1,
+        "preu_unitari": 3.25,
+        "total": 3.25,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 0,0 TOST.LT.33CL",
+        "quantitat": 1,
+        "preu_unitari": 0.86,
+        "total": 0.86,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 0,0 TOST.LT.33CL",
+        "quantitat": 1,
+        "preu_unitari": 0.86,
+        "total": 0.86,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BURRATA GRANAROLO FRESCA 125GR",
+        "quantitat": 1,
+        "preu_unitari": 2.25,
+        "total": 2.25,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BURRATA GRANAROLO FRESCA 125GR",
+        "quantitat": 1,
+        "preu_unitari": 2.25,
+        "total": 2.25,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 18.01,
+    "saved_at": "2026-06-26T12:08:20.586Z"
+  },
+  {
+    "establiment": "LUPA - SEMARK AC GROUP S.A.",
+    "tipus": "Supermercat",
     "data": "",
     "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
     "nif": "A39050349",
