@@ -312,10 +312,27 @@ table.products td input.center{text-align:center} table.products td input.right{
         <button class="btn btn-primary" style="flex:1;justify-content:center;gap:8px" onclick="toggleNouTicket()">
           <span id="nou-ticket-btn-icon">📷</span> <span id="nou-ticket-btn-text">Ticket amb foto</span>
         </button>
+        <button class="btn" style="flex:1;justify-content:center;gap:8px;background:#f0f4ff;color:#3949ab;border:1px solid #c5cae9" onclick="obrirWebcam()">
+          📹 Fer foto
+        </button>
         <button class="btn" style="flex:1;justify-content:center;gap:8px;background:#f5f5f5;color:#333;border:1px solid #ddd" onclick="nouTicketManual()">
           ✏️ Ticket manual
         </button>
       </div>
+
+      <!-- Modal webcam -->
+      <div id="webcamModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;display:none;align-items:center;justify-content:center;flex-direction:column;gap:16px">
+        <div style="background:#1a1a1a;border-radius:16px;padding:24px;max-width:640px;width:95%;text-align:center">
+          <h3 style="color:#fff;margin:0 0 16px">📹 Captura el ticket</h3>
+          <video id="webcamVideo" autoplay playsinline style="width:100%;border-radius:8px;background:#000;max-height:400px"></video>
+          <canvas id="webcamCanvas" style="display:none"></canvas>
+          <div style="display:flex;gap:10px;margin-top:16px;justify-content:center">
+            <button class="btn btn-primary" style="font-size:16px;padding:12px 28px" onclick="capturarFoto()">📸 Capturar</button>
+            <button class="btn" style="background:#333;color:#fff;border:none" onclick="tancarWebcam()">✕ Cancel·lar</button>
+          </div>
+        </div>
+      </div>
+
       <div id="nou-ticket-panel" style="display:none;margin-top:12px">
         <div class="upload-zone" id="dropZone" onclick="document.getElementById('fileInput').click()" ondragover="event.preventDefault()" ondrop="doDrop(event)">
           <div class="upload-icon">📸</div>
@@ -910,6 +927,42 @@ function nouTicketManual(){
   document.getElementById('shopName').focus();
 }
 function doDrop(e){e.preventDefault();const f=e.dataTransfer.files[0];if(f)processFile(f);}
+
+// ── Webcam ──
+let webcamStream=null;
+async function obrirWebcam(){
+  const modal=document.getElementById('webcamModal');
+  modal.style.display='flex';
+  try{
+    webcamStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'environment',width:{ideal:1920},height:{ideal:1080}}});
+    document.getElementById('webcamVideo').srcObject=webcamStream;
+  }catch(err){
+    modal.style.display='none';
+    alert('No s\'ha pogut accedir a la càmera: '+err.message);
+  }
+}
+function capturarFoto(){
+  const video=document.getElementById('webcamVideo');
+  const canvas=document.getElementById('webcamCanvas');
+  canvas.width=video.videoWidth;
+  canvas.height=video.videoHeight;
+  canvas.getContext('2d').drawImage(video,0,0);
+  tancarWebcam();
+  // Mostra preview i prepara per analitzar
+  const dataUrl=canvas.toDataURL('image/jpeg',0.92);
+  imgB64=dataUrl.split(',')[1];
+  imgMime='image/jpeg';
+  document.getElementById('imgPreview').src=dataUrl;
+  document.getElementById('nou-ticket-panel').style.display='block';
+  document.getElementById('dropZone').style.display='none';
+  document.getElementById('previewWrap').style.display='block';
+  document.getElementById('resultCard').style.display='none';
+  setStatus('','');
+}
+function tancarWebcam(){
+  if(webcamStream){webcamStream.getTracks().forEach(t=>t.stop());webcamStream=null;}
+  document.getElementById('webcamModal').style.display='none';
+}
 function handleFile(e){const f=e.target.files[0];if(f)processFile(f);}
 function processFile(file){imgMime=file.type||'image/jpeg';const r=new FileReader();r.onload=e=>{imgB64=e.target.result.split(',')[1];document.getElementById('imgPreview').src=e.target.result;document.getElementById('previewWrap').style.display='block';document.getElementById('dropZone').style.display='none';setStatus('','');};r.readAsDataURL(file);}
 function setStatus(msg,type){const el=document.getElementById('statusMsg');el.className='status '+type;el.innerHTML=type==='loading'?`<span class="spinner"></span>${msg}`:msg;}
