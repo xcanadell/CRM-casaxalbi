@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "Quesería Valle del Ciloria",
+    "tipus": "Factura simplificada",
+    "data": "26/06/2026",
+    "adreca": "Ctra. Ezcaray - Valgañón Nº 71, 26288 Zorraquín, La Rioja",
+    "nif": "E26196329",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Yogur Natural 450gr",
+        "quantitat": 2,
+        "preu_unitari": 2.3,
+        "total": 4.6,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Queso Fresco 400gr",
+        "quantitat": 1,
+        "preu_unitari": 5,
+        "total": 5,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 9.6,
+    "saved_at": "2026-06-26T11:58:58.285Z"
+  },
+  {
     "establiment": "SUPERMERCADOS ERCORECA, S.A.",
     "tipus": "FACTURA SIMPLIFICADA",
     "data": "22/06/2026",
