@@ -2,6 +2,25 @@
   {
     "establiment": "PARKING SAN ROQUE - INDIGO PARK ESPAÑA, S.A.",
     "tipus": "Aparcament",
+    "data": "23/06/2026",
+    "adreca": "C/ GREGORIO UZQUIANO, S/N, 48920 PORTUGALETE",
+    "nif": "A-82891730",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Estancia parking - Tarifa 2026 (17h 10m)",
+        "quantitat": 1,
+        "preu_unitari": 10.9,
+        "total": 10.9,
+        "us": "Viatges"
+      }
+    ],
+    "total": 10.9,
+    "saved_at": "2026-06-26T11:54:25.181Z"
+  },
+  {
+    "establiment": "PARKING SAN ROQUE - INDIGO PARK ESPAÑA, S.A.",
+    "tipus": "Aparcament",
     "data": "22/06/2026",
     "adreca": "C/ GREGORIO UZQUIANO, S/N, 48920 PORTUGALETE",
     "nif": "A-82891730",
