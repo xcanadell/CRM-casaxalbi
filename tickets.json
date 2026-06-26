@@ -1,5 +1,45 @@
 [
   {
+    "establiment": "LA FABRICA DE JUAN, S.L.",
+    "tipus": "Restaurant",
+    "data": "22/06/2026",
+    "adreca": "Playa Arena, 20, 48508 - Zierbena",
+    "nif": "B95260550",
+    "telefon": "946365361",
+    "productes": [
+      {
+        "descripcio": "Zamburiñas Gallegas",
+        "quantitat": 1,
+        "preu_unitari": 24,
+        "total": 24,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "Pan Servicio",
+        "quantitat": 2,
+        "preu_unitari": 1.2,
+        "total": 2.4,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "Rape",
+        "quantitat": 1,
+        "preu_unitari": 72,
+        "total": 72,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "Univers",
+        "quantitat": 1,
+        "preu_unitari": 36,
+        "total": 36,
+        "us": "Restauració"
+      }
+    ],
+    "total": 147.84,
+    "saved_at": "2026-06-26T11:56:15.730Z"
+  },
+  {
     "establiment": "PARKING SAN ROQUE - INDIGO PARK ESPAÑA, S.A.",
     "tipus": "Aparcament",
     "data": "23/06/2026",
