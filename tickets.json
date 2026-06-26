@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Ademanda pastelería artesana",
+    "tipus": "—",
+    "data": "26/06/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "2 pans",
+        "quantitat": 2,
+        "preu_unitari": 3,
+        "total": 6,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-06-26T12:01:12.698Z"
+  },
+  {
     "establiment": "Quesería Valle del Ciloria",
     "tipus": "Factura simplificada",
     "data": "26/06/2026",
