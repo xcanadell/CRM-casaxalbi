@@ -5,10 +5,10 @@
     "ingredients": [
       {
         "nom": "Shiitake",
-        "quantitat": 0.4,
+        "quantitat": 0.5,
         "unitat": "1",
-        "cost_unitari": 2,
-        "cost_total": 0.8
+        "cost_unitari": 2.68,
+        "cost_total": 1.34
       },
       {
         "nom": "Huevo",
@@ -18,10 +18,10 @@
         "cost_total": 0.4
       }
     ],
-    "cost_mp": 1.2,
+    "cost_mp": 1.74,
     "cost_prod": 1,
-    "cost_total": 2.2,
-    "updated_at": "2026-06-29T08:50:54.584Z"
+    "cost_total": 2.74,
+    "updated_at": "2026-06-29T08:51:38.112Z"
   },
   {
     "titol": "Lubina Plancha",
