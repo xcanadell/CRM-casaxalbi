@@ -1221,6 +1221,27 @@ function syncPlatCosts(){
   document.getElementById('plat-ctotal').value=(mp+prod).toFixed(2);
 }
 
+// ── Actualitza referències als events quan canvia nom de client/plat/vi/vari ──
+async function updateRefsInEvents({tipusAntic, nomAntic, nomNou}){
+  if(!nomAntic||nomAntic===nomNou) return;
+  let changed=false;
+  events.forEach(ev=>{
+    (ev.comensals||[]).forEach(com=>{
+      if(tipusAntic==='client'&&com.nom===nomAntic){com.nom=nomNou;changed=true;}
+      if(tipusAntic==='plat'){
+        com.plats=(com.plats||[]).map(p=>{if(p===nomAntic){changed=true;return nomNou;}return p;});
+      }
+      if(tipusAntic==='vi'){
+        com.vins=(com.vins||[]).map(v=>{if(v===nomAntic){changed=true;return nomNou;}return v;});
+      }
+      if(tipusAntic==='vari'){
+        com.varios=(com.varios||[]).map(va=>{if(va===nomAntic){changed=true;return nomNou;}return va;});
+      }
+    });
+  });
+  if(changed) await persistEvents();
+}
+
 async function savePlat(){
   const ings=[];
   document.querySelectorAll('#plat-ingsBody tr').forEach(tr=>{
@@ -1238,8 +1259,10 @@ async function savePlat(){
     updated_at:new Date().toISOString()
   };
   if(!plat.titol){alert('Afegeix el títol del plat.');return;}
+  const nomAnticPlat=platEditIdx!==null?plats[platEditIdx].titol:null;
   if(platEditIdx!==null){plats[platEditIdx]=plat;}else{plats.unshift(plat);}
   await persistPlats();
+  await updateRefsInEvents({tipusAntic:'plat',nomAntic:nomAnticPlat,nomNou:plat.titol});
   renderPlats();
   closePlatModal();
 }
@@ -1397,8 +1420,12 @@ async function saveBodega(){
     data_venda:document.getElementById('bod-data-venda').value||'',
     updated_at:new Date().toISOString()
   };
+  const viAntic=bodegaEditIdx!==null?bodega[bodegaEditIdx]:null;
+  const labelAntic=viAntic?(viAntic.nom+(viAntic.any?' ('+viAntic.any+')':'')):null;
+  const labelNou=vi.nom+(vi.any?' ('+vi.any+')':'');
   if(bodegaEditIdx!==null){bodega[bodegaEditIdx]=vi;}else{bodega.push(vi);}
   await persistBodega();
+  await updateRefsInEvents({tipusAntic:'vi',nomAntic:labelAntic,nomNou:labelNou});
   renderBodega();
   closeBodegaModal();
 }
@@ -1550,8 +1577,12 @@ async function saveClient(){
     notes:document.getElementById('cli-notes').value.trim(),
     updated_at:new Date().toISOString()
   };
+  const cAntic=clientEditIdx!==null?clients[clientEditIdx]:null;
+  const nomAnticClient=cAntic?([cAntic.nom,cAntic.cognom].filter(Boolean).join(' ')):null;
+  const nomNouClient=[client.nom,client.cognom].filter(Boolean).join(' ');
   if(clientEditIdx!==null){clients[clientEditIdx]=client;}else{clients.push(client);}
   await persistClients();
+  await updateRefsInEvents({tipusAntic:'client',nomAntic:nomAnticClient,nomNou:nomNouClient});
   renderClients();
   closeClientModal();
 }
@@ -2145,8 +2176,10 @@ async function saveVarios(){
     pvp:parseFloat(document.getElementById('var-pvp').value)||0,
     updated_at:new Date().toISOString()
   };
+  const nomAnticVari=variosEditIdx!==null?varios[variosEditIdx].nom:null;
   if(variosEditIdx!==null){varios[variosEditIdx]=item;}else{varios.push(item);}
   await persistVarios();
+  await updateRefsInEvents({tipusAntic:'vari',nomAntic:nomAnticVari,nomNou:item.nom});
   renderVarios();
   closeVariosModal();
 }
