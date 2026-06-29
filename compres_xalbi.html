@@ -1518,9 +1518,11 @@ function openClientModal(idx){
     sec.style.display='block';
     listEl.innerHTML=cliEvents.map(ev=>{
       const dataFmt=ev.data?new Date(ev.data+'T12:00:00').toLocaleDateString('ca-ES',{day:'numeric',month:'short',year:'numeric'}):'—';
+      const com=(ev.comensals||[]).find(c=>c.nom===nomComplet);
+      const pagat=com?((parseFloat(com.preu_menjar)||0)+(parseFloat(com.preu_beguda)||0)+(parseFloat(com.preu_altres)||0)):0;
       return`<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;border-radius:7px;background:#f9f9f9;margin-bottom:5px;font-size:13px">
         <span>📅 <strong>${dataFmt}</strong> <span style="color:#888;font-size:11px;margin-left:6px">${esc(ev.lloc||'')}</span></span>
-        <span style="font-weight:600;color:#2e7d32">${(ev.total||0).toFixed(2)} €</span>
+        <span style="font-weight:600;color:#2e7d32">${pagat.toFixed(2)} €</span>
       </div>`;
     }).join('');
   } else {
