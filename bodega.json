@@ -358,5 +358,17 @@
     "data_compra": "",
     "data_venda": "2026-06-26",
     "updated_at": "2026-06-29T08:06:37.995Z"
+  },
+  {
+    "nom": "Batussa",
+    "any": "2024",
+    "bodega": "Sense Celler Vins",
+    "tipus": "Vi negre",
+    "do": "Conca de Barbera",
+    "cost": 10,
+    "pvp": 36,
+    "data_compra": "",
+    "data_venda": "2026-06-26",
+    "updated_at": "2026-06-29T08:08:34.175Z"
   }
 ]
