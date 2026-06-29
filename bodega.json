@@ -382,5 +382,17 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-06-29T08:18:21.645Z"
+  },
+  {
+    "nom": "Hopp",
+    "any": "2021",
+    "bodega": "Finca Parera",
+    "tipus": "Orange",
+    "do": "Penedès",
+    "cost": 10,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-06-29T08:33:40.923Z"
   }
 ]
