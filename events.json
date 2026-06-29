@@ -20,7 +20,7 @@
     "comensals": [
       {
         "nom": "Jorge",
-        "preu_menjar": 0,
+        "preu_menjar": 35,
         "preu_beguda": 0,
         "preu_altres": 0,
         "plats": [
@@ -35,7 +35,7 @@
         "notes": ""
       }
     ],
-    "total": 0
+    "total": 35
   },
   {
     "data": "2026-06-26",
