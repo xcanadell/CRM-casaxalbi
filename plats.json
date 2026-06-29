@@ -55,8 +55,8 @@
         "nom": "Carrillera",
         "quantitat": 0.5,
         "unitat": "g",
-        "cost_unitari": 3,
-        "cost_total": 1.5
+        "cost_unitari": 1.85,
+        "cost_total": 0.93
       },
       {
         "nom": "Briox",
@@ -73,10 +73,10 @@
         "cost_total": 0.4
       }
     ],
-    "cost_mp": 2.73,
+    "cost_mp": 2.16,
     "cost_prod": 1,
-    "cost_total": 3.73,
-    "updated_at": "2026-06-29T10:22:05.363Z"
+    "cost_total": 3.16,
+    "updated_at": "2026-06-29T11:23:42.088Z"
   },
   {
     "titol": "Panceta baja temperatura con Baba Ganoush",
