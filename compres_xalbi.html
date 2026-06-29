@@ -1594,7 +1594,7 @@ function renderEventsList(){
       <div style="display:flex;justify-content:space-between;align-items:center">
         <div>
           <div class="ev-title">📅 ${dataFmt} &nbsp;<span class="ev-lloc-pill" style="font-size:12px;font-weight:400">${esc(lloc)}</span></div>
-          <div class="ev-meta">${ncom} comensal${ncom!==1?'s':''}${(ev.comensals||[]).length?': '+(ev.comensals||[]).map(c=>esc(c.nom)).join(' | '):''}${ev.notes?' · '+esc(ev.notes):''}</div>
+          <div class="ev-meta">${ncom} comensal${ncom!==1?'s':''}${(ev.comensals||[]).length?': '+(ev.comensals||[]).map(c=>esc(c.nom)).join(' | '):''}${ev.notes?'<br>'+esc(ev.notes):''}</div>
         </div>
         <div class="ev-right">
           <div class="ev-total-badge">${total} €</div>
