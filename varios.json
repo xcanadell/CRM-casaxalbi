@@ -61,5 +61,12 @@
     "cost": 0.5,
     "pvp": 1.8,
     "updated_at": "2026-06-29T08:53:30.534Z"
+  },
+  {
+    "nom": "Cafe con leche",
+    "desc": "",
+    "cost": 0.5,
+    "pvp": 2,
+    "updated_at": "2026-06-29T08:54:26.939Z"
   }
 ]
