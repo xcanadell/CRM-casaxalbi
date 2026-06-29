@@ -117,6 +117,8 @@
         "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [
+          "Shiitake con huevo (setas)",
+          "Lubina Plancha",
           "Puerros con queso fresco y frutos secos",
           "Brandada de Bacalao con flores de calabacin",
           "Yogur de Ezcaray"
@@ -133,9 +135,36 @@
           "Pan"
         ],
         "notes": "Menu adaptat per alergia, peix i bolets"
+      },
+      {
+        "nom": "Dona Jose Maria (inmobiliaria)",
+        "preu_menjar": 50,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [
+          "Carrillera sobre briox",
+          "Panceta baja temperatura con Baba Ganoush",
+          "Puerros con queso fresco y frutos secos",
+          "Brandada de Bacalao con flores de calabacin",
+          "Carpatxo de Gamba",
+          "Yogur de Ezcaray"
+        ],
+        "vins": [
+          "Familia Valdelana Criannza (2023)",
+          "Temerario Garnacha Viñas Viejas (2024)",
+          "La Barbacana (2022)",
+          "Batussa (2024)",
+          "Cric Cric Blanc (2021)",
+          "Escumos Sanromà"
+        ],
+        "varios": [
+          "Café",
+          "Pan"
+        ],
+        "notes": ""
       }
     ],
-    "total": 350
+    "total": 420
   },
   {
     "data": "2026-02-15",
