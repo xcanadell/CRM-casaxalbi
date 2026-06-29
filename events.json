@@ -7,7 +7,7 @@
       {
         "nom": "Jose Maria Navarro",
         "preu_menjar": 50,
-        "preu_beguda": 0,
+        "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [
           "Carrillera sobre briox",
@@ -17,7 +17,13 @@
           "Carpatxo de Gamba",
           "Yogur de Ezcaray"
         ],
-        "vins": [],
+        "vins": [
+          "Familia Valdelana Criannza (2023)",
+          "Temerario Garnacha Viñas Viejas (2024)",
+          "La Barbacana (2022)",
+          "Batussa (2024)",
+          "Cric Cric Blanc (2021)"
+        ],
         "varios": [],
         "notes": ""
       },
@@ -62,7 +68,7 @@
         "notes": ""
       }
     ],
-    "total": 50
+    "total": 70
   },
   {
     "data": "2026-02-15",
