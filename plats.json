@@ -84,10 +84,10 @@
     "ingredients": [
       {
         "nom": "Panceta",
-        "quantitat": 1,
+        "quantitat": 0.125,
         "unitat": "g",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "cost_unitari": 4.83,
+        "cost_total": 0.6
       },
       {
         "nom": "Berenjena",
@@ -97,10 +97,10 @@
         "cost_total": 0
       }
     ],
-    "cost_mp": 0,
+    "cost_mp": 0.6,
     "cost_prod": 1,
-    "cost_total": 1,
-    "updated_at": "2026-06-29T10:24:50.132Z"
+    "cost_total": 1.6,
+    "updated_at": "2026-06-29T11:11:38.995Z"
   },
   {
     "titol": "Puerros con queso fresco y frutos secos",
