@@ -334,5 +334,17 @@
     "data_compra": "2026-04-22",
     "data_venda": "",
     "updated_at": "2026-06-06T15:44:37.788Z"
+  },
+  {
+    "nom": "Familia Valdelana Criannza",
+    "any": "2023",
+    "bodega": "Bodegas Valdelanna",
+    "tipus": "Vi negre",
+    "do": "rioja",
+    "cost": 0,
+    "pvp": 36,
+    "data_compra": "",
+    "data_venda": "2026-06-26",
+    "updated_at": "2026-06-29T07:50:29.157Z"
   }
 ]
