@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 <title>Compres Casa Xalbi</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -291,6 +292,12 @@ table.products td input.center{text-align:center} table.products td input.right{
         <div class="dash-icon">🍷</div>
         <div class="dash-val" id="dash-n-vins">—</div>
         <div class="dash-label">Vins a la bodega</div>
+      </div>
+    </div>
+    <div class="dash-section">
+      <h3>Ingressos i costos mensuals</h3>
+      <div style="background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:20px">
+        <canvas id="dashChart" height="100"></canvas>
       </div>
     </div>
     <div class="dash-section">
@@ -1959,6 +1966,44 @@ function renderDashboard(){
     });
   });
   document.getElementById('dash-total-cost').textContent=totalCost>0?totalCost.toFixed(2)+' €':'—';
+
+  // ── Gràfic mensual ──
+  const mesosMap={};
+  events.forEach(ev=>{
+    if(!ev.data) return;
+    const mes=ev.data.slice(0,7); // "2026-04"
+    if(!mesosMap[mes]) mesosMap[mes]={ing:0,cost:0};
+    mesosMap[mes].ing+=(ev.total||0);
+    // calcular cost event
+    const com=ev.comensals||[];
+    const pc2={};com.forEach(c=>(c.plats||[]).forEach(p=>pc2[p]=(pc2[p]||0)+1));
+    Object.entries(pc2).forEach(([n,q])=>{const pl=plats.find(p=>p.titol===n);if(pl)mesosMap[mes].cost+=(parseFloat(pl.cost_mp)||0)*q;});
+    const vu2=new Set(com.flatMap(c=>c.vins||[]));
+    vu2.forEach(nv=>{const vi=bodega.find(v=>(v.nom+(v.any?' ('+v.any+')':''))===nv||v.nom===nv);if(vi)mesosMap[mes].cost+=(parseFloat(vi.cost)||0);});
+  });
+  const mesos=Object.keys(mesosMap).sort();
+  const labels=mesos.map(m=>{const[y,mo]=m.split('-');return new Date(y,mo-1).toLocaleDateString('ca-ES',{month:'short',year:'numeric'});});
+  const dataIng=mesos.map(m=>+mesosMap[m].ing.toFixed(2));
+  const dataCost=mesos.map(m=>+mesosMap[m].cost.toFixed(2));
+  const ctx=document.getElementById('dashChart');
+  if(ctx){
+    if(window._dashChart) window._dashChart.destroy();
+    window._dashChart=new Chart(ctx,{
+      type:'bar',
+      data:{
+        labels,
+        datasets:[
+          {label:'Ingressos',data:dataIng,backgroundColor:'rgba(46,125,50,0.75)',borderColor:'#2e7d32',borderWidth:1.5,borderRadius:6},
+          {label:'Costos',data:dataCost,backgroundColor:'rgba(198,40,40,0.55)',borderColor:'#c62828',borderWidth:1.5,borderRadius:6}
+        ]
+      },
+      options:{
+        responsive:true,
+        plugins:{legend:{position:'top'},tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+ctx.parsed.y.toFixed(2)+' €'}}},
+        scales:{y:{beginAtZero:true,ticks:{callback:v=>v+' €'},grid:{color:'#f0f0f0'}},x:{grid:{display:false}}}
+      }
+    });
+  }
 
   // Últims 5 events
   const sorted=[...events].sort((a,b)=>(b.data||'').localeCompare(a.data||'')).slice(0,5);
