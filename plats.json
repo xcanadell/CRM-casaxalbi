@@ -1,5 +1,29 @@
 [
   {
+    "titol": "Lubina Plancha",
+    "descripcio": "Acompañada de pimientos rojos",
+    "ingredients": [
+      {
+        "nom": "lubina",
+        "quantitat": 1,
+        "unitat": "1",
+        "cost_unitari": 3.8,
+        "cost_total": 3.8
+      },
+      {
+        "nom": "pimientos",
+        "quantitat": 1,
+        "unitat": "1",
+        "cost_unitari": 0.5,
+        "cost_total": 0.5
+      }
+    ],
+    "cost_mp": 4.3,
+    "cost_prod": 1,
+    "cost_total": 5.3,
+    "updated_at": "2026-06-29T08:48:38.684Z"
+  },
+  {
     "titol": "Carrillera sobre briox",
     "descripcio": "",
     "ingredients": [
