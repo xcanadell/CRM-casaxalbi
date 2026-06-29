@@ -53,10 +53,10 @@
     "ingredients": [
       {
         "nom": "Carrillera",
-        "quantitat": 1,
+        "quantitat": 0.5,
         "unitat": "g",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "cost_unitari": 3,
+        "cost_total": 1.5
       },
       {
         "nom": "Briox",
@@ -64,12 +64,19 @@
         "unitat": "u",
         "cost_unitari": 4.15,
         "cost_total": 0.83
+      },
+      {
+        "nom": "Verdures",
+        "quantitat": 0.2,
+        "unitat": "g",
+        "cost_unitari": 2,
+        "cost_total": 0.4
       }
     ],
-    "cost_mp": 0.83,
-    "cost_prod": 0,
-    "cost_total": 0.83,
-    "updated_at": "2026-06-29T10:20:14.276Z"
+    "cost_mp": 2.73,
+    "cost_prod": 1,
+    "cost_total": 3.73,
+    "updated_at": "2026-06-29T10:22:02.848Z"
   },
   {
     "titol": "Panceta baja temperatura con Baba Ganoush",
