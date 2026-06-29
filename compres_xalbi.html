@@ -495,6 +495,8 @@ table.products td input.center{text-align:center} table.products td input.right{
         <option value="Casa rural">Casa rural</option>
         <option value="RRSS">RRSS</option>
         <option value="Client Origen">Client Origen</option>
+        <option value="Família/Amics">Família/Amics</option>
+        <option value="Website">Website</option>
       </select>
     </div>
     <div id="clientsList"></div>
@@ -762,6 +764,8 @@ table.products td input.center{text-align:center} table.products td input.right{
           <option value="Casa rural">Casa rural</option>
           <option value="RRSS">RRSS</option>
           <option value="Client Origen">Client Origen</option>
+          <option value="Família/Amics">Família/Amics</option>
+          <option value="Website">Website</option>
         </select>
       </div>
     </div>
@@ -1400,14 +1404,14 @@ let clients=[];
 let clientEditIdx=null;
 
 const ORIGEN_CLASS={
-  'Veí Zaldierna':'vei-zal','Veí Ezcaray':'vei-ezc',
+  'Veí Zaldierna':'vei-zal','Veí Ezcaray':'vei-ezc','Família/Amics':'familia','Website':'website',
   'Acompanyant de veí':'acomp','Casa rural':'rural',
   'RRSS':'rrss','Client Origen':'origen'
 };
 const ORIGEN_ICON={
   'Veí Zaldierna':'🏘️','Veí Ezcaray':'🏡',
   'Acompanyant de veí':'👫','Casa rural':'🌿',
-  'RRSS':'📱','Client Origen':'⭐'
+  'RRSS':'📱','Client Origen':'⭐','Família/Amics':'👨‍👩‍👧','Website':'🌐'
 };
 
 async function initClients(){
