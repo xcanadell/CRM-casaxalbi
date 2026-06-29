@@ -1467,12 +1467,8 @@ function renderClients(){
     const cls=ORIGEN_CLASS[c.origen]||'origen';
     const icon=ORIGEN_ICON[c.origen]||'👤';
     const nomComplet=([c.nom,c.cognom].filter(Boolean).join(' '))||'—';
-    const telLink=c.tel?`<a href="tel:${c.tel}" style="color:inherit;text-decoration:none">${esc(c.tel)}</a>`:'—';
-    const emailLink=c.email?`<a href="mailto:${c.email}" style="color:#1565c0;text-decoration:none">${esc(c.email)}</a>`:'—';
     return`<tr>
       <td style="font-weight:500">${esc(nomComplet)}</td>
-      <td>${telLink}</td>
-      <td>${emailLink}</td>
       <td style="color:#666;font-size:12px">${esc(c.poblacio||'—')}</td>
       <td>${c.origen?`<span class="origen-pill origen-${cls}">${icon} ${esc(c.origen)}</span>`:'—'}</td>
       <td class="notes-preview" title="${esc(c.notes||'')}">${esc(c.notes||'—')}</td>
@@ -1484,12 +1480,10 @@ function renderClients(){
   }).join('');
   container.innerHTML=`<table class="clients-table">
     <thead><tr>
-      <th style="width:18%">Nom i cognom</th>
-      <th style="width:13%">Telèfon</th>
-      <th style="width:18%">Email</th>
-      <th style="width:12%">Població</th>
-      <th style="width:15%">Origen</th>
-      <th style="width:16%">Notes</th>
+      <th style="width:22%">Nom i cognom</th>
+      <th style="width:15%">Població</th>
+      <th style="width:20%">Origen</th>
+      <th style="width:35%">Notes</th>
       <th style="width:8%;text-align:center"></th>
     </tr></thead>
     <tbody>${rows}</tbody>
