@@ -458,5 +458,15 @@
     "origen": "Veí Ezcaray",
     "notes": "Company del Masip",
     "updated_at": "2026-06-29T08:46:07.867Z"
+  },
+  {
+    "nom": "Jorge",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "Bilbao",
+    "origen": "Veí Zaldierna",
+    "notes": "Vei de Zaldierna",
+    "updated_at": "2026-06-29T11:26:01.748Z"
   }
 ]
