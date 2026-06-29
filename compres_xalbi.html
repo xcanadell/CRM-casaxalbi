@@ -780,6 +780,10 @@ table.products td input.center{text-align:center} table.products td input.right{
       <label>Notes</label>
       <textarea id="cli-notes" placeholder="Comentaris, preferències, al·lèrgies, dates de visita..." style="width:100%;padding:8px 10px;border:1px solid #ddd;border-radius:7px;font-size:13px;font-family:inherit;outline:none;resize:vertical;min-height:72px;color:#1a1a1a"></textarea>
     </div>
+    <div id="cli-events-section" style="display:none;margin-top:14px;padding-top:14px;border-top:1px solid #eee">
+      <div style="font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">📅 Esdeveniments assistits</div>
+      <div id="cli-events-list"></div>
+    </div>
     <div class="modal-footer" style="margin-top:14px">
       <button class="btn btn-danger btn-sm" onclick="closeClientModal()">Cancel·lar</button>
       <button class="btn btn-primary" onclick="saveClient()">💾 Desar</button>
@@ -1467,11 +1471,13 @@ function renderClients(){
     const cls=ORIGEN_CLASS[c.origen]||'origen';
     const icon=ORIGEN_ICON[c.origen]||'👤';
     const nomComplet=([c.nom,c.cognom].filter(Boolean).join(' '))||'—';
+    const nEvents=events.filter(ev=>(ev.comensals||[]).some(com=>com.nom===nomComplet)).length;
     return`<tr>
       <td style="font-weight:500">${esc(nomComplet)}</td>
       <td style="color:#666;font-size:12px">${esc(c.poblacio||'—')}</td>
       <td>${c.origen?`<span class="origen-pill origen-${cls}">${icon} ${esc(c.origen)}</span>`:'—'}</td>
       <td class="notes-preview" title="${esc(c.notes||'')}">${esc(c.notes||'—')}</td>
+      <td style="text-align:center;font-weight:600;color:${nEvents>0?'#2e7d32':'#bbb'}">${nEvents>0?nEvents:'—'}</td>
       <td style="text-align:center;white-space:nowrap">
         <button class="btn btn-sm btn-edit" style="padding:3px 8px;margin-right:4px" onclick="openClientModal(${ri})">✏️</button>
         <button class="btn btn-sm btn-danger" style="padding:3px 8px" onclick="deleteClient(${ri})">🗑</button>
@@ -1480,11 +1486,12 @@ function renderClients(){
   }).join('');
   container.innerHTML=`<table class="clients-table">
     <thead><tr>
-      <th style="width:22%">Nom i cognom</th>
-      <th style="width:15%">Població</th>
-      <th style="width:20%">Origen</th>
-      <th style="width:35%">Notes</th>
-      <th style="width:8%;text-align:center"></th>
+      <th style="width:20%">Nom i cognom</th>
+      <th style="width:13%">Població</th>
+      <th style="width:18%">Origen</th>
+      <th style="width:30%">Notes</th>
+      <th style="width:7%;text-align:center">Events</th>
+      <th style="width:12%;text-align:center"></th>
     </tr></thead>
     <tbody>${rows}</tbody>
   </table>`;
@@ -1501,6 +1508,24 @@ function openClientModal(idx){
   document.getElementById('cli-poblacio').value=c.poblacio||'';
   document.getElementById('cli-origen').value=c.origen||'';
   document.getElementById('cli-notes').value=c.notes||'';
+  // Events del client
+  const nomComplet=([c.nom,c.cognom].filter(Boolean).join(' '))||'';
+  const cliEvents=events.filter(ev=>(ev.comensals||[]).some(com=>com.nom===nomComplet))
+    .sort((a,b)=>(b.data||'').localeCompare(a.data||''));
+  const sec=document.getElementById('cli-events-section');
+  const listEl=document.getElementById('cli-events-list');
+  if(clientEditIdx!==null&&cliEvents.length){
+    sec.style.display='block';
+    listEl.innerHTML=cliEvents.map(ev=>{
+      const dataFmt=ev.data?new Date(ev.data+'T12:00:00').toLocaleDateString('ca-ES',{day:'numeric',month:'short',year:'numeric'}):'—';
+      return`<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;border-radius:7px;background:#f9f9f9;margin-bottom:5px;font-size:13px">
+        <span>📅 <strong>${dataFmt}</strong> <span style="color:#888;font-size:11px;margin-left:6px">${esc(ev.lloc||'')}</span></span>
+        <span style="font-weight:600;color:#2e7d32">${(ev.total||0).toFixed(2)} €</span>
+      </div>`;
+    }).join('');
+  } else {
+    sec.style.display='none';
+  }
   document.getElementById('clientModal').classList.add('show');
   document.getElementById('cli-nom').focus();
 }
