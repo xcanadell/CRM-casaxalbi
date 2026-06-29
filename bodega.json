@@ -370,5 +370,17 @@
     "data_compra": "",
     "data_venda": "2026-06-26",
     "updated_at": "2026-06-29T08:08:34.175Z"
+  },
+  {
+    "nom": "Cric Cric Blanc",
+    "any": "2021",
+    "bodega": "Clos Lentiscus",
+    "tipus": "Vi negre",
+    "do": "Catalunnya",
+    "cost": 15,
+    "pvp": 36,
+    "data_compra": "",
+    "data_venda": "2026-06-26",
+    "updated_at": "2026-06-29T08:11:19.328Z"
   }
 ]
