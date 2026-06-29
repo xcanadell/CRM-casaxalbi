@@ -346,5 +346,17 @@
     "data_compra": "2026-05-23",
     "data_venda": "2026-06-26",
     "updated_at": "2026-06-29T07:57:36.333Z"
+  },
+  {
+    "nom": "La Barbacana",
+    "any": "2022",
+    "bodega": "La Senda",
+    "tipus": "Vi negre",
+    "do": "Castilla Leon",
+    "cost": 18,
+    "pvp": 36,
+    "data_compra": "",
+    "data_venda": "2026-06-26",
+    "updated_at": "2026-06-29T08:06:37.995Z"
   }
 ]
