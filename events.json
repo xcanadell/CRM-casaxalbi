@@ -189,9 +189,62 @@
           "Xupito"
         ],
         "notes": "Va fer un conyac amb gel després del sopar que no se li va cobrar. (20 euros de propina)"
+      },
+      {
+        "nom": "Bibi Venozolanos",
+        "preu_menjar": 50,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [
+          "Carrillera sobre briox",
+          "Panceta baja temperatura con Baba Ganoush",
+          "Puerros con queso fresco y frutos secos",
+          "Brandada de Bacalao con flores de calabacin",
+          "Carpatxo de Gamba",
+          "Yogur de Ezcaray"
+        ],
+        "vins": [
+          "Familia Valdelana Criannza (2023)",
+          "Temerario Garnacha Viñas Viejas (2024)",
+          "La Barbacana (2022)",
+          "Batussa (2024)",
+          "Cric Cric Blanc (2021)",
+          "Escumos Sanromà"
+        ],
+        "varios": [
+          "Pan",
+          "Cafe con leche"
+        ],
+        "notes": ""
+      },
+      {
+        "nom": "Elder Venezolano",
+        "preu_menjar": 50,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [
+          "Carrillera sobre briox",
+          "Panceta baja temperatura con Baba Ganoush",
+          "Puerros con queso fresco y frutos secos",
+          "Brandada de Bacalao con flores de calabacin",
+          "Carpatxo de Gamba",
+          "Yogur de Ezcaray"
+        ],
+        "vins": [
+          "Familia Valdelana Criannza (2023)",
+          "Temerario Garnacha Viñas Viejas (2024)",
+          "La Barbacana (2022)",
+          "Batussa (2024)",
+          "Cric Cric Blanc (2021)",
+          "Escumos Sanromà"
+        ],
+        "varios": [
+          "Pan"
+        ],
+        "notes": ""
       }
     ],
-    "total": 510
+    "total": 650
   },
   {
     "data": "2026-02-15",
