@@ -124,14 +124,14 @@
         "nom": "Frutos secos",
         "quantitat": 0.11,
         "unitat": "g",
-        "cost_unitari": 2,
-        "cost_total": 0.22
+        "cost_unitari": 1,
+        "cost_total": 0.11
       }
     ],
-    "cost_mp": 1.21,
+    "cost_mp": 1.1,
     "cost_prod": 1,
-    "cost_total": 2.21,
-    "updated_at": "2026-06-29T11:14:38.656Z"
+    "cost_total": 2.1,
+    "updated_at": "2026-06-29T11:14:54.677Z"
   },
   {
     "titol": "Brandada de Bacalao con flores de calabacin",
