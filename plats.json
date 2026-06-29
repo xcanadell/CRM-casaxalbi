@@ -170,16 +170,16 @@
     "ingredients": [
       {
         "nom": "Gamba",
-        "quantitat": 1,
+        "quantitat": 0.125,
         "unitat": "g",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "cost_unitari": 8,
+        "cost_total": 1
       }
     ],
-    "cost_mp": 0,
+    "cost_mp": 1,
     "cost_prod": 1,
-    "cost_total": 1,
-    "updated_at": "2026-06-29T10:25:18.127Z"
+    "cost_total": 2,
+    "updated_at": "2026-06-29T11:17:01.025Z"
   },
   {
     "titol": "Pica pica per cata vins",
