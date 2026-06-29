@@ -108,30 +108,30 @@
     "ingredients": [
       {
         "nom": "puerros",
-        "quantitat": 1,
+        "quantitat": 0.11,
         "unitat": "g",
-        "cost_unitari": 1,
-        "cost_total": 1
+        "cost_unitari": 4,
+        "cost_total": 0.44
       },
       {
         "nom": "Queso fresco",
-        "quantitat": 0.12,
+        "quantitat": 0.11,
         "unitat": "g",
         "cost_unitari": 5,
-        "cost_total": 0.6
+        "cost_total": 0.55
       },
       {
         "nom": "Frutos secos",
-        "quantitat": 0.12,
+        "quantitat": 0.11,
         "unitat": "g",
         "cost_unitari": 2,
-        "cost_total": 0.24
+        "cost_total": 0.22
       }
     ],
-    "cost_mp": 1.84,
+    "cost_mp": 1.21,
     "cost_prod": 1,
-    "cost_total": 2.84,
-    "updated_at": "2026-06-29T10:24:11.294Z"
+    "cost_total": 2.21,
+    "updated_at": "2026-06-29T11:14:38.656Z"
   },
   {
     "titol": "Brandada de Bacalao con flores de calabacin",
