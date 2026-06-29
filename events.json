@@ -569,33 +569,6 @@
         ]
       },
       {
-        "nom": "Javi",
-        "preu_menjar": 35,
-        "preu_beguda": 20,
-        "preu_altres": 5,
-        "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray"
-        ],
-        "vins": [
-          "Alto Otero",
-          "Espantaburros Clarete (2020)",
-          "Temerario Garnacha Viñas Viejas (2024)",
-          "Temerario Mazuela Viñas Viejas (2024)",
-          "Naturaleza Salvaje (2020)",
-          "Colet Gran Cuvée Rosé (2019)"
-        ],
-        "notes": "Jack Daniels",
-        "varios": [
-          "Pan",
-          "Licor solo"
-        ]
-      },
-      {
         "nom": "Noe",
         "preu_menjar": 35,
         "preu_beguda": 20,
@@ -617,33 +590,6 @@
           "Colet Gran Cuvée Rosé (2019)"
         ],
         "notes": "Gintonic Gordons",
-        "varios": [
-          "Pan",
-          "Gintonic"
-        ]
-      },
-      {
-        "nom": "Javier",
-        "preu_menjar": 35,
-        "preu_beguda": 20,
-        "preu_altres": 5,
-        "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray"
-        ],
-        "vins": [
-          "Alto Otero",
-          "Espantaburros Clarete (2020)",
-          "Temerario Garnacha Viñas Viejas (2024)",
-          "Temerario Mazuela Viñas Viejas (2024)",
-          "Naturaleza Salvaje (2020)",
-          "Colet Gran Cuvée Rosé (2019)"
-        ],
-        "notes": "Gintoninc Gordons",
         "varios": [
           "Pan",
           "Gintonic"
@@ -674,6 +620,60 @@
         "varios": [
           "Pan"
         ]
+      },
+      {
+        "nom": "Sergio Novio Noe",
+        "preu_menjar": 35,
+        "preu_beguda": 20,
+        "preu_altres": 5,
+        "plats": [
+          "Ensalada del Huerto Xalbi",
+          "Tiradito de Salmón",
+          "Rebozuelos Salteados",
+          "Risotto de Verduras",
+          "Carrillera a Baja Temperatura",
+          "Yogur de Ezcaray"
+        ],
+        "vins": [
+          "Alto Otero",
+          "Espantaburros Clarete (2020)",
+          "Temerario Garnacha Viñas Viejas (2024)",
+          "Temerario Mazuela Viñas Viejas (2024)",
+          "Naturaleza Salvaje (2020)",
+          "Colet Gran Cuvée Rosé (2019)"
+        ],
+        "varios": [
+          "Pan",
+          "Combinado"
+        ],
+        "notes": ""
+      },
+      {
+        "nom": "Javi Casa rural",
+        "preu_menjar": 35,
+        "preu_beguda": 20,
+        "preu_altres": 5,
+        "plats": [
+          "Ensalada del Huerto Xalbi",
+          "Tiradito de Salmón",
+          "Rebozuelos Salteados",
+          "Risotto de Verduras",
+          "Carrillera a Baja Temperatura",
+          "Yogur de Ezcaray"
+        ],
+        "vins": [
+          "Alto Otero",
+          "Espantaburros Clarete (2020)",
+          "Temerario Garnacha Viñas Viejas (2024)",
+          "Temerario Mazuela Viñas Viejas (2024)",
+          "Naturaleza Salvaje (2020)",
+          "Colet Gran Cuvée Rosé (2019)"
+        ],
+        "varios": [
+          "Pan",
+          "Combinado"
+        ],
+        "notes": ""
       }
     ],
     "total": 530
