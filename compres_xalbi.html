@@ -531,6 +531,7 @@ table.products td input.center{text-align:center} table.products td input.right{
     <div class="plats-header-row">
       <h2>🍽️ Carta de plats</h2>
       <div style="display:flex;gap:8px;align-items:center">
+        <input id="plats-search" type="search" placeholder="🔍 Cercar plat..." oninput="renderPlats()" style="padding:7px 12px;border:1px solid #ddd;border-radius:8px;font-size:13px;font-family:inherit;width:180px;outline:none">
         <select id="plats-sort" onchange="renderPlats()" style="padding:7px 10px;border:1px solid #ddd;border-radius:8px;font-size:12px;font-family:inherit;background:#fff">
           <option value="ordre">Ordre d'entrada</option>
           <option value="nom_asc">A → Z</option>
@@ -1087,11 +1088,15 @@ function renderPlats(){
   const list=document.getElementById('platsList');
   if(!plats.length){list.innerHTML='<div class="plat-empty">Cap plat registrat. Clica "+ Nou plat" per afegir-ne un.</div>';return;}
   const sort=document.getElementById('plats-sort')?.value||'ordre';
-  const sorted=[...plats].map((p,i)=>({...p,_i:i})).sort((a,b)=>{
-    if(sort==='nom_asc')return(a.titol||'').localeCompare(b.titol||'','ca',{sensitivity:'base'});
-    if(sort==='nom_desc')return(b.titol||'').localeCompare(a.titol||'','ca',{sensitivity:'base'});
-    return 0; // ordre d'entrada
-  });
+  const q=(document.getElementById('plats-search')?.value||'').toLowerCase();
+  const sorted=[...plats].map((p,i)=>({...p,_i:i}))
+    .filter(p=>!q||(p.titol||'').toLowerCase().includes(q)||(p.descripcio||'').toLowerCase().includes(q))
+    .sort((a,b)=>{
+      if(sort==='nom_asc')return(a.titol||'').localeCompare(b.titol||'','ca',{sensitivity:'base'});
+      if(sort==='nom_desc')return(b.titol||'').localeCompare(a.titol||'','ca',{sensitivity:'base'});
+      return 0;
+    });
+  if(!sorted.length){list.innerHTML='<div class="plat-empty">Cap plat coincideix amb la cerca.</div>';return;}
   list.innerHTML=sorted.map((p,i)=>{const ri=p._i;
     const ings=(p.ingredients||[]).map(ing=>`
       <tr>
