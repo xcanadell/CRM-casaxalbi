@@ -60,16 +60,16 @@
       },
       {
         "nom": "Briox",
-        "quantitat": 1,
-        "unitat": "g",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "quantitat": 0.2,
+        "unitat": "u",
+        "cost_unitari": 4.15,
+        "cost_total": 0.83
       }
     ],
-    "cost_mp": 0,
+    "cost_mp": 0.83,
     "cost_prod": 0,
-    "cost_total": 0,
-    "updated_at": "2026-06-26T12:13:06.262Z"
+    "cost_total": 0.83,
+    "updated_at": "2026-06-29T10:20:14.276Z"
   },
   {
     "titol": "Panceta baja temperatura con Baba Ganoush",
