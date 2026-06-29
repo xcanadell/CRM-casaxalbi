@@ -781,6 +781,12 @@ table.products td input.center{text-align:center} table.products td input.right{
     <h2>👤 Afegir comensal</h2>
     <input class="picker-search" id="clientPickerSearch" placeholder="🔍 Cercar client..." oninput="filterClientPicker()">
     <div class="picker-list" id="clientPickerList"></div>
+    <div id="copiarPrimerWrap" style="display:none;margin:10px 0 4px;padding:10px 12px;background:#f0f7ff;border-radius:8px;border:1px solid #c5deff">
+      <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;color:#1565c0">
+        <input type="checkbox" id="copiarPrimerCheck" style="width:16px;height:16px;cursor:pointer">
+        Copiar plats, vins i altres del primer comensal
+      </label>
+    </div>
     <div class="modal-footer" style="margin-top:12px">
       <button class="btn btn-sm btn-danger" onclick="closeClientPicker()">Cancel·lar</button>
     </div>
@@ -1805,6 +1811,12 @@ function updateBilling(){
 function openClientPicker(){
   document.getElementById('clientPickerSearch').value='';
   filterClientPicker();
+  // Mostrar checkbox de còpia només si ja hi ha algun comensal amb dades
+  const primer=(currentEvent.comensals||[])[0];
+  const teneDades=primer&&((primer.plats||[]).length||(primer.vins||[]).length||(primer.varios||[]).length);
+  const wrap=document.getElementById('copiarPrimerWrap');
+  wrap.style.display=teneDades?'block':'none';
+  document.getElementById('copiarPrimerCheck').checked=false;
   document.getElementById('clientPickerModal').classList.add('show');
 }
 function closeClientPicker(){
@@ -1832,7 +1844,19 @@ function addComensalFromClient(idx){
   const c=clients[idx];
   const nom=(c.nom+' '+(c.cognom||'')).trim();
   currentEvent.comensals=currentEvent.comensals||[];
-  currentEvent.comensals.push({nom,preu_menjar:0,preu_beguda:0,preu_altres:0,plats:[],vins:[],varios:[],notes:''});
+  const copiar=document.getElementById('copiarPrimerCheck').checked;
+  const primer=currentEvent.comensals[0];
+  const nouComensal={
+    nom,
+    preu_menjar: copiar&&primer ? (primer.preu_menjar||0) : 0,
+    preu_beguda: copiar&&primer ? (primer.preu_beguda||0) : 0,
+    preu_altres: copiar&&primer ? (primer.preu_altres||0) : 0,
+    plats: copiar&&primer ? [...(primer.plats||[])] : [],
+    vins:  copiar&&primer ? [...(primer.vins||[])]  : [],
+    varios:copiar&&primer ? [...(primer.varios||[])]: [],
+    notes: ''
+  };
+  currentEvent.comensals.push(nouComensal);
   closeClientPicker();
   renderComensals();
   updateBilling();
