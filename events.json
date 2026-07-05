@@ -6,10 +6,14 @@
     "comensals": [
       {
         "nom": "Jose Maria (Txema)",
-        "preu_menjar": 40,
-        "preu_beguda": 0,
-        "preu_altres": 0,
-        "plats": [],
+        "preu_menjar": 30,
+        "preu_beguda": 7,
+        "preu_altres": 3,
+        "plats": [
+          "Berberechos frescos",
+          "Plato de Gambas rojas (8 und)",
+          "Carrillera a Baja Temperatura"
+        ],
         "vins": [
           "Ijalba Crianza"
         ],
@@ -21,10 +25,14 @@
       },
       {
         "nom": "Javi Casa rural",
-        "preu_menjar": 40,
-        "preu_beguda": 0,
-        "preu_altres": 0,
-        "plats": [],
+        "preu_menjar": 30,
+        "preu_beguda": 7,
+        "preu_altres": 3,
+        "plats": [
+          "Berberechos frescos",
+          "Plato de Gambas rojas (8 und)",
+          "Carrillera a Baja Temperatura"
+        ],
         "vins": [
           "Ijalba Crianza"
         ],
