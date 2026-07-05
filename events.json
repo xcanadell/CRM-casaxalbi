@@ -1,5 +1,42 @@
 [
   {
+    "data": "2026-07-03",
+    "lloc": "Catering",
+    "notes": "Dinar casa x 2 paga Josema",
+    "comensals": [
+      {
+        "nom": "Jose Maria (Txema)",
+        "preu_menjar": 40,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [
+          "Ijalba Crianza"
+        ],
+        "varios": [
+          "Café",
+          "Licor solo"
+        ],
+        "notes": "2 xupitos de Jack Daniels"
+      },
+      {
+        "nom": "Javi Casa rural",
+        "preu_menjar": 40,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [
+          "Ijalba Crianza"
+        ],
+        "varios": [
+          "Licor solo"
+        ],
+        "notes": ""
+      }
+    ],
+    "total": 80
+  },
+  {
     "data": "2026-07-02",
     "lloc": "Catering",
     "notes": "Paella 7 cumple Nando (16€ x Cap)",
