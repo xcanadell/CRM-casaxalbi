@@ -67,8 +67,19 @@
     "data": "2026-07-04",
     "lloc": "Sopar Casa Xalbi",
     "notes": "Sopar amb veins de Zaldierna organitzat per Carlos y Ester",
-    "comensals": [],
-    "total": 0
+    "comensals": [
+      {
+        "nom": "Carlos",
+        "preu_menjar": 245,
+        "preu_beguda": 108,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "varios": [],
+        "notes": ""
+      }
+    ],
+    "total": 353
   },
   {
     "data": "2026-07-03",
