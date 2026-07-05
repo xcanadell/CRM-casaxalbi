@@ -1,5 +1,22 @@
 [
   {
+    "titol": "Berberechos frescos",
+    "descripcio": "",
+    "ingredients": [
+      {
+        "nom": "berberecho",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 2,
+        "cost_total": 2
+      }
+    ],
+    "cost_mp": 2,
+    "cost_prod": 1,
+    "cost_total": 3,
+    "updated_at": "2026-07-05T11:05:27.321Z"
+  },
+  {
     "titol": "Plato de Gambas rojas (8 und)",
     "descripcio": "",
     "ingredients": [],
