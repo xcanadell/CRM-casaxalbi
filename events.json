@@ -73,7 +73,13 @@
         "preu_menjar": 245,
         "preu_beguda": 108,
         "preu_altres": 0,
-        "plats": [],
+        "plats": [
+          "Puerros con queso fresco y frutos secos",
+          "Carpatxo de Gamba",
+          "Carrillera a Baja Temperatura",
+          "Yogur de Ezcaray",
+          "Steak Tartar de Vedella de Girona"
+        ],
         "vins": [],
         "varios": [],
         "notes": ""
