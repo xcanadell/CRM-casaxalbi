@@ -2,6 +2,60 @@
   {
     "establiment": "Lupa - Tus Vecinos de Confianza",
     "tipus": "Supermercat",
+    "data": "30/06/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "ALCACH ALTEZA COR.8/12 200 GR.",
+        "quantitat": 1,
+        "preu_unitari": 1.95,
+        "total": 1.95,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BIMI BANDEJA 200 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 2.69,
+        "total": 2.69,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BOLSA RECICLABLE GRANDE",
+        "quantitat": 1,
+        "preu_unitari": 0.15,
+        "total": 0.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PUERRO MANOJO UNOS 6x1,99",
+        "quantitat": 6,
+        "preu_unitari": 1.99,
+        "total": 11.94,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TIRAS COSTILLA FRESCA CERDO, KILO",
+        "quantitat": 1,
+        "preu_unitari": 5.37,
+        "total": 5.37,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CARRILLERA DE CERDO, KILO",
+        "quantitat": 1,
+        "preu_unitari": 29.92,
+        "total": 29.92,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 52.02,
+    "saved_at": "2026-07-08T10:41:04.156Z"
+  },
+  {
+    "establiment": "Lupa - Tus Vecinos de Confianza",
+    "tipus": "Supermercat",
     "data": "01/07/2026",
     "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
     "nif": "A39050349",
