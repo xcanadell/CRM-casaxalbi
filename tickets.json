@@ -2,6 +2,74 @@
   {
     "establiment": "Lupa - Tus Vecinos de Confianza",
     "tipus": "Supermercat",
+    "data": "07/07/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "ZANAHORIA ECOLOGICA BJA 400 GR",
+        "quantitat": 1,
+        "preu_unitari": 2.39,
+        "total": 2.39,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BOLSA LUPA RECICLABLE GRANDE",
+        "quantitat": 1,
+        "preu_unitari": 0.15,
+        "total": 0.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PUERRO MANOJO UNDS",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CALDO G.BLANCA CAS.POLLO B.LT.",
+        "quantitat": 1,
+        "preu_unitari": 2.3,
+        "total": 2.3,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CARRILLERA DE CERDO, KILO",
+        "quantitat": 1,
+        "preu_unitari": 42.38,
+        "total": 42.38,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ESPARRAGO VERDE, MANOJO 250",
+        "quantitat": 1,
+        "preu_unitari": 3.79,
+        "total": 3.79,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BERENJENA NEGRA",
+        "quantitat": 1,
+        "preu_unitari": 1.79,
+        "total": 1.79,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "AGUACATES",
+        "quantitat": 1,
+        "preu_unitari": 2.95,
+        "total": 2.95,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 57.74,
+    "saved_at": "2026-07-08T10:41:50.485Z"
+  },
+  {
+    "establiment": "Lupa - Tus Vecinos de Confianza",
+    "tipus": "Supermercat",
     "data": "30/06/2026",
     "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
     "nif": "A39050349",
