@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "BM",
+    "tipus": "Supermercat",
+    "data": "03/07/2026",
+    "adreca": "C/SAGASTIA 28 B, 26280 EZCARAY",
+    "nif": "B26516799",
+    "telefon": "900 555 300",
+    "productes": [
+      {
+        "descripcio": "CREMA ORUJO RUAVIEJA 0,7L",
+        "quantitat": 1,
+        "preu_unitari": 12.99,
+        "total": 12.99,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 12.99,
+    "saved_at": "2026-07-08T10:33:07.906Z"
+  },
+  {
     "establiment": "QUESERÍA VALLE DEL CILORIA",
     "tipus": "Factura simplificada",
     "data": "03/07/2026",
