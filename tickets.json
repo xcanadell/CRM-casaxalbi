@@ -1,5 +1,87 @@
 [
   {
+    "establiment": "Lupa",
+    "tipus": "Supermercat",
+    "data": "01/07/2026",
+    "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "HIELO BOLSA DE 2 KILOS",
+        "quantitat": 1,
+        "preu_unitari": 1.15,
+        "total": 1.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "HIELO BOLSA DE 2 KILOS",
+        "quantitat": 1,
+        "preu_unitari": 1.15,
+        "total": 1.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MANTEQ.MARGUI PASTILLA 250 GR.",
+        "quantitat": 1,
+        "preu_unitari": 2.7,
+        "total": 2.7,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BERBERECHO MALLA 500 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 3.39,
+        "total": 3.39,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BERBERECHO 75/90 500 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 10.99,
+        "total": 10.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ACEITE ABRILSOL GIRASOL LITRO",
+        "quantitat": 1,
+        "preu_unitari": 1.72,
+        "total": 1.72,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "SALSA LEA&PERRINS WORCESTER150",
+        "quantitat": 1,
+        "preu_unitari": 3.25,
+        "total": 3.25,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BRIOCHE TRENZADO 400 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 4.19,
+        "total": 4.19,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BRIOCHE TRENZADO 400 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 4.19,
+        "total": 4.19,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BRIOCHE TRENZADO 400 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 4.19,
+        "total": 4.19,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 36.92,
+    "saved_at": "2026-07-08T10:30:54.614Z"
+  },
+  {
     "establiment": "LUPA - SEMARK AC GROUP S.A.",
     "tipus": "Supermercat",
     "data": "26/06/2026",
