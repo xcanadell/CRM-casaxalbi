@@ -1,5 +1,108 @@
 [
   {
+    "establiment": "Lupa - Tus Vecinos de Confianza",
+    "tipus": "Supermercat",
+    "data": "01/07/2026",
+    "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "ALIN FRISKIES MN.MENU BUEY 1,5",
+        "quantitat": 1,
+        "preu_unitari": 3.99,
+        "total": 3.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CARNE DE NORA RAJOPE 150 GR.",
+        "quantitat": 1,
+        "preu_unitari": 2.09,
+        "total": 2.09,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "HUEVO AV.PRECIADO CLASE XL DOC",
+        "quantitat": 1,
+        "preu_unitari": 4.4,
+        "total": 4.4,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ANGURINAS PESCANOVA 2X100GR.U",
+        "quantitat": 1,
+        "preu_unitari": 2.59,
+        "total": 2.59,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 0,0 TOST.LT.33CL",
+        "quantitat": 1,
+        "preu_unitari": 6.88,
+        "total": 6.88,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAN REB.SEMILL&CEREALES 490 GR",
+        "quantitat": 1,
+        "preu_unitari": 1.92,
+        "total": 1.92,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PUERRO MANOJO UNDS",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PUERRO MANOJO UNDS",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PUERRO MANOJO UNDS",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "(RF) HEL.NESTLE MN.MAXIBON NATA P-6",
+        "quantitat": 1,
+        "preu_unitari": 4.5,
+        "total": 4.5,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "(TP) HEL.NESTLE MN.MAXIBON NATA P-6",
+        "quantitat": 1,
+        "preu_unitari": -0.68,
+        "total": -0.68,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "(RF) ROSTLE MN MAXIBON NATA P-6",
+        "quantitat": 1,
+        "preu_unitari": -4.5,
+        "total": -4.5,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "(RF) DEL NESTLE MN MAXIBON NATA P-6",
+        "quantitat": 1,
+        "preu_unitari": 0.68,
+        "total": 0.68,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 27.84,
+    "saved_at": "2026-07-08T10:40:13.783Z"
+  },
+  {
     "establiment": "EROSKI Center Haro 2",
     "tipus": "FACTURA SIMPLIFICADA",
     "data": "29/06/2026",
