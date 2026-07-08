@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "QUESERÍA VALLE DEL CILORIA",
+    "tipus": "Factura simplificada",
+    "data": "03/07/2026",
+    "adreca": "CTRA. EZCARAY - VALGAÑON Nº 71, 26288 ZORRAQUIN, LA RIOJA",
+    "nif": "E26196329",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "QUESO FRESCO 400GR",
+        "quantitat": 2,
+        "preu_unitari": 5,
+        "total": 10,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "YOGUR NATURAL 450GR",
+        "quantitat": 5,
+        "preu_unitari": 2.3,
+        "total": 11.5,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 21.5,
+    "saved_at": "2026-07-08T10:32:43.591Z"
+  },
+  {
     "establiment": "ADEMANDA pastelería artesana",
     "tipus": "Factura Simplificada",
     "data": "03/07/2026",
