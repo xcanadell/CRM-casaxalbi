@@ -1,5 +1,73 @@
 [
   {
+    "establiment": "EROSKI Center Haro 2",
+    "tipus": "FACTURA SIMPLIFICADA",
+    "data": "29/06/2026",
+    "adreca": "",
+    "nif": "F-20033361",
+    "telefon": "941303305",
+    "productes": [
+      {
+        "descripcio": "SETA OSTRA",
+        "quantitat": 1,
+        "preu_unitari": 1.64,
+        "total": 1.64,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "M.PIZ.FINISS.REDO",
+        "quantitat": 1,
+        "preu_unitari": 2.19,
+        "total": 2.19,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOMATE CHERRY PER",
+        "quantitat": 1,
+        "preu_unitari": 3.69,
+        "total": 3.69,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "EXTRAFINO NATUR",
+        "quantitat": 1,
+        "preu_unitari": 5.07,
+        "total": 5.07,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "SHIITAKE",
+        "quantitat": 2,
+        "preu_unitari": 2.85,
+        "total": 5.7,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PATE A LA TRUFA",
+        "quantitat": 1,
+        "preu_unitari": 1.5,
+        "total": 1.5,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PATE A LA PIMIENT",
+        "quantitat": 1,
+        "preu_unitari": 1.5,
+        "total": 1.5,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "SALSA MANGO",
+        "quantitat": 1,
+        "preu_unitari": 3.99,
+        "total": 3.99,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 25.28,
+    "saved_at": "2026-07-08T10:33:55.126Z"
+  },
+  {
     "establiment": "BM",
     "tipus": "Supermercat",
     "data": "03/07/2026",
