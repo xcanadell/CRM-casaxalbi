@@ -1,5 +1,283 @@
 [
   {
+    "establiment": "LIDL SUPERMERCADOS S.A.U.",
+    "tipus": "Supermercat",
+    "data": "29/06/2026",
+    "adreca": "Avda. Sto. Domingo de la calzada, 26200 Haro",
+    "nif": "A60195278",
+    "telefon": "900958311",
+    "productes": [
+      {
+        "descripcio": "MEGA ROLLO ABSORBEN.",
+        "quantitat": 2,
+        "preu_unitari": 2.85,
+        "total": 5.7,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAPEL HIGIENICO",
+        "quantitat": 1,
+        "preu_unitari": 3.59,
+        "total": 3.59,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "LEJIA DETERGENTE",
+        "quantitat": 1,
+        "preu_unitari": 0.95,
+        "total": 0.95,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "KH-7 DESENGRASANTE",
+        "quantitat": 1,
+        "preu_unitari": 3.69,
+        "total": 3.69,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "GEL WC CON LEJIA",
+        "quantitat": 1,
+        "preu_unitari": 0.89,
+        "total": 0.89,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "COCA COLA REGULAR",
+        "quantitat": 1,
+        "preu_unitari": 3,
+        "total": 3,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Desc.",
+        "quantitat": 1,
+        "preu_unitari": -0.3,
+        "total": -0.3,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PEPINILLOS AGRIDULC.",
+        "quantitat": 1,
+        "preu_unitari": 1.49,
+        "total": 1.49,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ESTRELLA GALICIA",
+        "quantitat": 2,
+        "preu_unitari": 4.12,
+        "total": 8.24,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "DETERGENTE MARSELLA",
+        "quantitat": 1,
+        "preu_unitari": 4.35,
+        "total": 4.35,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "LECHE ENTERA",
+        "quantitat": 1,
+        "preu_unitari": 0.96,
+        "total": 0.96,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PACK BEB. AVENA BAR",
+        "quantitat": 1,
+        "preu_unitari": 6.9,
+        "total": 6.9,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CALDO DE POLLO",
+        "quantitat": 2,
+        "preu_unitari": 0.69,
+        "total": 1.38,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOMATE FRITO",
+        "quantitat": 1,
+        "preu_unitari": 1.19,
+        "total": 1.19,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOMATE FRITO",
+        "quantitat": 1,
+        "preu_unitari": 0.92,
+        "total": 0.92,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PROVOLONE C/OREGANO",
+        "quantitat": 2,
+        "preu_unitari": 1.85,
+        "total": 3.7,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Desc.",
+        "quantitat": 1,
+        "preu_unitari": -0.12,
+        "total": -0.12,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MINI TORTILLAS TRIGO",
+        "quantitat": 1,
+        "preu_unitari": 0.99,
+        "total": 0.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PAJARITAS VEGETALES",
+        "quantitat": 1,
+        "preu_unitari": 0.85,
+        "total": 0.85,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BARRITAS PAN C/PIPAS",
+        "quantitat": 2,
+        "preu_unitari": 1.09,
+        "total": 2.18,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "MACARRON Nº6",
+        "quantitat": 1,
+        "preu_unitari": 1.15,
+        "total": 1.15,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "REGAÑAS",
+        "quantitat": 1,
+        "preu_unitari": 0.69,
+        "total": 0.69,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MIX DE FRUTOS SECOS",
+        "quantitat": 1,
+        "preu_unitari": 4.99,
+        "total": 4.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CAMPESINOS",
+        "quantitat": 2,
+        "preu_unitari": 0.89,
+        "total": 1.78,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "LOMOS BONITO",
+        "quantitat": 1,
+        "preu_unitari": 7.29,
+        "total": 7.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PERLAS DE PERFUME",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ACEITE DE COCO",
+        "quantitat": 2,
+        "preu_unitari": 2.99,
+        "total": 5.98,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "NACHOS",
+        "quantitat": 1,
+        "preu_unitari": 1.65,
+        "total": 1.65,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "COCKTAIL",
+        "quantitat": 1,
+        "preu_unitari": 1.59,
+        "total": 1.59,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CORTEZAS DE TRIGO",
+        "quantitat": 1,
+        "preu_unitari": 0.82,
+        "total": 0.82,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "FIDEOS MIE",
+        "quantitat": 2,
+        "preu_unitari": 1.19,
+        "total": 2.38,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PROMO 2a50%",
+        "quantitat": 1,
+        "preu_unitari": -0.6,
+        "total": -0.6,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BACON EN TIRAS",
+        "quantitat": 1,
+        "preu_unitari": 2.05,
+        "total": 2.05,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CEPILLOS-0509385",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BOLSAS GRANDES 50L",
+        "quantitat": 2,
+        "preu_unitari": 1.59,
+        "total": 3.18,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ACONDICIONADOR PLEX",
+        "quantitat": 1,
+        "preu_unitari": 4.59,
+        "total": 4.59,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "VINAGRE DE VINO",
+        "quantitat": 2,
+        "preu_unitari": 0.62,
+        "total": 1.24,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BUTIFARRA FAMILIAR",
+        "quantitat": 1,
+        "preu_unitari": 3.69,
+        "total": 3.69,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 98.69,
+    "saved_at": "2026-07-08T11:07:29.145Z"
+  },
+  {
     "establiment": "Lupa - Tus Vecinos de Confianza",
     "tipus": "Supermercat",
     "data": "07/07/2026",
