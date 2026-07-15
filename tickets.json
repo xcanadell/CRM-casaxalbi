@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "LUPA",
+    "tipus": "Supermercat",
+    "data": "04/07/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "ACEITUN.M.ACEITUN.EMBRUJOS 670G",
+        "quantitat": 1,
+        "preu_unitari": 4.09,
+        "total": 4.09,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERV.ESTR.GALIC.BOT.25 CL P6",
+        "quantitat": 1,
+        "preu_unitari": 4.12,
+        "total": 4.12,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERV.ESTR.GALIC.BOT.25 CL P6",
+        "quantitat": 1,
+        "preu_unitari": 4.12,
+        "total": 4.12,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 12.33,
+    "saved_at": "2026-07-15T11:59:10.454Z"
+  },
+  {
     "establiment": "LIDL SUPERMERCADOS S.A.U.",
     "tipus": "Supermercat",
     "data": "29/06/2026",
