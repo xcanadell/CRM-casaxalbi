@@ -10,12 +10,32 @@ Servidor local per a Compres Casa Xalbi.
 - POST /bodega       → desa bodega.json + git commit + push
 """
 
+import base64
+import io
 import json
 import os
 import ssl
 import subprocess
 import urllib.request
 from http.server import BaseHTTPRequestHandler, HTTPServer
+
+try:
+    import pillow_heif
+    from PIL import Image
+    HEIF_SUPPORT = True
+except ImportError:
+    HEIF_SUPPORT = False
+
+def convert_heic_to_jpeg_b64(b64_data):
+    """Converteix base64 HEIC a base64 JPEG."""
+    if not HEIF_SUPPORT:
+        raise RuntimeError("pillow-heif no instal·lat")
+    raw = base64.b64decode(b64_data)
+    pillow_heif.register_heif_opener()
+    img = Image.open(io.BytesIO(raw))
+    buf = io.BytesIO()
+    img.convert("RGB").save(buf, format="JPEG", quality=92)
+    return base64.b64encode(buf.getvalue()).decode("utf-8")
 
 PORT = 8765
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -125,6 +145,19 @@ class Handler(BaseHTTPRequestHandler):
             # Proxy cap a l'API d'Anthropic per evitar CORS
             api_key = data.get("api_key", "")
             payload = data.get("payload", {})
+            # Convertir HEIC → JPEG si cal
+            try:
+                for msg in payload.get("messages", []):
+                    for part in msg.get("content", []):
+                        if isinstance(part, dict) and part.get("type") == "image":
+                            src = part.get("source", {})
+                            mime = src.get("media_type", "")
+                            if mime in ("image/heic", "image/heif"):
+                                src["data"] = convert_heic_to_jpeg_b64(src["data"])
+                                src["media_type"] = "image/jpeg"
+            except Exception as conv_err:
+                self.send_json(500, {"error": f"Error convertint HEIC: {conv_err}"})
+                return
             try:
                 req_body = json.dumps(payload).encode("utf-8")
                 req = urllib.request.Request(
