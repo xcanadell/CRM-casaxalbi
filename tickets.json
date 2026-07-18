@@ -1,5 +1,52 @@
 [
   {
+    "establiment": "La Sirena",
+    "tipus": "Alimentació congelada",
+    "data": "07/07/2026",
+    "adreca": "c/ Navas de Tolosa, 198, Terrassa",
+    "nif": "A63935555",
+    "telefon": "900210621",
+    "productes": [
+      {
+        "descripcio": "Gamba vermella gran Premium",
+        "quantitat": 1,
+        "preu_unitari": 44.99,
+        "total": 44.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Pa bao",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Gamba Austral crua 20/30 peces",
+        "quantitat": 1,
+        "preu_unitari": 22.99,
+        "total": 22.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Gel",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Minestra Reina Premium",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 75.95,
+    "saved_at": "2026-07-18T20:59:48.099Z"
+  },
+  {
     "establiment": "BM - ALIMENTACION SAGASTIA XXI, SL",
     "tipus": "DROGUERIA-PERFUMERIA",
     "data": "08/07/2026",
