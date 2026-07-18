@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Vueling",
+    "tipus": "—",
+    "data": "19/07/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "",
+        "quantitat": 1,
+        "preu_unitari": 135.96,
+        "total": 135.96,
+        "us": "Viatges"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-07-18T22:12:52.653Z"
+  },
+  {
     "establiment": "Estanco",
     "tipus": "Estanco",
     "data": "8/07/2026",
