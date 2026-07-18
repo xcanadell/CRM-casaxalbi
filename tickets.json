@@ -1,5 +1,66 @@
 [
   {
+    "establiment": "HERBORISTERIA LA VENTILLA - BERTA LOPEZ MORENO",
+    "tipus": "FACTURA SIMPLIFICADA",
+    "data": "11/07/2026",
+    "adreca": "CL VENTILLA, 42, HARO",
+    "nif": "18594793Y",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "CALENDULA PLAN",
+        "quantitat": 2,
+        "preu_unitari": 2.53,
+        "total": 5.06,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "ESPLIEGO PLANT",
+        "quantitat": 2,
+        "preu_unitari": 2.75,
+        "total": 5.5,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "MANZANILLA DULCE (SORIA",
+        "quantitat": 1,
+        "preu_unitari": 4.49,
+        "total": 4.49,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "VITAMINA E LIQUIDA (SOL",
+        "quantitat": 1,
+        "preu_unitari": 24.97,
+        "total": 24.97,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "ACEITE ESENCIAL CITRONE",
+        "quantitat": 1,
+        "preu_unitari": 5.7,
+        "total": 5.7,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "ESENCIA DE LAVANDA 15ML",
+        "quantitat": 1,
+        "preu_unitari": 8.9,
+        "total": 8.9,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "VELA 100% CERA ABEJA 18",
+        "quantitat": 1,
+        "preu_unitari": 3.4,
+        "total": 3.4,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 58.02,
+    "saved_at": "2026-07-18T20:53:21.246Z"
+  },
+  {
     "establiment": "Lupa",
     "tipus": "Supermercat",
     "data": "09/07/2026",
