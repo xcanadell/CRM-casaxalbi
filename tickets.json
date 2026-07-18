@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "El parking",
+    "tipus": "—",
+    "data": "14/07/2026",
+    "adreca": "Logroño",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "",
+        "quantitat": 1,
+        "preu_unitari": 8.69,
+        "total": 0,
+        "us": "Altres"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-07-18T22:07:37.647Z"
+  },
+  {
     "establiment": "Dinar buffet lliure Japo Logroño",
     "tipus": "—",
     "data": "18/07/2026",
