@@ -1,5 +1,45 @@
 [
   {
+    "establiment": "Sun City",
+    "tipus": "Botiga de productes diversos",
+    "data": "14/07/2026",
+    "adreca": "C/Labradores 3 Bajo, 26005 Logroño",
+    "nif": "X4058430B",
+    "telefon": "698567777",
+    "productes": [
+      {
+        "descripcio": "BOLSA CAMISETA RECICLADO",
+        "quantitat": 1,
+        "preu_unitari": 0.1,
+        "total": 0.1,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "FRASCO DE CRISTAL CUENTA",
+        "quantitat": 11,
+        "preu_unitari": 1.6,
+        "total": 17.6,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "TARRO VIDRIO MULT 140CC",
+        "quantitat": 21,
+        "preu_unitari": 0.8,
+        "total": 16.8,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "TARRO 10ML",
+        "quantitat": 7,
+        "preu_unitari": 0.75,
+        "total": 5.25,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 39.75,
+    "saved_at": "2026-07-18T20:54:47.071Z"
+  },
+  {
     "establiment": "HERBORISTERIA LA VENTILLA - BERTA LOPEZ MORENO",
     "tipus": "FACTURA SIMPLIFICADA",
     "data": "11/07/2026",
