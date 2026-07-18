@@ -3,8 +3,19 @@
     "data": "2026-07-24",
     "lloc": "Sopar Casa Xalbi",
     "notes": "sopar grup 9 persones",
-    "comensals": [],
-    "total": 0
+    "comensals": [
+      {
+        "nom": "Carlota 9 div",
+        "preu_menjar": 315,
+        "preu_beguda": 180,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "varios": [],
+        "notes": ""
+      }
+    ],
+    "total": 495
   },
   {
     "data": "2026-05-18",
