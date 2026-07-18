@@ -301,6 +301,12 @@ table.products td input.center{text-align:center} table.products td input.right{
       </div>
     </div>
     <div class="dash-section">
+      <h3>🌿 Cosmètica Natural — ingressos mensuals</h3>
+      <div style="background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:20px">
+        <canvas id="dashChartCosm" height="100"></canvas>
+      </div>
+    </div>
+    <div class="dash-section">
       <h3>Últims esdeveniments</h3>
       <div id="dash-events-list"></div>
     </div>
@@ -2056,6 +2062,54 @@ function renderDashboard(){
         scales:{y:{beginAtZero:true,ticks:{callback:v=>v+' €'},grid:{color:'#f0f0f0'}},x:{grid:{display:false}}}
       }
     });
+  }
+
+  // ── Gràfic Cosmètica Natural ──
+  const cosmMap={};
+  // Events tipus Cosmètica Natural
+  events.filter(ev=>(ev.lloc||'')==='Cosmètica Natural').forEach(ev=>{
+    if(!ev.data) return;
+    const mes=ev.data.slice(0,7);
+    if(!cosmMap[mes]) cosmMap[mes]={events:0,compres:0};
+    cosmMap[mes].events+=(ev.total||0);
+  });
+  // Compres amb productes etiquetats com Cosmètica
+  tickets.forEach(t=>{
+    if(!t.data) return;
+    // Convertir data dd/mm/aaaa → aaaa-mm
+    const parts=t.data.split('/');
+    if(parts.length<3) return;
+    const mes=`${parts[2]}-${parts[1].padStart(2,'0')}`;
+    const totalCosm=(t.productes||[]).filter(p=>p.us==='Cosmètica').reduce((s,p)=>s+(parseFloat(p.total)||0),0);
+    if(totalCosm>0){
+      if(!cosmMap[mes]) cosmMap[mes]={events:0,compres:0};
+      cosmMap[mes].compres+=totalCosm;
+    }
+  });
+  const cosmMesos=Object.keys(cosmMap).sort();
+  const ctxCosm=document.getElementById('dashChartCosm');
+  if(ctxCosm){
+    if(window._dashChartCosm) window._dashChartCosm.destroy();
+    if(!cosmMesos.length){
+      ctxCosm.parentElement.innerHTML='<div style="text-align:center;color:#aaa;padding:30px;font-size:13px">Sense dades de Cosmètica Natural encara.</div>';
+    } else {
+      const labelsCosm=cosmMesos.map(m=>{const[y,mo]=m.split('-');return new Date(y,mo-1).toLocaleDateString('ca-ES',{month:'short',year:'numeric'});});
+      window._dashChartCosm=new Chart(ctxCosm,{
+        type:'bar',
+        data:{
+          labels:labelsCosm,
+          datasets:[
+            {label:'Events Cosmètica',data:cosmMesos.map(m=>+cosmMap[m].events.toFixed(2)),backgroundColor:'rgba(129,199,132,0.8)',borderColor:'#388e3c',borderWidth:1.5,borderRadius:6},
+            {label:'Compres Cosmètica',data:cosmMesos.map(m=>+cosmMap[m].compres.toFixed(2)),backgroundColor:'rgba(206,147,216,0.8)',borderColor:'#7b1fa2',borderWidth:1.5,borderRadius:6}
+          ]
+        },
+        options:{
+          responsive:true,
+          plugins:{legend:{position:'top'},tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+ctx.parsed.y.toFixed(2)+' €'}}},
+          scales:{y:{beginAtZero:true,ticks:{callback:v=>v+' €'},grid:{color:'#f0f0f0'}},x:{grid:{display:false}}}
+        }
+      });
+    }
   }
 
   // Últims 5 events
