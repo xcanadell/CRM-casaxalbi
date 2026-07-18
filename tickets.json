@@ -1,5 +1,59 @@
 [
   {
+    "establiment": "Flying Tiger Copenhagen",
+    "tipus": "Tiger Stores Spain S.L.",
+    "data": "14/07/2026",
+    "adreca": "Calle Arenal 5, 48005 Bilbao, España",
+    "nif": "ESB66124686",
+    "telefon": "+34 946 85 32 14",
+    "productes": [
+      {
+        "descripcio": "CESTA CUERDA 7X15CM",
+        "quantitat": 2,
+        "preu_unitari": 3,
+        "total": 6,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "CESTA CUERDA 7X15CM",
+        "quantitat": 3,
+        "preu_unitari": 3,
+        "total": 9,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "YUTE 35M",
+        "quantitat": 1,
+        "preu_unitari": 1,
+        "total": 1,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "CESTA CUERDA 7X15CM",
+        "quantitat": 3,
+        "preu_unitari": 3,
+        "total": 9,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "CESTA CUERDA 7X15CM",
+        "quantitat": 3,
+        "preu_unitari": 3,
+        "total": 9,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "BOLSA PAPEL",
+        "quantitat": 1,
+        "preu_unitari": 0.5,
+        "total": 0.5,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 34.5,
+    "saved_at": "2026-07-18T20:55:38.014Z"
+  },
+  {
     "establiment": "Sun City",
     "tipus": "Botiga de productes diversos",
     "data": "14/07/2026",
