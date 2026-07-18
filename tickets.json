@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "Lupa - Tus Vecinos de Confianza",
+    "tipus": "Supermercat",
+    "data": "09/07/2026",
+    "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "PATAT.RUFFLES SAB.JAMON 150 GR",
+        "quantitat": 1,
+        "preu_unitari": 1.89,
+        "total": 1.89,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BARR.ALTEZA PAN C/PIPAS 83-2UN",
+        "quantitat": 1,
+        "preu_unitari": 1.32,
+        "total": 1.32,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 3.21,
+    "saved_at": "2026-07-18T20:58:42.658Z"
+  },
+  {
     "establiment": "COPY LASER - COPISTERÍA Y PAPELERÍA",
     "tipus": "FACTURA SIMPLIFICADA",
     "data": "14/07/2026",
