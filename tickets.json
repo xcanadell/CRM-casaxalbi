@@ -1,5 +1,66 @@
 [
   {
+    "establiment": "COPY LASER - COPISTERÍA Y PAPELERÍA",
+    "tipus": "FACTURA SIMPLIFICADA",
+    "data": "14/07/2026",
+    "adreca": "C./ Calvo Sotelo 58, LOGROÑO, 26003",
+    "nif": "B-26051219",
+    "telefon": "941 247 036",
+    "productes": [
+      {
+        "descripcio": "FOTOCOPIAS A4 COLOR - 35",
+        "quantitat": 50,
+        "preu_unitari": 0.35,
+        "total": 17.51,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "CAJA TARJETA VISITA 2 C",
+        "quantitat": 1,
+        "preu_unitari": 22,
+        "total": 22,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "CARTON PLUMA A4 MONTADO",
+        "quantitat": 1,
+        "preu_unitari": 2.5,
+        "total": 2.5,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "FOTOCOPIA A4 SATINADO 160",
+        "quantitat": 1,
+        "preu_unitari": 0.66,
+        "total": 0.66,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "FOTOCOPIAS A4 COLOR PAPEL",
+        "quantitat": 7,
+        "preu_unitari": 0.9,
+        "total": 6.3,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "IMPRESIÓN 3 A 10 ARCHIVOS",
+        "quantitat": 1,
+        "preu_unitari": 0.5,
+        "total": 0.5,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "CORTE",
+        "quantitat": 1,
+        "preu_unitari": 1,
+        "total": 1,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 50.47,
+    "saved_at": "2026-07-18T20:58:02.690Z"
+  },
+  {
     "establiment": "LIDL SUPERMERCADOS S.A.U.",
     "tipus": "Supermercat",
     "data": "14/07/2026",
