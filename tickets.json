@@ -1,5 +1,45 @@
 [
   {
+    "establiment": "LIDL SUPERMERCADOS S.A.U.",
+    "tipus": "Supermercat",
+    "data": "14/07/2026",
+    "adreca": "C/ Clavijo, 67, 26008 Logroño",
+    "nif": "A60195278",
+    "telefon": "900958311",
+    "productes": [
+      {
+        "descripcio": "PAPEL HIGIÉNICO",
+        "quantitat": 1,
+        "preu_unitari": 3.59,
+        "total": 3.59,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PILAS ALCALINAS AA",
+        "quantitat": 1,
+        "preu_unitari": 2.39,
+        "total": 2.39,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ACEITE DE COCO",
+        "quantitat": 6,
+        "preu_unitari": 2.99,
+        "total": 17.94,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "ACEITE OLIVA SUAVE",
+        "quantitat": 1,
+        "preu_unitari": 18.7,
+        "total": 18.7,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 42.62,
+    "saved_at": "2026-07-18T20:57:04.839Z"
+  },
+  {
     "establiment": "Flying Tiger Copenhagen",
     "tipus": "Tiger Stores Spain S.L.",
     "data": "14/07/2026",
