@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "BM - ALIMENTACION SAGASTIA XXI, SL",
+    "tipus": "DROGUERIA-PERFUMERIA",
+    "data": "08/07/2026",
+    "adreca": "C/SAGASTIA 28 B, 26280 EZCARAY",
+    "nif": "B26516799",
+    "telefon": "900 555 300",
+    "productes": [
+      {
+        "descripcio": "JABON LIXONE GLICERINA 3 PAS",
+        "quantitat": 4,
+        "preu_unitari": 3.33,
+        "total": 13.32,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 13.32,
+    "saved_at": "2026-07-18T20:59:09.272Z"
+  },
+  {
     "establiment": "Lupa - Tus Vecinos de Confianza",
     "tipus": "Supermercat",
     "data": "09/07/2026",
