@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "FIB Birres",
+    "tipus": "—",
+    "data": "19/07/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "",
+        "quantitat": 1,
+        "preu_unitari": 30,
+        "total": 30,
+        "us": "Viatges"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-07-18T22:02:47.058Z"
+  },
+  {
     "establiment": "LUPA",
     "tipus": "Supermercat",
     "data": "04/07/2026",
