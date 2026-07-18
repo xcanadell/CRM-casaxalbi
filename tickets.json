@@ -1,5 +1,66 @@
 [
   {
+    "establiment": "Lupa",
+    "tipus": "Supermercat",
+    "data": "09/07/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "CERV.ESTR.GALIC.BOT.25 CL P6",
+        "quantitat": 1,
+        "preu_unitari": 4.12,
+        "total": 4.12,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CERV.ESTR.GALIC.BOT.25 CL P6",
+        "quantitat": 1,
+        "preu_unitari": 4.12,
+        "total": 4.12,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERVEZA FRANZISKANER BOT.50 CL",
+        "quantitat": 1,
+        "preu_unitari": 1.35,
+        "total": 1.35,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "TOMATE CHERRY RAMA BANDEJA 300",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "HUEVO AV.PRECIADO CLASE L DOC.",
+        "quantitat": 1,
+        "preu_unitari": 3.19,
+        "total": 3.19,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BERENJENA NEGRA",
+        "quantitat": 1,
+        "preu_unitari": 1.92,
+        "total": 1.92,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "HOGAZA CENTENO 60% M.MA.380GRS",
+        "quantitat": 1,
+        "preu_unitari": 1.59,
+        "total": 1.59,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 18.28,
+    "saved_at": "2026-07-18T20:26:54.613Z"
+  },
+  {
     "establiment": "LUPA",
     "tipus": "Supermercat",
     "data": "04/07/2026",
