@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Estanco",
+    "tipus": "—",
+    "data": "19/07/2026",
+    "adreca": "ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Tabaco, paper, filtres",
+        "quantitat": 1,
+        "preu_unitari": 17,
+        "total": 17,
+        "us": "Altres"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-07-18T22:09:34.565Z"
+  },
+  {
     "establiment": "El parking",
     "tipus": "—",
     "data": "14/07/2026",
