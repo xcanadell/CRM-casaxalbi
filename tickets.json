@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Dinar buffet lliure Japo Logroño",
+    "tipus": "—",
+    "data": "18/07/2026",
+    "adreca": "Logroño",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "",
+        "quantitat": 1,
+        "preu_unitari": 56,
+        "total": 56,
+        "us": "Restauració"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-07-18T22:04:14.322Z"
+  },
+  {
     "establiment": "FIB Birres",
     "tipus": "Festival ",
     "data": "17/07/2026",
