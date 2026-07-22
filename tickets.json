@@ -1,5 +1,122 @@
 [
   {
+    "establiment": "Lupa - Tus Vecinos de Confianza",
+    "tipus": "Supermercat",
+    "data": "22/07/2026",
+    "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "CERVEZA MAHOU 0,0 TOST.P6X25CL",
+        "quantitat": 1,
+        "preu_unitari": 4.05,
+        "total": 4.05,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERV.ESTR.GALIC.BOT.25 CL P6",
+        "quantitat": 1,
+        "preu_unitari": 4.12,
+        "total": 4.12,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CALDO ALTEZA POLLO BRIK LITRO",
+        "quantitat": 1,
+        "preu_unitari": 0.75,
+        "total": 0.75,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "COCA COLA NORMAL 1,25 LITROS",
+        "quantitat": 1,
+        "preu_unitari": 1.55,
+        "total": 1.55,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "COCA COLA NORMAL 1,25 LITROS",
+        "quantitat": 1,
+        "preu_unitari": 1.55,
+        "total": 1.55,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CALDO G.BLANCA CAS.POLLO B.LT.",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BEBIDA ALPRO AVENA BARISTA LT.",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "QUESO COTTAGE MARGUI N.0% 200G",
+        "quantitat": 1,
+        "preu_unitari": 1.36,
+        "total": 1.36,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BEBIDA ALPRO AVENA BARISTA LT.",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CAFE BONKA GRANO NATURAL 500GR",
+        "quantitat": 1,
+        "preu_unitari": 10.29,
+        "total": 10.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ACEITE LA MASIA COCO V.EX.E430",
+        "quantitat": 1,
+        "preu_unitari": 5.45,
+        "total": 5.45,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "GARBANZO LUENGO COCIDO FRC.570",
+        "quantitat": 1,
+        "preu_unitari": 1.2,
+        "total": 1.2,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "GARBANZO LUENGO COCIDO FRC.570",
+        "quantitat": 1,
+        "preu_unitari": 1.29,
+        "total": 1.29,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BRIOCHE TRENZADO 400 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 3.99,
+        "total": 3.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "HIELO BOLSA DE 2 KILOS",
+        "quantitat": 1,
+        "preu_unitari": 1.15,
+        "total": 1.15,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 43.71,
+    "saved_at": "2026-07-22T11:41:59.047Z"
+  },
+  {
     "establiment": "SUPER BAZAR MICRO VECINO",
     "tipus": "—",
     "data": "20/07/2026",
