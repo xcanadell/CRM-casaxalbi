@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "Lupa - Tus Vecinos de Confianza",
+    "tipus": "Supermercat",
+    "data": "19/07/2026",
+    "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "SHIITAKE BANDEJA 200 GRS",
+        "quantitat": 1,
+        "preu_unitari": 2.68,
+        "total": 2.68,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ARROZ SOS KILO",
+        "quantitat": 1,
+        "preu_unitari": 1.87,
+        "total": 1.87,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ALCACH.ALTEZA ENT.5/7 FA 400GR",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 6.54,
+    "saved_at": "2026-07-22T08:23:49.167Z"
+  },
+  {
     "establiment": "Vueling",
     "tipus": "Aerolinia",
     "data": "31/06/2026",
