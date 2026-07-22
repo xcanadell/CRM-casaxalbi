@@ -1,6 +1,6 @@
 [
   {
-    "establiment": "chino Ezcaray",
+    "establiment": "SUPER BAZAR MICRO VECINO",
     "tipus": "—",
     "data": "20/07/2026",
     "adreca": "",
@@ -11,18 +11,18 @@
         "descripcio": "Labials 2 unit",
         "quantitat": 5,
         "preu_unitari": 1.15,
-        "total": 0,
+        "total": 5.75,
         "us": "Cosmètica"
       },
       {
         "descripcio": "",
         "quantitat": 5,
         "preu_unitari": 0.85,
-        "total": 0,
+        "total": 4.25,
         "us": "Casa Xalbi"
       }
     ],
-    "total": 0,
+    "total": 10,
     "saved_at": "2026-07-22T08:25:10.340Z"
   },
   {
