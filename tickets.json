@@ -1,25 +1,6 @@
 [
   {
     "establiment": "Alejo Chino",
-    "tipus": "—",
-    "data": "26/07/2026",
-    "adreca": "",
-    "nif": "",
-    "telefon": "",
-    "productes": [
-      {
-        "descripcio": "Sopar fideus sushi",
-        "quantitat": 1,
-        "preu_unitari": 0,
-        "total": 29.2,
-        "us": "Restauració"
-      }
-    ],
-    "total": 0,
-    "saved_at": "2026-07-27T17:25:05.402Z"
-  },
-  {
-    "establiment": "Alejo Chino",
     "tipus": "Restauració",
     "data": "26/07/2026",
     "adreca": "",
