@@ -454,5 +454,17 @@
     "data_compra": "",
     "data_venda": "2026-07-24",
     "updated_at": "2026-07-29T12:02:17.928Z"
+  },
+  {
+    "nom": "Venus",
+    "any": "2019",
+    "bodega": "Sara Perez y René Barbier",
+    "tipus": "Vi negre",
+    "do": "Montsant",
+    "cost": 0,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "2026-07-24",
+    "updated_at": "2026-07-29T12:03:18.414Z"
   }
 ]
