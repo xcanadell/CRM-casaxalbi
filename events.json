@@ -27,7 +27,9 @@
         "preu_menjar": 315,
         "preu_beguda": 200,
         "preu_altres": 100,
-        "plats": [],
+        "plats": [
+          "Steak Tartar de Vedella de Girona"
+        ],
         "vins": [
           "Murmuri Priorat",
           "Con Barbas y a lo Loco",
