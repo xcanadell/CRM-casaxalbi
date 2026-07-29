@@ -415,9 +415,9 @@
     "do": "Priorat",
     "cost": 15,
     "pvp": 0,
-    "data_compra": "2026-04-18",
-    "data_venda": "2026-07-24",
-    "updated_at": "2026-07-29T12:00:52.236Z"
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-29T12:05:29.718Z"
   },
   {
     "nom": "Con Barbas y a lo Loco",
