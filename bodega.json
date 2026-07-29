@@ -430,5 +430,17 @@
     "data_compra": "",
     "data_venda": "2026-07-24",
     "updated_at": "2026-07-29T12:01:28.363Z"
+  },
+  {
+    "nom": "Acestral",
+    "any": "",
+    "bodega": "Vega de ribes",
+    "tipus": "Vi negre",
+    "do": "Malvasia Sitges",
+    "cost": 0,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "2026-07-24",
+    "updated_at": "2026-07-29T12:02:15.908Z"
   }
 ]
