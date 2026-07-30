@@ -1,5 +1,52 @@
 [
   {
+    "establiment": "PUYOL CARNS I EMBOTITS",
+    "tipus": "Carnisseria/Xarcuteria",
+    "data": "29/07/2026",
+    "adreca": "AVDA. BARCELONA, 231",
+    "nif": "39159438Y",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "PERNIL SEMI",
+        "quantitat": 1.02,
+        "preu_unitari": 25,
+        "total": 25.5,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "EMBOTITS (U)",
+        "quantitat": 3,
+        "preu_unitari": 7.5,
+        "total": 22.5,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BUTI OU",
+        "quantitat": 0.77,
+        "preu_unitari": 17.35,
+        "total": 13.36,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BUTI NEGRA",
+        "quantitat": 0.615,
+        "preu_unitari": 14.65,
+        "total": 9.01,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ANXOVA G.",
+        "quantitat": 1,
+        "preu_unitari": 17.4,
+        "total": 17.4,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 87.77,
+    "saved_at": "2026-07-30T07:58:16.264Z"
+  },
+  {
     "establiment": "LA VIÑA",
     "tipus": "Bar/Restaurant",
     "data": "26/07/2026",
