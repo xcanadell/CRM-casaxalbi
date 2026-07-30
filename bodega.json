@@ -437,11 +437,11 @@
     "bodega": "Vega de ribes",
     "tipus": "Vi negre",
     "do": "Malvasia Sitges",
-    "cost": 0,
-    "pvp": 0,
+    "cost": 15,
+    "pvp": 40,
     "data_compra": "",
-    "data_venda": "",
-    "updated_at": "2026-07-29T12:04:57.723Z"
+    "data_venda": "2026-07-24",
+    "updated_at": "2026-07-30T07:41:03.696Z"
   },
   {
     "nom": "Venus",
