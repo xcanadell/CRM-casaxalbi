@@ -454,5 +454,17 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-29T12:04:34.435Z"
+  },
+  {
+    "nom": "Origen garnacha negra",
+    "any": "",
+    "bodega": "",
+    "tipus": "Vi negre",
+    "do": "",
+    "cost": 0.1,
+    "pvp": 30,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-30T07:35:07.608Z"
   }
 ]
