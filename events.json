@@ -11,7 +11,43 @@
         "preu_altres": 188,
         "plats": [],
         "vins": [],
-        "varios": [],
+        "varios": [
+          {
+            "nom": "Labial",
+            "qty": 16,
+            "preu_unit": 2.5
+          },
+          {
+            "nom": "Crema calendula M",
+            "qty": 15,
+            "preu_unit": 6
+          },
+          {
+            "nom": "Capilar romero",
+            "qty": 6,
+            "preu_unit": 4
+          },
+          {
+            "nom": "Crema Exfoliant",
+            "qty": 1,
+            "preu_unit": 6
+          },
+          {
+            "nom": "Pastilla sabo",
+            "qty": 2,
+            "preu_unit": 4
+          },
+          {
+            "nom": "Pastilla sabo (M)",
+            "qty": 2,
+            "preu_unit": 4
+          },
+          {
+            "nom": "Crema manzanilla XL",
+            "qty": 1,
+            "preu_unit": 12
+          }
+        ],
         "notes": "16 labials - 4 sabons (2 i 2) - 6 capilars - 1 exfoliant - 1 XL Manzanilla - 15 Calendula M"
       }
     ],
