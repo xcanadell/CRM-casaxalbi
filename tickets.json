@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "ADEMANDA",
+    "tipus": "panaderia artesana",
+    "data": "24/07/2026",
+    "adreca": "C/Mansa Sanchez nº2 Local 10, 26280 - Ezcaray - La Rioja",
+    "nif": "941 42/554 - 635 298342",
+    "telefon": "941 42/554 - 635 298342",
+    "productes": [
+      {
+        "descripcio": "PAN DE CENTENO",
+        "quantitat": 1,
+        "preu_unitari": 2.2,
+        "total": 2.2,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAN DE MAIZ",
+        "quantitat": 1,
+        "preu_unitari": 2.4,
+        "total": 2.4,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "NATA",
+        "quantitat": 0.22,
+        "preu_unitari": 16.7,
+        "total": 3.61,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 8.21,
+    "saved_at": "2026-07-30T08:16:10.821Z"
+  },
+  {
     "establiment": "COLOR PLUS TERRASSA",
     "tipus": "Fotocòpia",
     "data": "28/07/2026",
