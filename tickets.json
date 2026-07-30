@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "LIBRERIA SALVA",
+    "tipus": "FACTURA SIMPLIFICADA (COPIA)",
+    "data": "26/07/24",
+    "adreca": "SANTIAGO LOPE, 10, 26280 - EZCARAY (LA RIOJA)",
+    "nif": "72793526K",
+    "telefon": "941 35 45 28",
+    "productes": [
+      {
+        "descripcio": "SOPORTE USB/E-MAIL/WHATSAPP",
+        "quantitat": 1,
+        "preu_unitari": 0.6,
+        "total": 0.6,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "COPIA A4 NORMAL COLOR",
+        "quantitat": 22,
+        "preu_unitari": 0.5,
+        "total": 11,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 11.6,
+    "saved_at": "2026-07-30T07:59:55.805Z"
+  },
+  {
     "establiment": "PUYOL CARNS I EMBOTITS",
     "tipus": "Carnisseria/Xarcuteria",
     "data": "29/07/2026",
