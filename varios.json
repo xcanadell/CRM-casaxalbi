@@ -68,5 +68,12 @@
     "cost": 0.5,
     "pvp": 2,
     "updated_at": "2026-06-29T08:54:26.939Z"
+  },
+  {
+    "nom": "Labial",
+    "desc": "Cosmetica labial",
+    "cost": 0,
+    "pvp": 2.5,
+    "updated_at": "2026-07-30T08:22:28.555Z"
   }
 ]
