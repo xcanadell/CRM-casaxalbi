@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "BM",
+    "tipus": "Alimentación",
+    "data": "24/07/2026",
+    "adreca": "C/SAGASTIA 28 B, 26280 EZCARAY",
+    "nif": "B26516799",
+    "telefon": "900555300",
+    "productes": [
+      {
+        "descripcio": "CALAMAR PESCANOVA TROZOS 300",
+        "quantitat": 1,
+        "preu_unitari": 6.69,
+        "total": 6.69,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 6.69,
+    "saved_at": "2026-07-30T08:16:48.537Z"
+  },
+  {
     "establiment": "ADEMANDA",
     "tipus": "panaderia artesana",
     "data": "24/07/2026",
