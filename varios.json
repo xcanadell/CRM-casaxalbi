@@ -72,9 +72,9 @@
   {
     "nom": "Labial",
     "desc": "Cosmetica labial",
-    "cost": 0,
+    "cost": 0.75,
     "pvp": 2.5,
-    "updated_at": "2026-07-30T08:22:28.555Z"
+    "updated_at": "2026-07-30T09:02:08.191Z"
   },
   {
     "nom": "Crema calendula M",
