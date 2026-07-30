@@ -110,5 +110,12 @@
     "cost": 0,
     "pvp": 4,
     "updated_at": "2026-07-30T08:25:36.556Z"
+  },
+  {
+    "nom": "Pastilla sabo (M)",
+    "desc": "Maduixes",
+    "cost": 0,
+    "pvp": 0,
+    "updated_at": "2026-07-30T08:25:54.806Z"
   }
 ]
