@@ -169,14 +169,21 @@
   {
     "data": "2026-07-06",
     "lloc": "Sopar Casa Xalbi",
-    "notes": "Parella de la casa rural amb gos i nen",
+    "notes": "Parella de la casa rural amb gos i nena ",
     "comensals": [
       {
         "nom": "Kristan Granada",
         "preu_menjar": 35,
         "preu_beguda": 15,
         "preu_altres": 0,
-        "plats": [],
+        "plats": [
+          "Berenjena con hummus, ricota y cherrys",
+          "Dim sums Carrillera",
+          "Carpatxo de Gamba",
+          "Ensalada del Huerto Xalbi",
+          "Yogur de Ezcaray",
+          "Steak Tartar de Vedella de Girona"
+        ],
         "vins": [],
         "varios": [],
         "notes": ""
@@ -186,7 +193,14 @@
         "preu_menjar": 35,
         "preu_beguda": 15,
         "preu_altres": 0,
-        "plats": [],
+        "plats": [
+          "Berenjena con hummus, ricota y cherrys",
+          "Dim sums Carrillera",
+          "Carpatxo de Gamba",
+          "Ensalada del Huerto Xalbi",
+          "Yogur de Ezcaray",
+          "Steak Tartar de Vedella de Girona"
+        ],
         "vins": [],
         "varios": [],
         "notes": ""
