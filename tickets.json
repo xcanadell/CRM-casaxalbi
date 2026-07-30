@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "COLOR PLUS TERRASSA",
+    "tipus": "Fotocòpia",
+    "data": "28/07/2026",
+    "adreca": "Ausias March 1 - Rbla. d'Egara 329",
+    "nif": "J66178948",
+    "telefon": "937 007 477",
+    "productes": [
+      {
+        "descripcio": "FOTOCOPIA A3 COLOR (6-25 pags.)",
+        "quantitat": 15,
+        "preu_unitari": 0.8,
+        "total": 12,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 12,
+    "saved_at": "2026-07-30T08:15:29.021Z"
+  },
+  {
     "establiment": "SUPER BAZAR MICRO VECINO",
     "tipus": "Supermercat",
     "data": "24/07/2026",
