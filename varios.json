@@ -96,5 +96,12 @@
     "cost": 0,
     "pvp": 6,
     "updated_at": "2026-07-30T08:23:54.639Z"
+  },
+  {
+    "nom": "Kit cosmetica 5 productes",
+    "desc": "",
+    "cost": 0,
+    "pvp": 25,
+    "updated_at": "2026-07-30T08:24:22.571Z"
   }
 ]
