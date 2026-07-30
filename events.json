@@ -184,7 +184,9 @@
           "Yogur de Ezcaray",
           "Steak Tartar de Vedella de Girona"
         ],
-        "vins": [],
+        "vins": [
+          "Origen garnacha negra"
+        ],
         "varios": [],
         "notes": ""
       },
@@ -201,7 +203,9 @@
           "Yogur de Ezcaray",
           "Steak Tartar de Vedella de Girona"
         ],
-        "vins": [],
+        "vins": [
+          "Origen garnacha negra"
+        ],
         "varios": [],
         "notes": ""
       }
