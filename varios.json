@@ -75,5 +75,12 @@
     "cost": 0,
     "pvp": 2.5,
     "updated_at": "2026-07-30T08:22:28.555Z"
+  },
+  {
+    "nom": "Crema calendula M",
+    "desc": "Pot mermelada",
+    "cost": 0,
+    "pvp": 6,
+    "updated_at": "2026-07-30T08:23:02.271Z"
   }
 ]
