@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "SUPER BAZAR MICRO VECINO",
+    "tipus": "Supermercat",
+    "data": "24/07/2026",
+    "adreca": "C/SAN FELIPE NERI 2-4, 26280 EZCARAY (LA RIOJA)",
+    "nif": "Y1840985X",
+    "telefon": "622837543",
+    "productes": [
+      {
+        "descripcio": "ARTICULOS VARIOS",
+        "quantitat": 12,
+        "preu_unitari": 0.85,
+        "total": 10.2,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "ARTICULOS VARIOS",
+        "quantitat": 2,
+        "preu_unitari": 1.15,
+        "total": 2.3,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "ARTICULOS VARIOS",
+        "quantitat": 1,
+        "preu_unitari": 1.45,
+        "total": 1.45,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 13.95,
+    "saved_at": "2026-07-30T08:14:23.888Z"
+  },
+  {
     "establiment": "LIBRERIA SALVA",
     "tipus": "FACTURA SIMPLIFICADA (COPIA)",
     "data": "26/07/24",
