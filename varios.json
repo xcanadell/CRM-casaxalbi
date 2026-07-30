@@ -82,5 +82,12 @@
     "cost": 0,
     "pvp": 6,
     "updated_at": "2026-07-30T08:23:02.271Z"
+  },
+  {
+    "nom": "Capilar romero",
+    "desc": "Aceite capilar",
+    "cost": 0,
+    "pvp": 4,
+    "updated_at": "2026-07-30T08:23:32.405Z"
   }
 ]
