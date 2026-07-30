@@ -449,11 +449,11 @@
     "bodega": "Sara Perez y René Barbier",
     "tipus": "Vi negre",
     "do": "Montsant",
-    "cost": 0,
-    "pvp": 0,
+    "cost": 30,
+    "pvp": 40,
     "data_compra": "",
-    "data_venda": "",
-    "updated_at": "2026-07-29T12:04:34.435Z"
+    "data_venda": "2026-07-24",
+    "updated_at": "2026-07-30T07:41:26.687Z"
   },
   {
     "nom": "Origen garnacha negra",
