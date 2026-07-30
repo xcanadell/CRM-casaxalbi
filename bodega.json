@@ -9,7 +9,8 @@
     "pvp": 15,
     "data_compra": "",
     "data_venda": "2026-04-02",
-    "updated_at": "2026-06-06T17:10:39.065Z"
+    "updated_at": "2026-06-06T17:10:39.065Z",
+    "id": "vi_bfea1ba7"
   },
   {
     "nom": "Les Cousins (rosat)",
@@ -21,7 +22,8 @@
     "pvp": 15,
     "data_compra": "",
     "data_venda": "2026-04-02",
-    "updated_at": "2026-06-06T17:09:47.990Z"
+    "updated_at": "2026-06-06T17:09:47.990Z",
+    "id": "vi_22e20092"
   },
   {
     "nom": "Negre Alemany",
@@ -33,7 +35,8 @@
     "pvp": 15,
     "data_compra": "",
     "data_venda": "2026-04-02",
-    "updated_at": "2026-06-06T17:10:13.819Z"
+    "updated_at": "2026-06-06T17:10:13.819Z",
+    "id": "vi_99af8e63"
   },
   {
     "nom": "Toscana Punky Cosines",
@@ -45,7 +48,8 @@
     "pvp": 23.3,
     "data_compra": "",
     "data_venda": "2026-04-18",
-    "updated_at": "2026-06-06T17:02:13.237Z"
+    "updated_at": "2026-06-06T17:02:13.237Z",
+    "id": "vi_497c2d13"
   },
   {
     "nom": "Negre Rias Baixes",
@@ -57,7 +61,8 @@
     "pvp": 23.3,
     "data_compra": "",
     "data_venda": "2026-04-18",
-    "updated_at": "2026-06-06T17:03:03.074Z"
+    "updated_at": "2026-06-06T17:03:03.074Z",
+    "id": "vi_d958ca16"
   },
   {
     "nom": "Escumos Sanromà",
@@ -69,7 +74,8 @@
     "pvp": 23.3,
     "data_compra": "",
     "data_venda": "2026-04-18",
-    "updated_at": "2026-06-06T17:04:53.322Z"
+    "updated_at": "2026-06-06T17:04:53.322Z",
+    "id": "vi_87aeffcc"
   },
   {
     "nom": "Castanyer",
@@ -81,7 +87,8 @@
     "pvp": 23.3,
     "data_compra": "",
     "data_venda": "2026-04-18",
-    "updated_at": "2026-06-06T17:05:38.986Z"
+    "updated_at": "2026-06-06T17:05:38.986Z",
+    "id": "vi_639987a8"
   },
   {
     "nom": "Murmuri Priorat",
@@ -93,7 +100,8 @@
     "pvp": 23.33,
     "data_compra": "",
     "data_venda": "2026-04-18",
-    "updated_at": "2026-06-06T17:07:36.050Z"
+    "updated_at": "2026-06-06T17:07:36.050Z",
+    "id": "vi_5fe8458c"
   },
   {
     "nom": "Marco Favio (Vi dolç)",
@@ -105,7 +113,8 @@
     "pvp": 23.3,
     "data_compra": "",
     "data_venda": "2026-04-18",
-    "updated_at": "2026-06-06T17:07:27.068Z"
+    "updated_at": "2026-06-06T17:07:27.068Z",
+    "id": "vi_1b945c0f"
   },
   {
     "nom": "Pedregar",
@@ -117,7 +126,8 @@
     "pvp": 30,
     "data_compra": "",
     "data_venda": "2026-05-01",
-    "updated_at": "2026-06-06T16:51:57.148Z"
+    "updated_at": "2026-06-06T16:51:57.148Z",
+    "id": "vi_944acb25"
   },
   {
     "nom": "AD Libitum",
@@ -129,7 +139,8 @@
     "pvp": 30,
     "data_compra": "2026-04-22",
     "data_venda": "2026-05-01",
-    "updated_at": "2026-06-06T16:50:43.515Z"
+    "updated_at": "2026-06-06T16:50:43.515Z",
+    "id": "vi_4b2a2f05"
   },
   {
     "nom": "Ecumós (Sanromà)",
@@ -141,7 +152,8 @@
     "pvp": 30,
     "data_compra": "",
     "data_venda": "2026-05-01",
-    "updated_at": "2026-06-06T16:50:31.355Z"
+    "updated_at": "2026-06-06T16:50:31.355Z",
+    "id": "vi_d1abf336"
   },
   {
     "nom": "El Mural",
@@ -153,7 +165,8 @@
     "pvp": 30,
     "data_compra": "",
     "data_venda": "2026-05-01",
-    "updated_at": "2026-06-06T16:51:08.420Z"
+    "updated_at": "2026-06-06T16:51:08.420Z",
+    "id": "vi_13811f30"
   },
   {
     "nom": "Aloers",
@@ -165,7 +178,8 @@
     "pvp": 22,
     "data_compra": "2026-04-22",
     "data_venda": "2026-05-02",
-    "updated_at": "2026-06-06T17:16:31.414Z"
+    "updated_at": "2026-06-06T17:16:31.414Z",
+    "id": "vi_7fb27ed2"
   },
   {
     "nom": "Montse i Mario",
@@ -177,7 +191,8 @@
     "pvp": 22,
     "data_compra": "",
     "data_venda": "2026-05-02",
-    "updated_at": "2026-06-06T17:16:19.521Z"
+    "updated_at": "2026-06-06T17:16:19.521Z",
+    "id": "vi_6c6f5f12"
   },
   {
     "nom": "Dolç Garnacha Blanca Montsant 4 copes",
@@ -189,7 +204,8 @@
     "pvp": 16,
     "data_compra": "",
     "data_venda": "2026-05-02",
-    "updated_at": "2026-06-06T17:19:20.526Z"
+    "updated_at": "2026-06-06T17:19:20.526Z",
+    "id": "vi_5191591f"
   },
   {
     "nom": "Alto Otero",
@@ -201,7 +217,8 @@
     "pvp": 30,
     "data_compra": "",
     "data_venda": "2026-05-29",
-    "updated_at": "2026-06-06T16:43:06.254Z"
+    "updated_at": "2026-06-06T16:43:06.254Z",
+    "id": "vi_4b1cfca5"
   },
   {
     "nom": "Espantaburros Clarete",
@@ -213,7 +230,8 @@
     "pvp": 30,
     "data_compra": "",
     "data_venda": "2026-05-29",
-    "updated_at": "2026-06-06T16:44:42.918Z"
+    "updated_at": "2026-06-06T16:44:42.918Z",
+    "id": "vi_b3387b0b"
   },
   {
     "nom": "Temerario Garnacha Viñas Viejas",
@@ -225,7 +243,8 @@
     "pvp": 30,
     "data_compra": "2026-05-23",
     "data_venda": "2026-05-30",
-    "updated_at": "2026-06-06T15:19:18.069Z"
+    "updated_at": "2026-06-06T15:19:18.069Z",
+    "id": "vi_03ac7c7a"
   },
   {
     "nom": "Temerario Mazuela Viñas Viejas",
@@ -237,7 +256,8 @@
     "pvp": 30,
     "data_compra": "2026-05-23",
     "data_venda": "2026-05-29",
-    "updated_at": "2026-06-06T16:45:01.061Z"
+    "updated_at": "2026-06-06T16:45:01.061Z",
+    "id": "vi_adef53e1"
   },
   {
     "nom": "Naturaleza Salvaje",
@@ -249,7 +269,8 @@
     "pvp": 30,
     "data_compra": "",
     "data_venda": "2026-05-29",
-    "updated_at": "2026-06-06T16:45:21.398Z"
+    "updated_at": "2026-06-06T16:45:21.398Z",
+    "id": "vi_944e0eab"
   },
   {
     "nom": "Colet Gran Cuvée Rosé",
@@ -261,7 +282,8 @@
     "pvp": 30,
     "data_compra": "",
     "data_venda": "2026-05-29",
-    "updated_at": "2026-06-06T16:45:40.728Z"
+    "updated_at": "2026-06-06T16:45:40.728Z",
+    "id": "vi_03c2f07c"
   },
   {
     "nom": "Temerario Garnacha Viñas Viejas",
@@ -273,7 +295,8 @@
     "pvp": 28,
     "data_compra": "2026-05-23",
     "data_venda": "2026-05-29",
-    "updated_at": "2026-06-06T15:10:51.913Z"
+    "updated_at": "2026-06-06T15:10:51.913Z",
+    "id": "vi_ff49b9e7"
   },
   {
     "nom": "Loire Comaine Clos G",
@@ -285,7 +308,8 @@
     "pvp": 0,
     "data_compra": "2026-04-22",
     "data_venda": "2026-07-23",
-    "updated_at": "2026-07-30T07:45:11.578Z"
+    "updated_at": "2026-07-30T07:45:11.578Z",
+    "id": "vi_1ef5f956"
   },
   {
     "nom": "VDN Alicante Casa",
@@ -297,7 +321,8 @@
     "pvp": 0,
     "data_compra": "2026-04-22",
     "data_venda": "",
-    "updated_at": "2026-06-06T15:42:48.774Z"
+    "updated_at": "2026-06-06T15:42:48.774Z",
+    "id": "vi_60670851"
   },
   {
     "nom": "Ijalba Crianza",
@@ -309,7 +334,8 @@
     "pvp": 14,
     "data_compra": "2026-04-22",
     "data_venda": "2026-07-03",
-    "updated_at": "2026-07-30T07:46:23.821Z"
+    "updated_at": "2026-07-30T07:46:23.821Z",
+    "id": "vi_05d5cfa1"
   },
   {
     "nom": "Etim Verema (4 copes queden) Dolç garnacha blanca",
@@ -321,7 +347,8 @@
     "pvp": 30,
     "data_compra": "2026-04-22",
     "data_venda": "2026-07-17",
-    "updated_at": "2026-07-30T07:43:26.419Z"
+    "updated_at": "2026-07-30T07:43:26.419Z",
+    "id": "vi_a8a0005d"
   },
   {
     "nom": "Familia Valdelana Criannza",
@@ -333,7 +360,8 @@
     "pvp": 30,
     "data_compra": "2026-04-22",
     "data_venda": "2026-06-26",
-    "updated_at": "2026-06-29T10:28:56.335Z"
+    "updated_at": "2026-06-29T10:28:56.335Z",
+    "id": "vi_ea911a8c"
   },
   {
     "nom": "Temerario Garnacha Viñas Viejas",
@@ -345,7 +373,8 @@
     "pvp": 30,
     "data_compra": "2026-05-23",
     "data_venda": "2026-06-26",
-    "updated_at": "2026-06-29T10:29:44.559Z"
+    "updated_at": "2026-06-29T10:29:44.559Z",
+    "id": "vi_d29c89dc"
   },
   {
     "nom": "La Barbacana",
@@ -357,7 +386,8 @@
     "pvp": 30,
     "data_compra": "",
     "data_venda": "2026-06-26",
-    "updated_at": "2026-06-29T10:29:17.507Z"
+    "updated_at": "2026-06-29T10:29:17.507Z",
+    "id": "vi_31bd5657"
   },
   {
     "nom": "Batussa",
@@ -369,7 +399,8 @@
     "pvp": 30,
     "data_compra": "",
     "data_venda": "2026-06-26",
-    "updated_at": "2026-06-29T10:28:23.206Z"
+    "updated_at": "2026-06-29T10:28:23.206Z",
+    "id": "vi_1673e63a"
   },
   {
     "nom": "Cric Cric Blanc",
@@ -381,7 +412,8 @@
     "pvp": 30,
     "data_compra": "",
     "data_venda": "2026-06-26",
-    "updated_at": "2026-06-29T10:28:31.982Z"
+    "updated_at": "2026-06-29T10:28:31.982Z",
+    "id": "vi_60a79b8a"
   },
   {
     "nom": "Hopp",
@@ -393,7 +425,8 @@
     "pvp": 20,
     "data_compra": "",
     "data_venda": "2026-07-10",
-    "updated_at": "2026-07-30T07:44:07.028Z"
+    "updated_at": "2026-07-30T07:44:07.028Z",
+    "id": "vi_fa97c6a7"
   },
   {
     "nom": "Escumos Sanromà",
@@ -405,7 +438,8 @@
     "pvp": 30,
     "data_compra": "",
     "data_venda": "2026-06-26",
-    "updated_at": "2026-06-29T10:28:42.535Z"
+    "updated_at": "2026-06-29T10:28:42.535Z",
+    "id": "vi_5d241ca9"
   },
   {
     "nom": "Murmuri Priorat",
@@ -417,7 +451,8 @@
     "pvp": 40,
     "data_compra": "",
     "data_venda": "2026-07-24",
-    "updated_at": "2026-07-30T07:39:47.731Z"
+    "updated_at": "2026-07-30T07:39:47.731Z",
+    "id": "vi_8e3a8d81"
   },
   {
     "nom": "Con Barbas y a lo Loco",
@@ -429,7 +464,8 @@
     "pvp": 40,
     "data_compra": "",
     "data_venda": "2026-07-24",
-    "updated_at": "2026-07-30T07:40:30.622Z"
+    "updated_at": "2026-07-30T07:40:30.622Z",
+    "id": "vi_7c8ea5e9"
   },
   {
     "nom": "Ancestral",
@@ -441,7 +477,8 @@
     "pvp": 40,
     "data_compra": "",
     "data_venda": "2026-07-24",
-    "updated_at": "2026-07-30T07:41:03.696Z"
+    "updated_at": "2026-07-30T07:41:03.696Z",
+    "id": "vi_dd393a54"
   },
   {
     "nom": "Venus",
@@ -453,7 +490,8 @@
     "pvp": 40,
     "data_compra": "",
     "data_venda": "2026-07-24",
-    "updated_at": "2026-07-30T07:41:26.687Z"
+    "updated_at": "2026-07-30T07:41:26.687Z",
+    "id": "vi_40037888"
   },
   {
     "nom": "Origen garnacha negra",
@@ -465,7 +503,8 @@
     "pvp": 30,
     "data_compra": "",
     "data_venda": "2026-06-06",
-    "updated_at": "2026-07-30T07:37:37.412Z"
+    "updated_at": "2026-07-30T07:37:37.412Z",
+    "id": "vi_b892c41c"
   },
   {
     "nom": "Vi Escumos Ancestral",
@@ -477,7 +516,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_7e80d3f7"
   },
   {
     "nom": "Cava Pregadeu Brut Nature",
@@ -489,7 +529,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_1d62fcce"
   },
   {
     "nom": "Empordà Oliveda Garota",
@@ -501,7 +542,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_74862ff6"
   },
   {
     "nom": "Penedès Celler Credo",
@@ -513,7 +555,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_ce9a1106"
   },
   {
     "nom": "Penedès Hipnosis",
@@ -525,7 +568,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_25569176"
   },
   {
     "nom": "Rioja Naku 2022",
@@ -537,7 +581,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_ad3226b8"
   },
   {
     "nom": "Cava Masia Serra Brut",
@@ -549,7 +594,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_448aa7f4"
   },
   {
     "nom": "Navarra Viña Zorzal",
@@ -561,7 +607,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_cb6553bf"
   },
   {
     "nom": "Corpinnat Viader Rosat",
@@ -573,7 +620,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_c1814611"
   },
   {
     "nom": "Rioja Viña Zorzal El Patito",
@@ -585,7 +633,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_465f032d"
   },
   {
     "nom": "Casa Agrícola Blanco",
@@ -597,7 +646,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_5a341ada"
   },
   {
     "nom": "Rioja Viña Cubillo Crianza",
@@ -609,7 +659,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_b57bf446"
   },
   {
     "nom": "Rioja Palacios Remondo",
@@ -621,7 +672,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_24615747"
   },
   {
     "nom": "Paco Garcia Seis 2022",
@@ -633,7 +685,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_9388f8e0"
   },
   {
     "nom": "Rioja Ijalba Crianza",
@@ -645,7 +698,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_69c2a93d"
   },
   {
     "nom": "Rioja Ijalba Graciano",
@@ -657,7 +711,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_755da946"
   },
   {
     "nom": "Rioja Ad Libitum",
@@ -669,7 +724,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_53345d66"
   },
   {
     "nom": "Montsant Orto Vi",
@@ -681,7 +737,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_ba4dd748"
   },
   {
     "nom": "Terra Alta Altavins",
@@ -693,7 +750,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_86a845e3"
   },
   {
     "nom": "Rioja Ijalba Maturana",
@@ -705,7 +763,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_8cdb0456"
   },
   {
     "nom": "Rioja Juan Valdelana",
@@ -717,7 +776,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_c44613ee"
   },
   {
     "nom": "Priorat Mas Alta",
@@ -729,7 +789,8 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_2de6c15a"
   },
   {
     "nom": "Viña Zorzal Graciano",
@@ -741,6 +802,7 @@
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z"
+    "updated_at": "2026-07-28T00:00:00.000Z",
+    "id": "vi_daecda9d"
   }
 ]

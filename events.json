@@ -13,39 +13,39 @@
         "vins": [],
         "varios": [
           {
-            "nom": "Labial",
             "qty": 16,
-            "preu_unit": 2.5
+            "preu_unit": 2.5,
+            "id": "va_acf01ba1"
           },
           {
-            "nom": "Crema calendula M",
             "qty": 15,
-            "preu_unit": 6
+            "preu_unit": 6,
+            "id": "va_bdd16739"
           },
           {
-            "nom": "Capilar romero",
             "qty": 6,
-            "preu_unit": 4
+            "preu_unit": 4,
+            "id": "va_57730b5b"
           },
           {
-            "nom": "Crema Exfoliant",
             "qty": 1,
-            "preu_unit": 6
+            "preu_unit": 6,
+            "id": "va_da2497ed"
           },
           {
-            "nom": "Pastilla sabo",
             "qty": 2,
-            "preu_unit": 4
+            "preu_unit": 4,
+            "id": "va_b899fac8"
           },
           {
-            "nom": "Pastilla sabo (M)",
             "qty": 2,
-            "preu_unit": 4
+            "preu_unit": 4,
+            "id": "va_1c3d3a40"
           },
           {
-            "nom": "Crema manzanilla XL",
             "qty": 1,
-            "preu_unit": 12
+            "preu_unit": 12,
+            "id": "va_f3dbf46f"
           }
         ],
         "notes": ""
@@ -64,18 +64,18 @@
         "preu_beguda": 200,
         "preu_altres": 100,
         "plats": [
-          "Torrija con helado de pisatcho",
-          "arrós de peix amb gambas",
-          "Berenjena con hummus, ricota y cherrys",
-          "Crema Apionavo con flores de cabacin y gulas",
-          "Dim sums Carrillera",
-          "Steak Tartar de Vedella de Girona"
+          "pl_859bbbbd",
+          "pl_e951a634",
+          "pl_f32eaf20",
+          "pl_79fce619",
+          "pl_03e97b0a",
+          "pl_be92eeec"
         ],
         "vins": [
-          "Murmuri Priorat",
-          "Con Barbas y a lo Loco",
-          "Ancestral",
-          "Venus"
+          "vi_8e3a8d81",
+          "vi_7c8ea5e9",
+          "vi_dd393a54",
+          "vi_40037888"
         ],
         "varios": [],
         "notes": ""
@@ -148,16 +148,24 @@
         "preu_beguda": 7,
         "preu_altres": 3,
         "plats": [
-          "Berberechos frescos",
-          "Plato de Gambas rojas (8 und)",
-          "Carrillera a Baja Temperatura"
+          "pl_39d5baa7",
+          "pl_80a3cb12",
+          "pl_3734ea94"
         ],
         "vins": [
-          "Ijalba Crianza"
+          "vi_05d5cfa1"
         ],
         "varios": [
-          "Café",
-          "Licor solo"
+          {
+            "id": "va_f358016a",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_a273b147",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ],
         "notes": "2 xupitos de Jack Daniels"
       },
@@ -167,15 +175,19 @@
         "preu_beguda": 7,
         "preu_altres": 3,
         "plats": [
-          "Berberechos frescos",
-          "Plato de Gambas rojas (8 und)",
-          "Carrillera a Baja Temperatura"
+          "pl_39d5baa7",
+          "pl_80a3cb12",
+          "pl_3734ea94"
         ],
         "vins": [
-          "Ijalba Crianza"
+          "vi_05d5cfa1"
         ],
         "varios": [
-          "Licor solo"
+          {
+            "id": "va_a273b147",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ],
         "notes": ""
       }
@@ -193,7 +205,7 @@
         "preu_beguda": 0,
         "preu_altres": 0,
         "plats": [
-          "Arròs de carn (7 pax)"
+          "pl_6dcea2fe"
         ],
         "vins": [],
         "varios": [],
@@ -213,15 +225,15 @@
         "preu_beguda": 15,
         "preu_altres": 0,
         "plats": [
-          "Berenjena con hummus, ricota y cherrys",
-          "Dim sums Carrillera",
-          "Carpatxo de Gamba",
-          "Ensalada del Huerto Xalbi",
-          "Yogur de Ezcaray",
-          "Steak Tartar de Vedella de Girona"
+          "pl_f32eaf20",
+          "pl_03e97b0a",
+          "pl_c14063ac",
+          "pl_7755ad17",
+          "pl_1a9476ac",
+          "pl_be92eeec"
         ],
         "vins": [
-          "Origen garnacha negra"
+          "vi_b892c41c"
         ],
         "varios": [],
         "notes": ""
@@ -232,15 +244,15 @@
         "preu_beguda": 15,
         "preu_altres": 0,
         "plats": [
-          "Berenjena con hummus, ricota y cherrys",
-          "Dim sums Carrillera",
-          "Carpatxo de Gamba",
-          "Ensalada del Huerto Xalbi",
-          "Yogur de Ezcaray",
-          "Steak Tartar de Vedella de Girona"
+          "pl_f32eaf20",
+          "pl_03e97b0a",
+          "pl_c14063ac",
+          "pl_7755ad17",
+          "pl_1a9476ac",
+          "pl_be92eeec"
         ],
         "vins": [
-          "Origen garnacha negra"
+          "vi_b892c41c"
         ],
         "varios": [],
         "notes": ""
@@ -259,12 +271,12 @@
         "preu_beguda": 108,
         "preu_altres": 0,
         "plats": [
-          "Tortilla abierta con gulas, cherry y setas (Para compartir)",
-          "Puerros con queso fresco y frutos secos",
-          "Carpatxo de Gamba",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray",
-          "Steak Tartar de Vedella de Girona"
+          "pl_cc1ed97e",
+          "pl_4a6edbec",
+          "pl_c14063ac",
+          "pl_3734ea94",
+          "pl_1a9476ac",
+          "pl_be92eeec"
         ],
         "vins": [],
         "varios": [],
@@ -284,12 +296,12 @@
         "preu_beguda": 160,
         "preu_altres": 102,
         "plats": [
-          "Tortilla abierta con gulas, cherry y setas (Para compartir)",
-          "Puerros con queso fresco y frutos secos",
-          "Carpatxo de Gamba",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray",
-          "Steak Tartar de Vedella de Girona"
+          "pl_cc1ed97e",
+          "pl_4a6edbec",
+          "pl_c14063ac",
+          "pl_3734ea94",
+          "pl_1a9476ac",
+          "pl_be92eeec"
         ],
         "vins": [],
         "varios": [],
@@ -309,24 +321,32 @@
         "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [
-          "Carrillera sobre briox",
-          "Panceta baja temperatura con Baba Ganoush",
-          "Puerros con queso fresco y frutos secos",
-          "Brandada de Bacalao con flores de calabacin",
-          "Carpatxo de Gamba",
-          "Yogur de Ezcaray"
+          "pl_20628ee7",
+          "pl_f929e07c",
+          "pl_4a6edbec",
+          "pl_2e737925",
+          "pl_c14063ac",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Familia Valdelana Criannza",
-          "Temerario Garnacha Viñas Viejas",
-          "La Barbacana",
-          "Batussa",
-          "Cric Cric Blanc",
-          "Escumos Sanromà"
+          "vi_ea911a8c",
+          "vi_d29c89dc",
+          "vi_31bd5657",
+          "vi_1673e63a",
+          "vi_60a79b8a",
+          "vi_5d241ca9"
         ],
         "varios": [
-          "Pan",
-          "Carajillo"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_b0ef6c33",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ],
         "notes": ""
       },
@@ -336,24 +356,32 @@
         "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [
-          "Carrillera sobre briox",
-          "Panceta baja temperatura con Baba Ganoush",
-          "Puerros con queso fresco y frutos secos",
-          "Brandada de Bacalao con flores de calabacin",
-          "Carpatxo de Gamba",
-          "Yogur de Ezcaray"
+          "pl_20628ee7",
+          "pl_f929e07c",
+          "pl_4a6edbec",
+          "pl_2e737925",
+          "pl_c14063ac",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Familia Valdelana Criannza",
-          "Temerario Garnacha Viñas Viejas",
-          "La Barbacana",
-          "Batussa",
-          "Cric Cric Blanc",
-          "Escumos Sanromà"
+          "vi_ea911a8c",
+          "vi_d29c89dc",
+          "vi_31bd5657",
+          "vi_1673e63a",
+          "vi_60a79b8a",
+          "vi_5d241ca9"
         ],
         "varios": [
-          "Pan",
-          "Carajillo"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_b0ef6c33",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ],
         "notes": ""
       },
@@ -363,23 +391,27 @@
         "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [
-          "Carrillera sobre briox",
-          "Panceta baja temperatura con Baba Ganoush",
-          "Puerros con queso fresco y frutos secos",
-          "Brandada de Bacalao con flores de calabacin",
-          "Carpatxo de Gamba",
-          "Yogur de Ezcaray"
+          "pl_20628ee7",
+          "pl_f929e07c",
+          "pl_4a6edbec",
+          "pl_2e737925",
+          "pl_c14063ac",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Familia Valdelana Criannza",
-          "Temerario Garnacha Viñas Viejas",
-          "La Barbacana",
-          "Batussa",
-          "Cric Cric Blanc",
-          "Escumos Sanromà"
+          "vi_ea911a8c",
+          "vi_d29c89dc",
+          "vi_31bd5657",
+          "vi_1673e63a",
+          "vi_60a79b8a",
+          "vi_5d241ca9"
         ],
         "varios": [
-          "Pan"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ],
         "notes": ""
       },
@@ -389,24 +421,32 @@
         "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [
-          "Carrillera sobre briox",
-          "Panceta baja temperatura con Baba Ganoush",
-          "Puerros con queso fresco y frutos secos",
-          "Brandada de Bacalao con flores de calabacin",
-          "Carpatxo de Gamba",
-          "Yogur de Ezcaray"
+          "pl_20628ee7",
+          "pl_f929e07c",
+          "pl_4a6edbec",
+          "pl_2e737925",
+          "pl_c14063ac",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Familia Valdelana Criannza",
-          "Temerario Garnacha Viñas Viejas",
-          "La Barbacana",
-          "Batussa",
-          "Cric Cric Blanc",
-          "Escumos Sanromà"
+          "vi_ea911a8c",
+          "vi_d29c89dc",
+          "vi_31bd5657",
+          "vi_1673e63a",
+          "vi_60a79b8a",
+          "vi_5d241ca9"
         ],
         "varios": [
-          "Café",
-          "Pan"
+          {
+            "id": "va_f358016a",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ],
         "notes": ""
       },
@@ -416,22 +456,26 @@
         "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [
-          "Shiitake con huevo (setas)",
-          "Lubina Plancha",
-          "Puerros con queso fresco y frutos secos",
-          "Brandada de Bacalao con flores de calabacin",
-          "Yogur de Ezcaray"
+          "pl_f57fd7e1",
+          "pl_e1515162",
+          "pl_4a6edbec",
+          "pl_2e737925",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Familia Valdelana Criannza",
-          "Temerario Garnacha Viñas Viejas",
-          "La Barbacana",
-          "Batussa",
-          "Cric Cric Blanc",
-          "Escumos Sanromà"
+          "vi_ea911a8c",
+          "vi_d29c89dc",
+          "vi_31bd5657",
+          "vi_1673e63a",
+          "vi_60a79b8a",
+          "vi_5d241ca9"
         ],
         "varios": [
-          "Pan"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ],
         "notes": "Menu adaptat per alergia, peix i bolets"
       },
@@ -441,24 +485,32 @@
         "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [
-          "Carrillera sobre briox",
-          "Panceta baja temperatura con Baba Ganoush",
-          "Puerros con queso fresco y frutos secos",
-          "Brandada de Bacalao con flores de calabacin",
-          "Carpatxo de Gamba",
-          "Yogur de Ezcaray"
+          "pl_20628ee7",
+          "pl_f929e07c",
+          "pl_4a6edbec",
+          "pl_2e737925",
+          "pl_c14063ac",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Familia Valdelana Criannza",
-          "Temerario Garnacha Viñas Viejas",
-          "La Barbacana",
-          "Batussa",
-          "Cric Cric Blanc",
-          "Escumos Sanromà"
+          "vi_ea911a8c",
+          "vi_d29c89dc",
+          "vi_31bd5657",
+          "vi_1673e63a",
+          "vi_60a79b8a",
+          "vi_5d241ca9"
         ],
         "varios": [
-          "Pan",
-          "Cortado"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_0086caa5",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ],
         "notes": "Descafeinado"
       },
@@ -468,24 +520,32 @@
         "preu_beguda": 20,
         "preu_altres": 20,
         "plats": [
-          "Carrillera sobre briox",
-          "Panceta baja temperatura con Baba Ganoush",
-          "Puerros con queso fresco y frutos secos",
-          "Brandada de Bacalao con flores de calabacin",
-          "Carpatxo de Gamba",
-          "Yogur de Ezcaray"
+          "pl_20628ee7",
+          "pl_f929e07c",
+          "pl_4a6edbec",
+          "pl_2e737925",
+          "pl_c14063ac",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Familia Valdelana Criannza",
-          "Temerario Garnacha Viñas Viejas",
-          "La Barbacana",
-          "Batussa",
-          "Cric Cric Blanc",
-          "Escumos Sanromà"
+          "vi_ea911a8c",
+          "vi_d29c89dc",
+          "vi_31bd5657",
+          "vi_1673e63a",
+          "vi_60a79b8a",
+          "vi_5d241ca9"
         ],
         "varios": [
-          "Pan",
-          "Xupito"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_f1b6cb47",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ],
         "notes": "Va fer un conyac amb gel després del sopar que no se li va cobrar. (20 euros de propina)"
       },
@@ -495,24 +555,32 @@
         "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [
-          "Carrillera sobre briox",
-          "Panceta baja temperatura con Baba Ganoush",
-          "Puerros con queso fresco y frutos secos",
-          "Brandada de Bacalao con flores de calabacin",
-          "Carpatxo de Gamba",
-          "Yogur de Ezcaray"
+          "pl_20628ee7",
+          "pl_f929e07c",
+          "pl_4a6edbec",
+          "pl_2e737925",
+          "pl_c14063ac",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Familia Valdelana Criannza",
-          "Temerario Garnacha Viñas Viejas",
-          "La Barbacana",
-          "Batussa",
-          "Cric Cric Blanc",
-          "Escumos Sanromà"
+          "vi_ea911a8c",
+          "vi_d29c89dc",
+          "vi_31bd5657",
+          "vi_1673e63a",
+          "vi_60a79b8a",
+          "vi_5d241ca9"
         ],
         "varios": [
-          "Pan",
-          "Cafe con leche"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_961b9fae",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ],
         "notes": ""
       },
@@ -522,23 +590,27 @@
         "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [
-          "Carrillera sobre briox",
-          "Panceta baja temperatura con Baba Ganoush",
-          "Puerros con queso fresco y frutos secos",
-          "Brandada de Bacalao con flores de calabacin",
-          "Carpatxo de Gamba",
-          "Yogur de Ezcaray"
+          "pl_20628ee7",
+          "pl_f929e07c",
+          "pl_4a6edbec",
+          "pl_2e737925",
+          "pl_c14063ac",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Familia Valdelana Criannza",
-          "Temerario Garnacha Viñas Viejas",
-          "La Barbacana",
-          "Batussa",
-          "Cric Cric Blanc",
-          "Escumos Sanromà"
+          "vi_ea911a8c",
+          "vi_d29c89dc",
+          "vi_31bd5657",
+          "vi_1673e63a",
+          "vi_60a79b8a",
+          "vi_5d241ca9"
         ],
         "varios": [
-          "Pan"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ],
         "notes": ""
       }
@@ -605,7 +677,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       }
     ],
     "total": 400
@@ -621,20 +694,28 @@
         "preu_beguda": 7,
         "preu_altres": 0,
         "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray"
+          "pl_7755ad17",
+          "pl_d00a4a7f",
+          "pl_20c85737",
+          "pl_df99878c",
+          "pl_3734ea94",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Temerario Garnacha Viñas Viejas"
+          "vi_d29c89dc"
         ],
         "notes": "",
         "varios": [
-          "Pan",
-          "Xupito"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_f1b6cb47",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ]
       },
       {
@@ -643,19 +724,23 @@
         "preu_beguda": 7,
         "preu_altres": 0,
         "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray"
+          "pl_7755ad17",
+          "pl_d00a4a7f",
+          "pl_20c85737",
+          "pl_df99878c",
+          "pl_3734ea94",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Temerario Garnacha Viñas Viejas"
+          "vi_d29c89dc"
         ],
         "notes": "",
         "varios": [
-          "Pan"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ]
       },
       {
@@ -664,19 +749,23 @@
         "preu_beguda": 7,
         "preu_altres": 0,
         "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray"
+          "pl_7755ad17",
+          "pl_d00a4a7f",
+          "pl_20c85737",
+          "pl_df99878c",
+          "pl_3734ea94",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Temerario Garnacha Viñas Viejas"
+          "vi_d29c89dc"
         ],
         "notes": "",
         "varios": [
-          "Pan"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ]
       },
       {
@@ -685,19 +774,23 @@
         "preu_beguda": 7,
         "preu_altres": 0,
         "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray"
+          "pl_7755ad17",
+          "pl_d00a4a7f",
+          "pl_20c85737",
+          "pl_df99878c",
+          "pl_3734ea94",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Temerario Garnacha Viñas Viejas"
+          "vi_d29c89dc"
         ],
         "notes": "",
         "varios": [
-          "Pan"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ]
       }
     ],
@@ -714,25 +807,33 @@
         "preu_beguda": 20,
         "preu_altres": 5,
         "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray"
+          "pl_7755ad17",
+          "pl_d00a4a7f",
+          "pl_20c85737",
+          "pl_df99878c",
+          "pl_3734ea94",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Alto Otero",
-          "Espantaburros Clarete",
-          "Temerario Garnacha Viñas Viejas",
-          "Temerario Mazuela Viñas Viejas",
-          "Naturaleza Salvaje",
-          "Colet Gran Cuvée Rosé"
+          "vi_4b1cfca5",
+          "vi_b3387b0b",
+          "vi_d29c89dc",
+          "vi_adef53e1",
+          "vi_944e0eab",
+          "vi_03c2f07c"
         ],
         "notes": "Gintonic gordons",
         "varios": [
-          "Pan",
-          "Combinado"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_8a0a10cb",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ]
       },
       {
@@ -741,25 +842,29 @@
         "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray",
-          "Tartar de Gamba"
+          "pl_7755ad17",
+          "pl_d00a4a7f",
+          "pl_20c85737",
+          "pl_df99878c",
+          "pl_3734ea94",
+          "pl_1a9476ac",
+          "pl_1d28d123"
         ],
         "vins": [
-          "Alto Otero",
-          "Espantaburros Clarete",
-          "Temerario Garnacha Viñas Viejas",
-          "Temerario Mazuela Viñas Viejas",
-          "Naturaleza Salvaje",
-          "Colet Gran Cuvée Rosé"
+          "vi_4b1cfca5",
+          "vi_b3387b0b",
+          "vi_d29c89dc",
+          "vi_adef53e1",
+          "vi_944e0eab",
+          "vi_03c2f07c"
         ],
         "notes": "",
         "varios": [
-          "Pan"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ]
       },
       {
@@ -768,25 +873,33 @@
         "preu_beguda": 20,
         "preu_altres": 5,
         "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray"
+          "pl_7755ad17",
+          "pl_d00a4a7f",
+          "pl_20c85737",
+          "pl_df99878c",
+          "pl_3734ea94",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Alto Otero",
-          "Espantaburros Clarete",
-          "Temerario Garnacha Viñas Viejas",
-          "Temerario Mazuela Viñas Viejas",
-          "Naturaleza Salvaje",
-          "Colet Gran Cuvée Rosé"
+          "vi_4b1cfca5",
+          "vi_b3387b0b",
+          "vi_d29c89dc",
+          "vi_adef53e1",
+          "vi_944e0eab",
+          "vi_03c2f07c"
         ],
         "notes": "Gintonic Gordons",
         "varios": [
-          "Pan",
-          "Gintonic"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_25578dd2",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ]
       },
       {
@@ -795,24 +908,28 @@
         "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray"
+          "pl_7755ad17",
+          "pl_d00a4a7f",
+          "pl_20c85737",
+          "pl_df99878c",
+          "pl_3734ea94",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Alto Otero",
-          "Espantaburros Clarete",
-          "Temerario Garnacha Viñas Viejas",
-          "Temerario Mazuela Viñas Viejas",
-          "Naturaleza Salvaje",
-          "Colet Gran Cuvée Rosé"
+          "vi_4b1cfca5",
+          "vi_b3387b0b",
+          "vi_d29c89dc",
+          "vi_adef53e1",
+          "vi_944e0eab",
+          "vi_03c2f07c"
         ],
         "notes": "",
         "varios": [
-          "Pan"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ]
       },
       {
@@ -821,25 +938,33 @@
         "preu_beguda": 20,
         "preu_altres": 5,
         "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray",
-          "Tartar de Gamba"
+          "pl_7755ad17",
+          "pl_20c85737",
+          "pl_df99878c",
+          "pl_3734ea94",
+          "pl_1a9476ac",
+          "pl_1d28d123"
         ],
         "vins": [
-          "Alto Otero",
-          "Espantaburros Clarete",
-          "Temerario Garnacha Viñas Viejas",
-          "Temerario Mazuela Viñas Viejas",
-          "Naturaleza Salvaje",
-          "Colet Gran Cuvée Rosé"
+          "vi_4b1cfca5",
+          "vi_b3387b0b",
+          "vi_d29c89dc",
+          "vi_adef53e1",
+          "vi_944e0eab",
+          "vi_03c2f07c"
         ],
         "notes": "Jack Daniels - Va menjar 2 carrilleres",
         "varios": [
-          "Pan",
-          "Licor solo"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_a273b147",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ]
       },
       {
@@ -848,25 +973,33 @@
         "preu_beguda": 20,
         "preu_altres": 5,
         "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray"
+          "pl_7755ad17",
+          "pl_d00a4a7f",
+          "pl_20c85737",
+          "pl_df99878c",
+          "pl_3734ea94",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Alto Otero",
-          "Espantaburros Clarete",
-          "Temerario Garnacha Viñas Viejas",
-          "Temerario Mazuela Viñas Viejas",
-          "Naturaleza Salvaje",
-          "Colet Gran Cuvée Rosé"
+          "vi_4b1cfca5",
+          "vi_b3387b0b",
+          "vi_d29c89dc",
+          "vi_adef53e1",
+          "vi_944e0eab",
+          "vi_03c2f07c"
         ],
         "notes": "Gintonic Gordons",
         "varios": [
-          "Pan",
-          "Gintonic"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_25578dd2",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ]
       },
       {
@@ -875,24 +1008,28 @@
         "preu_beguda": 20,
         "preu_altres": 5,
         "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray"
+          "pl_7755ad17",
+          "pl_d00a4a7f",
+          "pl_20c85737",
+          "pl_df99878c",
+          "pl_3734ea94",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Alto Otero",
-          "Espantaburros Clarete",
-          "Temerario Garnacha Viñas Viejas",
-          "Temerario Mazuela Viñas Viejas",
-          "Naturaleza Salvaje",
-          "Colet Gran Cuvée Rosé"
+          "vi_4b1cfca5",
+          "vi_b3387b0b",
+          "vi_d29c89dc",
+          "vi_adef53e1",
+          "vi_944e0eab",
+          "vi_03c2f07c"
         ],
         "notes": "No copas 5 propina",
         "varios": [
-          "Pan"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ]
       },
       {
@@ -901,24 +1038,32 @@
         "preu_beguda": 20,
         "preu_altres": 5,
         "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray"
+          "pl_7755ad17",
+          "pl_d00a4a7f",
+          "pl_20c85737",
+          "pl_df99878c",
+          "pl_3734ea94",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Alto Otero",
-          "Espantaburros Clarete",
-          "Temerario Garnacha Viñas Viejas",
-          "Temerario Mazuela Viñas Viejas",
-          "Naturaleza Salvaje",
-          "Colet Gran Cuvée Rosé"
+          "vi_4b1cfca5",
+          "vi_b3387b0b",
+          "vi_d29c89dc",
+          "vi_adef53e1",
+          "vi_944e0eab",
+          "vi_03c2f07c"
         ],
         "varios": [
-          "Pan",
-          "Combinado"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_8a0a10cb",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ],
         "notes": ""
       },
@@ -928,24 +1073,32 @@
         "preu_beguda": 20,
         "preu_altres": 5,
         "plats": [
-          "Ensalada del Huerto Xalbi",
-          "Tiradito de Salmón",
-          "Rebozuelos Salteados",
-          "Risotto de Verduras",
-          "Carrillera a Baja Temperatura",
-          "Yogur de Ezcaray"
+          "pl_7755ad17",
+          "pl_d00a4a7f",
+          "pl_20c85737",
+          "pl_df99878c",
+          "pl_3734ea94",
+          "pl_1a9476ac"
         ],
         "vins": [
-          "Alto Otero",
-          "Espantaburros Clarete",
-          "Temerario Garnacha Viñas Viejas",
-          "Temerario Mazuela Viñas Viejas",
-          "Naturaleza Salvaje",
-          "Colet Gran Cuvée Rosé"
+          "vi_4b1cfca5",
+          "vi_b3387b0b",
+          "vi_d29c89dc",
+          "vi_adef53e1",
+          "vi_944e0eab",
+          "vi_03c2f07c"
         ],
         "varios": [
-          "Pan",
-          "Combinado"
+          {
+            "id": "va_ef5f57bb",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_8a0a10cb",
+            "qty": 1,
+            "preu_unit": 0
+          }
         ],
         "notes": ""
       }
@@ -964,10 +1117,11 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [
-          "Aloers",
-          "Montse i Mario"
+          "vi_7fb27ed2",
+          "vi_6c6f5f12"
         ],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Karmele",
@@ -976,9 +1130,10 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [
-          "Dolç Garnacha Blanca Montsant 4 copes"
+          "vi_5191591f"
         ],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Amic Koldo i Karmele",
@@ -987,7 +1142,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Amiga Koldo i Karmele",
@@ -996,7 +1152,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       }
     ],
     "total": 180
@@ -1013,12 +1170,13 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [
-          "Pedregar",
-          "AD Libitum",
-          "Ecumós (Sanromà)",
-          "El Mural"
+          "vi_944acb25",
+          "vi_4b2a2f05",
+          "vi_d1abf336",
+          "vi_13811f30"
         ],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Laura",
@@ -1027,7 +1185,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Miguel",
@@ -1036,7 +1195,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Carmen",
@@ -1045,7 +1205,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Nuria",
@@ -1054,7 +1215,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Cristian",
@@ -1063,7 +1225,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       }
     ],
     "total": 330
@@ -1080,14 +1243,15 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [
-          "Toscana Punky Cosines",
-          "Negre Rias Baixes",
-          "Escumos Sanromà",
-          "Castanyer",
-          "Murmuri Priorat",
-          "Marco Favio (Vi dolç)"
+          "vi_497c2d13",
+          "vi_d958ca16",
+          "vi_5d241ca9",
+          "vi_639987a8",
+          "vi_8e3a8d81",
+          "vi_1b945c0f"
         ],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Karmele",
@@ -1096,7 +1260,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Martin",
@@ -1105,7 +1270,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Maria",
@@ -1114,7 +1280,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Alejandro",
@@ -1123,7 +1290,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Veronica",
@@ -1132,7 +1300,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Alba Veina",
@@ -1159,11 +1328,12 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [
-          "Escumos blanc",
-          "Les Cousins (rosat)",
-          "Negre Alemany"
+          "vi_bfea1ba7",
+          "vi_22e20092",
+          "vi_99af8e63"
         ],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Angel",
@@ -1172,7 +1342,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Carlos",
@@ -1181,7 +1352,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Ester",
@@ -1190,7 +1362,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Miriam",
@@ -1199,7 +1372,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Xavi Orgien",
@@ -1208,7 +1382,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Fill Xavi i Miriam",
@@ -1217,7 +1392,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       },
       {
         "nom": "Filla Xavi i Miriam",
@@ -1226,7 +1402,8 @@
         "preu_altres": 0,
         "plats": [],
         "vins": [],
-        "notes": ""
+        "notes": "",
+        "varios": []
       }
     ],
     "total": 285
