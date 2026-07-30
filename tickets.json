@@ -1,5 +1,199 @@
 [
   {
+    "establiment": "WINEPALACE TERRASSA",
+    "tipus": "Restaurant/Bar",
+    "data": "28/07/2026",
+    "adreca": "Pol. Ind Emporda Internacional, Passeig Vapor Gran 31 Local 14, 08221 Terrassa",
+    "nif": "B-B55080600",
+    "telefon": "938547137",
+    "productes": [
+      {
+        "descripcio": "VI ESCUMOS ANCESTRAL",
+        "quantitat": 1,
+        "preu_unitari": 9.8,
+        "total": 9.8,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CAVA PREGADEU BRUT N",
+        "quantitat": 1,
+        "preu_unitari": 7.94,
+        "total": 7.94,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "EMPORDA OLIVEDA GARO",
+        "quantitat": 1,
+        "preu_unitari": 6.26,
+        "total": 6.26,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PENEDES CELLER CREDO",
+        "quantitat": 1,
+        "preu_unitari": 6.43,
+        "total": 6.43,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "V R PENEDES HIPNOSIS",
+        "quantitat": 1,
+        "preu_unitari": 6.04,
+        "total": 6.04,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "V N RIOJA NAKU 2022",
+        "quantitat": 1,
+        "preu_unitari": 20.45,
+        "total": 20.45,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CAVA MASIA SERRA BRU",
+        "quantitat": 1,
+        "preu_unitari": 14.57,
+        "total": 14.57,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "NAVARRA VIÑA ZORZAL",
+        "quantitat": 1,
+        "preu_unitari": 5.05,
+        "total": 5.05,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CORPINNAT VIADER ROS",
+        "quantitat": 1,
+        "preu_unitari": 12.11,
+        "total": 12.11,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "RIOJA VIÑA ZORZAL EL",
+        "quantitat": 1,
+        "preu_unitari": 6.29,
+        "total": 6.29,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CASA AGRICOLA BLANCO",
+        "quantitat": 1,
+        "preu_unitari": 8.7,
+        "total": 8.7,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "GARRAFA 2L PET",
+        "quantitat": 1,
+        "preu_unitari": 1.12,
+        "total": 1.12,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "GRANALES VERMOUTH RO",
+        "quantitat": 1,
+        "preu_unitari": 4.68,
+        "total": 4.68,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "GRANALES VERMOUTH BL",
+        "quantitat": 1,
+        "preu_unitari": 4.68,
+        "total": 4.68,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "RIOJA VIÑA CUBILLO C",
+        "quantitat": 1,
+        "preu_unitari": 15.73,
+        "total": 15.73,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "RIOJA PALACIOS REMON",
+        "quantitat": 1,
+        "preu_unitari": 13.85,
+        "total": 13.85,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PACO GARCIA SEIS 202",
+        "quantitat": 1,
+        "preu_unitari": 5.41,
+        "total": 5.41,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "RIOJA UALBA CRIANZA",
+        "quantitat": 1,
+        "preu_unitari": 7.24,
+        "total": 7.24,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "RIOJA UALBA GRACIAN",
+        "quantitat": 1,
+        "preu_unitari": 12.27,
+        "total": 12.27,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "V N RIOJA AD LIBITUM",
+        "quantitat": 1,
+        "preu_unitari": 9.99,
+        "total": 9.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "V N MONTSANT ORTO VI",
+        "quantitat": 1,
+        "preu_unitari": 9.37,
+        "total": 9.37,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TERRA ALTA ALTAVINS",
+        "quantitat": 1,
+        "preu_unitari": 9.01,
+        "total": 9.01,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "RIOJA UALBA MATURAN",
+        "quantitat": 1,
+        "preu_unitari": 12.27,
+        "total": 12.27,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "RIOJA UALBA VALDELANA",
+        "quantitat": 1,
+        "preu_unitari": 24.38,
+        "total": 24.38,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "V N PRIORAT MAS ALTA",
+        "quantitat": 1,
+        "preu_unitari": 15.57,
+        "total": 15.57,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "VIÑA ZORZAL GRACIANO",
+        "quantitat": 1,
+        "preu_unitari": 6.46,
+        "total": 6.46,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 255.67,
+    "saved_at": "2026-07-30T08:17:51.606Z"
+  },
+  {
     "establiment": "BM",
     "tipus": "Alimentación",
     "data": "24/07/2026",
