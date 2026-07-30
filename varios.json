@@ -89,5 +89,12 @@
     "cost": 0,
     "pvp": 4,
     "updated_at": "2026-07-30T08:23:32.405Z"
+  },
+  {
+    "nom": "Crema Exfoliant",
+    "desc": "Coco",
+    "cost": 0,
+    "pvp": 6,
+    "updated_at": "2026-07-30T08:23:54.639Z"
   }
 ]
