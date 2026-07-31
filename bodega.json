@@ -1700,5 +1700,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:02:00.148Z"
+  },
+  {
+    "id": "vi_a1g12gbo",
+    "nom": "Pla de Tudela",
+    "any": "2021",
+    "bodega": "Espelt",
+    "tipus": "Vi blanc",
+    "do": "Empordar",
+    "varietat": "Picapoll blannc",
+    "cost": 40,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:02:49.623Z"
   }
 ]
