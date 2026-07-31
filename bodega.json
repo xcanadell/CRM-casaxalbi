@@ -1642,5 +1642,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:55:34.297Z"
+  },
+  {
+    "id": "vi_whmykox8",
+    "nom": "Villarin",
+    "any": "2021",
+    "bodega": "akilia",
+    "tipus": "Vi negre",
+    "do": "Bierzo",
+    "varietat": "Mencia",
+    "cost": 40,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:56:56.528Z"
   }
 ]
