@@ -1374,5 +1374,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:17:19.979Z"
+  },
+  {
+    "id": "vi_g4xysi4k",
+    "nom": "Insatabile",
+    "any": "2020",
+    "bodega": "Vins nus",
+    "tipus": "Vi rosat",
+    "do": "Priorat",
+    "varietat": "Garnatxa, xarel·lo",
+    "cost": 22,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:20:03.630Z"
   }
 ]
