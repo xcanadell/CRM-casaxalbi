@@ -1530,5 +1530,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:39:11.967Z"
+  },
+  {
+    "id": "vi_8ozoeoj8",
+    "nom": "Doix",
+    "any": "2018",
+    "bodega": "Mas Doix",
+    "tipus": "Vi negre",
+    "do": "Priorat",
+    "varietat": "marlot, garnatxa, carinnyena",
+    "cost": 90,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:40:46.926Z"
   }
 ]
