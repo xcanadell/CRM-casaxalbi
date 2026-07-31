@@ -521,16 +521,17 @@
   },
   {
     "id": "vi_1d62fcce",
-    "nom": "Cava Pregadeu Brut Nature",
-    "any": "",
-    "bodega": "",
+    "nom": "Pregadeu Brut Nature",
+    "any": "2024",
+    "bodega": "Els vinyarons",
     "tipus": "Escumós",
-    "do": "",
+    "do": "Penedes",
+    "varietat": "Xarel·lo",
     "cost": 7.94,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-30T11:56:59.024Z"
+    "updated_at": "2026-07-31T08:21:45.289Z"
   },
   {
     "nom": "Empordà Oliveda Garota",
