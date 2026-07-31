@@ -861,5 +861,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T08:24:53.709Z"
+  },
+  {
+    "id": "vi_mw3xwrxo",
+    "nom": "RNG 20 (Magnum)",
+    "any": "1997",
+    "bodega": "Ramon Nadal Giro",
+    "tipus": "Vi negre",
+    "do": "CAVA",
+    "varietat": "Xarel·lo, Parallada, Macabeo",
+    "cost": 200,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T08:26:23.791Z"
   }
 ]
