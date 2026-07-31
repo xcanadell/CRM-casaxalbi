@@ -1045,5 +1045,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T08:45:56.475Z"
+  },
+  {
+    "id": "vi_vqph7rbw",
+    "nom": "Villa Cardiel",
+    "any": "2022",
+    "bodega": "Altun",
+    "tipus": "Vi negre",
+    "do": "Rioja",
+    "varietat": "Tempranillo",
+    "cost": 18,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T08:47:23.605Z"
   }
 ]
