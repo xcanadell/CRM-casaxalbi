@@ -1017,5 +1017,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T08:43:09.494Z"
+  },
+  {
+    "id": "vi_5iqlax7h",
+    "nom": "Zaruga",
+    "any": "2020",
+    "bodega": "Bodegas Oscar Perez",
+    "tipus": "Vi negre",
+    "do": "Rioja",
+    "varietat": "Tempranillo, garnatxa, mazuelo",
+    "cost": 28,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T08:44:57.091Z"
   }
 ]
