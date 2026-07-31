@@ -918,5 +918,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T08:33:57.495Z"
+  },
+  {
+    "id": "vi_h70cxddm",
+    "nom": "Kastanyer",
+    "any": "2019",
+    "bodega": "Testuan",
+    "tipus": "Escumós",
+    "do": "Alella",
+    "varietat": "Xarel·lo",
+    "cost": 15,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T08:33:57.776Z"
   }
 ]
