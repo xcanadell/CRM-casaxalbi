@@ -1003,5 +1003,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T08:40:05.864Z"
+  },
+  {
+    "id": "vi_fet03f58",
+    "nom": "La city",
+    "any": "2021",
+    "bodega": "Lacity wines",
+    "tipus": "Vi negre",
+    "do": "Rioja",
+    "varietat": "Tempranillo, garnatxa, mazuelo, graciano",
+    "cost": 20,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T08:43:09.494Z"
   }
 ]
