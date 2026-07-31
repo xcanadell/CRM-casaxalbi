@@ -1896,5 +1896,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:14:26.232Z"
+  },
+  {
+    "id": "vi_wy5vbf3h",
+    "nom": "Naranjuez",
+    "any": "2014",
+    "bodega": "Naranjuez",
+    "tipus": "Vi negre",
+    "do": "Granada",
+    "varietat": "Pinot noir",
+    "cost": 25,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:16:27.758Z"
   }
 ]
