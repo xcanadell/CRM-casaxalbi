@@ -1558,5 +1558,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:41:37.042Z"
+  },
+  {
+    "id": "vi_vlensru5",
+    "nom": "Montes obarenes",
+    "any": "2022",
+    "bodega": "Gomez Cruzado",
+    "tipus": "Vi blanc",
+    "do": "Rioja",
+    "varietat": "Viura, tempranillo blanco, altres",
+    "cost": 40,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:43:55.846Z"
   }
 ]
