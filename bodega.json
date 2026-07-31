@@ -1516,5 +1516,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:37:48.104Z"
+  },
+  {
+    "id": "vi_87ctzcci",
+    "nom": "Face nord",
+    "any": "2016",
+    "bodega": "Trio l'infernal",
+    "tipus": "Vi negre",
+    "do": "Priorat",
+    "varietat": "shira",
+    "cost": 30,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:39:11.967Z"
   }
 ]
