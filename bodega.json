@@ -946,5 +946,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T08:35:21.545Z"
+  },
+  {
+    "id": "vi_qzrpm4yy",
+    "nom": "La Mateo blanc",
+    "any": "2017",
+    "bodega": "D. Mateos SL",
+    "tipus": "Vi blanc",
+    "do": "Rioja",
+    "varietat": "Tempranillo blanc",
+    "cost": 28,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T08:37:21.496Z"
   }
 ]
