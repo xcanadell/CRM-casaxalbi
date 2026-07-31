@@ -1150,5 +1150,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:03:26.542Z"
+  },
+  {
+    "id": "vi_inyrc6d8",
+    "nom": "Viña Tondonia Reserva",
+    "any": "",
+    "bodega": "Lopez de Heredia",
+    "tipus": "Vi negre",
+    "do": "Rioja",
+    "varietat": "Tempranillo, garnatxa, otros",
+    "cost": 25,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:03:26.658Z"
   }
 ]
