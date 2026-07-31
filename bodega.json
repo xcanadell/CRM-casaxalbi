@@ -1446,5 +1446,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:34:14.485Z"
+  },
+  {
+    "id": "vi_68anxlso",
+    "nom": "Cirarets",
+    "any": "2016",
+    "bodega": "Mas Alta",
+    "tipus": "Vi negre",
+    "do": "Priorat",
+    "varietat": "Carinyena, garnatxa",
+    "cost": 0,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:34:14.818Z"
   }
 ]
