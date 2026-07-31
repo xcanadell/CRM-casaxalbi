@@ -1854,5 +1854,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:10:54.463Z"
+  },
+  {
+    "id": "vi_e90zg77a",
+    "nom": "Viña Tondonia",
+    "any": "",
+    "bodega": "Lopez de Heredia",
+    "tipus": "Vi rosat",
+    "do": "Rioja",
+    "varietat": "",
+    "cost": 90,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:10:54.663Z"
   }
 ]
