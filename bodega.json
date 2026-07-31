@@ -1882,5 +1882,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:12:47.953Z"
+  },
+  {
+    "id": "vi_fnnn2xa4",
+    "nom": "Poirinho",
+    "any": "2017",
+    "bodega": "Nieport",
+    "tipus": "Vi negre",
+    "do": "Portugal",
+    "varietat": "Baga",
+    "cost": 25,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:14:26.232Z"
   }
 ]
