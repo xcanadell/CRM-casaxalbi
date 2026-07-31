@@ -681,17 +681,18 @@
     "id": "vi_24615747"
   },
   {
+    "id": "vi_9388f8e0",
     "nom": "Paco Garcia Seis 2022",
     "any": "2022",
     "bodega": "Paco García",
     "tipus": "Vi negre",
     "do": "Rioja",
+    "varietat": "Tempranillo",
     "cost": 5.41,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z",
-    "id": "vi_9388f8e0"
+    "updated_at": "2026-07-31T08:51:07.737Z"
   },
   {
     "nom": "Rioja Ijalba Crianza",
