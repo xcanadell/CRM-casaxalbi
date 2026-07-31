@@ -1402,5 +1402,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:27:47.722Z"
+  },
+  {
+    "id": "vi_0lq3u6se",
+    "nom": "La Solana Alta",
+    "any": "2016",
+    "bodega": "Masalta",
+    "tipus": "Vi blanc",
+    "do": "Priorat",
+    "varietat": "Garnatxa blanca, Pedro Ximenez",
+    "cost": 40,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:29:43.051Z"
   }
 ]
