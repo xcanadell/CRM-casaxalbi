@@ -725,17 +725,18 @@
     "updated_at": "2026-07-31T08:59:56.843Z"
   },
   {
-    "nom": "Rioja Ad Libitum",
-    "any": "",
-    "bodega": "",
+    "id": "vi_53345d66",
+    "nom": "Ad Libitum",
+    "any": "2024",
+    "bodega": "Juan Carlos Sancha",
     "tipus": "Vi negre",
     "do": "Rioja",
+    "varietat": "Maturana tinta",
     "cost": 9.99,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z",
-    "id": "vi_53345d66"
+    "updated_at": "2026-07-31T09:01:30.015Z"
   },
   {
     "nom": "Montsant Orto Vi",
