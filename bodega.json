@@ -637,17 +637,18 @@
     "id": "vi_465f032d"
   },
   {
+    "id": "vi_5a341ada",
     "nom": "Casa Agrícola Blanco",
-    "any": "",
-    "bodega": "Casa Agrícola",
+    "any": "2024",
+    "bodega": "Pepe Mendoza",
     "tipus": "Vi blanc",
-    "do": "",
+    "do": "Alicante",
+    "varietat": "Viognier, Macabeo, Mersegera, Moscatell",
     "cost": 8.7,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z",
-    "id": "vi_5a341ada"
+    "updated_at": "2026-07-31T08:19:23.211Z"
   },
   {
     "nom": "Rioja Viña Cubillo Crianza",
