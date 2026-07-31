@@ -1938,5 +1938,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:20:20.122Z"
+  },
+  {
+    "id": "vi_ef8btkzx",
+    "nom": "Alter Ego",
+    "any": "",
+    "bodega": "Les astronautes",
+    "tipus": "Vi negre",
+    "do": "Rueda",
+    "varietat": "Garnacha",
+    "cost": 13,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:23:55.464Z"
   }
 ]
