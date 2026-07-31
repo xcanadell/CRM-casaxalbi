@@ -753,17 +753,18 @@
     "updated_at": "2026-07-31T09:32:40.164Z"
   },
   {
-    "nom": "Terra Alta Altavins",
-    "any": "",
+    "id": "vi_86a845e3",
+    "nom": "Almodi",
+    "any": "2024",
     "bodega": "Altavins",
     "tipus": "Vi negre",
     "do": "Terra Alta",
+    "varietat": "Garnatxa peluda",
     "cost": 9.01,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z",
-    "id": "vi_86a845e3"
+    "updated_at": "2026-07-31T09:58:46.840Z"
   },
   {
     "id": "vi_8cdb0456",
