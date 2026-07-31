@@ -1460,5 +1460,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:35:14.395Z"
+  },
+  {
+    "id": "vi_g149jn6s",
+    "nom": "Suc de Saulo",
+    "any": "2021",
+    "bodega": "Comunica",
+    "tipus": "Vi negre",
+    "do": "Montsant",
+    "varietat": "Carinyena, garnatxa peluda",
+    "cost": 17,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:36:07.243Z"
   }
 ]
