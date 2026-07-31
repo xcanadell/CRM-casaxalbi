@@ -759,17 +759,18 @@
     "id": "vi_86a845e3"
   },
   {
+    "id": "vi_8cdb0456",
     "nom": "Rioja Ijalba Maturana",
-    "any": "",
+    "any": "2025",
     "bodega": "Ijalba",
-    "tipus": "Vi negre",
+    "tipus": "Vi blanc",
     "do": "Rioja",
+    "varietat": "Maturana blanca",
     "cost": 12.27,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z",
-    "id": "vi_8cdb0456"
+    "updated_at": "2026-07-31T08:38:07.908Z"
   },
   {
     "nom": "Rioja Juan Valdelana",
