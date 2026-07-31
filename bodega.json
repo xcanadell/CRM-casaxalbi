@@ -1812,5 +1812,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:09:17.146Z"
+  },
+  {
+    "id": "vi_0q0ffkd9",
+    "nom": "Viña Tondonia",
+    "any": "",
+    "bodega": "Lopez de Heredia",
+    "tipus": "Vi blanc",
+    "do": "Rioja",
+    "varietat": "Viura, otros",
+    "cost": 90,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:10:09.265Z"
   }
 ]
