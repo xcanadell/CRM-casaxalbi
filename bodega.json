@@ -889,5 +889,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T08:27:15.503Z"
+  },
+  {
+    "id": "vi_dv5khzeu",
+    "nom": "Peti qui peti",
+    "any": "2021",
+    "bodega": "La vinaventura vins",
+    "tipus": "Escumós",
+    "do": "Penedès",
+    "varietat": "Moscat d'alexandria, chinin blanc",
+    "cost": 12,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T08:28:18.540Z"
   }
 ]
