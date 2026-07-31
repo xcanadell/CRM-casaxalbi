@@ -1474,5 +1474,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:36:07.243Z"
+  },
+  {
+    "id": "vi_o1cze1fr",
+    "nom": "La figa",
+    "any": "2018",
+    "bodega": "Comunica",
+    "tipus": "Vi negre",
+    "do": "Montsant",
+    "varietat": "Garnatxa negra",
+    "cost": 40,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:36:51.168Z"
   }
 ]
