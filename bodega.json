@@ -1756,5 +1756,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:08:15.569Z"
+  },
+  {
+    "id": "vi_bj097m8h",
+    "nom": "Gravonia",
+    "any": "",
+    "bodega": "Lopez de Heredia",
+    "tipus": "Vi blanc",
+    "do": "Rioja",
+    "varietat": "Viura, otros",
+    "cost": 40,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:08:15.752Z"
   }
 ]
