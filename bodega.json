@@ -793,17 +793,18 @@
     "updated_at": "2026-07-31T08:55:41.543Z"
   },
   {
-    "nom": "Priorat Mas Alta",
-    "any": "",
+    "id": "vi_2de6c15a",
+    "nom": "Els pics",
+    "any": "2022",
     "bodega": "Mas Alta",
     "tipus": "Vi negre",
     "do": "Priorat",
+    "varietat": "Garnatxa, Carinyena, shira",
     "cost": 15.57,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z",
-    "id": "vi_2de6c15a"
+    "updated_at": "2026-07-31T09:31:15.983Z"
   },
   {
     "nom": "Viña Zorzal Graciano",
