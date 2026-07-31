@@ -508,16 +508,17 @@
   },
   {
     "id": "vi_7e80d3f7",
-    "nom": "Vi Escumos Ancestral",
-    "any": "",
-    "bodega": "",
+    "nom": "Puput",
+    "any": "2025",
+    "bodega": "Celler de les Aus",
     "tipus": "Escumós",
-    "do": "",
+    "do": "Alella",
+    "varietat": "Xarel·lo",
     "cost": 9.8,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-30T11:57:09.689Z"
+    "updated_at": "2026-07-31T08:31:16.086Z"
   },
   {
     "id": "vi_1d62fcce",
