@@ -711,17 +711,18 @@
     "updated_at": "2026-07-31T08:58:52.388Z"
   },
   {
+    "id": "vi_755da946",
     "nom": "Rioja Ijalba Graciano",
-    "any": "",
+    "any": "2022",
     "bodega": "Ijalba",
     "tipus": "Vi negre",
     "do": "Rioja",
+    "varietat": "Graciano",
     "cost": 12.27,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z",
-    "id": "vi_755da946"
+    "updated_at": "2026-07-31T08:59:56.843Z"
   },
   {
     "nom": "Rioja Ad Libitum",
