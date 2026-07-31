@@ -1308,7 +1308,7 @@
   {
     "id": "vi_ciqet62s",
     "nom": "Venus",
-    "any": "2015",
+    "any": "2014",
     "bodega": "Venus la universal",
     "tipus": "Vi negre",
     "do": "Montsant",
@@ -1317,6 +1317,6 @@
     "pvp": 0,
     "data_compra": "",
     "data_venda": "",
-    "updated_at": "2026-07-31T09:14:22.115Z"
+    "updated_at": "2026-07-31T09:14:47.420Z"
   }
 ]
