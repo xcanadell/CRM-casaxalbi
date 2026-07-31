@@ -1714,5 +1714,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:02:49.623Z"
+  },
+  {
+    "id": "vi_qflx0h4g",
+    "nom": "Els Aurons",
+    "any": "2021",
+    "bodega": "Oller del mas",
+    "tipus": "Vi rosat",
+    "do": "Pla de bages",
+    "varietat": "Picapoll blanc, picapoll negre",
+    "cost": 20,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:03:56.827Z"
   }
 ]
