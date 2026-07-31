@@ -1318,5 +1318,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:14:47.420Z"
+  },
+  {
+    "id": "vi_oocvjqhg",
+    "nom": "Venus",
+    "any": "2015",
+    "bodega": "Venus la universal",
+    "tipus": "Vi negre",
+    "do": "Montsant",
+    "varietat": "Garnatxa, Carinyena, shira",
+    "cost": 35,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:15:30.549Z"
   }
 ]
