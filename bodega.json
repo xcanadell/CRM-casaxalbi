@@ -1728,5 +1728,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:03:56.827Z"
+  },
+  {
+    "id": "vi_f1h6p7ip",
+    "nom": "El Pacto",
+    "any": "2023",
+    "bodega": "El pacto",
+    "tipus": "Vi blanc",
+    "do": "Rioja",
+    "varietat": "Viura, Malbesia, Garnatxa",
+    "cost": 18,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:06:03.846Z"
   }
 ]
