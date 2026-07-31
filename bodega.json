@@ -1059,5 +1059,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T08:47:23.605Z"
+  },
+  {
+    "id": "vi_ixu37iop",
+    "nom": "Livius graciano (GR)",
+    "any": "2014",
+    "bodega": "Alvia",
+    "tipus": "Vi negre",
+    "do": "Rioja",
+    "varietat": "Graciano",
+    "cost": 65,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T08:48:42.616Z"
   }
 ]
