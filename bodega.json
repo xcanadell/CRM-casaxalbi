@@ -1192,5 +1192,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:07:38.418Z"
+  },
+  {
+    "id": "vi_bfkaa8ta",
+    "nom": "Lantagonique",
+    "any": "2021",
+    "bodega": "Les Cosins",
+    "tipus": "Vi rosat",
+    "do": "Priorat",
+    "varietat": "Garnatxa, Carinyenna",
+    "cost": 13,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:07:38.602Z"
   }
 ]
