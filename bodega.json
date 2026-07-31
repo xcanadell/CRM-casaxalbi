@@ -1502,5 +1502,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:36:53.377Z"
+  },
+  {
+    "id": "vi_hmrxfs4v",
+    "nom": "Els escurçons",
+    "any": "2015",
+    "bodega": "Mas Martinet",
+    "tipus": "Vi negre",
+    "do": "Priorat",
+    "varietat": "Garnatxa, Carinyena, shira",
+    "cost": 60,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:37:48.104Z"
   }
 ]
