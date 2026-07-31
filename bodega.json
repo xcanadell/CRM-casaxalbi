@@ -1672,5 +1672,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:00:10.674Z"
+  },
+  {
+    "id": "vi_fyuqkyss",
+    "nom": "La llopetera",
+    "any": "2020",
+    "bodega": "Escoda Sanauja",
+    "tipus": "Vi negre",
+    "do": "Conca de Barbera",
+    "varietat": "Pinot noir",
+    "cost": 20,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:00:46.896Z"
   }
 ]
