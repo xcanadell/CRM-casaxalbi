@@ -932,5 +932,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T08:33:57.776Z"
+  },
+  {
+    "id": "vi_zgff217a",
+    "nom": "L'alba al turo rosat",
+    "any": "2021",
+    "bodega": "Mas Goma",
+    "tipus": "Escumós",
+    "do": "Penedès",
+    "varietat": "Garnatxa negra",
+    "cost": 12,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T08:35:21.545Z"
   }
 ]
