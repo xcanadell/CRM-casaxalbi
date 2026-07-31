@@ -1858,7 +1858,7 @@
   {
     "id": "vi_e90zg77a",
     "nom": "Viña Tondonia",
-    "any": "",
+    "any": "2010",
     "bodega": "Lopez de Heredia",
     "tipus": "Vi rosat",
     "do": "Rioja",
@@ -1867,6 +1867,6 @@
     "pvp": 0,
     "data_compra": "",
     "data_venda": "",
-    "updated_at": "2026-07-31T10:10:54.663Z"
+    "updated_at": "2026-07-31T10:11:12.407Z"
   }
 ]
