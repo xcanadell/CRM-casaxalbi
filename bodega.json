@@ -1802,7 +1802,7 @@
   {
     "id": "vi_zjtwk81r",
     "nom": "Gravonia",
-    "any": "",
+    "any": "2016",
     "bodega": "Lopez de Heredia",
     "tipus": "Vi blanc",
     "do": "Rioja",
@@ -1811,6 +1811,6 @@
     "pvp": 0,
     "data_compra": "",
     "data_venda": "",
-    "updated_at": "2026-07-31T10:08:16.352Z"
+    "updated_at": "2026-07-31T10:09:17.146Z"
   }
 ]
