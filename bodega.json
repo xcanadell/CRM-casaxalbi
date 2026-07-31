@@ -739,17 +739,18 @@
     "updated_at": "2026-07-31T09:01:30.015Z"
   },
   {
-    "nom": "Montsant Orto Vi",
-    "any": "",
-    "bodega": "",
+    "id": "vi_ba4dd748",
+    "nom": "Les argiles",
+    "any": "2024",
+    "bodega": "Orto Vi",
     "tipus": "Vi negre",
     "do": "Montsant",
+    "varietat": "Garnatxa negra",
     "cost": 9.37,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z",
-    "id": "vi_ba4dd748"
+    "updated_at": "2026-07-31T09:32:40.164Z"
   },
   {
     "nom": "Terra Alta Altavins",
