@@ -613,17 +613,18 @@
     "id": "vi_cb6553bf"
   },
   {
-    "nom": "Corpinnat Viader Rosat",
-    "any": "",
+    "id": "vi_c1814611",
+    "nom": "Tres viles",
+    "any": "2023",
     "bodega": "Viader",
     "tipus": "Vi rosat",
     "do": "Corpinnat",
+    "varietat": "Pinot noir",
     "cost": 12.11,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z",
-    "id": "vi_c1814611"
+    "updated_at": "2026-07-31T08:22:22.546Z"
   },
   {
     "nom": "Rioja Viña Zorzal El Patito",
