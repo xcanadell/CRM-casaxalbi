@@ -1628,5 +1628,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:54:51.216Z"
+  },
+  {
+    "id": "vi_t27ppajj",
+    "nom": "Almirez",
+    "any": "2018",
+    "bodega": "Teso la monja",
+    "tipus": "Vi negre",
+    "do": "Toro",
+    "varietat": "Tempranillo",
+    "cost": 17,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:55:34.297Z"
   }
 ]
