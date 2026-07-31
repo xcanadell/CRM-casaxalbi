@@ -1868,5 +1868,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:11:12.407Z"
+  },
+  {
+    "id": "vi_1vj7gtpi",
+    "nom": "La Mujer Caballo",
+    "any": "2020",
+    "bodega": "Filuxera i CIA",
+    "tipus": "Vi negre",
+    "do": "valencia",
+    "varietat": "Ull de perdiu",
+    "cost": 20,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:12:47.953Z"
   }
 ]
