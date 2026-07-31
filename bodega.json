@@ -1262,5 +1262,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:11:20.039Z"
+  },
+  {
+    "id": "vi_zs8nobt4",
+    "nom": "Pasaroles brisat",
+    "any": "2016",
+    "bodega": "Mas Martinet",
+    "tipus": "Brisat",
+    "do": "Priorat",
+    "varietat": "Garnatxa, Pedro Ximenez, Pica poll",
+    "cost": 40,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:11:59.337Z"
   }
 ]
