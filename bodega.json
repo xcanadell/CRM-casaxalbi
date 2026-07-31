@@ -1346,5 +1346,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:16:29.847Z"
+  },
+  {
+    "id": "vi_x4kq91yk",
+    "nom": "Venus blanc",
+    "any": "2014",
+    "bodega": "Venus la universal",
+    "tipus": "Vi blanc",
+    "do": "Montsant",
+    "varietat": "Xarel·lo",
+    "cost": 60,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:16:30.047Z"
   }
 ]
