@@ -1,5 +1,23 @@
 [
   {
+    "data": "2026-07-31",
+    "lloc": "Sopar Casa Xalbi",
+    "notes": "Clandesti",
+    "comensals": [
+      {
+        "nom": "Nuri Miro",
+        "preu_menjar": 240,
+        "preu_beguda": 120,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "varios": [],
+        "notes": ""
+      }
+    ],
+    "total": 360
+  },
+  {
     "data": "2026-07-26",
     "lloc": "Cosmètica Natural",
     "notes": "",
