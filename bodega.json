@@ -1388,5 +1388,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:20:03.630Z"
+  },
+  {
+    "id": "vi_mghjnik7",
+    "nom": "Coreografia",
+    "any": "2023",
+    "bodega": "Terruar limit",
+    "tipus": "Vi rosat",
+    "do": "Priorat",
+    "varietat": "Garnatxa negra, Garnatxa blanca",
+    "cost": 35,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:27:47.722Z"
   }
 ]
