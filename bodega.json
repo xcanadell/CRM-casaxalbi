@@ -775,17 +775,18 @@
     "updated_at": "2026-07-31T08:38:07.908Z"
   },
   {
-    "nom": "Rioja Juan Valdelana",
-    "any": "",
+    "id": "vi_c44613ee",
+    "nom": "Juan Valdelana",
+    "any": "2022",
     "bodega": "Juan Valdelana",
     "tipus": "Vi negre",
     "do": "Rioja",
+    "varietat": "Tempranillo, viura, graciano, garnacha, mazuelo, otros",
     "cost": 24.38,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z",
-    "id": "vi_c44613ee"
+    "updated_at": "2026-07-31T08:55:41.543Z"
   },
   {
     "nom": "Priorat Mas Alta",
