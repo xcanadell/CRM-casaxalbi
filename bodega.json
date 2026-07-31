@@ -808,17 +808,18 @@
     "updated_at": "2026-07-31T09:31:15.983Z"
   },
   {
+    "id": "vi_daecda9d",
     "nom": "Viña Zorzal Graciano",
-    "any": "",
-    "bodega": "Viña Zorzal",
+    "any": "2022",
+    "bodega": "Viña Zorzal Wines",
     "tipus": "Vi negre",
     "do": "Navarra",
+    "varietat": "Gracianno",
     "cost": 6.46,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z",
-    "id": "vi_daecda9d"
+    "updated_at": "2026-07-31T09:57:40.654Z"
   },
   {
     "id": "vi_gsfzrq8l",
