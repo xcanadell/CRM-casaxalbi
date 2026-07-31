@@ -1910,5 +1910,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:16:27.758Z"
+  },
+  {
+    "id": "vi_81de1551",
+    "nom": "Ojo y cohillo",
+    "any": "2023",
+    "bodega": "Miguel Castro Maillo",
+    "tipus": "Vi blanc",
+    "do": "Montilla Moriles",
+    "varietat": "Pedro ximenez",
+    "cost": 15,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:18:22.223Z"
   }
 ]
