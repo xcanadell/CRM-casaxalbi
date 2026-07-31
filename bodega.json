@@ -1614,5 +1614,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:47:13.286Z"
+  },
+  {
+    "id": "vi_r37wf8gx",
+    "nom": "Finca los quemado clarete",
+    "any": "2021",
+    "bodega": "Garcia Jorgieva",
+    "tipus": "Vi rosat",
+    "do": "Ribera del duero",
+    "varietat": "Tempranillo, albillo",
+    "cost": 25,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:54:51.216Z"
   }
 ]
