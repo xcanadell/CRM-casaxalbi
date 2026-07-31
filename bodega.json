@@ -1600,5 +1600,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:46:29.164Z"
+  },
+  {
+    "id": "vi_uqh9z4s4",
+    "nom": "Pan crudo (Magnnum)",
+    "any": "2022",
+    "bodega": "Gomez Cruzado",
+    "tipus": "Vi negre",
+    "do": "Rioja",
+    "varietat": "Garnatxa",
+    "cost": 80,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:47:13.286Z"
   }
 ]
