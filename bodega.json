@@ -655,17 +655,18 @@
     "updated_at": "2026-07-31T08:19:23.211Z"
   },
   {
+    "id": "vi_b57bf446",
     "nom": "Rioja Viña Cubillo Crianza",
-    "any": "",
+    "any": "2017",
     "bodega": "Viña Cubillo",
     "tipus": "Vi negre",
     "do": "Rioja",
+    "varietat": "Tempranillo, garnatxa, mazuelo, graciano",
     "cost": 15.73,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z",
-    "id": "vi_b57bf446"
+    "updated_at": "2026-07-31T08:51:53.389Z"
   },
   {
     "nom": "Rioja Palacios Remondo",
