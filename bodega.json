@@ -1572,5 +1572,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:43:55.846Z"
+  },
+  {
+    "id": "vi_3ps8nn58",
+    "nom": "Pan crudo",
+    "any": "2023",
+    "bodega": "Gomez Cruzado",
+    "tipus": "Vi negre",
+    "do": "Rioja",
+    "varietat": "Garnatxa",
+    "cost": 40,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:45:13.639Z"
   }
 ]
