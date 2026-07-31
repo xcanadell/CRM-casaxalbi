@@ -586,16 +586,17 @@
   },
   {
     "id": "vi_448aa7f4",
-    "nom": "Cava Masia Serra Brut",
-    "any": "",
+    "nom": "Kramant",
+    "any": "2018",
     "bodega": "Masia Serra",
     "tipus": "Escumós",
-    "do": "",
+    "do": "Empordar",
+    "varietat": "NSNC",
     "cost": 14.57,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-30T11:56:50.373Z"
+    "updated_at": "2026-07-31T08:20:35.510Z"
   },
   {
     "nom": "Navarra Viña Zorzal",
