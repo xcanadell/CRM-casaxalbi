@@ -847,5 +847,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T08:14:54.690Z"
+  },
+  {
+    "id": "vi_35za59nn",
+    "nom": "Rose Clos Lantiscus",
+    "any": "2017",
+    "bodega": "Clos Lantiscus",
+    "tipus": "Escumós",
+    "do": "Penedès",
+    "varietat": "Carinyena",
+    "cost": 12,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T08:24:53.709Z"
   }
 ]
