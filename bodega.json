@@ -1252,15 +1252,15 @@
   {
     "id": "vi_sxwwc81p",
     "nom": "Pasaroles brisat",
-    "any": "",
+    "any": "2020",
     "bodega": "Mas Martinet",
     "tipus": "Brisat",
     "do": "Priorat",
     "varietat": "Garnatxa, Pedro Ximenez, Pica poll",
-    "cost": 0,
+    "cost": 40,
     "pvp": 0,
     "data_compra": "",
     "data_venda": "",
-    "updated_at": "2026-07-31T09:10:18.545Z"
+    "updated_at": "2026-07-31T09:11:20.039Z"
   }
 ]
