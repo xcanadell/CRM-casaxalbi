@@ -1087,5 +1087,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T08:50:29.508Z"
+  },
+  {
+    "id": "vi_2b999r2f",
+    "nom": "Monopole",
+    "any": "2021",
+    "bodega": "Cune",
+    "tipus": "Vi blanc",
+    "do": "Rioja",
+    "varietat": "Viura",
+    "cost": 7,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T08:50:29.957Z"
   }
 ]
