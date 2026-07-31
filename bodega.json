@@ -830,5 +830,18 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T08:13:38.241Z"
+  },
+  {
+    "id": "vi_ze39uqk9",
+    "nom": "En mobiment A",
+    "any": "2022",
+    "bodega": "Barbar forest",
+    "tipus": "Escumós",
+    "do": "Terra alta",
+    "cost": 13,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T08:14:54.690Z"
   }
 ]
