@@ -1658,5 +1658,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:56:56.528Z"
+  },
+  {
+    "id": "vi_vbyxn4i7",
+    "nom": "Nas del gegant",
+    "any": "2023",
+    "bodega": "Escoda Sanauja",
+    "tipus": "Vi negre",
+    "do": "Conca de Barbera",
+    "varietat": "marlot, garnatxa, sumoll",
+    "cost": 17,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:00:10.674Z"
   }
 ]
