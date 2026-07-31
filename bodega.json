@@ -1686,5 +1686,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:00:46.896Z"
+  },
+  {
+    "id": "vi_vv9c1l4q",
+    "nom": "La Milonga",
+    "any": "2020",
+    "bodega": "Mario Robira",
+    "tipus": "Vi negre",
+    "do": "Alella",
+    "varietat": "shira",
+    "cost": 20,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:02:00.148Z"
   }
 ]
