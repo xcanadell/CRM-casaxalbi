@@ -1830,7 +1830,7 @@
   {
     "id": "vi_r6p3mriv",
     "nom": "Viña Tondonia",
-    "any": "",
+    "any": "2011",
     "bodega": "Lopez de Heredia",
     "tipus": "Vi blanc",
     "do": "Rioja",
@@ -1839,6 +1839,6 @@
     "pvp": 0,
     "data_compra": "",
     "data_venda": "",
-    "updated_at": "2026-07-31T10:10:09.497Z"
+    "updated_at": "2026-07-31T10:10:30.027Z"
   }
 ]
