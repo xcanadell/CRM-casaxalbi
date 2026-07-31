@@ -1924,5 +1924,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:18:22.223Z"
+  },
+  {
+    "id": "vi_vzg0vba5",
+    "nom": "La Maldición Oxidativo",
+    "any": "2018",
+    "bodega": "Cinco leguas",
+    "tipus": "Orange",
+    "do": "Madrid",
+    "varietat": "Torrontés, Malvar",
+    "cost": 12,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T10:20:20.122Z"
   }
 ]
