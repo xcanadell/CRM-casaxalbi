@@ -1290,5 +1290,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T09:13:08.912Z"
+  },
+  {
+    "id": "vi_q4t3ckp2",
+    "nom": "La solució rosa",
+    "any": "2020",
+    "bodega": "Venus la universal",
+    "tipus": "Vi rosat",
+    "do": "Montsant",
+    "varietat": "Garnatxa, Carinyena, macabeo, altres",
+    "cost": 17,
+    "pvp": 0,
+    "data_compra": "",
+    "data_venda": "",
+    "updated_at": "2026-07-31T09:13:09.129Z"
   }
 ]
