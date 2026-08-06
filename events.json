@@ -1,5 +1,27 @@
 [
   {
+    "data": "2026-08-02",
+    "lloc": "Sopar Casa Xalbi",
+    "notes": "Domino Arrocero veins",
+    "comensals": [
+      {
+        "nom": "Jornades Culturals zaldierna",
+        "preu_menjar": 96,
+        "preu_beguda": 12,
+        "preu_altres": 0,
+        "plats": [
+          "pl_e951a634"
+        ],
+        "vins": [
+          "vi_9388f8e0"
+        ],
+        "varios": [],
+        "notes": ""
+      }
+    ],
+    "total": 108
+  },
+  {
     "data": "2026-07-31",
     "lloc": "Sopar Casa Xalbi",
     "notes": "Clandesti",
