@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "Lupa - Tus Vecinos de Confianza",
+    "tipus": "Supermercat",
+    "data": "02/08/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Escaray",
+    "nif": "839050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "GEL CROWE DUCHA AVENA 750 ML",
+        "quantitat": 1,
+        "preu_unitari": 1.5,
+        "total": 1.5,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CREMA J.CROWE DEPIL DUCHA 200",
+        "quantitat": 1,
+        "preu_unitari": 2.9,
+        "total": 2.9,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ABSOL RERINA ALGODON AD.R.D.50",
+        "quantitat": 1,
+        "preu_unitari": 2.55,
+        "total": 2.55,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 7.05,
+    "saved_at": "2026-08-07T09:28:16.907Z"
+  },
+  {
     "establiment": "BIM",
     "tipus": "Supermercat",
     "data": "31/07/2026",
