@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "MUNDO 100",
+    "tipus": "Tienda",
+    "data": "26/08/2007",
+    "adreca": "C/REPUBLICO ARGENTINA 22 BAJO, 26002 LOGRONO (LA RIOJA)",
+    "nif": "17498798F",
+    "telefon": "626493982",
+    "productes": [
+      {
+        "descripcio": "Labials 2 unidades",
+        "quantitat": 10,
+        "preu_unitari": 1,
+        "total": 16,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "Pote crema premium",
+        "quantitat": 6,
+        "preu_unitari": 1,
+        "total": 6,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 16,
+    "saved_at": "2026-08-07T19:30:39.381Z"
+  },
+  {
     "establiment": "Sun City",
     "tipus": "Botiga",
     "data": "07/08/2026",
