@@ -1,5 +1,66 @@
 [
   {
+    "establiment": "ALCAMPO LOGROÑO",
+    "tipus": "Factura Simplificada",
+    "data": "07/08/2026",
+    "adreca": "Santiago de Compostela sur s/n 28029",
+    "nif": "A28581882",
+    "telefon": "941206310",
+    "productes": [
+      {
+        "descripcio": "QUESO SEMICUR.TR",
+        "quantitat": 1,
+        "preu_unitari": 5.81,
+        "total": 5.81,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "QUESO INGLES",
+        "quantitat": 1,
+        "preu_unitari": 4.79,
+        "total": 4.79,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "QUESO MADURADO C",
+        "quantitat": 1,
+        "preu_unitari": 2.3,
+        "total": 2.3,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ACEITE DE COCO",
+        "quantitat": 1,
+        "preu_unitari": 4.81,
+        "total": 4.81,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "CAFE SUPERIOR GRANO",
+        "quantitat": 1,
+        "preu_unitari": 7.99,
+        "total": 7.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ACEITE DE COCO",
+        "quantitat": 1,
+        "preu_unitari": 4.81,
+        "total": 4.81,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "ACEITE DE COCO",
+        "quantitat": 1,
+        "preu_unitari": 4.81,
+        "total": 4.81,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 35.32,
+    "saved_at": "2026-08-07T19:25:54.331Z"
+  },
+  {
     "establiment": "YOKOSO",
     "tipus": "Restaurant",
     "data": "07/08/2026",
