@@ -1,5 +1,94 @@
 [
   {
+    "establiment": "LUPA",
+    "tipus": "Carnisseria",
+    "data": "22/07/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcurra",
+    "nif": "639050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "SARDINA MEDIANA FRESCA",
+        "quantitat": 1,
+        "preu_unitari": 4.14,
+        "total": 4.14,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "MEJILLON MEDIANO MALLA 1 KG.",
+        "quantitat": 1,
+        "preu_unitari": 3.25,
+        "total": 3.25,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CARCASAS DE POLLO",
+        "quantitat": 1,
+        "preu_unitari": 0.45,
+        "total": 0.45,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LS E JETA CERDO COCIDA 500 GR",
+        "quantitat": 1,
+        "preu_unitari": 3.99,
+        "total": 3.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LS E JETA CERDO COCIDA 500 GR.",
+        "quantitat": 1,
+        "preu_unitari": 3.99,
+        "total": 3.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAN CAMPESINO/HUERTA 220 GR.PR",
+        "quantitat": 1,
+        "preu_unitari": 1,
+        "total": 1,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MELOCOTON AMARILLO",
+        "quantitat": 1,
+        "preu_unitari": 3.14,
+        "total": 3.14,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BERENJENA NEGRA",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOMATE CHERRY TR.MIX BAJA 300 G",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOMATE DE LA RIOJA",
+        "quantitat": 1,
+        "preu_unitari": 2.42,
+        "total": 2.42,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "SHIITAKE BANDEJA 200 GRS",
+        "quantitat": 1,
+        "preu_unitari": 2.68,
+        "total": 2.68,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 24.27,
+    "saved_at": "2026-08-07T09:26:40.342Z"
+  },
+  {
     "establiment": "BM",
     "tipus": "Alimentación",
     "data": "24/07/2026",
