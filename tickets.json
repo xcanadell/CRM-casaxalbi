@@ -1,5 +1,52 @@
 [
   {
+    "establiment": "SATO - fruiteria mercadillo",
+    "tipus": "Carnisseria",
+    "data": "01/07/2026",
+    "adreca": "C ALFONSO PEÑA N 68, STO DOMINGO DE LA CALZADA",
+    "nif": "",
+    "telefon": "626313483",
+    "productes": [
+      {
+        "descripcio": "Tomaquets ",
+        "quantitat": 0.5,
+        "preu_unitari": 3,
+        "total": 1.5,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Pressecs",
+        "quantitat": 1.165,
+        "preu_unitari": 1.8,
+        "total": 2.1,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Fruota",
+        "quantitat": 0.53,
+        "preu_unitari": 5,
+        "total": 2.65,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Producte 4",
+        "quantitat": 0.47,
+        "preu_unitari": 2.6,
+        "total": 1.22,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Producte 5",
+        "quantitat": 0.09,
+        "preu_unitari": 5.8,
+        "total": 0.52,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 7.99,
+    "saved_at": "2026-08-07T19:27:02.555Z"
+  },
+  {
     "establiment": "ALCAMPO LOGROÑO",
     "tipus": "Factura Simplificada",
     "data": "07/08/2026",
