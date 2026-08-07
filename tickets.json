@@ -1,5 +1,73 @@
 [
   {
+    "establiment": "BIM",
+    "tipus": "Supermercat",
+    "data": "31/07/2026",
+    "adreca": "SAGASTIA 28 B, 26280 EZCARAY",
+    "nif": "B26516799",
+    "telefon": "900555300",
+    "productes": [
+      {
+        "descripcio": "PERA CONFERENCIA 61MM Y +",
+        "quantitat": 0.92,
+        "preu_unitari": 3.79,
+        "total": 3.47,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BERBERECHO",
+        "quantitat": 0.45,
+        "preu_unitari": 16.95,
+        "total": 8.31,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BACON BM 90% CARNES 2X100G",
+        "quantitat": 1,
+        "preu_unitari": 2.79,
+        "total": 2.79,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "AZUCAR ACOR BLANCA BANDQUILLA PTE.1",
+        "quantitat": 1,
+        "preu_unitari": 1.09,
+        "total": 1.09,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PECT.MENDISOL GIRASOL 1L",
+        "quantitat": 1,
+        "preu_unitari": 1.89,
+        "total": 1.89,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAN HORN HOGAZA CENTENIO*48",
+        "quantitat": 1,
+        "preu_unitari": 2.25,
+        "total": 2.25,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAN HORN MAIZ 20% C/CEREAL.1",
+        "quantitat": 1,
+        "preu_unitari": 2.25,
+        "total": 2.25,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BOLSA CAMISETA 51X60 BM CAST",
+        "quantitat": 1,
+        "preu_unitari": 0.16,
+        "total": 0.16,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 22.21,
+    "saved_at": "2026-08-07T09:27:26.840Z"
+  },
+  {
     "establiment": "LUPA",
     "tipus": "Carnisseria",
     "data": "22/07/2026",
