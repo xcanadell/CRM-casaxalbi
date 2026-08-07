@@ -2,7 +2,7 @@
   {
     "establiment": "MUNDO 100",
     "tipus": "Tienda",
-    "data": "26/08/2007",
+    "data": "07/08/2026",
     "adreca": "C/REPUBLICO ARGENTINA 22 BAJO, 26002 LOGRONO (LA RIOJA)",
     "nif": "17498798F",
     "telefon": "626493982",
@@ -19,10 +19,10 @@
         "quantitat": 6,
         "preu_unitari": 1,
         "total": 6,
-        "us": "Casa Xalbi"
+        "us": "Cosmètica"
       }
     ],
-    "total": 16,
+    "total": 22,
     "saved_at": "2026-08-07T19:30:39.381Z"
   },
   {
