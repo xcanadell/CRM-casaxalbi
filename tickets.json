@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "doncopión",
+    "tipus": "reprografía",
+    "data": "07/08/2026",
+    "adreca": "Avd Navarra nº 12 Bajo, 6001 Logroño, La Rioja",
+    "nif": "B26215558",
+    "telefon": "941-21-37-16",
+    "productes": [
+      {
+        "descripcio": "Fotocopias A3 COLOR",
+        "quantitat": 2,
+        "preu_unitari": 1.2,
+        "total": 2.4,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 2.4,
+    "saved_at": "2026-08-07T19:27:28.617Z"
+  },
+  {
     "establiment": "SATO - fruiteria mercadillo",
     "tipus": "Carnisseria",
     "data": "01/07/2026",
