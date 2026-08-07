@@ -28,8 +28,8 @@
     "comensals": [
       {
         "nom": "Nuri Miro",
-        "preu_menjar": 240,
-        "preu_beguda": 120,
+        "preu_menjar": 40,
+        "preu_beguda": 20,
         "preu_altres": 0,
         "plats": [
           "pl_ki7tp3xr",
@@ -39,7 +39,146 @@
           "pl_03e97b0a",
           "pl_c14063ac"
         ],
-        "vins": [],
+        "vins": [
+          "vi_1d62fcce",
+          "vi_74862ff6",
+          "vi_ce9a1106",
+          "vi_755da946",
+          "vi_3do9c84s"
+        ],
+        "varios": [],
+        "notes": ""
+      },
+      {
+        "nom": "Harry",
+        "preu_menjar": 40,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [
+          "pl_ki7tp3xr",
+          "pl_nlvmn5fi",
+          "pl_859bbbbd",
+          "pl_f32eaf20",
+          "pl_03e97b0a",
+          "pl_c14063ac"
+        ],
+        "vins": [
+          "vi_1d62fcce",
+          "vi_74862ff6",
+          "vi_ce9a1106",
+          "vi_755da946",
+          "vi_3do9c84s"
+        ],
+        "varios": [
+          {
+            "id": "va_b0ef6c33",
+            "qty": 1,
+            "preu_unit": 2.5
+          }
+        ],
+        "notes": "Convidat a carajillo"
+      },
+      {
+        "nom": "Patxi Marit Belen",
+        "preu_menjar": 40,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [
+          "pl_ki7tp3xr",
+          "pl_nlvmn5fi",
+          "pl_859bbbbd",
+          "pl_f32eaf20",
+          "pl_03e97b0a",
+          "pl_c14063ac"
+        ],
+        "vins": [
+          "vi_1d62fcce",
+          "vi_74862ff6",
+          "vi_ce9a1106",
+          "vi_755da946",
+          "vi_3do9c84s"
+        ],
+        "varios": [],
+        "notes": "Convidat a cafe"
+      },
+      {
+        "nom": "Belen Dona Patxi",
+        "preu_menjar": 40,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [
+          "pl_ki7tp3xr",
+          "pl_nlvmn5fi",
+          "pl_859bbbbd",
+          "pl_f32eaf20",
+          "pl_03e97b0a",
+          "pl_c14063ac"
+        ],
+        "vins": [
+          "vi_1d62fcce",
+          "vi_74862ff6",
+          "vi_ce9a1106",
+          "vi_755da946",
+          "vi_3do9c84s"
+        ],
+        "varios": [
+          {
+            "id": "va_f358016a",
+            "qty": 1,
+            "preu_unit": 1.5
+          }
+        ],
+        "notes": "Convidem tallat descafeinat"
+      },
+      {
+        "nom": "Aitor Amic MAria",
+        "preu_menjar": 40,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [
+          "pl_ki7tp3xr",
+          "pl_nlvmn5fi",
+          "pl_859bbbbd",
+          "pl_f32eaf20",
+          "pl_03e97b0a",
+          "pl_c14063ac"
+        ],
+        "vins": [
+          "vi_1d62fcce",
+          "vi_74862ff6",
+          "vi_ce9a1106",
+          "vi_755da946",
+          "vi_3do9c84s"
+        ],
+        "varios": [
+          {
+            "id": "va_f358016a",
+            "qty": 1,
+            "preu_unit": 1.5
+          }
+        ],
+        "notes": "Convidem tallat"
+      },
+      {
+        "nom": "Maria Inmobiliaria",
+        "preu_menjar": 40,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [
+          "pl_ki7tp3xr",
+          "pl_nlvmn5fi",
+          "pl_859bbbbd",
+          "pl_f32eaf20",
+          "pl_03e97b0a",
+          "pl_c14063ac"
+        ],
+        "vins": [
+          "vi_1d62fcce",
+          "vi_74862ff6",
+          "vi_ce9a1106",
+          "vi_755da946",
+          "vi_3do9c84s"
+        ],
         "varios": [],
         "notes": ""
       }
