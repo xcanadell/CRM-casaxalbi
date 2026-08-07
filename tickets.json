@@ -1,5 +1,66 @@
 [
   {
+    "establiment": "CataNatura",
+    "tipus": "Herboristeria",
+    "data": "07/08/2026",
+    "adreca": "Gran vía Juan Carlos I, Nº41, 26005 LOGROÑO",
+    "nif": "B26530461",
+    "telefon": "941049586",
+    "productes": [
+      {
+        "descripcio": "MANTECA DE KARITE 100% ESENTIA",
+        "quantitat": 5,
+        "preu_unitari": 16.63,
+        "total": 15.8,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "CERA ABEJA EIN PIPEPITAS 400GR",
+        "quantitat": 5,
+        "preu_unitari": 14.58,
+        "total": 13.85,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "ROSAS 30 GR HERBES MOLI",
+        "quantitat": 5,
+        "preu_unitari": 4.1,
+        "total": 3.9,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "HIBISCO FLO RES ECO 30GR. HERBES",
+        "quantitat": 5,
+        "preu_unitari": 2.15,
+        "total": 2.04,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "ROMERO HOJA S 70 GR HERBES MOLI",
+        "quantitat": 5,
+        "preu_unitari": 2.25,
+        "total": 2.14,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "CALENDULA H ERBIES MOLI",
+        "quantitat": 5,
+        "preu_unitari": 2.05,
+        "total": 1.95,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "GLICERINA V EGETAL 125GR",
+        "quantitat": 5,
+        "preu_unitari": 6.27,
+        "total": 5.96,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 45.64,
+    "saved_at": "2026-08-07T19:33:12.787Z"
+  },
+  {
     "establiment": "MUNDO 100",
     "tipus": "Tienda",
     "data": "07/08/2026",
