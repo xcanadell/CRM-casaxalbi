@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "YOKOSO",
+    "tipus": "Restaurant",
+    "data": "07/08/2026",
+    "adreca": "Gonzalo de Berceo 11 Bajo, 26005 Logroño, La Rioja",
+    "nif": "X4254032K",
+    "telefon": "695.900.373",
+    "productes": [
+      {
+        "descripcio": "Frasco con cuentagotas",
+        "quantitat": 8,
+        "preu_unitari": 1,
+        "total": 8,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 8,
+    "saved_at": "2026-08-07T19:24:53.704Z"
+  },
+  {
     "establiment": "Lupa - Tus Vecinos de Confianza",
     "tipus": "Supermercat",
     "data": "02/08/2026",
