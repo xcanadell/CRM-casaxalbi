@@ -31,7 +31,14 @@
         "preu_menjar": 240,
         "preu_beguda": 120,
         "preu_altres": 0,
-        "plats": [],
+        "plats": [
+          "pl_ki7tp3xr",
+          "pl_nlvmn5fi",
+          "pl_859bbbbd",
+          "pl_f32eaf20",
+          "pl_03e97b0a",
+          "pl_c14063ac"
+        ],
         "vins": [],
         "varios": [],
         "notes": ""
