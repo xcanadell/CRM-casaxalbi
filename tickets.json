@@ -1,5 +1,59 @@
 [
   {
+    "establiment": "LIDL SUPERMERCADOS S.A.U.",
+    "tipus": "Supermercado",
+    "data": "26/08/2024",
+    "adreca": "C/ Clavijo, 67, 26008 Logroño",
+    "nif": "A60195278",
+    "telefon": "900958311",
+    "productes": [
+      {
+        "descripcio": "PEPINILLOS AGRIDULC.",
+        "quantitat": 1,
+        "preu_unitari": 1.49,
+        "total": 1.49,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "SAL YODADA FINA",
+        "quantitat": 1,
+        "preu_unitari": 0.38,
+        "total": 0.38,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ESTRELLA GALICIA",
+        "quantitat": 1,
+        "preu_unitari": 4.12,
+        "total": 4.12,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "COCA COLA",
+        "quantitat": 1,
+        "preu_unitari": 1.55,
+        "total": 1.55,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "MEGA ROLLO ABSORBEN.",
+        "quantitat": 1,
+        "preu_unitari": 2.85,
+        "total": 2.85,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAPEL HIGIENICO",
+        "quantitat": 1,
+        "preu_unitari": 3.59,
+        "total": 3.59,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 13.98,
+    "saved_at": "2026-08-07T19:28:15.586Z"
+  },
+  {
     "establiment": "doncopión",
     "tipus": "reprografía",
     "data": "07/08/2026",
