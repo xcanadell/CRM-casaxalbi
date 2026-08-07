@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "Sun City",
+    "tipus": "Botiga",
+    "data": "07/08/2026",
+    "adreca": "C/Labradores 3 bajo, 26005 Logroño",
+    "nif": "X4058430B",
+    "telefon": "698567777",
+    "productes": [
+      {
+        "descripcio": "135CC BOTE CRISTAL",
+        "quantitat": 24,
+        "preu_unitari": 0.8,
+        "total": 19.2,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "BOLSA CAMISETA RECICLADO",
+        "quantitat": 1,
+        "preu_unitari": 0.1,
+        "total": 0.1,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 19.3,
+    "saved_at": "2026-08-07T19:28:40.660Z"
+  },
+  {
     "establiment": "LIDL SUPERMERCADOS S.A.U.",
     "tipus": "Supermercado",
     "data": "26/08/2024",
