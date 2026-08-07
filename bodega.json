@@ -543,10 +543,10 @@
     "do": "Empordà",
     "varietat": "chardonnay",
     "cost": 6.26,
-    "pvp": 0,
+    "pvp": 24,
     "data_compra": "2026-07-28",
-    "data_venda": "",
-    "updated_at": "2026-08-07T09:09:16.168Z"
+    "data_venda": "2026-07-31",
+    "updated_at": "2026-08-07T09:18:15.628Z"
   },
   {
     "id": "vi_ce9a1106",
