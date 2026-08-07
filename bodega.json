@@ -535,17 +535,18 @@
     "updated_at": "2026-07-31T08:21:45.289Z"
   },
   {
-    "nom": "Empordà Oliveda Garota",
-    "any": "",
-    "bodega": "",
-    "tipus": "Vi negre",
+    "id": "vi_74862ff6",
+    "nom": "Garoina",
+    "any": "2025",
+    "bodega": "Oliveda",
+    "tipus": "Vi blanc",
     "do": "Empordà",
+    "varietat": "chardonnay",
     "cost": 6.26,
     "pvp": 0,
     "data_compra": "2026-07-28",
     "data_venda": "",
-    "updated_at": "2026-07-28T00:00:00.000Z",
-    "id": "vi_74862ff6"
+    "updated_at": "2026-08-07T09:09:16.168Z"
   },
   {
     "nom": "Penedès Celler Credo",
