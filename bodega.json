@@ -557,10 +557,10 @@
     "do": "Penedès",
     "varietat": "Monastrell",
     "cost": 6.43,
-    "pvp": 0,
+    "pvp": 24,
     "data_compra": "2026-07-28",
-    "data_venda": "",
-    "updated_at": "2026-08-07T09:10:29.721Z"
+    "data_venda": "2026-07-31",
+    "updated_at": "2026-08-07T09:18:31.849Z"
   },
   {
     "nom": "Penedès Hipnosis",
