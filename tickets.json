@@ -1,5 +1,45 @@
 [
   {
+    "establiment": "360imprimir",
+    "tipus": "Comanda online",
+    "data": "06/08/2026",
+    "adreca": "INTERNET",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Bolsas para sándwich con ventana eco de kraft ",
+        "quantitat": 250,
+        "preu_unitari": 8.83,
+        "total": 8.83,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "Etiquetas en rollo",
+        "quantitat": 500,
+        "preu_unitari": 17.76,
+        "total": 17.76,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "IVA",
+        "quantitat": 1,
+        "preu_unitari": 8.63,
+        "total": 8.63,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "ENTREGA",
+        "quantitat": 1,
+        "preu_unitari": 16.85,
+        "total": 16.85,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 49.73,
+    "saved_at": "2026-08-07T19:43:44.013Z"
+  },
+  {
     "establiment": "CataNatura",
     "tipus": "Herboristeria",
     "data": "07/08/2026",
