@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "AUTOSERVICIO MARY",
+    "tipus": "—",
+    "data": "09/08/2026",
+    "adreca": "C/ Sagastia 17, 26280 Ezcaray",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Tomaquet piparres arros gastat ",
+        "quantitat": 1,
+        "preu_unitari": 8,
+        "total": 8,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Tomaquet arros no gastat",
+        "quantitat": 1,
+        "preu_unitari": 7,
+        "total": 7,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-08-09T15:30:39.848Z"
+  },
+  {
     "establiment": "Sonorama",
     "tipus": "Festival ",
     "data": "08/08/2026",
