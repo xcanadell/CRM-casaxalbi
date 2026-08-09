@@ -8,7 +8,7 @@
         "nom": "Iñaki VIP",
         "preu_menjar": 234,
         "preu_beguda": 79,
-        "preu_altres": 19.5,
+        "preu_altres": 19,
         "plats": [
           "pl_wo3ncbzs"
         ],
@@ -31,13 +31,13 @@
           {
             "id": "va_0086caa5",
             "qty": 5,
-            "preu_unit": 1.7
+            "preu_unit": 1.6
           }
         ],
         "notes": "28 menu arrós + 10€ propina"
       }
     ],
-    "total": 332.5
+    "total": 332
   },
   {
     "data": "2026-08-02",
