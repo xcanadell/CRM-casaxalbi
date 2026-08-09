@@ -45,12 +45,19 @@
         "unitat": "u",
         "cost_unitari": 2.3,
         "cost_total": 4.6
+      },
+      {
+        "nom": "Pa 2 barres",
+        "quantitat": 2,
+        "unitat": "g",
+        "cost_unitari": 1.6,
+        "cost_total": 3.2
       }
     ],
-    "cost_mp": 16.6,
+    "cost_mp": 19.8,
     "cost_prod": 0,
-    "cost_total": 16.6,
-    "updated_at": "2026-08-09T15:37:04.360Z"
+    "cost_total": 19.8,
+    "updated_at": "2026-08-09T15:38:50.766Z"
   },
   {
     "id": "pl_ki7tp3xr",
