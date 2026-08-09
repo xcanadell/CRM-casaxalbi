@@ -10,19 +10,12 @@
         "unitat": "g",
         "cost_unitari": 6,
         "cost_total": 24
-      },
-      {
-        "nom": "Vi Paco",
-        "quantitat": 1,
-        "unitat": "g",
-        "cost_unitari": 5.41,
-        "cost_total": 5.41
       }
     ],
-    "cost_mp": 29.41,
+    "cost_mp": 24,
     "cost_prod": 0,
-    "cost_total": 29.41,
-    "updated_at": "2026-08-09T16:02:57.186Z"
+    "cost_total": 24,
+    "updated_at": "2026-08-09T16:03:14.673Z"
   },
   {
     "id": "pl_wo3ncbzs",
