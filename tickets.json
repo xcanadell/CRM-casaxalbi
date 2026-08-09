@@ -1,5 +1,80 @@
 [
   {
+    "establiment": "LUPA",
+    "tipus": "Supermercado",
+    "data": "08/08/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "CERV.ESTR.GALIC.BOT.25 CL P6",
+        "quantitat": 1,
+        "preu_unitari": 4.12,
+        "total": 4.12,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CERV.ESTR.GALIC.BOT.25 CL P6",
+        "quantitat": 1,
+        "preu_unitari": 4.12,
+        "total": 4.12,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CERVEZA VOLL DAMM LATA 50 CL. 4x1,45",
+        "quantitat": 1,
+        "preu_unitari": 5.8,
+        "total": 5.8,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "(P) CERVEZA VOLL DAMM LATA 50 CL.",
+        "quantitat": 1,
+        "preu_unitari": -1.46,
+        "total": -1.46,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "CARNE DE NORA RAJOPE 150 GR.",
+        "quantitat": 1,
+        "preu_unitari": 2.09,
+        "total": 2.09,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LANGOSTINO RECIEN COCIDO GRNDE",
+        "quantitat": 1,
+        "preu_unitari": 3.94,
+        "total": 3.94,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "POTA DE ALTURA",
+        "quantitat": 1,
+        "preu_unitari": 7.61,
+        "total": 7.61,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ALMEJA MARINE.70/90 MALLA 500G",
+        "quantitat": 1,
+        "preu_unitari": 11.95,
+        "total": 11.95,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MEJILLON MEDIANO MALLA 1 KG.",
+        "quantitat": 1,
+        "preu_unitari": 2.49,
+        "total": 2.49,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 40.66,
+    "saved_at": "2026-08-09T15:41:19.807Z"
+  },
+  {
     "establiment": "AUTOSERVICIO MARY",
     "tipus": "Supermercat",
     "data": "09/08/2026",
