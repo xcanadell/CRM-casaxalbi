@@ -6,9 +6,9 @@
     "comensals": [
       {
         "nom": "Iñaki VIP",
-        "preu_menjar": 224,
+        "preu_menjar": 234,
         "preu_beguda": 79,
-        "preu_altres": 27.5,
+        "preu_altres": 19.5,
         "plats": [
           "pl_wo3ncbzs"
         ],
@@ -25,7 +25,7 @@
           },
           {
             "id": "va_25578dd2",
-            "qty": 2,
+            "qty": 1,
             "preu_unit": 8
           },
           {
@@ -34,10 +34,10 @@
             "preu_unit": 1.7
           }
         ],
-        "notes": ""
+        "notes": "28 menu arrós + 10€ propina"
       }
     ],
-    "total": 330.5
+    "total": 332.5
   },
   {
     "data": "2026-08-02",
