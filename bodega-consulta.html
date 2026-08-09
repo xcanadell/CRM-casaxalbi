@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍷 Bodega — Casa Xalbi</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; color: #1a1a1a; }
+
+    header { background: #1a1a1a; color: #fff; padding: 16px 20px; position: sticky; top: 0; z-index: 10; }
+    header h1 { font-size: 18px; font-weight: 700; }
+    header p { font-size: 12px; color: #aaa; margin-top: 2px; }
+
+    .controls { padding: 14px 16px; background: #fff; border-bottom: 1px solid #e0e0e0; display: flex; gap: 10px; flex-wrap: wrap; }
+    .controls input { flex: 1; min-width: 140px; padding: 9px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; font-family: inherit; outline: none; }
+    .controls input:focus { border-color: #1a1a1a; }
+    .controls select { padding: 9px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 13px; font-family: inherit; background: #fff; outline: none; }
+
+    .stats { display: flex; gap: 10px; padding: 12px 16px; flex-wrap: wrap; }
+    .stat { background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 10px 14px; flex: 1; min-width: 100px; }
+    .stat-val { font-size: 20px; font-weight: 700; }
+    .stat-label { font-size: 11px; color: #888; margin-top: 2px; }
+
+    .list { padding: 0 16px 80px; }
+    .card { background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; margin-bottom: 10px; padding: 14px 16px; }
+    .card-nom { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+    .card-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+    .pill { display: inline-block; font-size: 11px; padding: 2px 9px; border-radius: 20px; border: 1px solid #e0e0e0; background: #f5f5f5; color: #555; }
+    .pill.negre { background: #f3e5f5; border-color: #ce93d8; color: #6a1b9a; }
+    .pill.blanc { background: #fffde7; border-color: #fff176; color: #827717; }
+    .pill.rosat { background: #fce4ec; border-color: #f48fb1; color: #880e4f; }
+    .pill.escumos { background: #e3f2fd; border-color: #90caf9; color: #0d47a1; }
+    .pill.orange { background: #fff3e0; border-color: #ffcc80; color: #e65100; }
+    .pill.brisat { background: #fbe9e7; border-color: #ffab91; color: #bf360c; }
+    .pill.dolcos { background: #f9fbe7; border-color: #dce775; color: #558b2f; }
+    .pill.altres { background: #f5f5f5; border-color: #e0e0e0; color: #555; }
+    .card-preus { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+    .card-pvp { font-size: 20px; font-weight: 700; color: #1a1a1a; }
+    .card-cost { font-size: 12px; color: #aaa; }
+    .card-do { font-size: 12px; color: #888; }
+    .card-varietat { font-size: 12px; color: #888; font-style: italic; }
+
+    .empty { text-align: center; padding: 60px 20px; color: #aaa; font-size: 15px; }
+    .loading { text-align: center; padding: 60px 20px; color: #888; }
+
+    .tabs { display: flex; background: #fff; border-bottom: 2px solid #e0e0e0; }
+    .tab { flex: 1; padding: 10px; font-size: 13px; font-weight: 500; text-align: center; cursor: pointer; border: none; background: none; font-family: inherit; color: #888; border-bottom: 2px solid transparent; margin-bottom: -2px; }
+    .tab.active { color: #1a1a1a; border-bottom-color: #1a1a1a; font-weight: 700; }
+
+    .updated { text-align: center; font-size: 11px; color: #bbb; padding: 10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🍷 Bodega — Casa Xalbi</h1>
+  <p id="header-sub">Carregant...</p>
+</header>
+
+<div class="tabs">
+  <button class="tab active" onclick="setTab('disponibles')">Disponibles <span id="cnt-disp"></span></button>
+  <button class="tab" onclick="setTab('venuts')">Venuts <span id="cnt-venuts"></span></button>
+</div>
+
+<div class="controls">
+  <input type="text" id="cerca" placeholder="🔍 Cercar vi..." oninput="render()">
+  <select id="filtre-tipus" onchange="render()">
+    <option value="">Tots els tipus</option>
+    <option value="Vi blanc">🍋 Vi blanc</option>
+    <option value="Vi rosat">🌸 Vi rosat</option>
+    <option value="Vi negre">🍇 Vi negre</option>
+    <option value="Escumós">🥂 Escumós</option>
+    <option value="Orange">🍊 Orange</option>
+    <option value="Brisat">🍂 Brisat</option>
+    <option value="Dolços i generosos">🍯 Dolços i generosos</option>
+    <option value="Altres">· Altres</option>
+  </select>
+  <select id="ordre" onchange="render()">
+    <option value="nom">A → Z</option>
+    <option value="pvp">Preu ↑</option>
+    <option value="pvp_desc">Preu ↓</option>
+    <option value="tipus">Per tipus</option>
+  </select>
+</div>
+
+<div class="stats" id="stats"></div>
+<div class="list" id="llista"><div class="loading">Carregant bodega...</div></div>
+<div class="updated" id="updated"></div>
+
+<script>
+const REPO = 'xcanadell/CRM-casaxalbi';
+const RAW  = `https://raw.githubusercontent.com/${REPO}/main/bodega.json`;
+const TIPUS_CLASS = {'Vi blanc':'blanc','Vi rosat':'rosat','Vi negre':'negre','Escumós':'escumos','Orange':'orange','Brisat':'brisat','Dolços i generosos':'dolcos','Altres':'altres'};
+const TIPUS_ICON  = {'Vi blanc':'🍋','Vi rosat':'🌸','Vi negre':'🍇','Escumós':'🥂','Orange':'🍊','Brisat':'🍂','Dolços i generosos':'🍯','Altres':'·'};
+
+let bodega = [];
+let tab = 'disponibles';
+
+function setTab(t) {
+  tab = t;
+  document.querySelectorAll('.tab').forEach((el,i) => el.classList.toggle('active', (i===0&&t==='disponibles')||(i===1&&t==='venuts')));
+  render();
+}
+
+async function load() {
+  try {
+    const r = await fetch(RAW + '?t=' + Date.now());
+    bodega = await r.json();
+    document.getElementById('header-sub').textContent = `${bodega.length} vins registrats`;
+    document.getElementById('updated').textContent = `Actualitzat: ${new Date().toLocaleTimeString('ca-ES')}`;
+    render();
+  } catch(e) {
+    document.getElementById('llista').innerHTML = '<div class="empty">Error carregant la bodega 😞</div>';
+  }
+}
+
+function esc(s) { const d = document.createElement('div'); d.textContent = s||''; return d.innerHTML; }
+
+function render() {
+  const q = document.getElementById('cerca').value.toLowerCase();
+  const tf = document.getElementById('filtre-tipus').value;
+  const ordre = document.getElementById('ordre').value;
+
+  const disp = bodega.filter(v => !v.data_venda);
+  const venuts = bodega.filter(v => !!v.data_venda);
+  document.getElementById('cnt-disp').textContent = `(${disp.length})`;
+  document.getElementById('cnt-venuts').textContent = `(${venuts.length})`;
+
+  let base = tab === 'venuts' ? venuts : disp;
+  let filtered = base.filter(v => {
+    if (tf && v.tipus !== tf) return false;
+    if (!q) return true;
+    return (v.nom + (v.do||'') + (v.tipus||'') + (v.bodega||'') + (v.varietat||'')).toLowerCase().includes(q);
+  });
+
+  filtered.sort((a,b) => {
+    if (ordre === 'pvp') return (parseFloat(a.pvp)||0) - (parseFloat(b.pvp)||0);
+    if (ordre === 'pvp_desc') return (parseFloat(b.pvp)||0) - (parseFloat(a.pvp)||0);
+    if (ordre === 'tipus') return (a.tipus||'').localeCompare(b.tipus||'','ca') || (a.nom||'').localeCompare(b.nom||'','ca');
+    return (a.nom||'').localeCompare(b.nom||'','ca');
+  });
+
+  // Stats
+  const costTotal = base.reduce((s,v) => s + (parseFloat(v.cost)||0), 0);
+  const pvpTotal  = base.reduce((s,v) => s + (parseFloat(v.pvp)||0), 0);
+  document.getElementById('stats').innerHTML = `
+    <div class="stat"><div class="stat-val">${base.length}</div><div class="stat-label">Ampolles</div></div>
+    <div class="stat"><div class="stat-val">${costTotal.toFixed(0)} €</div><div class="stat-label">Cost total</div></div>
+    <div class="stat"><div class="stat-val">${pvpTotal.toFixed(0)} €</div><div class="stat-label">Valor PVP</div></div>
+  `;
+
+  if (!filtered.length) {
+    document.getElementById('llista').innerHTML = '<div class="empty">Cap vi trobat</div>';
+    return;
+  }
+
+  document.getElementById('llista').innerHTML = filtered.map(v => {
+    const cls = TIPUS_CLASS[v.tipus] || 'altres';
+    const icon = TIPUS_ICON[v.tipus] || '·';
+    const pvp = parseFloat(v.pvp)||0;
+    const cost = parseFloat(v.cost)||0;
+    return `<div class="card">
+      <div class="card-nom">${esc(v.nom)}${v.any ? ` <span style="font-size:13px;color:#aaa;font-weight:400">(${v.any})</span>` : ''}</div>
+      <div class="card-meta">
+        <span class="pill ${cls}">${icon} ${esc(v.tipus||'—')}</span>
+        ${v.do ? `<span class="pill">${esc(v.do)}</span>` : ''}
+        ${v.bodega ? `<span class="pill">🏭 ${esc(v.bodega)}</span>` : ''}
+      </div>
+      ${v.varietat ? `<div class="card-varietat">🍇 ${esc(v.varietat)}</div>` : ''}
+      <div class="card-preus">
+        <div>
+          ${pvp ? `<div class="card-pvp">${pvp.toFixed(2)} €</div>` : '<div class="card-pvp" style="color:#ccc">Sense PVP</div>'}
+          ${cost ? `<div class="card-cost">Cost: ${cost.toFixed(2)} €</div>` : ''}
+        </div>
+        ${v.data_compra ? `<div style="font-size:11px;color:#bbb">🛒 ${v.data_compra}</div>` : ''}
+        ${v.data_venda ? `<div style="font-size:11px;color:#2e7d32">✅ Venut ${v.data_venda}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+load();
+// Recarregar cada 5 minuts
+setInterval(load, 5 * 60 * 1000);
+</script>
+</body>
+</html>
