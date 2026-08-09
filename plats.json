@@ -125,14 +125,22 @@
     "id": "pl_859bbbbd"
   },
   {
+    "id": "pl_e951a634",
     "titol": "arrós de peix amb gambas",
     "descripcio": "",
-    "ingredients": [],
-    "cost_mp": 0,
+    "ingredients": [
+      {
+        "nom": "Plat d'arros",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 6,
+        "cost_total": 6
+      }
+    ],
+    "cost_mp": 6,
     "cost_prod": 0,
-    "cost_total": 0,
-    "updated_at": "2026-07-29T12:09:40.994Z",
-    "id": "pl_e951a634"
+    "cost_total": 6,
+    "updated_at": "2026-08-09T15:58:32.698Z"
   },
   {
     "titol": "Berenjena con hummus, ricota y cherrys",
