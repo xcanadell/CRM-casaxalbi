@@ -15,29 +15,29 @@
         "nom": "Gambas",
         "quantitat": 1,
         "unitat": "g",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "cost_unitari": 5,
+        "cost_total": 5
       },
       {
         "nom": "Musclos",
         "quantitat": 1,
         "unitat": "g",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "cost_unitari": 2.49,
+        "cost_total": 2.49
       },
       {
-        "nom": "Escopinyes",
+        "nom": "1/2 Almejas",
         "quantitat": 1,
         "unitat": "g",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "cost_unitari": 6,
+        "cost_total": 6
       },
       {
         "nom": "Suquet",
         "quantitat": 1,
         "unitat": "g",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "cost_unitari": 1,
+        "cost_total": 1
       },
       {
         "nom": "Yogurt",
@@ -52,12 +52,40 @@
         "unitat": "g",
         "cost_unitari": 1.6,
         "cost_total": 3.2
+      },
+      {
+        "nom": "1/2 carne ñora",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 2.09,
+        "cost_total": 2.09
+      },
+      {
+        "nom": "1/2 calamar",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 3.8,
+        "cost_total": 3.8
+      },
+      {
+        "nom": "1/2 butifarra negra",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
+      },
+      {
+        "nom": "Pot tomaquest musclos",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0,
+        "cost_total": 0
       }
     ],
-    "cost_mp": 19.8,
+    "cost_mp": 40.18,
     "cost_prod": 0,
-    "cost_total": 19.8,
-    "updated_at": "2026-08-09T15:38:50.766Z"
+    "cost_total": 40.18,
+    "updated_at": "2026-08-09T15:46:01.650Z"
   },
   {
     "id": "pl_ki7tp3xr",
