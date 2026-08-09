@@ -71,21 +71,28 @@
         "nom": "1/2 butifarra negra",
         "quantitat": 1,
         "unitat": "g",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "cost_unitari": 4.5,
+        "cost_total": 4.5
       },
       {
         "nom": "Pot tomaquest musclos",
         "quantitat": 1,
         "unitat": "g",
-        "cost_unitari": 0,
-        "cost_total": 0
+        "cost_unitari": 0.9,
+        "cost_total": 0.9
+      },
+      {
+        "nom": "Miel",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0.3,
+        "cost_total": 0.3
       }
     ],
-    "cost_mp": 40.18,
-    "cost_prod": 0,
-    "cost_total": 40.18,
-    "updated_at": "2026-08-09T15:46:01.650Z"
+    "cost_mp": 45.88,
+    "cost_prod": 5,
+    "cost_total": 50.88,
+    "updated_at": "2026-08-09T15:48:35.822Z"
   },
   {
     "id": "pl_ki7tp3xr",
