@@ -3542,7 +3542,7 @@
   },
   {
     "establiment": "Ademanda pastelería artesana",
-    "tipus": "Factura Simplificada",
+    "tipus": "panaderia artesana",
     "data": "12/06/2026",
     "adreca": "C/Marisa Sanchez nº2 Local 10, 26280 - Ezcaray - La Rioja",
     "nif": "",
@@ -3556,7 +3556,7 @@
         "us": "Ús propi"
       }
     ],
-    "total": 5.9,
+    "total": 3.3,
     "saved_at": "2026-06-12T11:29:02.825Z"
   },
   {
