@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "Sonorama",
+    "tipus": "—",
+    "data": "08/08/2026",
+    "adreca": "Aranda del duero",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Entrades",
+        "quantitat": 2,
+        "preu_unitari": 50,
+        "total": 100,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "Pulsera Barra",
+        "quantitat": 1,
+        "preu_unitari": 20,
+        "total": 20,
+        "us": "Viatges"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-08-09T15:27:46.161Z"
+  },
+  {
     "establiment": "360imprimir",
     "tipus": "Comanda online",
     "data": "06/08/2026",
