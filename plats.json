@@ -1,7 +1,7 @@
 [
   {
     "id": "pl_isu6aig8",
-    "titol": "Arrós per 4 domingo arrocero 1 agosto",
+    "titol": "Domingo Arrocero 01/08 4.pax",
     "descripcio": "",
     "ingredients": [
       {
@@ -10,12 +10,19 @@
         "unitat": "g",
         "cost_unitari": 6,
         "cost_total": 24
+      },
+      {
+        "nom": "Vi Paco",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 4,
+        "cost_total": 4
       }
     ],
-    "cost_mp": 24,
+    "cost_mp": 28,
     "cost_prod": 0,
-    "cost_total": 24,
-    "updated_at": "2026-08-09T16:00:09.790Z"
+    "cost_total": 28,
+    "updated_at": "2026-08-09T16:02:00.394Z"
   },
   {
     "id": "pl_wo3ncbzs",
