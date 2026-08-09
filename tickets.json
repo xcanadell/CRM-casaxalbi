@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "Ademanda pastelería artesana",
+    "tipus": "—",
+    "data": "09/08/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Barra pa oli gastada",
+        "quantitat": 1,
+        "preu_unitari": 1.6,
+        "total": 0,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Barra pa oli no gastada",
+        "quantitat": 1,
+        "preu_unitari": 1.6,
+        "total": 0,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-08-09T15:55:32.745Z"
+  },
+  {
     "establiment": "LUPA",
     "tipus": "Supermercado",
     "data": "08/08/2026",
