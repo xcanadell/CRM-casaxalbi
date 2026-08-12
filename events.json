@@ -1,6 +1,35 @@
 [
   {
     "data": "2026-08-12",
+    "lloc": "Cosmètica Natural",
+    "notes": "Ezcararte festa major",
+    "comensals": [
+      {
+        "nom": "Merkat Ezcaray Cosmetica natural",
+        "preu_menjar": 0,
+        "preu_beguda": 0,
+        "preu_altres": 130,
+        "plats": [],
+        "vins": [],
+        "varios": [
+          {
+            "id": "va_57730b5b",
+            "qty": 1,
+            "preu_unit": 4
+          },
+          {
+            "id": "va_da2497ed",
+            "qty": 21,
+            "preu_unit": 6
+          }
+        ],
+        "notes": ""
+      }
+    ],
+    "total": 130
+  },
+  {
+    "data": "2026-08-12",
     "lloc": "Menú Arròs",
     "notes": "Paella per 5 per emportar 16€ ració",
     "comensals": [
