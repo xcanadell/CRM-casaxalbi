@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Copisteria AREA Pc",
+    "tipus": "—",
+    "data": "12/08/2026",
+    "adreca": "Santo Domingo",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Impresio A4",
+        "quantitat": 3,
+        "preu_unitari": 1,
+        "total": 3,
+        "us": "Cosmètica"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-08-12T17:53:05.534Z"
+  },
+  {
     "establiment": "CARBURANTES RIOJA S.L.",
     "tipus": "Gasolinera",
     "data": "12/08/2026",
