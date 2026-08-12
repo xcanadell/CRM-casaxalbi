@@ -20,26 +20,6 @@
     "total": 80
   },
   {
-    "data": "2026-08-12",
-    "lloc": "Menú Arròs",
-    "notes": "Paella per 5 per emportar 16€ ració",
-    "comensals": [
-      {
-        "nom": "Javis Vei Zaldierna",
-        "preu_menjar": 80,
-        "preu_beguda": 0,
-        "preu_altres": 0,
-        "plats": [
-          "pl_isu6aig8"
-        ],
-        "vins": [],
-        "varios": [],
-        "notes": ""
-      }
-    ],
-    "total": 80
-  },
-  {
     "data": "2026-08-09",
     "lloc": "Menú Arròs",
     "notes": "Domingo Arrozero grup de 8 amics que tenen casa a Ezcaray fa molts anys",
