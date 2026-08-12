@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "BM",
+    "tipus": "Alimentació",
+    "data": "12/08/26",
+    "adreca": "C/SAGASTIA 28 B, 26280 EZCARAY",
+    "nif": "B2651679",
+    "telefon": "900555300",
+    "productes": [
+      {
+        "descripcio": "COL-REPOLLO FRUTERIA",
+        "quantitat": 1.01,
+        "preu_unitari": 1.99,
+        "total": 2.01,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MEJILLON BOUCHOT PESCADERIA Oferta -2.00",
+        "quantitat": 1,
+        "preu_unitari": 6.95,
+        "total": 6.95,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 8.96,
+    "saved_at": "2026-08-12T17:44:07.314Z"
+  },
+  {
     "establiment": "Ademanda pastelería artesana",
     "tipus": "panaderia artesana",
     "data": "09/08/2026",
