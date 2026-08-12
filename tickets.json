@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Quesería Valle del Ciloria",
+    "tipus": "Factura simplificada",
+    "data": "12/08/2026",
+    "adreca": "Ctra. Ezcaray - Valgañón nº 71, 26288 Zorraquín, La Rioja",
+    "nif": "E26196329",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "YOGUR NATURAL 450GR",
+        "quantitat": 6,
+        "preu_unitari": 2.3,
+        "total": 13.8,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 13.8,
+    "saved_at": "2026-08-12T17:49:06.931Z"
+  },
+  {
     "establiment": "BM",
     "tipus": "Alimentació",
     "data": "12/08/2026",
