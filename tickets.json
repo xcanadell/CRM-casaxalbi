@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "CARBURANTES RIOJA S.L.",
+    "tipus": "Gasolinera",
+    "data": "12/08/26",
+    "adreca": "PG. SAN LAZARO, SECTOR 6, 26250 STO. DOMINGO DE LA CALZADA LA RIOJA",
+    "nif": "B26550616",
+    "telefon": "0",
+    "productes": [
+      {
+        "descripcio": "Gasolina 95",
+        "quantitat": 29.95,
+        "preu_unitari": 1.67,
+        "total": 50,
+        "us": "Altres"
+      }
+    ],
+    "total": 50,
+    "saved_at": "2026-08-12T17:51:39.048Z"
+  },
+  {
     "establiment": "IGOR OLAIZOLA FERNANDEZ C/ARZOBISPO BARROETA",
     "tipus": "Venda",
     "data": "09/08/2026",
