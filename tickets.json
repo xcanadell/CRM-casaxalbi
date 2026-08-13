@@ -1,5 +1,59 @@
 [
   {
+    "establiment": "Lupo",
+    "tipus": "Supermercat",
+    "data": "10/08/2026",
+    "adreca": "Ctra. Santo Domingo, 61, Escabay",
+    "nif": "B39050349",
+    "telefon": "900200328",
+    "productes": [
+      {
+        "descripcio": "PIZZA TARRADELAS J.SERRAN 390",
+        "quantitat": 1,
+        "preu_unitari": 3.19,
+        "total": 3.19,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ACEITE OLIVA SUAVE 5 LITROS",
+        "quantitat": 1,
+        "preu_unitari": 17.75,
+        "total": 17.75,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "CHOC VALL BLANC MILKA 100G",
+        "quantitat": 1,
+        "preu_unitari": 4.95,
+        "total": 4.95,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ACEITE LA MASÍA COCO V.EX.E430",
+        "quantitat": 1,
+        "preu_unitari": 5.45,
+        "total": 5.45,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "ACEITE LA MASÍA COCO V.EX.E430",
+        "quantitat": 1,
+        "preu_unitari": 5.45,
+        "total": 5.45,
+        "us": "Cosmètica"
+      },
+      {
+        "descripcio": "ACEITI.H.ACEITUN EMBRUJOS 570G",
+        "quantitat": 1,
+        "preu_unitari": 4.09,
+        "total": 4.09,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 40.88,
+    "saved_at": "2026-08-13T07:14:26.449Z"
+  },
+  {
     "establiment": "Copisteria AREA Pc",
     "tipus": "—",
     "data": "12/08/2026",
