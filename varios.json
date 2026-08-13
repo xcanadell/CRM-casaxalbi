@@ -120,12 +120,12 @@
     "id": "va_85f062f7"
   },
   {
+    "id": "va_b899fac8",
     "nom": "Pastilla sabo",
     "desc": "llimones",
-    "cost": 0,
+    "cost": 1,
     "pvp": 4,
-    "updated_at": "2026-07-30T08:25:36.556Z",
-    "id": "va_b899fac8"
+    "updated_at": "2026-08-13T20:55:00.167Z"
   },
   {
     "nom": "Pastilla sabo (M)",
