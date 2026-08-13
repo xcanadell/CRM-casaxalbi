@@ -96,12 +96,12 @@
     "id": "va_bdd16739"
   },
   {
+    "id": "va_57730b5b",
     "nom": "Capilar romero",
     "desc": "Aceite capilar",
-    "cost": 0,
+    "cost": 1.5,
     "pvp": 4,
-    "updated_at": "2026-07-30T08:23:32.405Z",
-    "id": "va_57730b5b"
+    "updated_at": "2026-08-13T20:25:30.355Z"
   },
   {
     "nom": "Crema Exfoliant",
