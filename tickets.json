@@ -1,5 +1,276 @@
 [
   {
+    "establiment": "LUPA",
+    "tipus": "Supermercado",
+    "data": "13/08/2026",
+    "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
+    "nif": "A39050349",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "CALABACIN",
+        "quantitat": 1,
+        "preu_unitari": 1.21,
+        "total": 1.21,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOMATE DE LA RIOJA",
+        "quantitat": 1,
+        "preu_unitari": 6.31,
+        "total": 6.31,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "HIGO NEGRO",
+        "quantitat": 1,
+        "preu_unitari": 5.42,
+        "total": 5.42,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "HEL.CARTE D OR VAINILL.622 GR.",
+        "quantitat": 1,
+        "preu_unitari": 4.35,
+        "total": 4.35,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "SHIITAKE BANDEJA 200 GRS",
+        "quantitat": 1,
+        "preu_unitari": 2.68,
+        "total": 2.68,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOMATE HELIOS TRIT.NATUR.570GR",
+        "quantitat": 1,
+        "preu_unitari": 2.15,
+        "total": 2.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOMATE HELIOS TRIT.NATUR.570GR",
+        "quantitat": 1,
+        "preu_unitari": 2.15,
+        "total": 2.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PIMIENTO DE FREIR CAT.1*",
+        "quantitat": 1,
+        "preu_unitari": 0.74,
+        "total": 0.74,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOMATE HELIOS TRIT.NATUR.570GR",
+        "quantitat": 1,
+        "preu_unitari": 2.15,
+        "total": 2.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ACEITUNAS & CIFRAS VAHINE UND.",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ESTROPAJO AM SUCIE.C/ESPON.P-3",
+        "quantitat": 1,
+        "preu_unitari": 0.75,
+        "total": 0.75,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "HOGAZA MAIZ 5% 420 GR.",
+        "quantitat": 1,
+        "preu_unitari": 2.05,
+        "total": 2.05,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "HOGAZA MAIZ 5% 420 GR.",
+        "quantitat": 1,
+        "preu_unitari": 2.05,
+        "total": 2.05,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ACEITUN.ACEITUN.REC.ANDAL360G",
+        "quantitat": 1,
+        "preu_unitari": 1.95,
+        "total": 1.95,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOMATE MUT.CONC.POMODORO 130GR",
+        "quantitat": 1,
+        "preu_unitari": 2.9,
+        "total": 2.9,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ATUN ALTEZA CL.AC.OL RR-125 FA",
+        "quantitat": 1,
+        "preu_unitari": 1.39,
+        "total": 1.39,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BRIOCHE TRENZADO 400 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 4.19,
+        "total": 4.19,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ARROZ SOS KILO",
+        "quantitat": 1,
+        "preu_unitari": 1.87,
+        "total": 1.87,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ARROZ SOS KILO",
+        "quantitat": 1,
+        "preu_unitari": 1.87,
+        "total": 1.87,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "FREGONA VILEDA SUAVE",
+        "quantitat": 1,
+        "preu_unitari": 2.49,
+        "total": 2.49,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LECHE ALTEZA ENTERA LITRO",
+        "quantitat": 1,
+        "preu_unitari": 0.96,
+        "total": 0.96,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 5 ESTR.25 CL.P-6",
+        "quantitat": 1,
+        "preu_unitari": 4.05,
+        "total": 4.05,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 5 ESTR.25 CL.P-6",
+        "quantitat": 1,
+        "preu_unitari": 4.05,
+        "total": 4.05,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "REFR.ALTEZA COLA LATA 33 CL. 4x0,35",
+        "quantitat": 1,
+        "preu_unitari": 1.4,
+        "total": 1.4,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "NESTEA LIMON LATA 33 CL. 4x1,00",
+        "quantitat": 1,
+        "preu_unitari": 4,
+        "total": 4,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 0,0 TOST.LT.33CL",
+        "quantitat": 1,
+        "preu_unitari": 0.86,
+        "total": 0.86,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 0,0 TOST.LT.33CL",
+        "quantitat": 1,
+        "preu_unitari": 0.86,
+        "total": 0.86,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 0,0 TOST.LT.33CL",
+        "quantitat": 1,
+        "preu_unitari": 0.86,
+        "total": 0.86,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ARROZ SOS KILO",
+        "quantitat": 1,
+        "preu_unitari": 1.87,
+        "total": 1.87,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CALDO ALTEZA PESCADO BRIK LT.",
+        "quantitat": 1,
+        "preu_unitari": 0.95,
+        "total": 0.95,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MEJILLON MEDIANO MALLA 1 KG.",
+        "quantitat": 1,
+        "preu_unitari": 2.49,
+        "total": 2.49,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MEJILLON MEDIANO MALLA 1 KG.",
+        "quantitat": 1,
+        "preu_unitari": 2.49,
+        "total": 2.49,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MEJILLON MEDIANO MALLA 1 KG.",
+        "quantitat": 1,
+        "preu_unitari": 2.49,
+        "total": 2.49,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ALMEJA MARINE.70/90 MALLA 500G",
+        "quantitat": 1,
+        "preu_unitari": 11.95,
+        "total": 11.95,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LANGOSTINO CRUDO MEDIANO 50/60",
+        "quantitat": 1,
+        "preu_unitari": 9.25,
+        "total": 9.25,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "POTA DE ALTURA",
+        "quantitat": 1,
+        "preu_unitari": 14.23,
+        "total": 14.23,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Cupón (9463425492040)",
+        "quantitat": 1,
+        "preu_unitari": -1.62,
+        "total": -1.62,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 112.8,
+    "saved_at": "2026-08-13T20:16:12.099Z"
+  },
+  {
     "establiment": "Lupa",
     "tipus": "—",
     "data": "13/08/2026",
