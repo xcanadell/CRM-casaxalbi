@@ -51,7 +51,23 @@
         "vins": [
           "vi_8cdb0456"
         ],
-        "varios": [],
+        "varios": [
+          {
+            "id": "va_f358016a",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_0086caa5",
+            "qty": 1,
+            "preu_unit": 0
+          },
+          {
+            "id": "va_961b9fae",
+            "qty": 1,
+            "preu_unit": 0
+          }
+        ],
         "notes": "Amanida tomaquet, figues amb pernil, olives, fuet, musclos amb pisto, arros,"
       }
     ],
