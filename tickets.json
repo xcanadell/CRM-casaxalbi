@@ -1,5 +1,94 @@
 [
   {
+    "establiment": "AUTOSERVICIO MARI S.C",
+    "tipus": "Autoservicio",
+    "data": "13/08/2026",
+    "adreca": "C/ Sagastia 17, 26280 Ezcarray",
+    "nif": "J-26519124",
+    "telefon": "941 354212",
+    "productes": [
+      {
+        "descripcio": "ALIMENTACION",
+        "quantitat": 1,
+        "preu_unitari": 2,
+        "total": 2,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ALIMENTACION",
+        "quantitat": 1,
+        "preu_unitari": 2,
+        "total": 2,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LECH/VERD/PA",
+        "quantitat": 1,
+        "preu_unitari": 2.6,
+        "total": 2.6,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LECH/VERD/PA",
+        "quantitat": 1,
+        "preu_unitari": 17.02,
+        "total": 17.02,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "DROG/LICOR",
+        "quantitat": 1,
+        "preu_unitari": 0.1,
+        "total": 0.1,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BASE 4%",
+        "quantitat": 1,
+        "preu_unitari": 18.87,
+        "total": 18.87,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "IVA 4%",
+        "quantitat": 1,
+        "preu_unitari": 0.75,
+        "total": 0.75,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BASE 10%",
+        "quantitat": 1,
+        "preu_unitari": 3.64,
+        "total": 3.64,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "IVA 10%",
+        "quantitat": 1,
+        "preu_unitari": 0.36,
+        "total": 0.36,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BASE 21%",
+        "quantitat": 1,
+        "preu_unitari": 0.08,
+        "total": 0.08,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "IVA 21%",
+        "quantitat": 1,
+        "preu_unitari": 0.02,
+        "total": 0.02,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 23.72,
+    "saved_at": "2026-08-13T19:47:42.324Z"
+  },
+  {
     "establiment": "Lupo",
     "tipus": "Supermercat",
     "data": "10/08/2026",
