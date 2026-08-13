@@ -158,5 +158,13 @@
     "pvp": 6,
     "updated_at": "2026-07-30T08:28:27.250Z",
     "id": "va_08cf527a"
+  },
+  {
+    "id": "va_nwtbin9u",
+    "nom": "Nueva crema (keratina)",
+    "desc": "De calendula, ibiscus, labanda, rosas..",
+    "cost": 4.7,
+    "pvp": 8,
+    "updated_at": "2026-08-13T20:46:28.042Z"
   }
 ]
