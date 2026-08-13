@@ -1,5 +1,23 @@
 [
   {
+    "data": "2026-08-16",
+    "lloc": "Menú Arròs",
+    "notes": "6 menu arros",
+    "comensals": [
+      {
+        "nom": "Alba Veina",
+        "preu_menjar": 168,
+        "preu_beguda": 25,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "varios": [],
+        "notes": ""
+      }
+    ],
+    "total": 193
+  },
+  {
     "data": "2026-08-14",
     "lloc": "Menú Arròs",
     "notes": "",
