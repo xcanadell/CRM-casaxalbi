@@ -1,5 +1,66 @@
 [
   {
+    "establiment": "LUPA",
+    "tipus": "Supermercat",
+    "data": "13/06/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcurra",
+    "nif": "N39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "SALMÓN AHUMADO ALIEZA 100 GR",
+        "quantitat": 1,
+        "preu_unitari": 3.99,
+        "total": 3.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "GAZPACHO ALVALLE SELECCIÓN 900",
+        "quantitat": 1,
+        "preu_unitari": 3.49,
+        "total": 3.49,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "SMOOTHIE READY FR. PLAT. 250 ML",
+        "quantitat": 1,
+        "preu_unitari": 1.65,
+        "total": 1.65,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "NESTEA LIMÓN LATA 33 CL.",
+        "quantitat": 1,
+        "preu_unitari": 1,
+        "total": 1,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "COCA COLA NORMAL 1,25 LITROS",
+        "quantitat": 1,
+        "preu_unitari": 1.55,
+        "total": 1.55,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "COCA COLA NORMAL 1,25 LITROS",
+        "quantitat": 1,
+        "preu_unitari": 1.55,
+        "total": 1.55,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "NESTEA LIMÓN LATA 33 CL.",
+        "quantitat": 1,
+        "preu_unitari": 1,
+        "total": 1,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 13.83,
+    "saved_at": "2026-08-13T19:49:39.024Z"
+  },
+  {
     "establiment": "EL COLMADO DE EZCARAY",
     "tipus": "FACTURA SIMPLIFICADA",
     "data": "13/08/2026",
