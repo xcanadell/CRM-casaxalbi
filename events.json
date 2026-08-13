@@ -1,5 +1,27 @@
 [
   {
+    "data": "2026-08-13",
+    "lloc": "Menú Arròs",
+    "notes": "Cumple 57 patxi y belen (7 pax)",
+    "comensals": [
+      {
+        "nom": "Patxi Marit Belen",
+        "preu_menjar": 258.5,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [
+          "pl_859bbbbd"
+        ],
+        "vins": [
+          "vi_8cdb0456"
+        ],
+        "varios": [],
+        "notes": "Amanida tomaquet, figues amb pernil, olives, fuet, musclos amb pisto, arros,"
+      }
+    ],
+    "total": 258.5
+  },
+  {
     "data": "2026-08-12",
     "lloc": "Cosmètica Natural",
     "notes": "Ezcararte festa major",
