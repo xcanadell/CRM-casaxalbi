@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Lupa",
+    "tipus": "—",
+    "data": "13/08/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "",
+        "quantitat": 1,
+        "preu_unitari": 112.8,
+        "total": 112.8,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-08-13T19:57:25.622Z"
+  },
+  {
     "establiment": "LUPA",
     "tipus": "Supermercat",
     "data": "13/08/2026",
