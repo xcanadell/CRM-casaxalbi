@@ -80,12 +80,12 @@
     "id": "va_961b9fae"
   },
   {
+    "id": "va_acf01ba1",
     "nom": "Labial",
     "desc": "Cosmetica labial",
-    "cost": 0.75,
+    "cost": 1.47,
     "pvp": 2.5,
-    "updated_at": "2026-07-30T09:02:08.191Z",
-    "id": "va_acf01ba1"
+    "updated_at": "2026-08-13T20:20:45.139Z"
   },
   {
     "nom": "Crema calendula M",
