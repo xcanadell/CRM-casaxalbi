@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "EL COLMADO DE EZCARAY",
+    "tipus": "FACTURA SIMPLIFICADA",
+    "data": "13/08/2026",
+    "adreca": "C/ SAGASTIA Nº 5, EZCARAY - LA RIOJA",
+    "nif": "J26567255",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Queso Torta Suave Azul",
+        "quantitat": 1,
+        "preu_unitari": 7.16,
+        "total": 7.16,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 7.16,
+    "saved_at": "2026-08-13T19:48:50.496Z"
+  },
+  {
     "establiment": "AUTOSERVICIO MARI S.C",
     "tipus": "Autoservicio",
     "data": "13/08/2026",
