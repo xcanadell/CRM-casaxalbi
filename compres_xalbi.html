@@ -292,6 +292,7 @@ table.products td input.center{text-align:center} table.products td input.right{
         <div class="dash-icon">🍷</div>
         <div class="dash-val" id="dash-n-vins">—</div>
         <div class="dash-label">Vins a la bodega</div>
+        <div id="dash-vins-extra" style="font-size:11px;color:#888;margin-top:4px"></div>
       </div>
     </div>
     <div class="dash-section">
@@ -430,6 +431,7 @@ table.products td input.center{text-align:center} table.products td input.right{
           <label>Tipus d'event</label>
           <select id="ev-lloc">
             <option value="Sopar Casa Xalbi">🏡 Sopar Casa Xalbi</option>
+            <option value="Menú Arròs">🥘 Menú Arròs</option>
             <option value="Cata de vins">🍷 Cata de vins</option>
             <option value="Catering">🍽️ Catering</option>
             <option value="Cosmètica Natural">🌿 Cosmètica Natural</option>
@@ -544,6 +546,8 @@ table.products td input.center{text-align:center} table.products td input.right{
         <option value="Vi negre">🍇 Vi negre</option>
         <option value="Escumós">🥂 Escumós</option>
         <option value="Orange">🍊 Orange</option>
+        <option value="Brisat">🍂 Brisat</option>
+        <option value="Dolços i generosos">🍯 Dolços i generosos</option>
         <option value="Altres">· Altres</option>
       </select>
     </div>
@@ -666,12 +670,18 @@ table.products td input.center{text-align:center} table.products td input.right{
           <option value="Vi negre">🍇 Vi negre</option>
           <option value="Escumós">🥂 Escumós</option>
           <option value="Orange">🍊 Orange</option>
+          <option value="Brisat">🍂 Brisat</option>
+          <option value="Dolços i generosos">🍯 Dolços i generosos</option>
           <option value="Altres">· Altres</option>
         </select>
       </div>
       <div class="modal-field">
         <label>Denominació d'Origen</label>
         <input id="bod-do" placeholder="Ex: Rioja, Penedès...">
+      </div>
+      <div class="modal-field">
+        <label>Varietat</label>
+        <input id="bod-varietat" placeholder="Ex: Tempranillo, Garnatxa...">
       </div>
     </div>
     <div class="modal-grid-2" style="margin-bottom:10px">
@@ -956,7 +966,7 @@ async function analyzeTicket(){
   const k=getApiKey();if(!k){alert('Introdueix la clau API.');return;}if(!imgB64)return;
   const btn=document.getElementById('analyzeBtn');btn.disabled=true;setStatus('Analitzant...','loading');
   const prompt=`Analitza aquest ticket i extreu les dades en JSON. Respon ÚNICAMENT amb el JSON, sense markdown.\nFormat: {"establiment":"","tipus":"","data":"dd/mm/aaaa","adreca":"","nif":"","telefon":"","productes":[{"descripcio":"","quantitat":1,"preu_unitari":0.00,"total":0.00}],"total":0.00}\nRegles: preus sense €, inclou TOTS els productes.`;
-  const payload={api_key:k,payload:{model:"claude-haiku-4-5-20251001",max_tokens:2000,messages:[{role:"user",content:[{type:"image",source:{type:"base64",media_type:imgMime,data:imgB64}},{type:"text",text:prompt}]}]}};
+  const payload={api_key:k,payload:{model:"claude-haiku-4-5-20251001",max_tokens:4000,messages:[{role:"user",content:[{type:"image",source:{type:"base64",media_type:imgMime,data:imgB64}},{type:"text",text:prompt}]}]}};
   const maxIntents=3;
   for(let intent=1;intent<=maxIntents;intent++){
     try{
@@ -1346,8 +1356,8 @@ async function deletePlat(i){
 let bodega=[];
 let bodegaEditIdx=null;
 
-const TIPUS_CLASS={'Vi blanc':'blanc','Vi rosat':'rosat','Vi negre':'negre','Escumós':'escumos','Orange':'orange','Altres':'altres'};
-const TIPUS_ICON={'Vi blanc':'🍋','Vi rosat':'🌸','Vi negre':'🍇','Escumós':'🥂','Orange':'🍊','Altres':'·'};
+const TIPUS_CLASS={'Vi blanc':'blanc','Vi rosat':'rosat','Vi negre':'negre','Escumós':'escumos','Orange':'orange','Brisat':'brisat','Dolços i generosos':'dolcos','Altres':'altres'};
+const TIPUS_ICON={'Vi blanc':'🍋','Vi rosat':'🌸','Vi negre':'🍇','Escumós':'🥂','Orange':'🍊','Brisat':'🍂','Dolços i generosos':'🍯','Altres':'·'};
 
 async function initBodega(){
   try{
@@ -1419,6 +1429,7 @@ function renderBodega(){
       <td style="font-size:12px;color:#555">${esc(v.bodega||'—')}</td>
       <td><span class="tipus-pill tipus-${cls}">${icon} ${esc(v.tipus||'—')}</span></td>
       <td style="color:#666;font-size:12px">${esc(v.do||'—')}</td>
+      <td style="color:#666;font-size:12px">${esc(v.varietat||'—')}</td>
       <td style="text-align:right">${cost?cost.toFixed(2)+' €':'—'}</td>
       <td style="text-align:right;font-weight:600">${pvp?pvp.toFixed(2)+' €':'—'}</td>
       <td style="text-align:right">${margeHtml}</td>
@@ -1437,6 +1448,7 @@ function renderBodega(){
       <th class="th-bodega">Bodega</th>
       <th class="th-tipus">Tipus</th>
       <th class="th-do">Denominació</th>
+      <th style="width:9%">Varietat</th>
       <th class="th-cost">Cost</th>
       <th class="th-pvp">P.V.P</th>
       <th class="th-marge">Marge</th>
@@ -1457,6 +1469,7 @@ function openBodegaModal(idx){
   document.getElementById('bod-bodega').value=v.bodega||'';
   document.getElementById('bod-tipus').value=v.tipus||'Vi negre';
   document.getElementById('bod-do').value=v.do||'';
+  document.getElementById('bod-varietat').value=v.varietat||'';
   document.getElementById('bod-cost').value=v.cost||'';
   document.getElementById('bod-pvp').value=v.pvp||'';
   document.getElementById('bod-data-compra').value=v.data_compra||'';
@@ -1496,6 +1509,7 @@ async function saveBodega(){
     bodega:document.getElementById('bod-bodega').value.trim(),
     tipus:document.getElementById('bod-tipus').value,
     do:document.getElementById('bod-do').value.trim(),
+    varietat:document.getElementById('bod-varietat').value.trim(),
     cost:parseFloat(document.getElementById('bod-cost').value)||0,
     pvp:parseFloat(document.getElementById('bod-pvp').value)||0,
     data_compra:document.getElementById('bod-data-compra').value||'',
@@ -1734,16 +1748,16 @@ function renderEventsList(){
     // plats i vins amb recompte
     const platCount={},viCount={},variCount={};
     (ev.comensals||[]).forEach(c=>{
-      (c.plats||[]).forEach(p=>platCount[p]=(platCount[p]||0)+1);
-      (c.vins||[]).forEach(v=>viCount[v]=(viCount[v]||0)+1);
+      (c.plats||[]).forEach(id=>{const pl=plats.find(p=>p.id===id);const n=pl?pl.titol:id;platCount[n]=(platCount[n]||0)+1;});
+      (c.vins||[]).forEach(id=>{const vi=bodega.find(v=>v.id===id);const n=vi?vi.nom+(vi.any?' ('+vi.any+')':''):id;viCount[n]=(viCount[n]||0)+1;});
       (c.varios||[]).forEach(va=>{const id=typeof va==='object'?va.id:va;const vari=varios.find(v=>v.id===id);const n=vari?vari.nom:id;variCount[n]=(variCount[n]||0)+(typeof va==='object'?(va.qty||1):1);});
     });
     const platsHtml=Object.entries(platCount)
-      .map(([p,n])=>`<span class="chip" style="font-size:11px">${esc(p)}${n>1?` <strong>×${n}</strong>`:''}</span>`).join('');
+      .map(([n,cnt])=>`<span class="chip" style="font-size:11px">${esc(n)}${cnt>1?` <strong>×${cnt}</strong>`:''}</span>`).join('');
     const vinsHtml=Object.keys(viCount)
-      .map(v=>`<span class="chip vi" style="font-size:11px">${esc(v)}</span>`).join('');
+      .map(n=>`<span class="chip vi" style="font-size:11px">${esc(n)}</span>`).join('');
     const variosHtml=Object.entries(variCount)
-      .map(([va,n])=>`<span class="chip" style="font-size:11px;background:#fff3e0;color:#e65100;border-color:#ffcc80">${esc(va)}${n>1?` <strong>×${n}</strong>`:''}</span>`).join('');
+      .map(([n,cnt])=>`<span class="chip" style="font-size:11px;background:#fff3e0;color:#e65100;border-color:#ffcc80">${esc(n)}${cnt>1?` <strong>×${cnt}</strong>`:''}</span>`).join('');
     const resumHtml=(Object.keys(platCount).length||Object.keys(viCount).length||Object.keys(variCount).length)
       ?`<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px">${platsHtml}${vinsHtml}${variosHtml}</div>`
       :'';
@@ -2115,6 +2129,9 @@ function renderDashboard(){
   document.getElementById('dash-n-clients').textContent=clients.length;
   document.getElementById('dash-n-plats').textContent=plats.length;
   document.getElementById('dash-n-vins').textContent=bodega.length;
+  const vinsDisp=bodega.filter(v=>!v.data_venda);
+  const costTotal=vinsDisp.reduce((s,v)=>s+(parseFloat(v.cost)||0),0);
+  document.getElementById('dash-vins-extra').textContent=`${vinsDisp.length} disponibles · ${costTotal.toFixed(0)} € cost`;
 
   // Total ingressos i costos dels events
   const totalIng=events.reduce((s,ev)=>s+(ev.total||0),0);
@@ -2254,6 +2271,7 @@ function renderDashboard(){
       const dataFmt=ev.data?new Date(ev.data+'T12:00:00').toLocaleDateString('ca-ES',{day:'numeric',month:'short',year:'numeric'}):'—';
       const ncom=(ev.comensals||[]).length;
       const ing=(ev.total||0);
+      const ri=events.indexOf(ev);
       // cost event
       let cost=0;
       const com=ev.comensals||[];
@@ -2261,9 +2279,10 @@ function renderDashboard(){
       Object.entries(pc).forEach(([id,q])=>{const pl=plats.find(p=>p.id===id);if(pl)cost+=(parseFloat(pl.cost_mp)||0)*q;});
       const vu=new Set(com.flatMap(c=>c.vins||[]));
       vu.forEach(id=>{const vi=bodega.find(v=>v.id===id);if(vi)cost+=(parseFloat(vi.cost)||0);});
+      com.forEach(c=>(c.varios||[]).forEach(va=>{const id=typeof va==='object'?va.id:va;const qty=typeof va==='object'?(va.qty||1):1;const vari=varios.find(v=>v.id===id);if(vari)cost+=(parseFloat(vari.cost)||0)*qty;}));
       const ben=ing-cost;
       const benColor=ben>0?'#2e7d32':ben<0?'#c0392b':'#888';
-      return`<tr>
+      return`<tr onclick="showTab('events');openEventEditor(${ri})" style="cursor:pointer" onmouseover="this.style.background='#f9f9f9'" onmouseout="this.style.background=''">
         <td style="font-weight:500">${dataFmt}</td>
         <td><span class="ev-lloc-pill">${esc(ev.lloc||'—')}</span></td>
         <td style="text-align:center;color:#888">${ncom}</td>
