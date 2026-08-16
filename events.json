@@ -6,8 +6,8 @@
     "comensals": [
       {
         "nom": "Alba Veina",
-        "preu_menjar": 168,
-        "preu_beguda": 25,
+        "preu_menjar": 222,
+        "preu_beguda": 9,
         "preu_altres": 0,
         "plats": [],
         "vins": [],
@@ -15,7 +15,7 @@
         "notes": ""
       }
     ],
-    "total": 193
+    "total": 231
   },
   {
     "data": "2026-08-14",
