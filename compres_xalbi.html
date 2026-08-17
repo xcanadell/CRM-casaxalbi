@@ -498,6 +498,7 @@ table.products td input.center{text-align:center} table.products td input.right{
   <div id="panel-clients" class="panel">
     <div class="plats-header-row">
       <h2>👥 Clients</h2>
+      <button class="btn btn-secondary" id="syncBtn" onclick="syncClients()" style="margin-right:8px">🔄 Sincronitzar</button>
       <button class="btn btn-primary" onclick="openClientModal()">+ Nou client</button>
     </div>
     <div class="bodega-search">
@@ -1657,6 +1658,23 @@ function openClientModal(idx){
   }
   document.getElementById('clientModal').classList.add('show');
   document.getElementById('cli-nom').focus();
+}
+
+async function syncClients(){
+  const btn=document.getElementById('syncBtn');
+  btn.disabled=true; btn.textContent='🔄 Sincronitzant...';
+  try {
+    const r=await fetch('http://localhost:8765/sync');
+    if(!r.ok) throw new Error('Error servidor');
+    const fresh=await fetch('http://localhost:8765/clients');
+    clients=await fresh.json();
+    renderClients();
+    btn.textContent='✅ Sincronitzat!';
+  } catch(e){
+    btn.textContent='❌ Error';
+    alert('Error sincronitzant: '+e.message);
+  }
+  setTimeout(()=>{btn.disabled=false;btn.textContent='🔄 Sincronitzar';},2000);
 }
 
 function closeClientModal(){

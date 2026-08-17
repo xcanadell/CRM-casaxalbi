@@ -104,6 +104,13 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
+        if self.path == "/sync":
+            try:
+                subprocess.run(["git", "pull", "--rebase"], cwd=BASE_DIR, check=True)
+                self.send_json(200, {"ok": True})
+            except subprocess.CalledProcessError as e:
+                self.send_json(500, {"ok": False, "error": str(e)})
+            return
         if self.path == "/tickets":
             self.send_json(200, read_json(TICKETS_FILE))
         elif self.path == "/plats":
