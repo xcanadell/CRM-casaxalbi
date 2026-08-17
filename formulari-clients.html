@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Casa Xalbi — Registre de clients</title>
+  <title>Casa Xalbi — Registro de clientes</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; color: #1a1a1a; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 24px 16px 40px; }
@@ -36,38 +36,38 @@
 <div class="card">
   <div class="logo">
     <h1>🏡 Casa Xalbi</h1>
-    <p>Registre de clients · Ezcaray</p>
+    <p>Registro de clientes · Ezcaray</p>
   </div>
 
   <form id="form" onsubmit="enviar(event)">
     <div class="row2">
       <div>
-        <label>Nom *</label>
-        <input id="f-nom" placeholder="Nom" required autocomplete="given-name">
+        <label>Nombre *</label>
+        <input id="f-nom" placeholder="Nombre" required autocomplete="given-name">
       </div>
       <div>
-        <label>Cognom / Apellido</label>
-        <input id="f-cognom" placeholder="Cognom" autocomplete="family-name">
+        <label>Apellido</label>
+        <input id="f-cognom" placeholder="Apellido" autocomplete="family-name">
       </div>
     </div>
 
     <label>Email</label>
-    <input id="f-email" type="email" placeholder="correu@exemple.com" autocomplete="email">
+    <input id="f-email" type="email" placeholder="correo@ejemplo.com" autocomplete="email">
 
-    <label>Telèfon / Teléfono</label>
+    <label>Teléfono</label>
     <input id="f-tel" type="tel" placeholder="+34 600 000 000" autocomplete="tel">
 
-    <label>Població / Localidad</label>
-    <input id="f-poblacio" placeholder="Ex: Ezcaray, Barcelona..." autocomplete="address-level2">
+    <label>Localidad</label>
+    <input id="f-poblacio" placeholder="Ej: Ezcaray, Madrid..." autocomplete="address-level2">
 
-    <label>Comentaris / Comentarios</label>
-    <textarea id="f-comentaris" placeholder="Preferències, al·lèrgies, com vas conèixer Casa Xalbi..."></textarea>
+    <label>Comentarios</label>
+    <textarea id="f-comentaris" placeholder="Preferencias, alergias, cómo conociste Casa Xalbi..."></textarea>
 
-    <button class="btn" type="submit" id="btn-enviar">Registrar-me</button>
+    <button class="btn" type="submit" id="btn-enviar">Registrarme</button>
     <div class="msg" id="msg"></div>
   </form>
 
-  <p class="legal">Les teves dades s'utilitzen exclusivament per a la gestió de reserves i comunicació amb Casa Xalbi. No es compartiran amb tercers.</p>
+  <p class="legal">Tus datos se utilizan exclusivamente para la gestión de reservas y comunicación con Casa Xalbi. No se compartirán con terceros.</p>
 </div>
 
 <script>
@@ -91,19 +91,19 @@ function showMsg(text,type){
 
 async function enviar(e){
   e.preventDefault();
-  if(TOKEN==='POSA_AQUI_EL_TOKEN'){showMsg('Error de configuració: cal afegir el token de GitHub.','err');return;}
+  if(TOKEN==='POSA_AQUI_EL_TOKEN'){showMsg('Error de configuración: falta añadir el token de GitHub.','err');return;}
   const nom=document.getElementById('f-nom').value.trim();
-  if(!nom){showMsg('El nom és obligatori.','err');return;}
+  if(!nom){showMsg('El nombre es obligatorio.','err');return;}
 
   const btn=document.getElementById('btn-enviar');
-  btn.disabled=true; btn.textContent='Enviant...';
+  btn.disabled=true; btn.textContent='Enviando...';
 
   try {
     // 1. Llegir fitxer actual
     const getRes = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`,{
       headers:{'Authorization':`Bearer ${TOKEN}`,'Accept':'application/vnd.github+json'}
     });
-    if(!getRes.ok) throw new Error(`Error llegint clients: ${getRes.status}`);
+    if(!getRes.ok) throw new Error(`Error leyendo clientes: ${getRes.status}`);
     const meta = await getRes.json();
     const clients = JSON.parse(atob(meta.content.replace(/\n/g,'')));
 
@@ -134,7 +134,7 @@ async function enviar(e){
     if(!putRes.ok){const err=await putRes.json();throw new Error(err.message||putRes.status);}
 
     document.getElementById('form').reset();
-    showMsg('✅ Registre completat! Gràcies per registrar-te.','ok');
+    showMsg('✅ ¡Registro completado! Gracias por registrarte en Casa Xalbi.','ok');
   } catch(err){
     showMsg(`Error: ${err.message}`,'err');
   } finally {
