@@ -805,6 +805,9 @@ table.products td input.center{text-align:center} table.products td input.right{
       <label>Notes</label>
       <textarea id="cli-notes" placeholder="Comentaris, preferències, al·lèrgies, dates de visita..." style="width:100%;padding:8px 10px;border:1px solid #ddd;border-radius:7px;font-size:13px;font-family:inherit;outline:none;resize:vertical;min-height:72px;color:#1a1a1a"></textarea>
     </div>
+    <div id="cli-data-registre-wrap" style="display:none;margin-top:8px;font-size:12px;color:#888">
+      📅 Registrat el: <span id="cli-data-registre-val"></span>
+    </div>
     <div id="cli-events-section" style="display:none;margin-top:14px;padding-top:14px;border-top:1px solid #eee">
       <div style="font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">📅 Esdeveniments assistits</div>
       <div id="cli-events-list"></div>
@@ -1596,6 +1599,7 @@ function renderClients(){
       <td style="color:#666;font-size:12px">${esc(c.poblacio||'—')}</td>
       <td>${c.origen?`<span class="origen-pill origen-${cls}">${icon} ${esc(c.origen)}</span>`:'—'}</td>
       <td class="notes-preview" title="${esc(c.notes||'')}">${esc(c.notes||'—')}</td>
+      <td style="text-align:center;font-size:12px;color:#888">${c.data_registre||'—'}</td>
       <td style="text-align:center;font-weight:600;color:${nEvents>0?'#2e7d32':'#bbb'}">${nEvents>0?nEvents:'—'}</td>
       <td style="text-align:center;white-space:nowrap">
         <button class="btn btn-sm btn-edit" style="padding:3px 8px;margin-right:4px" onclick="openClientModal(${ri})">✏️</button>
@@ -1605,12 +1609,13 @@ function renderClients(){
   }).join('');
   container.innerHTML=`<table class="clients-table">
     <thead><tr>
-      <th style="width:20%">Nom i cognom</th>
-      <th style="width:13%">Població</th>
-      <th style="width:18%">Origen</th>
-      <th style="width:30%">Notes</th>
-      <th style="width:7%;text-align:center">Events</th>
-      <th style="width:12%;text-align:center"></th>
+      <th style="width:18%">Nom i cognom</th>
+      <th style="width:11%">Població</th>
+      <th style="width:15%">Origen</th>
+      <th style="width:22%">Notes</th>
+      <th style="width:10%;text-align:center">Registrat</th>
+      <th style="width:6%;text-align:center">Events</th>
+      <th style="width:10%;text-align:center"></th>
     </tr></thead>
     <tbody>${rows}</tbody>
   </table>`;
@@ -1627,6 +1632,9 @@ function openClientModal(idx){
   document.getElementById('cli-poblacio').value=c.poblacio||'';
   document.getElementById('cli-origen').value=c.origen||'';
   document.getElementById('cli-notes').value=c.notes||'';
+  const drWrap=document.getElementById('cli-data-registre-wrap');
+  if(clientEditIdx!==null&&c.data_registre){drWrap.style.display='block';document.getElementById('cli-data-registre-val').textContent=c.data_registre;}
+  else{drWrap.style.display='none';}
   // Events del client
   const nomComplet=([c.nom,c.cognom].filter(Boolean).join(' '))||'';
   const cliEvents=events.filter(ev=>(ev.comensals||[]).some(com=>com.nom===nomComplet))
@@ -1659,6 +1667,7 @@ function closeClientModal(){
 async function saveClient(){
   const nom=document.getElementById('cli-nom').value.trim();
   if(!nom){alert('Afegeix el nom del client.');return;}
+  const avui=(()=>{const d=new Date();const dd=String(d.getDate()).padStart(2,'0');const mm=String(d.getMonth()+1).padStart(2,'0');return`${dd}/${mm}/${d.getFullYear()}`;})();
   const client={
     nom,
     cognom:document.getElementById('cli-cognom').value.trim(),
@@ -1667,6 +1676,7 @@ async function saveClient(){
     poblacio:document.getElementById('cli-poblacio').value.trim(),
     origen:document.getElementById('cli-origen').value,
     notes:document.getElementById('cli-notes').value.trim(),
+    data_registre:(clientEditIdx!==null&&clients[clientEditIdx].data_registre)||avui,
     updated_at:new Date().toISOString()
   };
   const cAntic=clientEditIdx!==null?clients[clientEditIdx]:null;

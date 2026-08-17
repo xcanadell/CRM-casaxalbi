@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Xalbi — Registre de clients</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; color: #1a1a1a; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 24px 16px 40px; }
+
+    .card { background: #fff; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.08); width: 100%; max-width: 480px; padding: 28px 24px; }
+
+    .logo { text-align: center; margin-bottom: 22px; }
+    .logo h1 { font-size: 22px; font-weight: 700; }
+    .logo p { font-size: 13px; color: #888; margin-top: 4px; }
+
+    label { display: block; font-size: 12px; font-weight: 600; color: #555; margin-bottom: 5px; margin-top: 14px; text-transform: uppercase; letter-spacing: 0.4px; }
+    input, textarea { width: 100%; padding: 11px 14px; border: 1px solid #ddd; border-radius: 10px; font-size: 15px; font-family: inherit; outline: none; transition: border-color .15s; color: #1a1a1a; background: #fafafa; }
+    input:focus, textarea:focus { border-color: #1a1a1a; background: #fff; }
+    textarea { resize: vertical; min-height: 80px; }
+
+    .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    .btn { display: block; width: 100%; margin-top: 22px; padding: 14px; background: #1a1a1a; color: #fff; border: none; border-radius: 12px; font-size: 16px; font-weight: 600; font-family: inherit; cursor: pointer; transition: background .15s; }
+    .btn:hover { background: #333; }
+    .btn:disabled { background: #bbb; cursor: default; }
+
+    .msg { margin-top: 16px; padding: 12px 16px; border-radius: 10px; font-size: 14px; display: none; }
+    .msg.ok { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+    .msg.err { background: #fce4ec; color: #c62828; border: 1px solid #ef9a9a; }
+
+    .legal { font-size: 11px; color: #bbb; text-align: center; margin-top: 18px; line-height: 1.5; }
+  </style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">
+    <h1>🏡 Casa Xalbi</h1>
+    <p>Registre de clients · Ezcaray</p>
+  </div>
+
+  <form id="form" onsubmit="enviar(event)">
+    <div class="row2">
+      <div>
+        <label>Nom *</label>
+        <input id="f-nom" placeholder="Nom" required autocomplete="given-name">
+      </div>
+      <div>
+        <label>Cognom / Apellido</label>
+        <input id="f-cognom" placeholder="Cognom" autocomplete="family-name">
+      </div>
+    </div>
+
+    <label>Email</label>
+    <input id="f-email" type="email" placeholder="correu@exemple.com" autocomplete="email">
+
+    <label>Telèfon / Teléfono</label>
+    <input id="f-tel" type="tel" placeholder="+34 600 000 000" autocomplete="tel">
+
+    <label>Població / Localidad</label>
+    <input id="f-poblacio" placeholder="Ex: Ezcaray, Barcelona..." autocomplete="address-level2">
+
+    <label>Comentaris / Comentarios</label>
+    <textarea id="f-comentaris" placeholder="Preferències, al·lèrgies, com vas conèixer Casa Xalbi..."></textarea>
+
+    <button class="btn" type="submit" id="btn-enviar">Registrar-me</button>
+    <div class="msg" id="msg"></div>
+  </form>
+
+  <p class="legal">Les teves dades s'utilitzen exclusivament per a la gestió de reserves i comunicació amb Casa Xalbi. No es compartiran amb tercers.</p>
+</div>
+
+<script>
+const REPO  = 'xcanadell/CRM-casaxalbi';
+const FILE  = 'clients.json';
+// Token de GitHub amb permís de Contents:write en aquest repositori
+// Genera'l a: https://github.com/settings/tokens → Fine-grained → només aquest repo → Contents: Read and Write
+const TOKEN = 'POSA_AQUI_EL_TOKEN';
+
+function avui(){
+  const d=new Date();
+  const dd=String(d.getDate()).padStart(2,'0');
+  const mm=String(d.getMonth()+1).padStart(2,'0');
+  return`${dd}/${mm}/${d.getFullYear()}`;
+}
+
+function showMsg(text,type){
+  const el=document.getElementById('msg');
+  el.textContent=text; el.className='msg '+type; el.style.display='block';
+}
+
+async function enviar(e){
+  e.preventDefault();
+  if(TOKEN==='POSA_AQUI_EL_TOKEN'){showMsg('Error de configuració: cal afegir el token de GitHub.','err');return;}
+  const nom=document.getElementById('f-nom').value.trim();
+  if(!nom){showMsg('El nom és obligatori.','err');return;}
+
+  const btn=document.getElementById('btn-enviar');
+  btn.disabled=true; btn.textContent='Enviant...';
+
+  try {
+    // 1. Llegir fitxer actual
+    const getRes = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`,{
+      headers:{'Authorization':`Bearer ${TOKEN}`,'Accept':'application/vnd.github+json'}
+    });
+    if(!getRes.ok) throw new Error(`Error llegint clients: ${getRes.status}`);
+    const meta = await getRes.json();
+    const clients = JSON.parse(atob(meta.content.replace(/\n/g,'')));
+
+    // 2. Afegir nou client
+    const nouClient={
+      nom,
+      cognom:document.getElementById('f-cognom').value.trim(),
+      tel:document.getElementById('f-tel').value.trim(),
+      email:document.getElementById('f-email').value.trim(),
+      poblacio:document.getElementById('f-poblacio').value.trim(),
+      origen:'Formulari web',
+      notes:document.getElementById('f-comentaris').value.trim(),
+      data_registre:avui(),
+      updated_at:new Date().toISOString()
+    };
+    clients.push(nouClient);
+
+    // 3. Escriure fitxer actualitzat
+    const putRes = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`,{
+      method:'PUT',
+      headers:{'Authorization':`Bearer ${TOKEN}`,'Accept':'application/vnd.github+json','Content-Type':'application/json'},
+      body: JSON.stringify({
+        message:`registre: nou client ${nom} via formulari web`,
+        content: btoa(unescape(encodeURIComponent(JSON.stringify(clients,null,2)))),
+        sha: meta.sha
+      })
+    });
+    if(!putRes.ok){const err=await putRes.json();throw new Error(err.message||putRes.status);}
+
+    document.getElementById('form').reset();
+    showMsg('✅ Registre completat! Gràcies per registrar-te.','ok');
+  } catch(err){
+    showMsg(`Error: ${err.message}`,'err');
+  } finally {
+    btn.disabled=false; btn.textContent='Registrar-me';
+  }
+}
+</script>
+</body>
+</html>
