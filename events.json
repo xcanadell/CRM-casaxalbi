@@ -6,16 +6,16 @@
     "comensals": [
       {
         "nom": "Nuri Miro",
-        "preu_menjar": 180,
-        "preu_beguda": 0,
+        "preu_menjar": 175,
+        "preu_beguda": 21.5,
         "preu_altres": 0,
         "plats": [],
         "vins": [],
         "varios": [],
-        "notes": ""
+        "notes": "35 5"
       }
     ],
-    "total": 180
+    "total": 196.5
   },
   {
     "data": "2026-08-16",
