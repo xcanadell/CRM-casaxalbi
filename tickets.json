@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "PLAT PREU S.L.",
+    "tipus": "Culinarium",
+    "data": "18/08/2025",
+    "adreca": "Av. Gran Via, 50, 26007 LOGROÑO",
+    "nif": "B25370008",
+    "telefon": "941056252",
+    "productes": [
+      {
+        "descripcio": "ROLLO BOLSAS ENVASAR 2",
+        "quantitat": 1,
+        "preu_unitari": 8.95,
+        "total": 8.95,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 8.95,
+    "saved_at": "2026-08-19T11:32:46.297Z"
+  },
+  {
     "establiment": "Mercadillo",
     "tipus": "—",
     "data": "15/08/2026",
