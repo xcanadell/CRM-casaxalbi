@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "El Colmado de Ezcaray",
+    "tipus": "Factura Simplificada",
+    "data": "17/08/2026",
+    "adreca": "C/ Sagastia nº 5, Ezcaray - La Rioja",
+    "nif": "J26556725",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Queso Savel",
+        "quantitat": 1,
+        "preu_unitari": 9.36,
+        "total": 9.36,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Queso San Simon Da Cost",
+        "quantitat": 1,
+        "preu_unitari": 5.5,
+        "total": 5.5,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 14.86,
+    "saved_at": "2026-08-19T20:06:01.690Z"
+  },
+  {
     "establiment": "BM",
     "tipus": "Carniceria-Charcuteria / Pescaderia / Drogueria-Perfumeria",
     "data": "26/08/2026",
