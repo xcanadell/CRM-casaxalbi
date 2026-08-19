@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "Mercadillo",
+    "tipus": "—",
+    "data": "19/08/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Bacalla, olives,..",
+        "quantitat": 1,
+        "preu_unitari": 21.23,
+        "total": 0,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Xorissos",
+        "quantitat": 1,
+        "preu_unitari": 7,
+        "total": 0,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Verdura",
+        "quantitat": 1,
+        "preu_unitari": 4,
+        "total": 0,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-08-19T11:25:50.815Z"
+  },
+  {
     "establiment": "LUPA",
     "tipus": "Supermercado",
     "data": "16/08/2026",
