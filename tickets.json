@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "Vinos Bacus Logroño",
+    "tipus": "—",
+    "data": "18/08/2026",
+    "adreca": "Logroño",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Jarrarte Blanco Joven",
+        "quantitat": 2,
+        "preu_unitari": 11.95,
+        "total": 23.9,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Zortun Monge Ruiz",
+        "quantitat": 2,
+        "preu_unitari": 13.5,
+        "total": 27,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Kaori",
+        "quantitat": 2,
+        "preu_unitari": 11.5,
+        "total": 23,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 73.9,
+    "saved_at": "2026-08-19T11:17:17.965Z"
+  },
+  {
     "establiment": "Tenda campanya",
     "tipus": "—",
     "data": "18/08/2026",
