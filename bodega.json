@@ -2026,5 +2026,19 @@
     "data_compra": "2026-08-18",
     "data_venda": "",
     "updated_at": "2026-08-19T11:19:19.440Z"
+  },
+  {
+    "id": "vi_voqquin0",
+    "nom": "Kaori",
+    "any": "",
+    "bodega": "",
+    "tipus": "Vi blanc",
+    "do": "",
+    "varietat": "",
+    "cost": 11.5,
+    "pvp": 0,
+    "data_compra": "2026-08-18",
+    "data_venda": "",
+    "updated_at": "2026-08-19T11:19:19.640Z"
   }
 ]
