@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "DRUNI, S.A.",
+    "tipus": "Farmàcia",
+    "data": "18/08/2026",
+    "adreca": "Av. Gran Vía Juan Carlos I, 24, 26001 - LOGROÑO",
+    "nif": "A46556166",
+    "telefon": "6731929771",
+    "productes": [
+      {
+        "descripcio": "ARG CHAMPU ANTICASPA",
+        "quantitat": 1,
+        "preu_unitari": 7.99,
+        "total": 7.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ECO CURLY HAIR MASK",
+        "quantitat": 1,
+        "preu_unitari": 5.95,
+        "total": 5.95,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 13.94,
+    "saved_at": "2026-08-19T11:38:56.946Z"
+  },
+  {
     "establiment": "MAsip ",
     "tipus": "Bar/Restaurant",
     "data": "11/08/2026",
