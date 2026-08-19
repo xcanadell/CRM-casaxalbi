@@ -1,5 +1,52 @@
 [
   {
+    "establiment": "MAsip ",
+    "tipus": "Bar/Restaurant",
+    "data": "11/08/2026",
+    "adreca": "Plaza MASIP PEREZ, S.L., ARMANDO BUSCARTNI 1, LEZARA",
+    "nif": "B26545020",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "H.ESCALFADO",
+        "quantitat": 3,
+        "preu_unitari": 3.2,
+        "total": 9.6,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "PECHUGA / JAMON BESAMEL",
+        "quantitat": 1,
+        "preu_unitari": 3.2,
+        "total": 3.2,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "PECHUGA / JAMON BESAMEL",
+        "quantitat": 1,
+        "preu_unitari": 3.2,
+        "total": 3.2,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "ALEGRIA RELLENA",
+        "quantitat": 2,
+        "preu_unitari": 3.2,
+        "total": 6.4,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "V. CRIANZA/V. BLAN",
+        "quantitat": 3,
+        "preu_unitari": 2.5,
+        "total": 7.5,
+        "us": "Restauració"
+      }
+    ],
+    "total": 29.9,
+    "saved_at": "2026-08-19T11:38:30.738Z"
+  },
+  {
     "establiment": "LIDL SUPERMERCADOS S.A.U.",
     "tipus": "Supermercado",
     "data": "18/08/2026",
