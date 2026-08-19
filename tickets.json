@@ -1,5 +1,45 @@
 [
   {
+    "establiment": "BM",
+    "tipus": "Carniceria-Charcuteria / Pescaderia / Drogueria-Perfumeria",
+    "data": "26/08/2026",
+    "adreca": "C/SAGASTIA 28 B, 26280 EZCARRA",
+    "nif": "B26516799",
+    "telefon": "900555300",
+    "productes": [
+      {
+        "descripcio": "JAMON COCIDO LA SELVA EXTRA",
+        "quantitat": 0.15,
+        "preu_unitari": 20.99,
+        "total": 3.15,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PIZZA TARRADELLAS BARBACOA 1",
+        "quantitat": 1,
+        "preu_unitari": 3.25,
+        "total": 3.25,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "AGUA VICHY CATALAN BT 1L",
+        "quantitat": 1,
+        "preu_unitari": 1.59,
+        "total": 1.59,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "VAJILLAS FAIRY ULTRAPOWER 82",
+        "quantitat": 1,
+        "preu_unitari": 4.49,
+        "total": 4.49,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 12.48,
+    "saved_at": "2026-08-19T20:05:36.965Z"
+  },
+  {
     "establiment": "DRUNI, S.A.",
     "tipus": "Farmàcia",
     "data": "18/08/2026",
