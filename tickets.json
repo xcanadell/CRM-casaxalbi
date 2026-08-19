@@ -1,31 +1,5 @@
 [
   {
-    "establiment": "FRUTAS Y HORTALIZAS GAITD",
-    "tipus": "Fruita i hortalisses",
-    "data": "07/07/2026",
-    "adreca": "C ALFONSO PEÑA N 68, STO DOMINGO DE LA CALZADA",
-    "nif": "V000003-01",
-    "telefon": "626313483",
-    "productes": [
-      {
-        "descripcio": "Producte 1",
-        "quantitat": 1,
-        "preu_unitari": 4.45,
-        "total": 5.36,
-        "us": "Casa Xalbi"
-      },
-      {
-        "descripcio": "Producte 2",
-        "quantitat": 1,
-        "preu_unitari": 0.78,
-        "total": 6.35,
-        "us": "Casa Xalbi"
-      }
-    ],
-    "total": 4.74,
-    "saved_at": "2026-08-19T11:40:07.914Z"
-  },
-  {
     "establiment": "DRUNI, S.A.",
     "tipus": "Farmàcia",
     "data": "18/08/2026",
