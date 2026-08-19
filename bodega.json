@@ -1956,5 +1956,19 @@
     "data_compra": "",
     "data_venda": "",
     "updated_at": "2026-07-31T10:23:55.464Z"
+  },
+  {
+    "id": "vi_ta2540b2",
+    "nom": "Jarrete Blanco Joven",
+    "any": "",
+    "bodega": "",
+    "tipus": "Vi blanc",
+    "do": "",
+    "varietat": "",
+    "cost": 11.95,
+    "pvp": 0,
+    "data_compra": "2026-08-18",
+    "data_venda": "",
+    "updated_at": "2026-08-19T11:18:13.322Z"
   }
 ]
