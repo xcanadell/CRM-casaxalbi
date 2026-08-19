@@ -1,5 +1,129 @@
 [
   {
+    "establiment": "LIDL SUPERMERCADOS S.A.U.",
+    "tipus": "Supermercado",
+    "data": "18/08/2026",
+    "adreca": "C/ Clavijo, 67, 26008 Logroño",
+    "nif": "A60195278",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "MIX DE FRUTOS SECOS",
+        "quantitat": 1,
+        "preu_unitari": 4.99,
+        "total": 4.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CAMPESINOS",
+        "quantitat": 1,
+        "preu_unitari": 0.89,
+        "total": 0.89,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "REGAÑAS",
+        "quantitat": 1,
+        "preu_unitari": 0.69,
+        "total": 0.69,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PERLAS DE PERFUME",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ACEITE DE GIRASOL",
+        "quantitat": 1,
+        "preu_unitari": 1.84,
+        "total": 1.84,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "VINAGRE DE MANZANA",
+        "quantitat": 1,
+        "preu_unitari": 0.85,
+        "total": 0.85,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LECHE ENTERA",
+        "quantitat": 1,
+        "preu_unitari": 0.96,
+        "total": 0.96,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "NATA PARA COCINAR",
+        "quantitat": 1,
+        "preu_unitari": 1.52,
+        "total": 1.52,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "SOS ARROZ",
+        "quantitat": 1,
+        "preu_unitari": 1.88,
+        "total": 1.88,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BOLSAS CONGELACION",
+        "quantitat": 1,
+        "preu_unitari": 1.15,
+        "total": 1.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAPEL HIGIENICO",
+        "quantitat": 1,
+        "preu_unitari": 3.59,
+        "total": 3.59,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "MEGA ROLLO ABSORBEN.",
+        "quantitat": 1,
+        "preu_unitari": 2.79,
+        "total": 2.79,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PACK BEB. AVENA BAR",
+        "quantitat": 1,
+        "preu_unitari": 6.9,
+        "total": 6.9,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "QUITAMANCHAS ROPA",
+        "quantitat": 1,
+        "preu_unitari": 3.09,
+        "total": 3.09,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "MAHOU 0,0 TOSTADA",
+        "quantitat": 4,
+        "preu_unitari": 0.86,
+        "total": 3.44,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ESTRELLA GALICIA",
+        "quantitat": 3,
+        "preu_unitari": 4.12,
+        "total": 12.36,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 49.09,
+    "saved_at": "2026-08-19T11:37:28.569Z"
+  },
+  {
     "establiment": "ADEMANDA",
     "tipus": "pastelería artesana",
     "data": "14/08/2028",
