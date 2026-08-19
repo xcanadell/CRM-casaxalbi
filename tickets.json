@@ -1,5 +1,66 @@
 [
   {
+    "establiment": "LUPA",
+    "tipus": "Supermercado",
+    "data": "16/08/2026",
+    "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "BOLSA LUPA RECICLABLE GRANDE",
+        "quantitat": 1,
+        "preu_unitari": 0.15,
+        "total": 0.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ARROZ SOS KILO",
+        "quantitat": 1,
+        "preu_unitari": 1.87,
+        "total": 1.87,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LECHE ALTEZA ENTERA LITRO",
+        "quantitat": 1,
+        "preu_unitari": 0.96,
+        "total": 0.96,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOMATE ECOLOGICO BJA 500 GRS",
+        "quantitat": 1,
+        "preu_unitari": 2.65,
+        "total": 2.65,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAN BAGUETTE AKUA 250 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 1.45,
+        "total": 1.45,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAN BAGUETTE AKUA 250 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 1.45,
+        "total": 1.45,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MEJILLON MEDIANO MALLA 1 KG.",
+        "quantitat": 1,
+        "preu_unitari": 2.49,
+        "total": 2.49,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 11.02,
+    "saved_at": "2026-08-19T11:21:21.507Z"
+  },
+  {
     "establiment": "Huerta Negra",
     "tipus": "—",
     "data": "18/08/2026",
