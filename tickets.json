@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Tenda campanya",
+    "tipus": "—",
+    "data": "18/08/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "",
+        "quantitat": 1,
+        "preu_unitari": 2395,
+        "total": 2395,
+        "us": "Viatges"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-08-19T07:13:20.392Z"
+  },
+  {
     "establiment": "LUPA",
     "tipus": "Supermercado",
     "data": "13/08/2026",
