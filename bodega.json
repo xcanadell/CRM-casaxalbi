@@ -1998,5 +1998,19 @@
     "data_compra": "2026-08-18",
     "data_venda": "",
     "updated_at": "2026-08-19T11:18:50.364Z"
+  },
+  {
+    "id": "vi_fhhmkuvt",
+    "nom": "Zortun Monge Ruiz",
+    "any": "",
+    "bodega": "",
+    "tipus": "Vi blanc",
+    "do": "",
+    "varietat": "",
+    "cost": 13.5,
+    "pvp": 0,
+    "data_compra": "2026-08-18",
+    "data_venda": "",
+    "updated_at": "2026-08-19T11:18:50.547Z"
   }
 ]
