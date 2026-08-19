@@ -11,25 +11,25 @@
         "descripcio": "Bacalla, olives,..",
         "quantitat": 1,
         "preu_unitari": 21.23,
-        "total": 0,
+        "total": 21.23,
         "us": "Casa Xalbi"
       },
       {
         "descripcio": "Xorissos",
         "quantitat": 1,
         "preu_unitari": 7,
-        "total": 0,
+        "total": 7,
         "us": "Casa Xalbi"
       },
       {
         "descripcio": "Verdura",
         "quantitat": 1,
         "preu_unitari": 4,
-        "total": 0,
+        "total": 4,
         "us": "Casa Xalbi"
       }
     ],
-    "total": 0,
+    "total": 32.23,
     "saved_at": "2026-08-19T11:31:18.930Z"
   },
   {
