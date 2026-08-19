@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "ADEMANDA",
+    "tipus": "pastelería artesana",
+    "data": "14/08/2028",
+    "adreca": "C/Marisa Sanchez nº2 Local 10, 26280 - Ezcaray - La Rioja",
+    "nif": "1317223IQ",
+    "telefon": "941427554 - 6352083429",
+    "productes": [
+      {
+        "descripcio": "CROISSANT",
+        "quantitat": 0.19,
+        "preu_unitari": 18.5,
+        "total": 3.55,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BARRA",
+        "quantitat": 11,
+        "preu_unitari": 1.3,
+        "total": 14.3,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 17.85,
+    "saved_at": "2026-08-19T11:34:34.800Z"
+  },
+  {
     "establiment": "PLAT PREU S.L. Culinarium",
     "tipus": "Culinarium",
     "data": "18/08/2025",
