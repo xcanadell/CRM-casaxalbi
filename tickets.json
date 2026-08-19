@@ -1,5 +1,66 @@
 [
   {
+    "establiment": "Huerta Negra",
+    "tipus": "—",
+    "data": "18/08/2026",
+    "adreca": "Santurde",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Col Repollo (1 Unidad (1.5 kg aprox))",
+        "quantitat": 2,
+        "preu_unitari": 2.3,
+        "total": 4.6,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Hinojo (1 unidad)",
+        "quantitat": 1,
+        "preu_unitari": 1.6,
+        "total": 1.6,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Patata cocer (1kg)",
+        "quantitat": 2,
+        "preu_unitari": 0.95,
+        "total": 1.9,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Piparras (200g)",
+        "quantitat": 3,
+        "preu_unitari": 2,
+        "total": 6,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Puerro (1 manojo)",
+        "quantitat": 3,
+        "preu_unitari": 2.5,
+        "total": 7.5,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Tomate (1kg)",
+        "quantitat": 2,
+        "preu_unitari": 4,
+        "total": 8,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Tomate cherry (300 g)",
+        "quantitat": 2,
+        "preu_unitari": 2,
+        "total": 4,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 33.6,
+    "saved_at": "2026-08-19T11:20:22.281Z"
+  },
+  {
     "establiment": "Vinos Bacus Logroño",
     "tipus": "—",
     "data": "18/08/2026",
