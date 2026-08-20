@@ -28,7 +28,9 @@
         "preu_beguda": 9,
         "preu_altres": 0,
         "plats": [],
-        "vins": [],
+        "vins": [
+          "vi_448aa7f4"
+        ],
         "varios": [],
         "notes": ""
       }
