@@ -2040,5 +2040,19 @@
     "data_compra": "2026-08-18",
     "data_venda": "",
     "updated_at": "2026-08-19T11:19:19.640Z"
+  },
+  {
+    "id": "vi_aenuqmpu",
+    "nom": "Blanc rioja regalat padel",
+    "any": "",
+    "bodega": "",
+    "tipus": "Vi negre",
+    "do": "",
+    "varietat": "",
+    "cost": 0.1,
+    "pvp": 20,
+    "data_compra": "2026-08-03",
+    "data_venda": "",
+    "updated_at": "2026-08-20T10:23:47.337Z"
   }
 ]
