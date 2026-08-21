@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "ADEMANDA",
+    "tipus": "pastelería artesana",
+    "data": "20/08/2028",
+    "adreca": "C/Marisa Sanchez nº2 Local 10, 26280 - Ezcaray - La Rioja",
+    "nif": "",
+    "telefon": "941 427554 - 635 2883",
+    "productes": [
+      {
+        "descripcio": "CROISSANT",
+        "quantitat": 0.21,
+        "preu_unitari": 18.5,
+        "total": 3.81,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PAN DE MAIZ",
+        "quantitat": 1,
+        "preu_unitari": 2.4,
+        "total": 2.4,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAN DE CENTENО",
+        "quantitat": 1,
+        "preu_unitari": 2.2,
+        "total": 2.2,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 8.41,
+    "saved_at": "2026-08-21T08:59:45.458Z"
+  },
+  {
     "establiment": "El Colmado de Ezcaray",
     "tipus": "Factura Simplificada",
     "data": "17/08/2026",
