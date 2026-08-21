@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Ezcaray fest ",
+    "tipus": "—",
+    "data": "21/08/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Bono ticket swap",
+        "quantitat": 1,
+        "preu_unitari": 58,
+        "total": 116,
+        "us": "Viatges"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-08-21T09:04:11.333Z"
+  },
+  {
     "establiment": "IUP - Tus Vecinos da Confianza",
     "tipus": "Supermercat",
     "data": "20/06/2026",
