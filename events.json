@@ -1,6 +1,24 @@
 [
   {
     "data": "2026-08-20",
+    "lloc": "Cata de vins",
+    "notes": "Alba, Maria y exjefe ",
+    "comensals": [
+      {
+        "nom": "Alba Veina",
+        "preu_menjar": 0,
+        "preu_beguda": 75,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "varios": [],
+        "notes": "Cata de 4 vins"
+      }
+    ],
+    "total": 75
+  },
+  {
+    "data": "2026-08-20",
     "lloc": "Sopar Casa Xalbi",
     "notes": "Sopar cuadrilla Aitor, Maria,..",
     "comensals": [
