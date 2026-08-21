@@ -1,5 +1,23 @@
 [
   {
+    "data": "2026-08-21",
+    "lloc": "Menú Arròs",
+    "notes": "9 veins",
+    "comensals": [
+      {
+        "nom": "Alba Veina",
+        "preu_menjar": 270,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "varios": [],
+        "notes": ""
+      }
+    ],
+    "total": 270
+  },
+  {
     "data": "2026-08-20",
     "lloc": "Cata de vins",
     "notes": "Alba, Maria y exjefe ",
