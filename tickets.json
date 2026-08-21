@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "QUESERÍA VALLE DEL CILORIA",
+    "tipus": "Quesería",
+    "data": "20/08/2026",
+    "adreca": "CTRA. EZCARAY - VALGAÑON Nº 71, 26288 ZORRAQUÍN, LA RIOJA",
+    "nif": "E26196329",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "YOGUR NATURAL 450GR",
+        "quantitat": 2,
+        "preu_unitari": 2.3,
+        "total": 4.6,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "QUESO FRESCO 300GR",
+        "quantitat": 1,
+        "preu_unitari": 4,
+        "total": 4,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 8.6,
+    "saved_at": "2026-08-21T09:01:40.290Z"
+  },
+  {
     "establiment": "ADEMANDA",
     "tipus": "pastelería artesana",
     "data": "20/08/2026",
