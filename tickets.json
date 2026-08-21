@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "IUP - Tus Vecinos da Confianza",
+    "tipus": "Supermercat",
+    "data": "20/06/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "C.I.F-H3050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "HIGO NEGRO",
+        "quantitat": 1,
+        "preu_unitari": 3.08,
+        "total": 3.08,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 3.08,
+    "saved_at": "2026-08-21T09:02:54.196Z"
+  },
+  {
     "establiment": "QUESERÍA VALLE DEL CILORIA",
     "tipus": "Quesería",
     "data": "20/08/2026",
