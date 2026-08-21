@@ -49,6 +49,36 @@
         "vins": [],
         "varios": [],
         "notes": "6 menus x 60 + 10 propina (figues pernil + esqueixada + porros + stick +bao carrillera + yogurt + maridatge)"
+      },
+      {
+        "nom": "Aitor Amic MAria",
+        "preu_menjar": 0,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "varios": [],
+        "notes": ""
+      },
+      {
+        "nom": "Lara (Maria Aitor) 941 periodista",
+        "preu_menjar": 0,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "varios": [],
+        "notes": ""
+      },
+      {
+        "nom": "Maria Inmobiliaria",
+        "preu_menjar": 0,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "varios": [],
+        "notes": ""
       }
     ],
     "total": 430
