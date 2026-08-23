@@ -1,5 +1,23 @@
 [
   {
+    "data": "2026-08-22",
+    "lloc": "Cosmètica Natural",
+    "notes": "Market festes zaldierna",
+    "comensals": [
+      {
+        "nom": "Jornades Culturals zaldierna",
+        "preu_menjar": 20,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "varios": [],
+        "notes": ""
+      }
+    ],
+    "total": 20
+  },
+  {
     "data": "2026-08-23",
     "lloc": "Menú Arròs",
     "notes": "Juan & Conpany + 4 random",
