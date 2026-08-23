@@ -1,5 +1,23 @@
 [
   {
+    "data": "2026-08-23",
+    "lloc": "Menú Arròs",
+    "notes": "Juan & Conpany + 4 random",
+    "comensals": [
+      {
+        "nom": "Juan",
+        "preu_menjar": 350,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "varios": [],
+        "notes": "115 + 164 + 70"
+      }
+    ],
+    "total": 350
+  },
+  {
     "data": "2026-08-21",
     "lloc": "Menú Arròs",
     "notes": "7 veins",
