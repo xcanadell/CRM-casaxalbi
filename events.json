@@ -6,7 +6,7 @@
     "comensals": [
       {
         "nom": "Jornades Culturals zaldierna",
-        "preu_menjar": 20,
+        "preu_menjar": 35,
         "preu_beguda": 0,
         "preu_altres": 0,
         "plats": [],
@@ -15,7 +15,7 @@
         "notes": ""
       }
     ],
-    "total": 20
+    "total": 35
   },
   {
     "data": "2026-08-23",
