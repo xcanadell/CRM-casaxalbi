@@ -638,11 +638,12 @@
         "quantitat": 1,
         "preu_unitari": 2395,
         "total": 2395,
-        "us": "Viatges"
+        "us": "Altres"
       }
     ],
     "total": 2395,
-    "saved_at": "2026-08-19T07:13:20.392Z"
+    "saved_at": "2026-08-19T07:13:20.392Z",
+    "ambit": "Casa Xalbi"
   },
   {
     "establiment": "LUPA",
