@@ -2473,14 +2473,21 @@ function renderDashboard(){
     const parts=t.data.split('/');
     if(parts.length<3)return;
     const mes=`${parts[2]}-${parts[1].padStart(2,'0')}`;
-    if(!mesosMap[mes])mesosMap[mes]={ing:0,cost:0,compres:0};
+    if(!mesosMap[mes])mesosMap[mes]={ing:0,cost:0,compres:0,despeses:0};
     mesosMap[mes].compres+=(t.total||0);
+  });
+  // Afegir despeses fixes per mes
+  despeses.forEach(d=>{
+    const mes=d.mes;
+    if(!mes)return;
+    if(!mesosMap[mes])mesosMap[mes]={ing:0,cost:0,compres:0,despeses:0};
+    mesosMap[mes].despeses=(mesosMap[mes].despeses||0)+(parseFloat(d.import)||0);
   });
   const mesos=Object.keys(mesosMap).sort();
   const labels=mesos.map(m=>{const[y,mo]=m.split('-');return new Date(y,mo-1).toLocaleDateString('ca-ES',{month:'short',year:'numeric'});});
   const dataIng=mesos.map(m=>+mesosMap[m].ing.toFixed(2));
-  const dataCost=mesos.map(m=>+mesosMap[m].cost.toFixed(2));
   const dataCompres=mesos.map(m=>+(mesosMap[m].compres||0).toFixed(2));
+  const dataDespeses=mesos.map(m=>+(mesosMap[m].despeses||0).toFixed(2));
   const ctx=document.getElementById('dashChart');
   if(ctx){
     if(window._dashChart) window._dashChart.destroy();
@@ -2490,14 +2497,14 @@ function renderDashboard(){
         labels,
         datasets:[
           {label:'Ingressos events',data:dataIng,backgroundColor:'rgba(46,125,50,0.75)',borderColor:'#2e7d32',borderWidth:1.5,borderRadius:6},
-          {label:'Costos events',data:dataCost,backgroundColor:'rgba(198,40,40,0.55)',borderColor:'#c62828',borderWidth:1.5,borderRadius:6},
-          {label:'Despeses compres',data:dataCompres,backgroundColor:'rgba(66,133,244,0.6)',borderColor:'#4285f4',borderWidth:1.5,borderRadius:6}
+          {label:'Compres',data:dataCompres,backgroundColor:'rgba(66,133,244,0.65)',borderColor:'#4285f4',borderWidth:1.5,borderRadius:0,stack:'despeses'},
+          {label:'Despeses fixes',data:dataDespeses,backgroundColor:'rgba(255,152,0,0.65)',borderColor:'#f57c00',borderWidth:1.5,borderRadius:6,stack:'despeses'}
         ]
       },
       options:{
         responsive:true,
         plugins:{legend:{position:'top'},tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.parsed.y.toFixed(2)+' €'}}},
-        scales:{y:{beginAtZero:true,ticks:{callback:v=>v+' €'},grid:{color:'#f0f0f0'}},x:{grid:{display:false}}}
+        scales:{y:{beginAtZero:true,ticks:{callback:v=>v+' €'},grid:{color:'#f0f0f0'}},x:{stacked:true,grid:{display:false}}}
       }
     });
   }
