@@ -268,6 +268,7 @@ table.products td input.center{text-align:center} table.products td input.right{
       </div>
     </div>
     <button class="tab" id="nav-clients" onclick="showTab('clients')">👥 CRM</button>
+    <button class="tab" id="nav-despeses" onclick="showTab('despeses')">🏠 Despeses</button>
     <button class="tab" id="nav-history" onclick="showTab('history')">🛒 Compres</button>
   </div>
 
@@ -321,6 +322,72 @@ table.products td input.center{text-align:center} table.products td input.right{
     <div class="dash-section">
       <h3>Últims esdeveniments</h3>
       <div id="dash-events-list"></div>
+    </div>
+  </div>
+
+  <!-- Panel Despeses fixes -->
+  <div id="panel-despeses" class="panel">
+    <div class="plats-header-row">
+      <h2>🏠 Despeses fixes</h2>
+      <button class="btn btn-primary" onclick="openDespesaModal()">+ Nova despesa</button>
+    </div>
+    <div id="despeses-resum" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px"></div>
+    <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid #e0e0e0;font-size:13px">
+      <thead><tr style="background:#fafafa">
+        <th style="text-align:left;padding:10px 14px;color:#888;font-weight:500;font-size:11px;border-bottom:2px solid #eee">Concepte</th>
+        <th style="text-align:left;padding:10px 14px;color:#888;font-weight:500;font-size:11px;border-bottom:2px solid #eee">Categoria</th>
+        <th style="text-align:center;padding:10px 14px;color:#888;font-weight:500;font-size:11px;border-bottom:2px solid #eee">Mes</th>
+        <th style="text-align:right;padding:10px 14px;color:#888;font-weight:500;font-size:11px;border-bottom:2px solid #eee">Import</th>
+        <th style="text-align:left;padding:10px 14px;color:#888;font-weight:500;font-size:11px;border-bottom:2px solid #eee">Notes</th>
+        <th style="width:60px;border-bottom:2px solid #eee"></th>
+      </tr></thead>
+      <tbody id="despeses-tbody"></tbody>
+    </table>
+  </div>
+
+  <!-- Modal Despesa -->
+  <div class="modal-overlay" id="despesaModal" onclick="if(event.target===this)closeDespesaModal()">
+    <div class="modal-box" style="max-width:480px">
+      <h2 id="despesaModalTitle">🏠 Nova despesa</h2>
+      <div class="modal-field">
+        <label>Concepte</label>
+        <input id="des-concepte" placeholder="Ex: Hipoteca, Llum, Aigua...">
+      </div>
+      <div class="modal-grid-2" style="margin-top:10px">
+        <div class="modal-field">
+          <label>Categoria</label>
+          <select id="des-categoria">
+            <option value="Habitatge">🏠 Habitatge</option>
+            <option value="Subministraments">💡 Subministraments</option>
+            <option value="Assegurances">🛡️ Assegurances</option>
+            <option value="Transport">🚗 Transport</option>
+            <option value="Subscripcions">📱 Subscripcions</option>
+            <option value="Altres">📌 Altres</option>
+          </select>
+        </div>
+        <div class="modal-field">
+          <label>Import mensual (€)</label>
+          <input type="number" id="des-import" min="0" step="0.01" placeholder="0.00">
+        </div>
+      </div>
+      <div class="modal-grid-2" style="margin-top:10px">
+        <div class="modal-field">
+          <label>Data inici</label>
+          <input type="month" id="des-inici">
+        </div>
+        <div class="modal-field">
+          <label>Data fi (buit = actiu)</label>
+          <input type="month" id="des-fi">
+        </div>
+      </div>
+      <div class="modal-field" style="margin-top:10px">
+        <label>Notes</label>
+        <input id="des-notes" placeholder="Observacions...">
+      </div>
+      <div class="modal-footer" style="margin-top:14px">
+        <button class="btn btn-danger btn-sm" onclick="closeDespesaModal()">Cancel·lar</button>
+        <button class="btn btn-primary" onclick="saveDespesa()">💾 Desar</button>
+      </div>
     </div>
   </div>
 
@@ -600,6 +667,12 @@ table.products td input.center{text-align:center} table.products td input.right{
       <div class="info-field" style="grid-column:1/-1"><label>Establiment</label><input class="editable shop-name-input" id="edit-nom" placeholder="Nom"></div>
       <div class="info-field"><label>Data</label><input class="editable" id="edit-data" placeholder="dd/mm/aaaa"></div>
       <div class="info-field"><label>Tipus</label><input class="editable" id="edit-tipus" placeholder="Supermercat..."></div>
+      <div class="info-field"><label>Àmbit</label><select class="editable" id="edit-ambit">
+        <option value="Casa Xalbi">🏡 Casa Xalbi</option>
+        <option value="Gastro XP">👨‍🍳 Gastro XP</option>
+        <option value="Cosmètica">🌿 Cosmètica</option>
+        <option value="Personal">👤 Personal</option>
+      </select></div>
       <div class="info-field" style="grid-column:1/-1"><label>Adreça</label><input class="editable" id="edit-adreca" placeholder="—"></div>
     </div>
     <div class="section-label">Productes</div>
@@ -908,6 +981,7 @@ async function init(){
   await initClients();
   await initEvents();
   await initVarios();
+  await initDespeses();
   renderHistory();showTab('dashboard');
 }
 
@@ -940,7 +1014,7 @@ document.addEventListener('click',()=>closeProductesMenu());
 
 function showTab(tab){
   const productesTabs=['bodega','varios','plats'];
-  const navMap={dashboard:'nav-dashboard',events:'nav-events',clients:'nav-clients',history:'nav-history'};
+  const navMap={dashboard:'nav-dashboard',events:'nav-events',clients:'nav-clients',despeses:'nav-despeses',history:'nav-history'};
   // Actualitzar estil nav
   Object.entries(navMap).forEach(([t,id])=>{
     const el=document.getElementById(id);
@@ -949,7 +1023,7 @@ function showTab(tab){
   const prodBtn=document.getElementById('nav-productes-btn');
   if(prodBtn) prodBtn.classList.toggle('active', productesTabs.includes(tab));
   // Mostrar panels
-  ['dashboard','events','bodega','varios','plats','clients','history'].forEach(p=>
+  ['dashboard','events','bodega','varios','plats','clients','despeses','history'].forEach(p=>
     document.getElementById('panel-'+p).classList.toggle('active',tab===p));
   if(tab==='dashboard')renderDashboard();
   if(tab==='history')renderHistory();
@@ -957,6 +1031,7 @@ function showTab(tab){
   if(tab==='bodega')renderBodega();
   if(tab==='varios')renderVarios();
   if(tab==='clients')renderClients();
+  if(tab==='despeses')renderDespeses();
   if(tab==='events')renderEventsList();
 }
 function toggleNouTicket(){
@@ -1150,6 +1225,7 @@ function openEditModal(ri){
   document.getElementById('edit-nom').value=t.establiment||'';
   document.getElementById('edit-data').value=t.data||'';
   document.getElementById('edit-tipus').value=t.tipus||'';
+  document.getElementById('edit-ambit').value=t.ambit||'Casa Xalbi';
   document.getElementById('edit-adreca').value=t.adreca||'';
   const body=document.getElementById('edit-productsBody');
   body.innerHTML='';
@@ -1192,6 +1268,7 @@ async function saveEditTicket(){
     establiment:document.getElementById('edit-nom').value,
     data:document.getElementById('edit-data').value,
     tipus:document.getElementById('edit-tipus').value,
+    ambit:document.getElementById('edit-ambit').value,
     adreca:document.getElementById('edit-adreca').value,
     productes:prods,
     total:parseFloat(total.toFixed(2))
@@ -2193,6 +2270,94 @@ function confirmViPicker(){
 }
 
 // ── Dashboard ─────────────────────────────────────────────────────
+// ── Despeses fixes ────────────────────────────────────────────────
+let despeses=[];
+let despesaEditIdx=null;
+const DES_CAT_ICON={'Habitatge':'🏠','Subministraments':'💡','Assegurances':'🛡️','Transport':'🚗','Subscripcions':'📱','Altres':'📌'};
+
+async function initDespeses(){
+  try{const r=await fetch(API+'/despeses');if(!r.ok)throw new Error();despeses=await r.json();}catch(e){despeses=[];}
+}
+
+async function persistDespeses(){
+  await fetch(API+'/despeses',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(despeses)});
+}
+
+function openDespesaModal(idx){
+  despesaEditIdx=(idx!==undefined)?idx:null;
+  document.getElementById('despesaModalTitle').textContent=despesaEditIdx!==null?'✏️ Editar despesa':'🏠 Nova despesa';
+  const d=despesaEditIdx!==null?despeses[despesaEditIdx]:{concepte:'',categoria:'Habitatge',import:'',inici:'',fi:'',notes:''};
+  document.getElementById('des-concepte').value=d.concepte||'';
+  document.getElementById('des-categoria').value=d.categoria||'Habitatge';
+  document.getElementById('des-import').value=d.import||'';
+  document.getElementById('des-inici').value=d.inici||'';
+  document.getElementById('des-fi').value=d.fi||'';
+  document.getElementById('des-notes').value=d.notes||'';
+  document.getElementById('despesaModal').classList.add('show');
+}
+
+function closeDespesaModal(){
+  document.getElementById('despesaModal').classList.remove('show');
+  despesaEditIdx=null;
+}
+
+async function saveDespesa(){
+  const concepte=document.getElementById('des-concepte').value.trim();
+  if(!concepte){alert('Afegeix el concepte.');return;}
+  const d={
+    concepte,
+    categoria:document.getElementById('des-categoria').value,
+    import:parseFloat(document.getElementById('des-import').value)||0,
+    inici:document.getElementById('des-inici').value,
+    fi:document.getElementById('des-fi').value,
+    notes:document.getElementById('des-notes').value.trim()
+  };
+  if(despesaEditIdx!==null){despeses[despesaEditIdx]=d;}else{despeses.push(d);}
+  await persistDespeses();
+  closeDespesaModal();
+  renderDespeses();
+}
+
+async function deleteDespesa(idx){
+  if(!confirm('Eliminar aquesta despesa?'))return;
+  despeses.splice(idx,1);
+  await persistDespeses();
+  renderDespeses();
+}
+
+function renderDespeses(){
+  // Resum per categoria
+  const catTotals={};
+  despeses.forEach(d=>{
+    catTotals[d.categoria]=(catTotals[d.categoria]||0)+(parseFloat(d.import)||0);
+  });
+  const totalMensual=Object.values(catTotals).reduce((s,v)=>s+v,0);
+  document.getElementById('despeses-resum').innerHTML=
+    `<div class="stat"><div class="stat-val">${totalMensual.toFixed(0)} €</div><div class="stat-label">Total mensual</div></div>`+
+    `<div class="stat"><div class="stat-val">${(totalMensual*12).toFixed(0)} €</div><div class="stat-label">Total anual</div></div>`+
+    Object.entries(catTotals).map(([cat,val])=>
+      `<div class="stat"><div class="stat-val" style="font-size:15px">${DES_CAT_ICON[cat]||'📌'} ${val.toFixed(0)} €</div><div class="stat-label">${cat}</div></div>`
+    ).join('');
+
+  // Taula
+  const tbody=document.getElementById('despeses-tbody');
+  if(!despeses.length){
+    tbody.innerHTML=`<tr><td colspan="6" style="text-align:center;padding:30px;color:#aaa">Cap despesa registrada</td></tr>`;
+    return;
+  }
+  tbody.innerHTML=despeses.map((d,i)=>`<tr>
+    <td style="padding:10px 14px;border-bottom:1px solid #f5f5f5;font-weight:500">${esc(d.concepte)}</td>
+    <td style="padding:10px 14px;border-bottom:1px solid #f5f5f5">${DES_CAT_ICON[d.categoria]||'📌'} ${esc(d.categoria)}</td>
+    <td style="text-align:center;padding:10px 14px;border-bottom:1px solid #f5f5f5;font-size:12px;color:#888">${d.inici||'—'}${d.fi?' → '+d.fi:' → avui'}</td>
+    <td style="text-align:right;padding:10px 14px;border-bottom:1px solid #f5f5f5;font-weight:700">${(parseFloat(d.import)||0).toFixed(2)} €</td>
+    <td style="padding:10px 14px;border-bottom:1px solid #f5f5f5;font-size:12px;color:#888">${esc(d.notes||'—')}</td>
+    <td style="text-align:center;padding:6px 14px;border-bottom:1px solid #f5f5f5;white-space:nowrap">
+      <button class="btn btn-sm btn-edit" style="padding:3px 8px;margin-right:4px" onclick="openDespesaModal(${i})">✏️</button>
+      <button class="btn btn-sm btn-danger" style="padding:3px 8px" onclick="deleteDespesa(${i})">🗑</button>
+    </td>
+  </tr>`).join('');
+}
+
 function renderDashboard(){
   // Mètriques simples
   document.getElementById('dash-n-events').textContent=events.length;
