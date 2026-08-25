@@ -19,9 +19,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .api-setup p { font-size: 13px; color: #5d4037; margin-bottom: 6px; }
 .api-setup input { width: 100%; padding: 8px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 13px; font-family: monospace; }
 .api-setup small { font-size: 11px; color: #888; margin-top: 4px; display: block; }
-.tabs { display: flex; margin-bottom: 20px; border-bottom: 1px solid #e0e0e0; }
+.tabs { display: flex; margin-bottom: 20px; border-bottom: 1px solid #e0e0e0; align-items: flex-end; }
 .tab { padding: 10px 20px; font-size: 14px; cursor: pointer; border: none; background: none; color: #666; border-bottom: 2px solid transparent; font-family: inherit; }
 .tab.active { color: #1a1a1a; font-weight: 600; border-bottom-color: #1a1a1a; }
+.tab-dropdown { position: relative; }
+.tab-dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,.1); z-index: 100; min-width: 140px; padding: 6px 0; }
+.tab-dropdown-menu button { display: block; width: 100%; padding: 10px 18px; background: none; border: none; font-size: 14px; font-family: inherit; color: #1a1a1a; text-align: left; cursor: pointer; }
+.tab-dropdown-menu button:hover { background: #f5f5f5; }
+.tab-dropdown.open .tab-dropdown-menu { display: block; }
+.tab-dropdown .tab.active { color: #1a1a1a; font-weight: 600; border-bottom-color: #1a1a1a; }
 .panel { display: none; } .panel.active { display: block; }
 .upload-zone { border: 2px dashed #ccc; border-radius: 12px; padding: 36px 24px; text-align: center; cursor: pointer; background: #fff; }
 .upload-zone:hover { border-color: #1a1a1a; background: #fafafa; }
@@ -251,13 +257,18 @@ table.products td input.center{text-align:center} table.products td input.right{
     <p>Registre personal — Xavi</p>
   </div>
   <div class="tabs">
-    <button class="tab active" onclick="showTab('dashboard')">📊 Dashboard</button>
-    <button class="tab" onclick="showTab('events')">📅 Esdeveniments</button>
-    <button class="tab" onclick="showTab('bodega')">🍷 Bodega</button>
-    <button class="tab" onclick="showTab('varios')">🧂 Altres</button>
-    <button class="tab" onclick="showTab('plats')">🍽️ Plats</button>
-    <button class="tab" onclick="showTab('clients')">👥 Clients</button>
-    <button class="tab" onclick="showTab('history')">🛒 Compres</button>
+    <button class="tab active" id="nav-dashboard" onclick="showTab('dashboard')">📊 Dashboard</button>
+    <button class="tab" id="nav-events" onclick="showTab('events')">📅 Events</button>
+    <div class="tab-dropdown" id="nav-productes">
+      <button class="tab" id="nav-productes-btn" onclick="toggleProductesMenu(event)">📦 Productes ▾</button>
+      <div class="tab-dropdown-menu" id="productes-menu">
+        <button onclick="showTab('bodega');closeProductesMenu()">🍷 Bodega</button>
+        <button onclick="showTab('varios');closeProductesMenu()">🧂 Altres</button>
+        <button onclick="showTab('plats');closeProductesMenu()">🍽️ Plats</button>
+      </div>
+    </div>
+    <button class="tab" id="nav-clients" onclick="showTab('clients')">👥 CRM</button>
+    <button class="tab" id="nav-history" onclick="showTab('history')">🛒 Compres</button>
   </div>
 
   <!-- Panel Dashboard -->
@@ -918,9 +929,26 @@ window.addEventListener('load',()=>{document.getElementById('apiKeyInput').value
 function saveApiKey(){localStorage.setItem('xalbi_apikey',document.getElementById('apiKeyInput').value.trim());}
 function getApiKey(){return document.getElementById('apiKeyInput').value.trim();}
 let imgB64=null,imgMime='image/jpeg';
+function toggleProductesMenu(e){
+  e.stopPropagation();
+  document.getElementById('nav-productes').classList.toggle('open');
+}
+function closeProductesMenu(){
+  document.getElementById('nav-productes').classList.remove('open');
+}
+document.addEventListener('click',()=>closeProductesMenu());
+
 function showTab(tab){
-  const tabs=['dashboard','events','bodega','varios','plats','clients','history'];
-  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',tabs[i]===tab));
+  const productesTabs=['bodega','varios','plats'];
+  const navMap={dashboard:'nav-dashboard',events:'nav-events',clients:'nav-clients',history:'nav-history'};
+  // Actualitzar estil nav
+  Object.entries(navMap).forEach(([t,id])=>{
+    const el=document.getElementById(id);
+    if(el) el.classList.toggle('active',tab===t);
+  });
+  const prodBtn=document.getElementById('nav-productes-btn');
+  if(prodBtn) prodBtn.classList.toggle('active', productesTabs.includes(tab));
+  // Mostrar panels
   ['dashboard','events','bodega','varios','plats','clients','history'].forEach(p=>
     document.getElementById('panel-'+p).classList.toggle('active',tab===p));
   if(tab==='dashboard')renderDashboard();
