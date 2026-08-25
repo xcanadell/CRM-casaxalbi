@@ -442,6 +442,14 @@ table.products td input.center{text-align:center} table.products td input.right{
           <label>Notes generals</label>
           <input type="text" id="ev-notes" placeholder="Observacions de l'event...">
         </div>
+        <div>
+          <label>⏱ Hores Alba</label>
+          <input type="number" id="ev-hores-alba" min="0" step="0.5" placeholder="0">
+        </div>
+        <div>
+          <label>⏱ Hores Xavi</label>
+          <input type="number" id="ev-hores-xavi" min="0" step="0.5" placeholder="0">
+        </div>
       </div>
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
         <div class="section-label" style="margin:0">Comensals</div>
@@ -1825,6 +1833,8 @@ function openEditorView(){
   document.getElementById('ev-data').value=currentEvent.data||'';
   document.getElementById('ev-lloc').value=currentEvent.lloc||'Casa Xalbi';
   document.getElementById('ev-notes').value=currentEvent.notes||'';
+  document.getElementById('ev-hores-alba').value=currentEvent.hores_alba||'';
+  document.getElementById('ev-hores-xavi').value=currentEvent.hores_xavi||'';
   renderComensals();
   updateBilling();
 }
@@ -1839,6 +1849,10 @@ async function saveEvent(){
   currentEvent.data=document.getElementById('ev-data').value;
   currentEvent.lloc=document.getElementById('ev-lloc').value;
   currentEvent.notes=document.getElementById('ev-notes').value;
+  const ha=parseFloat(document.getElementById('ev-hores-alba').value)||0;
+  const hx=parseFloat(document.getElementById('ev-hores-xavi').value)||0;
+  if(ha) currentEvent.hores_alba=ha; else delete currentEvent.hores_alba;
+  if(hx) currentEvent.hores_xavi=hx; else delete currentEvent.hores_xavi;
   // recalc total
   currentEvent.total=(currentEvent.comensals||[]).reduce((s,c)=>
     s+(parseFloat(c.preu_menjar)||0)+(parseFloat(c.preu_beguda)||0)+(parseFloat(c.preu_altres)||0),0);
