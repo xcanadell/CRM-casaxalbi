@@ -10,7 +10,7 @@
     "mes": "2026-08",
     "concepte": "Traster (lloguer)",
     "categoria": "Habitatge",
-    "import": 60.0,
+    "import": 60,
     "notes": "Pagament dia 05 via Bizum"
   },
   {
@@ -31,7 +31,7 @@
     "mes": "2026-07",
     "concepte": "Vodafone",
     "categoria": "Subscripcions",
-    "import": 36.0,
+    "import": 36,
     "notes": "Pagament dia 14"
   },
   {
@@ -66,7 +66,7 @@
     "mes": "2026-07",
     "concepte": "Traster (lloguer)",
     "categoria": "Habitatge",
-    "import": 60.0,
+    "import": 60,
     "notes": "Pagament dia 03 via Bizum"
   },
   {
@@ -94,14 +94,14 @@
     "mes": "2026-06",
     "concepte": "Vodafone",
     "categoria": "Subscripcions",
-    "import": 34.0,
+    "import": 34,
     "notes": "Pagament dia 12"
   },
   {
     "mes": "2026-06",
     "concepte": "Traster (lloguer)",
     "categoria": "Habitatge",
-    "import": 60.0,
+    "import": 60,
     "notes": "Pagament dia 02 via Bizum"
   },
   {
@@ -129,14 +129,14 @@
     "mes": "2026-05",
     "concepte": "Vodafone",
     "categoria": "Subscripcions",
-    "import": 34.0,
+    "import": 34,
     "notes": "Pagament dia 13"
   },
   {
     "mes": "2026-05",
     "concepte": "Traster (lloguer)",
     "categoria": "Habitatge",
-    "import": 60.0,
+    "import": 60,
     "notes": "Pagament dia 04 via Bizum"
   },
   {
@@ -171,7 +171,7 @@
     "mes": "2026-04",
     "concepte": "Traster (lloguer)",
     "categoria": "Habitatge",
-    "import": 60.0,
+    "import": 60,
     "notes": "Pagament dia 02 via Bizum"
   },
   {
@@ -241,7 +241,7 @@
     "mes": "2026-03",
     "concepte": "Traster (lloguer)",
     "categoria": "Habitatge",
-    "import": 60.0,
+    "import": 60,
     "notes": "Pagament dia 02 via Bizum"
   },
   {
@@ -269,7 +269,7 @@
     "mes": "2026-02",
     "concepte": "Vodafone",
     "categoria": "Subscripcions",
-    "import": 34.0,
+    "import": 34,
     "notes": "Pagament dia 13"
   },
   {
@@ -313,5 +313,12 @@
     "categoria": "Subscripcions",
     "import": 16.99,
     "notes": "Pagament dia 11"
+  },
+  {
+    "mes": "2026-01",
+    "concepte": "Traster (lloguer)",
+    "categoria": "Habitatge",
+    "import": 60,
+    "notes": "pagat dia 1"
   }
 ]
