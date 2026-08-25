@@ -325,21 +325,42 @@ table.products td input.center{text-align:center} table.products td input.right{
     </div>
   </div>
 
-  <!-- Panel Despeses fixes -->
+  <!-- Panel Despeses -->
   <div id="panel-despeses" class="panel">
     <div class="plats-header-row">
-      <h2>🏠 Despeses fixes</h2>
+      <h2>🏠 Despeses</h2>
       <button class="btn btn-primary" onclick="openDespesaModal()">+ Nova despesa</button>
     </div>
-    <div id="despeses-resum" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px"></div>
+    <!-- Stats -->
+    <div id="despeses-stats" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px"></div>
+    <!-- Gràfic -->
+    <div style="background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:16px;margin-bottom:16px">
+      <canvas id="despeses-chart" height="90"></canvas>
+    </div>
+    <!-- Filtres -->
+    <div style="display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap">
+      <select id="des-filtre-cat" onchange="renderDespeses()" style="padding:8px 12px;border:1px solid #ddd;border-radius:8px;font-size:13px;font-family:inherit;background:#fff">
+        <option value="">Totes les categories</option>
+        <option value="Habitatge">🏠 Habitatge</option>
+        <option value="Subministraments">💡 Subministraments</option>
+        <option value="Assegurances">🛡️ Assegurances</option>
+        <option value="Transport">🚗 Transport</option>
+        <option value="Subscripcions">📱 Subscripcions</option>
+        <option value="Altres">📌 Altres</option>
+      </select>
+      <select id="des-filtre-any" onchange="renderDespeses()" style="padding:8px 12px;border:1px solid #ddd;border-radius:8px;font-size:13px;font-family:inherit;background:#fff">
+        <option value="">Tots els anys</option>
+      </select>
+    </div>
+    <!-- Taula -->
     <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid #e0e0e0;font-size:13px">
       <thead><tr style="background:#fafafa">
+        <th style="text-align:left;padding:10px 14px;color:#888;font-weight:500;font-size:11px;border-bottom:2px solid #eee;width:12%">Mes</th>
         <th style="text-align:left;padding:10px 14px;color:#888;font-weight:500;font-size:11px;border-bottom:2px solid #eee">Concepte</th>
-        <th style="text-align:left;padding:10px 14px;color:#888;font-weight:500;font-size:11px;border-bottom:2px solid #eee">Categoria</th>
-        <th style="text-align:center;padding:10px 14px;color:#888;font-weight:500;font-size:11px;border-bottom:2px solid #eee">Mes</th>
-        <th style="text-align:right;padding:10px 14px;color:#888;font-weight:500;font-size:11px;border-bottom:2px solid #eee">Import</th>
+        <th style="text-align:left;padding:10px 14px;color:#888;font-weight:500;font-size:11px;border-bottom:2px solid #eee;width:18%">Categoria</th>
+        <th style="text-align:right;padding:10px 14px;color:#888;font-weight:500;font-size:11px;border-bottom:2px solid #eee;width:10%">Import</th>
         <th style="text-align:left;padding:10px 14px;color:#888;font-weight:500;font-size:11px;border-bottom:2px solid #eee">Notes</th>
-        <th style="width:60px;border-bottom:2px solid #eee"></th>
+        <th style="width:70px;border-bottom:2px solid #eee"></th>
       </tr></thead>
       <tbody id="despeses-tbody"></tbody>
     </table>
@@ -347,13 +368,13 @@ table.products td input.center{text-align:center} table.products td input.right{
 
   <!-- Modal Despesa -->
   <div class="modal-overlay" id="despesaModal" onclick="if(event.target===this)closeDespesaModal()">
-    <div class="modal-box" style="max-width:480px">
+    <div class="modal-box" style="max-width:460px">
       <h2 id="despesaModalTitle">🏠 Nova despesa</h2>
-      <div class="modal-field">
-        <label>Concepte</label>
-        <input id="des-concepte" placeholder="Ex: Hipoteca, Llum, Aigua...">
-      </div>
-      <div class="modal-grid-2" style="margin-top:10px">
+      <div class="modal-grid-2" style="margin-bottom:10px">
+        <div class="modal-field">
+          <label>Mes</label>
+          <input type="month" id="des-mes">
+        </div>
         <div class="modal-field">
           <label>Categoria</label>
           <select id="des-categoria">
@@ -365,24 +386,18 @@ table.products td input.center{text-align:center} table.products td input.right{
             <option value="Altres">📌 Altres</option>
           </select>
         </div>
-        <div class="modal-field">
-          <label>Import mensual (€)</label>
-          <input type="number" id="des-import" min="0" step="0.01" placeholder="0.00">
-        </div>
       </div>
-      <div class="modal-grid-2" style="margin-top:10px">
-        <div class="modal-field">
-          <label>Data inici</label>
-          <input type="month" id="des-inici">
-        </div>
-        <div class="modal-field">
-          <label>Data fi (buit = actiu)</label>
-          <input type="month" id="des-fi">
-        </div>
+      <div class="modal-field" style="margin-bottom:10px">
+        <label>Concepte</label>
+        <input id="des-concepte" placeholder="Ex: Hipoteca, Llum, Vodafone...">
       </div>
-      <div class="modal-field" style="margin-top:10px">
+      <div class="modal-field" style="margin-bottom:10px">
+        <label>Import (€)</label>
+        <input type="number" id="des-import" min="0" step="0.01" placeholder="0.00">
+      </div>
+      <div class="modal-field">
         <label>Notes</label>
-        <input id="des-notes" placeholder="Observacions...">
+        <input id="des-notes" placeholder="Observacions opcionals...">
       </div>
       <div class="modal-footer" style="margin-top:14px">
         <button class="btn btn-danger btn-sm" onclick="closeDespesaModal()">Cancel·lar</button>
@@ -2270,10 +2285,12 @@ function confirmViPicker(){
 }
 
 // ── Dashboard ─────────────────────────────────────────────────────
-// ── Despeses fixes ────────────────────────────────────────────────
+// ── Despeses ────────────────────────────────────────────────────────
 let despeses=[];
 let despesaEditIdx=null;
-const DES_CAT_ICON={'Habitatge':'🏠','Subministraments':'💡','Assegurances':'🛡️','Transport':'🚗','Subscripcions':'📱','Altres':'📌'};
+let despesesChartInst=null;
+const DES_CAT={'Habitatge':'🏠','Subministraments':'💡','Assegurances':'🛡️','Transport':'🚗','Subscripcions':'📱','Altres':'📌'};
+const DES_COLORS={'Habitatge':'rgba(33,150,243,.75)','Subministraments':'rgba(255,193,7,.75)','Assegurances':'rgba(76,175,80,.75)','Transport':'rgba(156,39,176,.75)','Subscripcions':'rgba(255,87,34,.75)','Altres':'rgba(158,158,158,.75)'};
 
 async function initDespeses(){
   try{const r=await fetch(API+'/despeses');if(!r.ok)throw new Error();despeses=await r.json();}catch(e){despeses=[];}
@@ -2286,14 +2303,16 @@ async function persistDespeses(){
 function openDespesaModal(idx){
   despesaEditIdx=(idx!==undefined)?idx:null;
   document.getElementById('despesaModalTitle').textContent=despesaEditIdx!==null?'✏️ Editar despesa':'🏠 Nova despesa';
-  const d=despesaEditIdx!==null?despeses[despesaEditIdx]:{concepte:'',categoria:'Habitatge',import:'',inici:'',fi:'',notes:''};
-  document.getElementById('des-concepte').value=d.concepte||'';
+  const now=new Date();
+  const defMes=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+  const d=despesaEditIdx!==null?despeses[despesaEditIdx]:{concepte:'',categoria:'Habitatge',import:'',mes:defMes,notes:''};
+  document.getElementById('des-mes').value=d.mes||defMes;
   document.getElementById('des-categoria').value=d.categoria||'Habitatge';
+  document.getElementById('des-concepte').value=d.concepte||'';
   document.getElementById('des-import').value=d.import||'';
-  document.getElementById('des-inici').value=d.inici||'';
-  document.getElementById('des-fi').value=d.fi||'';
   document.getElementById('des-notes').value=d.notes||'';
   document.getElementById('despesaModal').classList.add('show');
+  document.getElementById('des-concepte').focus();
 }
 
 function closeDespesaModal(){
@@ -2304,15 +2323,17 @@ function closeDespesaModal(){
 async function saveDespesa(){
   const concepte=document.getElementById('des-concepte').value.trim();
   if(!concepte){alert('Afegeix el concepte.');return;}
+  const mes=document.getElementById('des-mes').value;
+  if(!mes){alert('Selecciona el mes.');return;}
   const d={
+    mes,
     concepte,
     categoria:document.getElementById('des-categoria').value,
     import:parseFloat(document.getElementById('des-import').value)||0,
-    inici:document.getElementById('des-inici').value,
-    fi:document.getElementById('des-fi').value,
     notes:document.getElementById('des-notes').value.trim()
   };
   if(despesaEditIdx!==null){despeses[despesaEditIdx]=d;}else{despeses.push(d);}
+  despeses.sort((a,b)=>b.mes.localeCompare(a.mes));
   await persistDespeses();
   closeDespesaModal();
   renderDespeses();
@@ -2326,36 +2347,73 @@ async function deleteDespesa(idx){
 }
 
 function renderDespeses(){
-  // Resum per categoria
-  const catTotals={};
-  despeses.forEach(d=>{
-    catTotals[d.categoria]=(catTotals[d.categoria]||0)+(parseFloat(d.import)||0);
+  const catFilt=document.getElementById('des-filtre-cat')?.value||'';
+  const anyFilt=document.getElementById('des-filtre-any')?.value||'';
+
+  // Omplir filtre d'anys
+  const anys=[...new Set(despeses.map(d=>d.mes?.slice(0,4)).filter(Boolean))].sort().reverse();
+  const filtAnyEl=document.getElementById('des-filtre-any');
+  if(filtAnyEl){
+    const cur=filtAnyEl.value;
+    filtAnyEl.innerHTML='<option value="">Tots els anys</option>'+anys.map(a=>`<option value="${a}" ${a===cur?'selected':''}>${a}</option>`).join('');
+  }
+
+  const filtrats=despeses.filter(d=>{
+    if(catFilt&&d.categoria!==catFilt)return false;
+    if(anyFilt&&!(d.mes||'').startsWith(anyFilt))return false;
+    return true;
   });
-  const totalMensual=Object.values(catTotals).reduce((s,v)=>s+v,0);
-  document.getElementById('despeses-resum').innerHTML=
-    `<div class="stat"><div class="stat-val">${totalMensual.toFixed(0)} €</div><div class="stat-label">Total mensual</div></div>`+
-    `<div class="stat"><div class="stat-val">${(totalMensual*12).toFixed(0)} €</div><div class="stat-label">Total anual</div></div>`+
-    Object.entries(catTotals).map(([cat,val])=>
-      `<div class="stat"><div class="stat-val" style="font-size:15px">${DES_CAT_ICON[cat]||'📌'} ${val.toFixed(0)} €</div><div class="stat-label">${cat}</div></div>`
+
+  // Stats
+  const total=filtrats.reduce((s,d)=>s+(parseFloat(d.import)||0),0);
+  const catTotals={};
+  filtrats.forEach(d=>{catTotals[d.categoria]=(catTotals[d.categoria]||0)+(parseFloat(d.import)||0);});
+  document.getElementById('despeses-stats').innerHTML=
+    `<div class="stat"><div class="stat-val">${filtrats.length}</div><div class="stat-label">Entrades</div></div>`+
+    `<div class="stat"><div class="stat-val">${total.toFixed(0)} €</div><div class="stat-label">Total període</div></div>`+
+    Object.entries(catTotals).sort((a,b)=>b[1]-a[1]).map(([cat,val])=>
+      `<div class="stat"><div class="stat-val" style="font-size:15px">${val.toFixed(0)} €</div><div class="stat-label">${DES_CAT[cat]||'📌'} ${cat}</div></div>`
     ).join('');
+
+  // Gràfic per mes (stacked bars per categoria)
+  const mesosSet=[...new Set(filtrats.map(d=>d.mes))].sort();
+  const cats=Object.keys(DES_CAT);
+  const datasets=cats.map(cat=>({
+    label:cat,
+    data:mesosSet.map(m=>filtrats.filter(d=>d.mes===m&&d.categoria===cat).reduce((s,d)=>s+(parseFloat(d.import)||0),0)),
+    backgroundColor:DES_COLORS[cat],
+    borderRadius:4,stack:'a'
+  })).filter(ds=>ds.data.some(v=>v>0));
+
+  const ctx=document.getElementById('despeses-chart').getContext('2d');
+  if(despesesChartInst)despesesChartInst.destroy();
+  despesesChartInst=new Chart(ctx,{type:'bar',data:{
+    labels:mesosSet.map(m=>{const[y,mo]=m.split('-');return new Date(y,mo-1).toLocaleDateString('ca-ES',{month:'short',year:'numeric'});}),
+    datasets
+  },options:{responsive:true,plugins:{legend:{position:'top',labels:{boxWidth:14,font:{size:11}}}},scales:{x:{stacked:true,grid:{display:false}},y:{stacked:true,ticks:{callback:v=>v+'€'}}}}});
 
   // Taula
   const tbody=document.getElementById('despeses-tbody');
-  if(!despeses.length){
-    tbody.innerHTML=`<tr><td colspan="6" style="text-align:center;padding:30px;color:#aaa">Cap despesa registrada</td></tr>`;
+  if(!filtrats.length){
+    tbody.innerHTML=`<tr><td colspan="6" style="text-align:center;padding:30px;color:#aaa">Cap despesa registrada. Clica "+ Nova despesa" per afegir-ne una.</td></tr>`;
     return;
   }
-  tbody.innerHTML=despeses.map((d,i)=>`<tr>
-    <td style="padding:10px 14px;border-bottom:1px solid #f5f5f5;font-weight:500">${esc(d.concepte)}</td>
-    <td style="padding:10px 14px;border-bottom:1px solid #f5f5f5">${DES_CAT_ICON[d.categoria]||'📌'} ${esc(d.categoria)}</td>
-    <td style="text-align:center;padding:10px 14px;border-bottom:1px solid #f5f5f5;font-size:12px;color:#888">${d.inici||'—'}${d.fi?' → '+d.fi:' → avui'}</td>
-    <td style="text-align:right;padding:10px 14px;border-bottom:1px solid #f5f5f5;font-weight:700">${(parseFloat(d.import)||0).toFixed(2)} €</td>
-    <td style="padding:10px 14px;border-bottom:1px solid #f5f5f5;font-size:12px;color:#888">${esc(d.notes||'—')}</td>
-    <td style="text-align:center;padding:6px 14px;border-bottom:1px solid #f5f5f5;white-space:nowrap">
-      <button class="btn btn-sm btn-edit" style="padding:3px 8px;margin-right:4px" onclick="openDespesaModal(${i})">✏️</button>
-      <button class="btn btn-sm btn-danger" style="padding:3px 8px" onclick="deleteDespesa(${i})">🗑</button>
-    </td>
-  </tr>`).join('');
+  tbody.innerHTML=filtrats.map(d=>{
+    const ri=despeses.indexOf(d);
+    const[y,mo]=d.mes.split('-');
+    const mesFmt=new Date(y,mo-1).toLocaleDateString('ca-ES',{month:'long',year:'numeric'});
+    return`<tr>
+      <td style="padding:10px 14px;border-bottom:1px solid #f5f5f5;font-size:12px;color:#888;white-space:nowrap">${mesFmt}</td>
+      <td style="padding:10px 14px;border-bottom:1px solid #f5f5f5;font-weight:500">${esc(d.concepte)}</td>
+      <td style="padding:10px 14px;border-bottom:1px solid #f5f5f5;font-size:12px">${DES_CAT[d.categoria]||'📌'} ${esc(d.categoria)}</td>
+      <td style="text-align:right;padding:10px 14px;border-bottom:1px solid #f5f5f5;font-weight:700">${(parseFloat(d.import)||0).toFixed(2)} €</td>
+      <td style="padding:10px 14px;border-bottom:1px solid #f5f5f5;font-size:12px;color:#888">${esc(d.notes||'')}</td>
+      <td style="text-align:center;padding:6px 14px;border-bottom:1px solid #f5f5f5;white-space:nowrap">
+        <button class="btn btn-sm btn-edit" style="padding:3px 8px;margin-right:4px" onclick="openDespesaModal(${ri})">✏️</button>
+        <button class="btn btn-sm btn-danger" style="padding:3px 8px" onclick="deleteDespesa(${ri})">🗑</button>
+      </td>
+    </tr>`;
+  }).join('');
 }
 
 function renderDashboard(){
