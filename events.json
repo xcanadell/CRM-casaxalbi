@@ -33,7 +33,9 @@
         "notes": "115 + 164 + 70"
       }
     ],
-    "total": 350
+    "total": 350,
+    "hores_alba": 4,
+    "hores_xavi": 4
   },
   {
     "data": "2026-08-21",
