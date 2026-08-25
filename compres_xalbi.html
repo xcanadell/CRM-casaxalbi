@@ -2379,43 +2379,20 @@ function renderDespeses(){
   const mesosSet=[...new Set(filtrats.map(d=>d.mes))].sort();
   const cats=Object.keys(DES_CAT);
 
-  // Estimació mes pròxim: mitjana de fins 3 mesos anteriors per categoria
-  const now=new Date();
-  const nextMes=`${now.getFullYear()}-${String(now.getMonth()+2).padStart(2,'0')}`.replace(/-13$/,`-01`).replace(/(\d{4})-13/,`${now.getFullYear()+1}-01`);
-  const nextD=new Date(now.getFullYear(), now.getMonth()+1, 1);
-  const nextMesKey=`${nextD.getFullYear()}-${String(nextD.getMonth()+1).padStart(2,'0')}`;
-  const nextLabel='📊 '+nextD.toLocaleDateString('ca-ES',{month:'short',year:'numeric'})+' (est.)';
-  const ultims3=[...mesosSet].slice(-3);
-  const estimacio={};
-  cats.forEach(cat=>{
-    const vals=ultims3.map(m=>filtrats.filter(d=>d.mes===m&&d.categoria===cat).reduce((s,d)=>s+(parseFloat(d.import)||0),0)).filter(v=>v>0);
-    estimacio[cat]=vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:0;
-  });
+  const labels=mesosSet.map(m=>{const[y,mo]=m.split('-');return new Date(y,mo-1).toLocaleDateString('ca-ES',{month:'short',year:'numeric'});});
 
-  const labels=[...mesosSet.map(m=>{const[y,mo]=m.split('-');return new Date(y,mo-1).toLocaleDateString('ca-ES',{month:'short',year:'numeric'});}), nextLabel];
-
-  const datasets=cats.map(cat=>{
-    const hist=mesosSet.map(m=>filtrats.filter(d=>d.mes===m&&d.categoria===cat).reduce((s,d)=>s+(parseFloat(d.import)||0),0));
-    const est=Math.round(estimacio[cat]*100)/100;
-    return {
-      label:cat,
-      data:[...hist, est],
-      backgroundColor:[...mesosSet.map(()=>DES_COLORS[cat]), DES_COLORS[cat].replace('.75','.35')],
-      borderColor:[...mesosSet.map(()=>'transparent'), DES_COLORS[cat].replace('.35','.9')],
-      borderWidth:[...mesosSet.map(()=>0), 2],
-      borderDash:[...mesosSet.map(()=>[]), [5,4]],
-      borderRadius:4, stack:'a'
-    };
-  }).filter(ds=>ds.data.some(v=>v>0));
+  const datasets=cats.map(cat=>({
+    label:cat,
+    data:mesosSet.map(m=>filtrats.filter(d=>d.mes===m&&d.categoria===cat).reduce((s,d)=>s+(parseFloat(d.import)||0),0)),
+    backgroundColor:DES_COLORS[cat],
+    borderRadius:4,stack:'a'
+  })).filter(ds=>ds.data.some(v=>v>0));
 
   const ctx=document.getElementById('despeses-chart').getContext('2d');
   if(despesesChartInst)despesesChartInst.destroy();
   despesesChartInst=new Chart(ctx,{type:'bar',data:{labels,datasets},options:{
     responsive:true,
-    plugins:{
-      legend:{position:'top',labels:{boxWidth:14,font:{size:11}}},
-      tooltip:{callbacks:{footer:items=>{const isEst=items[0]?.label?.includes('est.');return isEst?'Estimació basada en els últims 3 mesos':'';}}}
-    },
+    plugins:{legend:{position:'top',labels:{boxWidth:14,font:{size:11}}}},
     scales:{x:{stacked:true,grid:{display:false}},y:{stacked:true,ticks:{callback:v=>v+'€'}}}
   }});
 
