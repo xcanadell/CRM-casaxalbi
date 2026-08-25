@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "mes": "2026-08",
+    "concepte": "Spotify",
+    "categoria": "Subscripcions",
+    "import": 16.99,
+    "notes": "Pagament dia 11"
+  },
+  {
+    "mes": "2026-07",
+    "concepte": "Spotify",
+    "categoria": "Subscripcions",
+    "import": 16.99,
+    "notes": "Pagament dia 11"
+  },
+  {
+    "mes": "2026-06",
+    "concepte": "Spotify",
+    "categoria": "Subscripcions",
+    "import": 16.99,
+    "notes": "Pagament dia 11"
+  },
+  {
+    "mes": "2026-05",
+    "concepte": "Spotify",
+    "categoria": "Subscripcions",
+    "import": 16.99,
+    "notes": "Pagament dia 11"
+  },
+  {
+    "mes": "2026-04",
+    "concepte": "Spotify",
+    "categoria": "Subscripcions",
+    "import": 16.99,
+    "notes": "Pagament dia 11"
+  },
+  {
+    "mes": "2026-03",
+    "concepte": "Spotify",
+    "categoria": "Subscripcions",
+    "import": 16.99,
+    "notes": "Pagament dia 11"
+  },
+  {
+    "mes": "2026-02",
+    "concepte": "Spotify",
+    "categoria": "Subscripcions",
+    "import": 16.99,
+    "notes": "Pagament dia 11"
+  },
+  {
+    "mes": "2026-01",
+    "concepte": "Spotify",
+    "categoria": "Subscripcions",
+    "import": 16.99,
+    "notes": "Pagament dia 11"
+  }
+]
