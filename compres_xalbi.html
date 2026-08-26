@@ -1959,7 +1959,7 @@ function setCrmTab(tab){
   if(tab==='empreses')renderEmpreses();
 }
 
-const TIPUS_ICON={'Bodega':'🍷','Restaurante':'🍽️','Hotel':'🏨','Ajuntament':'🏛️','Distribuïdor':'📦','Altres':'📌'};
+const EMPRESA_TIPUS_ICON={'Bodega':'🍷','Restaurante':'🍽️','Hotel':'🏨','Ajuntament':'🏛️','Distribuïdor':'📦','Altres':'📌'};
 
 async function initEmpreses(){
   try{
@@ -1997,7 +1997,7 @@ function renderEmpreses(){
   if(!filtered.length){container.innerHTML='<div class="clients-empty">Cap resultat per a la cerca.</div>';return;}
   const rows=filtered.map(e=>{
     const ri=empreses.indexOf(e);
-    const icon=TIPUS_ICON[e.tipus]||'📌';
+    const icon=EMPRESA_TIPUS_ICON[e.tipus]||'📌';
     return`<tr>
       <td><strong>${e.nom||'—'}</strong></td>
       <td><span style="font-size:12px;background:#f0f0f0;border-radius:12px;padding:2px 9px">${icon} ${e.tipus||'—'}</span></td>
