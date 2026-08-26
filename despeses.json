@@ -91,6 +91,13 @@
     "notes": "Pagament dia 11"
   },
   {
+    "mes": "2026-07",
+    "concepte": "Canvas",
+    "categoria": "Subscripcions",
+    "import": 12,
+    "notes": "Pagat dia 26"
+  },
+  {
     "mes": "2026-06",
     "concepte": "Iberdrola (electricitat)",
     "categoria": "Subministraments",
