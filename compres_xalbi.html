@@ -595,33 +595,68 @@ table.products td input.center{text-align:center} table.products td input.right{
     <div id="variosList"></div>
   </div>
 
-  <!-- Panel Clients -->
+  <!-- Panel Clients (CRM) -->
   <div id="panel-clients" class="panel">
-    <div class="plats-header-row">
-      <h2>👥 Clients</h2>
-      <button class="btn btn-secondary" id="syncBtn" onclick="syncClients()" style="margin-right:8px">🔄 Sincronitzar</button>
-      <button class="btn btn-primary" onclick="openClientModal()">+ Nou client</button>
+    <!-- Sub-pestanyes CRM -->
+    <div style="display:flex;gap:0;margin-bottom:20px;border-bottom:2px solid #e0e0e0">
+      <button id="crm-tab-particulars" onclick="setCrmTab('particulars')" style="background:none;border:none;padding:8px 22px;font-size:14px;font-family:inherit;cursor:pointer;border-bottom:2px solid #1a1a1a;margin-bottom:-2px;font-weight:600;color:#1a1a1a">👤 Particulars</button>
+      <button id="crm-tab-empreses" onclick="setCrmTab('empreses')" style="background:none;border:none;padding:8px 22px;font-size:14px;font-family:inherit;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;color:#888">🏢 Empreses</button>
     </div>
-    <div class="bodega-search">
-      <input type="text" id="clients-search" placeholder="🔍 Cercar per nom, email, població..." oninput="renderClients()">
-      <select id="clients-sort" onchange="renderClients()">
-        <option value="nom_asc">A → Z</option>
-        <option value="nom_desc">Z → A</option>
-        <option value="origen">Per origen</option>
-      </select>
-      <select id="clients-filter" onchange="renderClients()">
-        <option value="">Tots els orígens</option>
-        <option value="Veí Zaldierna">Veí Zaldierna</option>
-        <option value="Veí Ezcaray">Veí Ezcaray</option>
-        <option value="Acompanyant de veí">Acompanyant de veí</option>
-        <option value="Casa rural">Casa rural</option>
-        <option value="RRSS">RRSS</option>
-        <option value="Client Origen">Client Origen</option>
-        <option value="Família/Amics">Família/Amics</option>
-        <option value="Website">Website</option>
-      </select>
+
+    <!-- Sub-panel Particulars -->
+    <div id="crm-panel-particulars">
+      <div class="plats-header-row">
+        <h2>👤 Clients particulars</h2>
+        <button class="btn btn-secondary" id="syncBtn" onclick="syncClients()" style="margin-right:8px">🔄 Sincronitzar</button>
+        <button class="btn btn-primary" onclick="openClientModal()">+ Nou client</button>
+      </div>
+      <div class="bodega-search">
+        <input type="text" id="clients-search" placeholder="🔍 Cercar per nom, email, població..." oninput="renderClients()">
+        <select id="clients-sort" onchange="renderClients()">
+          <option value="nom_asc">A → Z</option>
+          <option value="nom_desc">Z → A</option>
+          <option value="origen">Per origen</option>
+        </select>
+        <select id="clients-filter" onchange="renderClients()">
+          <option value="">Tots els orígens</option>
+          <option value="Veí Zaldierna">Veí Zaldierna</option>
+          <option value="Veí Ezcaray">Veí Ezcaray</option>
+          <option value="Acompanyant de veí">Acompanyant de veí</option>
+          <option value="Casa rural">Casa rural</option>
+          <option value="RRSS">RRSS</option>
+          <option value="Client Origen">Client Origen</option>
+          <option value="Família/Amics">Família/Amics</option>
+          <option value="Website">Website</option>
+        </select>
+      </div>
+      <div id="clientsList"></div>
     </div>
-    <div id="clientsList"></div>
+
+    <!-- Sub-panel Empreses -->
+    <div id="crm-panel-empreses" style="display:none">
+      <div class="plats-header-row">
+        <h2>🏢 Empreses</h2>
+        <button class="btn btn-primary" onclick="openEmpresaModal()">+ Nova empresa</button>
+      </div>
+      <div class="bodega-search">
+        <input type="text" id="empreses-search" placeholder="🔍 Cercar per nom, localitat, email..." oninput="renderEmpreses()">
+        <select id="empreses-sort" onchange="renderEmpreses()">
+          <option value="nom_asc">A → Z</option>
+          <option value="nom_desc">Z → A</option>
+          <option value="tipus">Per tipus</option>
+        </select>
+        <select id="empreses-filter" onchange="renderEmpreses()">
+          <option value="">Tots els tipus</option>
+          <option value="Bodega">🍷 Bodega</option>
+          <option value="Restaurante">🍽️ Restaurante</option>
+          <option value="Hotel">🏨 Hotel</option>
+          <option value="Ajuntament">🏛️ Ajuntament</option>
+          <option value="Distribuïdor">📦 Distribuïdor</option>
+          <option value="Altres">📌 Altres</option>
+        </select>
+      </div>
+      <div id="empresesList"></div>
+    </div>
   </div>
 
   <!-- Panel Bodega -->
@@ -927,6 +962,71 @@ table.products td input.center{text-align:center} table.products td input.right{
   </div>
 </div>
 
+<!-- Modal Empresa -->
+<div class="modal-overlay" id="empresaModal" onclick="if(event.target===this)closeEmpresaModal()">
+  <div class="modal-box" style="max-width:600px">
+    <h2 id="empresaModalTitle">🏢 Nova empresa</h2>
+    <div class="modal-grid-2" style="margin-bottom:10px">
+      <div class="modal-field" style="grid-column:1/-1">
+        <label>Nom de l'empresa</label>
+        <input id="emp-nom" placeholder="Nom">
+      </div>
+    </div>
+    <div class="modal-grid-2" style="margin-bottom:10px">
+      <div class="modal-field">
+        <label>Tipus</label>
+        <select id="emp-tipus">
+          <option value="Bodega">🍷 Bodega</option>
+          <option value="Restaurante">🍽️ Restaurante</option>
+          <option value="Hotel">🏨 Hotel</option>
+          <option value="Ajuntament">🏛️ Ajuntament</option>
+          <option value="Distribuïdor">📦 Distribuïdor</option>
+          <option value="Altres">📌 Altres</option>
+        </select>
+      </div>
+      <div class="modal-field">
+        <label>Telèfon</label>
+        <input id="emp-tel" type="tel" placeholder="000 000 000">
+      </div>
+    </div>
+    <div class="modal-field" style="margin-bottom:10px">
+      <label>Adreça</label>
+      <input id="emp-direccio" placeholder="Carrer, número...">
+    </div>
+    <div class="modal-grid-2" style="margin-bottom:10px">
+      <div class="modal-field">
+        <label>Localitat</label>
+        <input id="emp-localitat" placeholder="Logroño...">
+      </div>
+      <div class="modal-field">
+        <label>Província</label>
+        <input id="emp-provincia" placeholder="La Rioja...">
+      </div>
+    </div>
+    <div class="modal-grid-2" style="margin-bottom:10px">
+      <div class="modal-field">
+        <label>Email</label>
+        <input id="emp-email" type="email" placeholder="contacte@empresa.com">
+      </div>
+      <div class="modal-field">
+        <label>Web</label>
+        <input id="emp-web" placeholder="www.empresa.com">
+      </div>
+    </div>
+    <div class="modal-field">
+      <label>Notes</label>
+      <textarea id="emp-notes" placeholder="Comentaris, persona de contacte, condicions..." style="width:100%;padding:8px 10px;border:1px solid #ddd;border-radius:7px;font-size:13px;font-family:inherit;outline:none;resize:vertical;min-height:72px;color:#1a1a1a"></textarea>
+    </div>
+    <div id="emp-data-registre-wrap" style="display:none;margin-top:8px;font-size:12px;color:#888">
+      📅 Registrat el: <span id="emp-data-registre-val"></span>
+    </div>
+    <div class="modal-footer" style="margin-top:14px">
+      <button class="btn btn-danger btn-sm" onclick="closeEmpresaModal()">Cancel·lar</button>
+      <button class="btn btn-primary" onclick="saveEmpresa()">💾 Desar</button>
+    </div>
+  </div>
+</div>
+
 <!-- Modal: selecció de client per event -->
 <div class="modal-overlay" id="clientPickerModal" onclick="if(event.target===this)closeClientPicker()">
   <div class="modal-box" style="max-width:440px">
@@ -994,6 +1094,7 @@ async function init(){
   await initPlats();
   await initBodega();
   await initClients();
+  await initEmpreses();
   await initEvents();
   await initVarios();
   await initDespeses();
@@ -1840,6 +1941,135 @@ async function deleteClient(i){
   clients.splice(i,1);
   await persistClients();
   renderClients();
+}
+
+// ── Empreses ─────────────────────────────────────────────────────
+let empreses=[];
+let empresaEditIdx=null;
+let crmActiveTab='particulars';
+
+function setCrmTab(tab){
+  crmActiveTab=tab;
+  document.getElementById('crm-panel-particulars').style.display=tab==='particulars'?'':'none';
+  document.getElementById('crm-panel-empreses').style.display=tab==='empreses'?'':'none';
+  const st={fontWeight:tab==='particulars'?'600':'400',color:tab==='particulars'?'#1a1a1a':'#888',borderBottom:tab==='particulars'?'2px solid #1a1a1a':'2px solid transparent'};
+  const se={fontWeight:tab==='empreses'?'600':'400',color:tab==='empreses'?'#1a1a1a':'#888',borderBottom:tab==='empreses'?'2px solid #1a1a1a':'2px solid transparent'};
+  Object.assign(document.getElementById('crm-tab-particulars').style,st);
+  Object.assign(document.getElementById('crm-tab-empreses').style,se);
+  if(tab==='empreses')renderEmpreses();
+}
+
+const TIPUS_ICON={'Bodega':'🍷','Restaurante':'🍽️','Hotel':'🏨','Ajuntament':'🏛️','Distribuïdor':'📦','Altres':'📌'};
+
+async function initEmpreses(){
+  try{
+    const r=await fetch(API+'/empreses');
+    if(!r.ok)throw new Error();
+    empreses=await r.json();
+  }catch(e){
+    try{const s=localStorage.getItem('xalbi-empreses');empreses=s?JSON.parse(s):[];}catch(e2){empreses=[];}
+  }
+}
+
+async function persistEmpreses(){
+  try{
+    await fetch(API+'/empreses',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(empreses)});
+  }catch(e){
+    try{localStorage.setItem('xalbi-empreses',JSON.stringify(empreses));}catch(e2){}
+  }
+}
+
+function renderEmpreses(){
+  const q=(document.getElementById('empreses-search').value||'').toLowerCase();
+  const tf=document.getElementById('empreses-filter').value;
+  const sort=document.getElementById('empreses-sort').value;
+  let filtered=empreses.filter((e,i)=>{
+    const match=(e.nom||'').toLowerCase().includes(q)||(e.localitat||'').toLowerCase().includes(q)||(e.email||'').toLowerCase().includes(q)||(e.provincia||'').toLowerCase().includes(q);
+    return match&&(!tf||e.tipus===tf);
+  });
+  filtered.sort((a,b)=>{
+    if(sort==='nom_desc')return(b.nom||'').localeCompare(a.nom||'');
+    if(sort==='tipus')return(a.tipus||'').localeCompare(b.tipus||'');
+    return(a.nom||'').localeCompare(b.nom||'');
+  });
+  const container=document.getElementById('empresesList');
+  if(!empreses.length){container.innerHTML='<div class="clients-empty">Cap empresa registrada. Clica "+ Nova empresa" per afegir-ne una.</div>';return;}
+  if(!filtered.length){container.innerHTML='<div class="clients-empty">Cap resultat per a la cerca.</div>';return;}
+  const rows=filtered.map(e=>{
+    const ri=empreses.indexOf(e);
+    const icon=TIPUS_ICON[e.tipus]||'📌';
+    return`<tr>
+      <td><strong>${e.nom||'—'}</strong></td>
+      <td><span style="font-size:12px;background:#f0f0f0;border-radius:12px;padding:2px 9px">${icon} ${e.tipus||'—'}</span></td>
+      <td>${e.localitat||'—'}</td>
+      <td>${e.provincia||'—'}</td>
+      <td style="color:#555">${e.tel||'—'}</td>
+      <td style="color:#555">${e.email||'—'}</td>
+      <td>
+        <button class="btn btn-sm btn-edit" style="padding:3px 8px;margin-right:4px" onclick="openEmpresaModal(${ri})">✏️</button>
+        <button class="btn btn-sm btn-danger" style="padding:3px 8px" onclick="deleteEmpresa(${ri})">🗑</button>
+      </td>
+    </tr>`;
+  }).join('');
+  container.innerHTML=`<table class="clients-table">
+    <thead><tr><th>Nom</th><th>Tipus</th><th>Localitat</th><th>Província</th><th>Telèfon</th><th>Email</th><th></th></tr></thead>
+    <tbody>${rows}</tbody>
+  </table>
+  <div style="margin-top:8px;font-size:12px;color:#aaa;text-align:right">${filtered.length} de ${empreses.length} empreses</div>`;
+}
+
+function openEmpresaModal(idx){
+  empresaEditIdx=(idx!==undefined)?idx:null;
+  document.getElementById('empresaModalTitle').textContent=empresaEditIdx!==null?'✏️ Editar empresa':'🏢 Nova empresa';
+  const e=empresaEditIdx!==null?empreses[empresaEditIdx]:{nom:'',tipus:'Bodega',tel:'',email:'',direccio:'',cp:'',localitat:'',provincia:'',web:'',notes:''};
+  document.getElementById('emp-nom').value=e.nom||'';
+  document.getElementById('emp-tipus').value=e.tipus||'Bodega';
+  document.getElementById('emp-tel').value=e.tel||'';
+  document.getElementById('emp-email').value=e.email||'';
+  document.getElementById('emp-direccio').value=e.direccio||'';
+  document.getElementById('emp-localitat').value=e.localitat||'';
+  document.getElementById('emp-provincia').value=e.provincia||'';
+  document.getElementById('emp-web').value=e.web||'';
+  document.getElementById('emp-notes').value=e.notes||'';
+  const drWrap=document.getElementById('emp-data-registre-wrap');
+  if(empresaEditIdx!==null&&e.data_registre){drWrap.style.display='block';document.getElementById('emp-data-registre-val').textContent=e.data_registre;}
+  else drWrap.style.display='none';
+  document.getElementById('empresaModal').style.display='flex';
+}
+
+function closeEmpresaModal(){
+  document.getElementById('empresaModal').style.display='none';
+  empresaEditIdx=null;
+}
+
+async function saveEmpresa(){
+  const nom=document.getElementById('emp-nom').value.trim();
+  if(!nom){alert('El nom és obligatori');return;}
+  const empresa={
+    nom,
+    tipus:document.getElementById('emp-tipus').value,
+    tel:document.getElementById('emp-tel').value.trim(),
+    email:document.getElementById('emp-email').value.trim(),
+    direccio:document.getElementById('emp-direccio').value.trim(),
+    cp:document.getElementById('emp-cp')?document.getElementById('emp-cp').value.trim():'',
+    localitat:document.getElementById('emp-localitat').value.trim(),
+    provincia:document.getElementById('emp-provincia').value.trim(),
+    web:document.getElementById('emp-web').value.trim(),
+    notes:document.getElementById('emp-notes').value.trim(),
+    data_registre:(empresaEditIdx!==null&&empreses[empresaEditIdx].data_registre)||avui,
+    updated_at:new Date().toISOString()
+  };
+  if(empresaEditIdx!==null){empreses[empresaEditIdx]=empresa;}else{empreses.push(empresa);}
+  await persistEmpreses();
+  closeEmpresaModal();
+  renderEmpreses();
+}
+
+async function deleteEmpresa(i){
+  if(!confirm('Eliminar aquesta empresa?'))return;
+  empreses.splice(i,1);
+  await persistEmpreses();
+  renderEmpreses();
 }
 
 // ── Esdeveniments ────────────────────────────────────────────────
