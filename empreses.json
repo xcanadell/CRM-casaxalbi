@@ -7392,16 +7392,17 @@
     "nom": "Hostal La Real Fábrica",
     "tipus": "Allotjament",
     "subtipus": "Hostal",
+    "prioritat": "⭐⭐⭐⭐",
+    "tel": "600 90 47 03",
+    "email": "",
     "direccio": "",
     "cp": "",
     "localitat": "Ezcaray",
     "provincia": "La Rioja",
-    "tel": "",
-    "web": "",
-    "email": "",
-    "prioritat": "⭐⭐⭐⭐",
+    "web": "https://alberguerealfabrica.es",
     "notes": "",
-    "data_registre": "27/08/2026"
+    "data_registre": "27/08/2026",
+    "updated_at": "2026-08-27T21:21:51.436Z"
   },
   {
     "nom": "Hotel Echaurren",
