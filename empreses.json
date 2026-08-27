@@ -7573,16 +7573,17 @@
     "nom": "Real Casona de las Amas",
     "tipus": "Allotjament",
     "subtipus": "Hotel boutique",
+    "prioritat": "⭐⭐⭐⭐",
+    "tel": "+34 941 41 61 03",
+    "email": "mail@realcasonadelasamas.com",
     "direccio": "",
     "cp": "",
     "localitat": "Azofra",
     "provincia": "La Rioja",
-    "tel": "+34 941 41 61 03",
     "web": "realcasonadelasamas.com",
-    "email": "",
-    "prioritat": "⭐⭐⭐⭐",
     "notes": "Boutique de lujo, 16 habitaciones, en el Camino de Santiago (~35 km). Ya vende experiencias de vino; clientela de alto poder adquisitivo.",
-    "data_registre": "27/08/2026"
+    "data_registre": "27/08/2026",
+    "updated_at": "2026-08-27T21:28:01.317Z"
   },
   {
     "nom": "Hotel Rural Las Águedas",
