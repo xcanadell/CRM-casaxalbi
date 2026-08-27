@@ -7648,16 +7648,17 @@
     "nom": "Eurostars Los Agustinos",
     "tipus": "Allotjament",
     "subtipus": "Hotel",
+    "prioritat": "⭐⭐⭐",
+    "tel": "941 31 13 08",
+    "email": "",
     "direccio": "",
     "cp": "",
     "localitat": "Haro",
     "provincia": "La Rioja",
-    "tel": "",
     "web": "eurostarshotels.com",
-    "email": "",
-    "prioritat": "⭐⭐⭐",
     "notes": "4★, antiguo convento del s. XIV, claustro monumental (~34 km). Hotel de referencia en la capital del Rioja, con espacios singulares para eventos especiales; clientela enoturista de nivel alto.",
-    "data_registre": "27/08/2026"
+    "data_registre": "27/08/2026",
+    "updated_at": "2026-08-27T21:20:18.849Z"
   },
   {
     "nom": "Palacio Tondón (Marriott Autograph Collection)",
