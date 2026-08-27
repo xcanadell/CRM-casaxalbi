@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Ubaga",
+    "tipus": "—",
+    "data": "27/08/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Cortos",
+        "quantitat": 2,
+        "preu_unitari": 1.3,
+        "total": 2.6,
+        "us": "Restauració"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-08-27T09:24:51.122Z"
+  },
+  {
     "establiment": "Jamón Jamón",
     "tipus": "Restauració",
     "data": "27/08/2026",
