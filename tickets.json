@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Palasaca Ezcaray",
+    "tipus": "—",
+    "data": "26/08/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "2 creps + 2 birres",
+        "quantitat": 1,
+        "preu_unitari": 15.8,
+        "total": 15.8,
+        "us": "Restauració"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-08-27T09:22:49.597Z"
+  },
+  {
     "establiment": "Lupa",
     "tipus": "Supermercat",
     "data": "26/08/2026",
