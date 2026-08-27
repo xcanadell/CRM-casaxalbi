@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "Lupa",
+    "tipus": "Supermercat",
+    "data": "26/08/2026",
+    "adreca": "Utra Santo Domingo, 64 Ezcurau",
+    "nif": "A39050549",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "CAFÉ FORTALEZA GRN.NATURAL 500",
+        "quantitat": 1,
+        "preu_unitari": 10.45,
+        "total": 10.45,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "LIMONES GRANEL",
+        "quantitat": 1,
+        "preu_unitari": 1.52,
+        "total": 1.52,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "NECTARINA",
+        "quantitat": 1,
+        "preu_unitari": 1.01,
+        "total": 1.01,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 12.98,
+    "saved_at": "2026-08-27T09:21:01.060Z"
+  },
+  {
     "establiment": "CERVECERIA DEYAN",
     "tipus": "bar",
     "data": "16/08/2026",
