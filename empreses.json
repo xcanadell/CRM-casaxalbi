@@ -7602,16 +7602,17 @@
     "nom": "El Real de Siota",
     "tipus": "Allotjament",
     "subtipus": "Casa Rural",
+    "prioritat": "⭐⭐",
+    "tel": "678 94 76 50",
+    "email": "vero_1995_@hotmail.com",
     "direccio": "",
     "cp": "",
     "localitat": "Castañares de Rioja",
     "provincia": "La Rioja",
-    "tel": "",
     "web": "elrealdesiota.com",
-    "email": "",
-    "prioritat": "⭐⭐",
     "notes": "Alojamiento rural pequeño con restaurante propio (~25 km). Opción más modesta pero con restaurante activo en pueblo con encanto de la Rioja Alta — a valorar como segunda línea.",
-    "data_registre": "27/08/2026"
+    "data_registre": "27/08/2026",
+    "updated_at": "2026-08-27T21:18:18.453Z"
   },
   {
     "nom": "Teatrisso Hotel Palacio",
