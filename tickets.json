@@ -1,8 +1,8 @@
 [
   {
     "establiment": "Ubaga",
-    "tipus": "—",
-    "data": "27/08/2026",
+    "tipus": "Restauració",
+    "data": "26/08/2026",
     "adreca": "",
     "nif": "",
     "telefon": "",
@@ -15,8 +15,9 @@
         "us": "Restauració"
       }
     ],
-    "total": 0,
-    "saved_at": "2026-08-27T09:24:51.122Z"
+    "total": 2.6,
+    "saved_at": "2026-08-27T09:24:51.122Z",
+    "ambit": "Casa Xalbi"
   },
   {
     "establiment": "Jamón Jamón",
