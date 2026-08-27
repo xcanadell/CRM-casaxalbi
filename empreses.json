@@ -7620,16 +7620,17 @@
     "nom": "Teatrisso Hotel Palacio",
     "tipus": "Allotjament",
     "subtipus": "Hotel",
+    "prioritat": "⭐⭐⭐⭐",
+    "tel": "+34 697 922 452",
+    "email": "info@teatrisso.com",
     "direccio": "",
     "cp": "",
     "localitat": "Cuzcurrita de Río Tirón",
     "provincia": "La Rioja",
-    "tel": "",
     "web": "teatrisso.com",
-    "email": "",
-    "prioritat": "⭐⭐⭐⭐",
     "notes": "Palacio del s. XVII, 3★ superior, muy temático (~27 km). Ya organiza 'Teatrisso Night — Historia, Gastronomía y Vino' y cenas ambigú; proactivos creando experiencias — buen candidato para colaborar.",
-    "data_registre": "27/08/2026"
+    "data_registre": "27/08/2026",
+    "updated_at": "2026-08-27T21:30:10.117Z"
   },
   {
     "nom": "Palacio de Casafuerte",
