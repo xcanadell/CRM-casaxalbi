@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "CERVECERIA DEYAN",
+    "tipus": "bar",
+    "data": "16/08/2026",
+    "adreca": "C/Subida a Soleta,1 26280 EZCARAY (La Rioja)",
+    "nif": "16543645K",
+    "telefon": "722742397",
+    "productes": [
+      {
+        "descripcio": "GOMEZ CRUZADO",
+        "quantitat": 2,
+        "preu_unitari": 2.4,
+        "total": 4.8,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "SALCHI BACON QUESO",
+        "quantitat": 1,
+        "preu_unitari": 6.9,
+        "total": 6.9,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "LACON",
+        "quantitat": 1,
+        "preu_unitari": 6.5,
+        "total": 6.5,
+        "us": "Restauració"
+      }
+    ],
+    "total": 18.2,
+    "saved_at": "2026-08-27T09:20:02.792Z"
+  },
+  {
     "establiment": "Quesería Valle del Ciloria",
     "tipus": "Factura simplificada",
     "data": "21/08/2026",
