@@ -7697,16 +7697,17 @@
     "nom": "Santa María Briones",
     "tipus": "Allotjament",
     "subtipus": "Hotel boutique",
+    "prioritat": "⭐⭐⭐⭐",
+    "tel": "623 48 12 18",
+    "email": "reservas@santamariabriones.com",
     "direccio": "",
     "cp": "",
     "localitat": "Briones",
     "provincia": "La Rioja",
-    "tel": "",
     "web": "santamariabriones.com",
-    "email": "",
-    "prioritat": "⭐⭐⭐⭐",
     "notes": "Boutique de diseño adults-only, 16 habitaciones, listado en Guía Michelin (~39 km). Dos restaurantes propios y bodega restaurada para eventos privados; público adulto de alto standing.",
-    "data_registre": "27/08/2026"
+    "data_registre": "27/08/2026",
+    "updated_at": "2026-08-27T21:28:59.553Z"
   },
   {
     "nom": "Casona del Boticario",
