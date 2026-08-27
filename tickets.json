@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Jamón Jamón",
+    "tipus": "—",
+    "data": "27/08/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Birres cumple leire",
+        "quantitat": 4,
+        "preu_unitari": 3,
+        "total": 12,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-08-27T09:24:15.201Z"
+  },
+  {
     "establiment": "Palasaca Ezcaray",
     "tipus": "Restauració",
     "data": "26/08/2026",
