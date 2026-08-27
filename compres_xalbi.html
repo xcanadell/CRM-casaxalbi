@@ -649,7 +649,7 @@ table.products td input.center{text-align:center} table.products td input.right{
           <option value="">Tots els tipus</option>
           <option value="Bodega">🍷 Bodega</option>
           <option value="Restaurante">🍽️ Restaurante</option>
-          <option value="Hotel">🏨 Hotel</option>
+          <option value="Allotjament">🏨 Allotjament</option>
           <option value="Ajuntament">🏛️ Ajuntament</option>
           <option value="Distribuïdor">📦 Distribuïdor</option>
           <option value="Altres">📌 Altres</option>
@@ -975,13 +975,28 @@ table.products td input.center{text-align:center} table.products td input.right{
     <div class="modal-grid-2" style="margin-bottom:10px">
       <div class="modal-field">
         <label>Tipus</label>
-        <select id="emp-tipus">
+        <select id="emp-tipus" onchange="toggleSubtipus()">
           <option value="Bodega">🍷 Bodega</option>
           <option value="Restaurante">🍽️ Restaurante</option>
-          <option value="Hotel">🏨 Hotel</option>
+          <option value="Allotjament">🏨 Allotjament</option>
           <option value="Ajuntament">🏛️ Ajuntament</option>
           <option value="Distribuïdor">📦 Distribuïdor</option>
           <option value="Altres">📌 Altres</option>
+        </select>
+      </div>
+      <div class="modal-field" id="emp-subtipus-wrap" style="display:none">
+        <label>Subtipus</label>
+        <input id="emp-subtipus" placeholder="Hotel, Apartamentos, Casa Rural, Albergue...">
+      </div>
+      <div class="modal-field">
+        <label>Prioritat</label>
+        <select id="emp-prioritat">
+          <option value="">— Sense prioritat —</option>
+          <option value="⭐">⭐ Baixa</option>
+          <option value="⭐⭐">⭐⭐ Normal</option>
+          <option value="⭐⭐⭐">⭐⭐⭐ Mitjana</option>
+          <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ Alta</option>
+          <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ Màxima</option>
         </select>
       </div>
       <div class="modal-field">
@@ -1959,7 +1974,12 @@ function setCrmTab(tab){
   if(tab==='empreses')renderEmpreses();
 }
 
-const EMPRESA_TIPUS_ICON={'Bodega':'🍷','Restaurante':'🍽️','Hotel':'🏨','Ajuntament':'🏛️','Distribuïdor':'📦','Altres':'📌'};
+const EMPRESA_TIPUS_ICON={'Bodega':'🍷','Restaurante':'🍽️','Allotjament':'🏨','Ajuntament':'🏛️','Distribuïdor':'📦','Altres':'📌'};
+
+function toggleSubtipus(){
+  const t=document.getElementById('emp-tipus').value;
+  document.getElementById('emp-subtipus-wrap').style.display=t==='Allotjament'?'':'none';
+}
 
 async function initEmpreses(){
   try{
@@ -1998,13 +2018,14 @@ function renderEmpreses(){
   const rows=filtered.map(e=>{
     const ri=empreses.indexOf(e);
     const icon=EMPRESA_TIPUS_ICON[e.tipus]||'📌';
+    const tipusLabel=e.subtipus?`${icon} ${e.subtipus}`:`${icon} ${e.tipus||'—'}`;
     return`<tr>
       <td><strong>${e.nom||'—'}</strong></td>
-      <td><span style="font-size:12px;background:#f0f0f0;border-radius:12px;padding:2px 9px">${icon} ${e.tipus||'—'}</span></td>
+      <td><span style="font-size:12px;background:#f0f0f0;border-radius:12px;padding:2px 9px">${tipusLabel}</span></td>
       <td>${e.localitat||'—'}</td>
-      <td>${e.provincia||'—'}</td>
       <td style="color:#555">${e.tel||'—'}</td>
       <td style="color:#555">${e.email||'—'}</td>
+      <td style="font-size:13px">${e.prioritat||'—'}</td>
       <td>
         <button class="btn btn-sm btn-edit" style="padding:3px 8px;margin-right:4px" onclick="openEmpresaModal(${ri})">✏️</button>
         <button class="btn btn-sm btn-danger" style="padding:3px 8px" onclick="deleteEmpresa(${ri})">🗑</button>
@@ -2012,7 +2033,7 @@ function renderEmpreses(){
     </tr>`;
   }).join('');
   container.innerHTML=`<table class="clients-table">
-    <thead><tr><th>Nom</th><th>Tipus</th><th>Localitat</th><th>Província</th><th>Telèfon</th><th>Email</th><th></th></tr></thead>
+    <thead><tr><th>Nom</th><th>Tipus</th><th>Localitat</th><th>Telèfon</th><th>Email</th><th>Prioritat</th><th></th></tr></thead>
     <tbody>${rows}</tbody>
   </table>
   <div style="margin-top:8px;font-size:12px;color:#aaa;text-align:right">${filtered.length} de ${empreses.length} empreses</div>`;
@@ -2021,9 +2042,12 @@ function renderEmpreses(){
 function openEmpresaModal(idx){
   empresaEditIdx=(idx!==undefined)?idx:null;
   document.getElementById('empresaModalTitle').textContent=empresaEditIdx!==null?'✏️ Editar empresa':'🏢 Nova empresa';
-  const e=empresaEditIdx!==null?empreses[empresaEditIdx]:{nom:'',tipus:'Bodega',tel:'',email:'',direccio:'',cp:'',localitat:'',provincia:'',web:'',notes:''};
+  const e=empresaEditIdx!==null?empreses[empresaEditIdx]:{nom:'',tipus:'Bodega',subtipus:'',prioritat:'',tel:'',email:'',direccio:'',cp:'',localitat:'',provincia:'',web:'',notes:''};
   document.getElementById('emp-nom').value=e.nom||'';
   document.getElementById('emp-tipus').value=e.tipus||'Bodega';
+  document.getElementById('emp-subtipus').value=e.subtipus||'';
+  document.getElementById('emp-subtipus-wrap').style.display=e.tipus==='Allotjament'?'':'none';
+  document.getElementById('emp-prioritat').value=e.prioritat||'';
   document.getElementById('emp-tel').value=e.tel||'';
   document.getElementById('emp-email').value=e.email||'';
   document.getElementById('emp-direccio').value=e.direccio||'';
@@ -2048,6 +2072,8 @@ async function saveEmpresa(){
   const empresa={
     nom,
     tipus:document.getElementById('emp-tipus').value,
+    subtipus:document.getElementById('emp-subtipus').value.trim(),
+    prioritat:document.getElementById('emp-prioritat').value,
     tel:document.getElementById('emp-tel').value.trim(),
     email:document.getElementById('emp-email').value.trim(),
     direccio:document.getElementById('emp-direccio').value.trim(),
