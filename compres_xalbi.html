@@ -2023,8 +2023,8 @@ function renderEmpreses(){
       <td><strong>${e.nom||'—'}</strong></td>
       <td><span style="font-size:12px;background:#f0f0f0;border-radius:12px;padding:2px 9px">${tipusLabel}</span></td>
       <td>${e.localitat||'—'}</td>
-      <td style="color:#555">${e.tel||'—'}</td>
-      <td style="color:#555">${e.email||'—'}</td>
+      <td style="text-align:center;font-size:15px" title="${e.tel||''}">${e.tel?'<span style="color:#2e7d32">✓</span>':'<span style="color:#c62828">✗</span>'}</td>
+      <td style="text-align:center;font-size:15px" title="${e.email||''}">${e.email?'<span style="color:#2e7d32">✓</span>':'<span style="color:#c62828">✗</span>'}</td>
       <td style="font-size:13px">${e.prioritat||'—'}</td>
       <td>
         <button class="btn btn-sm btn-edit" style="padding:3px 8px;margin-right:4px" onclick="openEmpresaModal(${ri})">✏️</button>
