@@ -1,5 +1,73 @@
 [
   {
+    "establiment": "LUPA",
+    "tipus": "supermercat",
+    "data": "18/08/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "039050349",
+    "telefon": "900200328",
+    "productes": [
+      {
+        "descripcio": "HIELO BOLSA DE 2 KILOS",
+        "quantitat": 3,
+        "preu_unitari": 1.15,
+        "total": 3.45,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MOLDE ALUMINIO 2,7 LITROS 2UND",
+        "quantitat": 1,
+        "preu_unitari": 2.45,
+        "total": 2.45,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LANGOST.RODOLFO PEL/COC.150 GR",
+        "quantitat": 1,
+        "preu_unitari": 4.95,
+        "total": 4.95,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CHARCUTERIA QUESO GRANA PADANO DOP 10 MESES",
+        "quantitat": 1,
+        "preu_unitari": 11.48,
+        "total": 11.48,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PUNTA IBERICO KILO",
+        "quantitat": 1,
+        "preu_unitari": 11.66,
+        "total": 11.66,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "HOGAZA SEMILLAS 420 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MEJILLON MEDIANO MALLA 1 KG.",
+        "quantitat": 1,
+        "preu_unitari": 3.49,
+        "total": 3.49,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "HOGAZA DOS CEREALES 450 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 1.73,
+        "total": 1.73,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 41.1,
+    "saved_at": "2026-08-27T09:18:21.760Z"
+  },
+  {
     "establiment": "Ezcaray fest ",
     "tipus": "Festival ",
     "data": "20/08/2026",
