@@ -264,7 +264,7 @@
   {
     "establiment": "IUP - Tus Vecinos da Confianza",
     "tipus": "Supermercat",
-    "data": "20/06/2026",
+    "data": "20/08/2026",
     "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
     "nif": "C.I.F-H3050349",
     "telefon": "900 200 328",
@@ -278,7 +278,8 @@
       }
     ],
     "total": 3.08,
-    "saved_at": "2026-08-21T09:02:54.196Z"
+    "saved_at": "2026-08-21T09:02:54.196Z",
+    "ambit": "Casa Xalbi"
   },
   {
     "establiment": "QUESERÍA VALLE DEL CILORIA",
