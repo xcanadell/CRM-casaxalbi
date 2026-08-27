@@ -7726,15 +7726,16 @@
     "nom": "Hotel Villa de Ábalos",
     "tipus": "Allotjament",
     "subtipus": "Hotel boutique",
+    "prioritat": "⭐⭐⭐⭐⭐",
+    "tel": "+34 941 33 43 02 / 649 84 17 46",
+    "email": "hotel@hotelvilladeabalos.com",
     "direccio": "",
     "cp": "",
     "localitat": "Ábalos",
     "provincia": "La Rioja",
-    "tel": "+34 941 33 43 02 / 649 84 17 46",
     "web": "hotelvilladeabalos.com",
-    "email": "",
-    "prioritat": "⭐⭐⭐⭐⭐",
     "notes": "Boutique de 12 habitaciones centrado en enoturismo (~42 km). Se define como 'una experiencia centrada en la gastronomía y el mundo del vino'; servicio de extras personalizables — muy alineado con lo que ofrecéis.",
-    "data_registre": "27/08/2026"
+    "data_registre": "27/08/2026",
+    "updated_at": "2026-08-27T21:23:17.046Z"
   }
 ]
