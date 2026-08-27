@@ -1,7 +1,7 @@
 [
   {
     "establiment": "Palasaca Ezcaray",
-    "tipus": "—",
+    "tipus": "Restauració",
     "data": "26/08/2026",
     "adreca": "",
     "nif": "",
@@ -15,8 +15,9 @@
         "us": "Restauració"
       }
     ],
-    "total": 0,
-    "saved_at": "2026-08-27T09:22:49.597Z"
+    "total": 15.8,
+    "saved_at": "2026-08-27T09:22:49.597Z",
+    "ambit": "Casa Xalbi"
   },
   {
     "establiment": "Lupa",
