@@ -7707,16 +7707,17 @@
     "nom": "Casona del Boticario",
     "tipus": "Allotjament",
     "subtipus": "Hotel boutique",
+    "prioritat": "⭐⭐⭐",
+    "tel": "+34609088131",
+    "email": "info@casonadelboticario.es",
     "direccio": "",
     "cp": "",
     "localitat": "San Vicente de la Sonsierra",
     "provincia": "La Rioja",
-    "tel": "",
-    "web": "casonadelboticario.com",
-    "email": "",
-    "prioritat": "⭐⭐",
+    "web": "https://www.casonadelboticario.es",
     "notes": "Boutique adults-only, 3★ (~40 km). Categoría algo por debajo del resto del grupo, pero encaja en perfil y zona.",
-    "data_registre": "27/08/2026"
+    "data_registre": "27/08/2026",
+    "updated_at": "2026-08-27T21:14:34.954Z"
   },
   {
     "nom": "Hotel Villa de Ábalos",
