@@ -1,7 +1,7 @@
 [
   {
     "establiment": "Jamón Jamón",
-    "tipus": "—",
+    "tipus": "Restauració",
     "data": "27/08/2026",
     "adreca": "",
     "nif": "",
@@ -12,11 +12,12 @@
         "quantitat": 4,
         "preu_unitari": 3,
         "total": 12,
-        "us": "Casa Xalbi"
+        "us": "Restauració"
       }
     ],
-    "total": 0,
-    "saved_at": "2026-08-27T09:24:15.201Z"
+    "total": 12,
+    "saved_at": "2026-08-27T09:24:15.201Z",
+    "ambit": "Casa Xalbi"
   },
   {
     "establiment": "Palasaca Ezcaray",
