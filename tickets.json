@@ -2,7 +2,7 @@
   {
     "establiment": "LUPA",
     "tipus": "supermercat",
-    "data": "18/08/2026",
+    "data": "21/08/2026",
     "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
     "nif": "039050349",
     "telefon": "900200328",
@@ -64,8 +64,9 @@
         "us": "Casa Xalbi"
       }
     ],
-    "total": 41.1,
-    "saved_at": "2026-08-27T09:18:21.760Z"
+    "total": 41.2,
+    "saved_at": "2026-08-27T09:18:21.760Z",
+    "ambit": "Casa Xalbi"
   },
   {
     "establiment": "Ezcaray fest ",
