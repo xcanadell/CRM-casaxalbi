@@ -7256,16 +7256,17 @@
     "nom": "Zaldierna al Sol Ezcaray",
     "tipus": "Allotjament",
     "subtipus": "Apartamentos",
+    "prioritat": "⭐⭐⭐⭐⭐",
+    "tel": "696468679.0",
+    "email": "karlosbilbo@gmail.com",
     "direccio": "",
     "cp": "",
     "localitat": "Zaldierna",
     "provincia": "La Rioja",
-    "tel": "696468679.0",
     "web": "https://zaldierna.info/",
-    "email": "karlosbilbo@gmail.com",
-    "prioritat": "",
-    "notes": "",
-    "data_registre": "27/08/2026"
+    "notes": "Ja treballem amb ell",
+    "data_registre": "27/08/2026",
+    "updated_at": "2026-08-27T21:11:25.245Z"
   },
   {
     "nom": "Apartamentos Lladito",
