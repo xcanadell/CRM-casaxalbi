@@ -9,14 +9,36 @@
     "productes": [
       {
         "descripcio": "Bono ticket swap",
-        "quantitat": 1,
+        "quantitat": 2,
         "preu_unitari": 58,
         "total": 116,
         "us": "Viatges"
+      },
+      {
+        "descripcio": "Birres + papes BM",
+        "quantitat": 1,
+        "preu_unitari": 8.46,
+        "total": 8.46,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "birres festi",
+        "quantitat": 5,
+        "preu_unitari": 5,
+        "total": 25,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "vi festi",
+        "quantitat": 1,
+        "preu_unitari": 4,
+        "total": 4,
+        "us": "Casa Xalbi"
       }
     ],
-    "total": 116,
-    "saved_at": "2026-08-21T09:04:11.333Z"
+    "total": 153.46,
+    "saved_at": "2026-08-21T09:04:11.333Z",
+    "ambit": "Casa Xalbi"
   },
   {
     "establiment": "IUP - Tus Vecinos da Confianza",
