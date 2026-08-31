@@ -5,7 +5,7 @@
     "notes": "6 pax ",
     "comensals": [
       {
-        "nom": "Xavier Cañadell",
+        "nom": "Rafa Caballero",
         "preu_menjar": 168,
         "preu_beguda": 25,
         "preu_altres": 17,
@@ -38,7 +38,7 @@
             "preu_unit": 5
           }
         ],
-        "notes": "168 + 5 propina (Vino Ontañon)"
+        "notes": ""
       }
     ],
     "total": 210,
