@@ -174,5 +174,13 @@
     "cost": 2.95,
     "pvp": 6,
     "updated_at": "2026-08-13T20:47:14.675Z"
+  },
+  {
+    "id": "va_qbount8u",
+    "nom": "cerveza",
+    "desc": "(quinto) Maho o Galicia",
+    "cost": 0.7,
+    "pvp": 2.5,
+    "updated_at": "2026-08-31T10:59:33.360Z"
   }
 ]
