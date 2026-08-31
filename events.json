@@ -1,5 +1,31 @@
 [
   {
+    "data": "2026-08-30",
+    "lloc": "Menú Arròs",
+    "notes": "6 pax ",
+    "comensals": [
+      {
+        "nom": "Xavier Cañadell",
+        "preu_menjar": 173,
+        "preu_beguda": 31,
+        "preu_altres": 6,
+        "plats": [],
+        "vins": [],
+        "varios": [
+          {
+            "id": "va_f358016a",
+            "qty": 4,
+            "preu_unit": 1.5
+          }
+        ],
+        "notes": "168 + 5 propina"
+      }
+    ],
+    "total": 210,
+    "hores_alba": 2,
+    "hores_xavi": 2
+  },
+  {
     "data": "2026-08-22",
     "lloc": "Cosmètica Natural",
     "notes": "Market festes zaldierna",
