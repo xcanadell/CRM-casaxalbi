@@ -1087,7 +1087,7 @@ table.products td input.center{text-align:center} table.products td input.right{
 </div>
 
 <script>
-const API='http://localhost:8765';
+const API=window.location.origin;
 const LS='xalbi-v4'; // fallback localStorage
 
 let tickets=[];
@@ -1908,9 +1908,9 @@ async function syncClients(){
   const btn=document.getElementById('syncBtn');
   btn.disabled=true; btn.textContent='🔄 Sincronitzant...';
   try {
-    const r=await fetch('http://localhost:8765/sync');
+    const r=await fetch(API+'/sync');
     if(!r.ok) throw new Error('Error servidor');
-    const fresh=await fetch('http://localhost:8765/clients');
+    const fresh=await fetch(API+'/clients');
     clients=await fresh.json();
     renderClients();
     btn.textContent='✅ Sincronitzat!';
