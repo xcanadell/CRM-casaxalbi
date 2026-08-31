@@ -9,7 +9,10 @@
         "preu_menjar": 173,
         "preu_beguda": 31,
         "preu_altres": 6,
-        "plats": [],
+        "plats": [
+          "pl_isu6aig8",
+          "pl_859bbbbd"
+        ],
         "vins": [
           "vi_f8pq7u1d"
         ],
