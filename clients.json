@@ -610,5 +610,16 @@
     "notes": "Periodista",
     "data_registre": "21/08/2026",
     "updated_at": "2026-08-21T09:25:12.774Z"
+  },
+  {
+    "nom": "Rafa",
+    "cognom": "Caballero",
+    "tel": "618273658",
+    "email": "r.caballero00@gmail.com",
+    "poblacio": "Logroño",
+    "origen": "Veí Ezcaray",
+    "notes": "Ciclista que va passar un dia i va reservar per 6, va venir amb la dona y dos parelles mes de companys que surten en bici.",
+    "data_registre": "31/08/2026",
+    "updated_at": "2026-08-31T11:03:33.297Z"
   }
 ]
