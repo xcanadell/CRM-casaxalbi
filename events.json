@@ -7,8 +7,8 @@
       {
         "nom": "Xavier Cañadell",
         "preu_menjar": 173,
-        "preu_beguda": 31,
-        "preu_altres": 6,
+        "preu_beguda": 25,
+        "preu_altres": 12,
         "plats": [
           "pl_isu6aig8",
           "pl_859bbbbd"
@@ -21,6 +21,16 @@
             "id": "va_f358016a",
             "qty": 4,
             "preu_unit": 1.5
+          },
+          {
+            "id": "va_qbount8u",
+            "qty": 1,
+            "preu_unit": 3
+          },
+          {
+            "id": "va_4d80mpba",
+            "qty": 1,
+            "preu_unit": 3
           }
         ],
         "notes": "168 + 5 propina (Vino Ontañon)"
