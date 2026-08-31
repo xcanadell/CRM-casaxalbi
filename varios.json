@@ -190,5 +190,13 @@
     "cost": 0.8,
     "pvp": 2.5,
     "updated_at": "2026-08-31T11:00:04.972Z"
+  },
+  {
+    "id": "va_5u2ole9n",
+    "nom": "Propina",
+    "desc": "",
+    "cost": 0.01,
+    "pvp": 0,
+    "updated_at": "2026-08-31T11:01:32.539Z"
   }
 ]
