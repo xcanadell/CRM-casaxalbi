@@ -10,7 +10,9 @@
         "preu_beguda": 31,
         "preu_altres": 6,
         "plats": [],
-        "vins": [],
+        "vins": [
+          "vi_f8pq7u1d"
+        ],
         "varios": [
           {
             "id": "va_f358016a",
