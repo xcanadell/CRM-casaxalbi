@@ -182,5 +182,13 @@
     "cost": 0.7,
     "pvp": 2.5,
     "updated_at": "2026-08-31T10:59:33.360Z"
+  },
+  {
+    "id": "va_4d80mpba",
+    "nom": "Cerveza sin alcohol",
+    "desc": "Lata",
+    "cost": 0.8,
+    "pvp": 2.5,
+    "updated_at": "2026-08-31T11:00:04.972Z"
   }
 ]
