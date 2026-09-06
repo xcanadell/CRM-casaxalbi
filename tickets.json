@@ -11,12 +11,13 @@
         "descripcio": "Formatges",
         "quantitat": 1,
         "preu_unitari": 18.68,
-        "total": 0,
-        "us": "Casa Xalbi"
+        "total": 18.68,
+        "us": "Ús propi"
       }
     ],
-    "total": 0,
-    "saved_at": "2026-09-06T14:13:56.846Z"
+    "total": 18.68,
+    "saved_at": "2026-09-06T14:13:56.846Z",
+    "ambit": "Casa Xalbi"
   },
   {
     "establiment": "Lupa",
