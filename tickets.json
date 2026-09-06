@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Lupa",
+    "tipus": "—",
+    "data": "06/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "",
+        "quantitat": 1,
+        "preu_unitari": 10.01,
+        "total": 10.01,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-06T14:12:41.199Z"
+  },
+  {
     "establiment": "Gimnas Forma Ezcaray",
     "tipus": "—",
     "data": "03/09/2026",
