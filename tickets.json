@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "ADEMANDA",
+    "tipus": "pastelería artesana",
+    "data": "05/09/2026",
+    "adreca": "C/Marisa Sanchez nº2 Local 10, 26280 Ezcaray - La Rioja",
+    "nif": "13172231Q",
+    "telefon": "941427554 / 635298342",
+    "productes": [
+      {
+        "descripcio": "CROISSANT",
+        "quantitat": 0.19,
+        "preu_unitari": 18.5,
+        "total": 3.55,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BARRA",
+        "quantitat": 1,
+        "preu_unitari": 1.3,
+        "total": 1.3,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 4.85,
+    "saved_at": "2026-09-06T14:00:53.616Z"
+  },
+  {
     "establiment": "Lupa",
     "tipus": "Supermercado",
     "data": "30/08/2026",
