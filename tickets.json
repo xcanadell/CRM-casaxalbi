@@ -1,5 +1,59 @@
 [
   {
+    "establiment": "LUPA",
+    "tipus": "Supermercado",
+    "data": "04/09/2026",
+    "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900200328",
+    "productes": [
+      {
+        "descripcio": "HIELO BOLSA DE 2 KILOS",
+        "quantitat": 1,
+        "preu_unitari": 1.15,
+        "total": 1.15,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "HIELO BOLSA DE 2 KILOS",
+        "quantitat": 1,
+        "preu_unitari": 1.15,
+        "total": 1.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BURRATA GRANAROLO FRESCA 125GR",
+        "quantitat": 1,
+        "preu_unitari": 2.25,
+        "total": 2.25,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "NATA ASTURIANA MONTAR 500 ML.",
+        "quantitat": 1,
+        "preu_unitari": 2.85,
+        "total": 2.85,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "HIGO NEGRO",
+        "quantitat": 1,
+        "preu_unitari": 1.22,
+        "total": 1.22,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAN BOGAVANTE 310 GR. PR.",
+        "quantitat": 1,
+        "preu_unitari": 1.39,
+        "total": 1.39,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 10.01,
+    "saved_at": "2026-09-06T17:52:16.804Z"
+  },
+  {
     "establiment": "Taxi Marraqueix",
     "tipus": "—",
     "data": "30/08/2026",
