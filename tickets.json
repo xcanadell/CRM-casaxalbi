@@ -1,6 +1,95 @@
 [
   {
     "establiment": "LUPA",
+    "tipus": "Supermercat",
+    "data": "28/08/2026",
+    "adreca": "Ctra. Santo Domingo, 64 Escaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "CERV. ESTR. GALIC. BOT. 25 CL P6",
+        "quantitat": 1,
+        "preu_unitari": 4.12,
+        "total": 4.12,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 5 ESTR. 25 CL P-6",
+        "quantitat": 1,
+        "preu_unitari": 4.05,
+        "total": 4.05,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ACEITE CATALAN C/GAS 1 L.",
+        "quantitat": 1,
+        "preu_unitari": 1.55,
+        "total": 1.55,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ACEITE AOVE LUIS EMBUJDOS 670G",
+        "quantitat": 1,
+        "preu_unitari": 4.09,
+        "total": 4.09,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "SALMON NORUEGO AL CORTE",
+        "quantitat": 1,
+        "preu_unitari": 3.76,
+        "total": 3.76,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CALAMAR MEDIANO 200-500",
+        "quantitat": 1,
+        "preu_unitari": 16.68,
+        "total": 16.68,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "SARDINA MEDIANA FRESCA",
+        "quantitat": 1,
+        "preu_unitari": 3.72,
+        "total": 3.72,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "SHIITAKE BANDEJA 200 GRS",
+        "quantitat": 1,
+        "preu_unitari": 2.68,
+        "total": 2.68,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BURRATA GRANDIOLA FRESCA 125GR",
+        "quantitat": 1,
+        "preu_unitari": 2.25,
+        "total": 2.25,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PATATRUFFLES JAMON 243 GR.",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CALDO G. BLANCA CAS. B/SAL 1 LT.",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 48.18,
+    "saved_at": "2026-09-06T17:53:40.544Z"
+  },
+  {
+    "establiment": "LUPA",
     "tipus": "Supermercado",
     "data": "04/09/2026",
     "adreca": "Ctra. Santo Domingo, 64, Ezcaray",
