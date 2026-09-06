@@ -1,5 +1,129 @@
 [
   {
+    "data": "2026-09-04",
+    "lloc": "Sopar Casa Xalbi",
+    "notes": "Sopar 3 parelles (una noia no veu alcohol) el Gerar i la Mireia (no paguen) comparteixen 2 postres per parella",
+    "comensals": [
+      {
+        "nom": "Patxi Marit Belen",
+        "preu_menjar": 30,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [
+          "pl_njuscvxu",
+          "pl_mi0rvqs9",
+          "pl_03e97b0a",
+          "pl_7755ad17",
+          "pl_1d28d123",
+          "pl_be92eeec"
+        ],
+        "vins": [],
+        "varios": [
+          {
+            "id": "va_f358016a",
+            "qty": 2,
+            "preu_unit": 0
+          }
+        ],
+        "notes": "COnvidem dos cafes, "
+      },
+      {
+        "nom": "Belen Dona Patxi",
+        "preu_menjar": 30,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [
+          "pl_mi0rvqs9",
+          "pl_859bbbbd",
+          "pl_03e97b0a",
+          "pl_7755ad17",
+          "pl_1d28d123",
+          "pl_be92eeec"
+        ],
+        "vins": [],
+        "varios": [],
+        "notes": ""
+      },
+      {
+        "nom": "Felipe Texas",
+        "preu_menjar": 30,
+        "preu_beguda": 20,
+        "preu_altres": 0,
+        "plats": [
+          "pl_mi0rvqs9",
+          "pl_859bbbbd",
+          "pl_03e97b0a",
+          "pl_7755ad17",
+          "pl_1d28d123",
+          "pl_be92eeec"
+        ],
+        "vins": [],
+        "varios": [],
+        "notes": ""
+      },
+      {
+        "nom": "Thalia Texas",
+        "preu_menjar": 30,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [
+          "pl_njuscvxu",
+          "pl_mi0rvqs9",
+          "pl_03e97b0a",
+          "pl_7755ad17",
+          "pl_1d28d123",
+          "pl_be92eeec"
+        ],
+        "vins": [],
+        "varios": [],
+        "notes": "No beu alcohol"
+      },
+      {
+        "nom": "Gerard Cosi Alba",
+        "preu_menjar": 0,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [
+          "pl_mi0rvqs9",
+          "pl_859bbbbd",
+          "pl_03e97b0a",
+          "pl_7755ad17",
+          "pl_1d28d123",
+          "pl_be92eeec"
+        ],
+        "vins": [],
+        "varios": [
+          {
+            "id": "va_f358016a",
+            "qty": 1,
+            "preu_unit": 0
+          }
+        ],
+        "notes": ""
+      },
+      {
+        "nom": "Miriea Novia Gerard Cosi Alba",
+        "preu_menjar": 0,
+        "preu_beguda": 0,
+        "preu_altres": 0,
+        "plats": [
+          "pl_njuscvxu",
+          "pl_mi0rvqs9",
+          "pl_03e97b0a",
+          "pl_7755ad17",
+          "pl_1d28d123",
+          "pl_be92eeec"
+        ],
+        "vins": [],
+        "varios": [],
+        "notes": ""
+      }
+    ],
+    "total": 180,
+    "hores_alba": 3,
+    "hores_xavi": 3
+  },
+  {
     "data": "2026-08-30",
     "lloc": "Menú Arròs",
     "notes": "6 pax ",
