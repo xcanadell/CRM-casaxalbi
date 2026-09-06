@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Taxi Marraqueix",
+    "tipus": "—",
+    "data": "30/08/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "taxi aeropoort anar i tornar",
+        "quantitat": 1,
+        "preu_unitari": 25,
+        "total": 25,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-06T14:17:20.411Z"
+  },
+  {
     "establiment": "Lupa ",
     "tipus": "—",
     "data": "28/08/2026",
