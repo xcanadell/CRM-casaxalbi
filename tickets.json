@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "LUPA",
+    "tipus": "Supermercat",
+    "data": "30/08/2026",
+    "adreca": "Ctra Santo Domingo, 64 Ezcaray",
+    "nif": "63905549",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "GALDO ALTEZA PESCADO BRIK LT.",
+        "quantitat": 1,
+        "preu_unitari": 0.95,
+        "total": 0.95,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BRUCHE TRENZADO 400 GRS.",
+        "quantitat": 1,
+        "preu_unitari": 4.19,
+        "total": 4.19,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 5.14,
+    "saved_at": "2026-09-06T13:59:46.563Z"
+  },
+  {
     "establiment": "Ubaga",
     "tipus": "Restauració",
     "data": "26/08/2026",
