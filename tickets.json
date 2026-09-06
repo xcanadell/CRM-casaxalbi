@@ -2,7 +2,7 @@
   {
     "establiment": "Lupa",
     "tipus": "—",
-    "data": "06/09/2026",
+    "data": "04/09/2026",
     "adreca": "",
     "nif": "",
     "telefon": "",
@@ -15,8 +15,9 @@
         "us": "Casa Xalbi"
       }
     ],
-    "total": 0,
-    "saved_at": "2026-09-06T14:12:41.199Z"
+    "total": 10.01,
+    "saved_at": "2026-09-06T14:12:41.199Z",
+    "ambit": "Casa Xalbi"
   },
   {
     "establiment": "Gimnas Forma Ezcaray",
