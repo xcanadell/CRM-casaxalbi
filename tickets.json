@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "Lupa",
+    "tipus": "Supermercado",
+    "data": "30/08/2026",
+    "adreca": "Utra Barrio Dosiñau, 64, Ezcurray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "MEJILLON MEDIANO MALLA 1 KG.",
+        "quantitat": 1,
+        "preu_unitari": 2.49,
+        "total": 2.49,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ALMEJA MARINE.70/90 MALLA 500G",
+        "quantitat": 1,
+        "preu_unitari": 12.95,
+        "total": 12.95,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 15.44,
+    "saved_at": "2026-09-06T14:00:15.619Z"
+  },
+  {
     "establiment": "LUPA",
     "tipus": "Supermercat",
     "data": "30/08/2026",
