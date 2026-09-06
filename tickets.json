@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Lupa ",
+    "tipus": "—",
+    "data": "28/08/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "",
+        "quantitat": 1,
+        "preu_unitari": 48.18,
+        "total": 48.18,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-06T14:16:20.589Z"
+  },
+  {
     "establiment": "El colmado",
     "tipus": "—",
     "data": "03/09/2026",
