@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Sp Catharsis (camisetas)",
+    "tipus": "—",
+    "data": "06/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Camisetas",
+        "quantitat": 2,
+        "preu_unitari": 23.31,
+        "total": 46.62,
+        "us": "Altres"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-06T14:10:48.295Z"
+  },
+  {
     "establiment": "Quesería Valle del Ciloria",
     "tipus": "Factura simplificada",
     "data": "30/08/2026",
