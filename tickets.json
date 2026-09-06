@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Gimnas Forma Ezcaray",
+    "tipus": "—",
+    "data": "03/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Entrada spinnig",
+        "quantitat": 2,
+        "preu_unitari": 8.5,
+        "total": 17,
+        "us": "Altres"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-06T14:12:11.419Z"
+  },
+  {
     "establiment": "Sp Catharsis (camisetas)",
     "tipus": "—",
     "data": "06/09/2026",
