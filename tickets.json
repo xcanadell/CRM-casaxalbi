@@ -10,13 +10,14 @@
       {
         "descripcio": "taxi aeropoort anar i tornar",
         "quantitat": 1,
-        "preu_unitari": 25,
-        "total": 25,
+        "preu_unitari": 25.5,
+        "total": 25.5,
         "us": "Casa Xalbi"
       }
     ],
-    "total": 0,
-    "saved_at": "2026-09-06T14:17:20.411Z"
+    "total": 25.5,
+    "saved_at": "2026-09-06T14:17:20.411Z",
+    "ambit": "Casa Xalbi"
   },
   {
     "establiment": "Lupa ",
