@@ -1,5 +1,73 @@
 [
   {
+    "establiment": "Ametller Origen",
+    "tipus": "Supermercat",
+    "data": "10/09/2026",
+    "adreca": "Passeig 22 de Juliol 399, Terrassa",
+    "nif": "NIF 662591399",
+    "telefon": "645380908",
+    "productes": [
+      {
+        "descripcio": "Salsa bolonyesa AO 235g AMETLLER",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Macarrons ESSENCIALS 500g ESSENC",
+        "quantitat": 1,
+        "preu_unitari": 0.79,
+        "total": 0.79,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Tomàquet pebrot extra",
+        "quantitat": 0.48,
+        "preu_unitari": 4.93,
+        "total": 2.4,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Magdalenes tradicional AO 275g A",
+        "quantitat": 1,
+        "preu_unitari": 2.49,
+        "total": 2.49,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Pics camperos AO 180G AMETLLER O",
+        "quantitat": 1,
+        "preu_unitari": 1.19,
+        "total": 1.19,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Gorgonzola Got Castellanza",
+        "quantitat": 0.274,
+        "preu_unitari": 17.9,
+        "total": 4.9,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Permil cult duroc 11esC FAMILIAR",
+        "quantitat": 1,
+        "preu_unitari": 4.89,
+        "total": 4.89,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Sushi caixa 26 AO-SH 305g 12U AO",
+        "quantitat": 1,
+        "preu_unitari": 13.9,
+        "total": 13.9,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 32.55,
+    "saved_at": "2026-09-26T10:27:34.732Z"
+  },
+  {
     "establiment": "Libreria Salva",
     "tipus": "—",
     "data": "26/09/2026",
