@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Libreria Salva",
+    "tipus": "—",
+    "data": "26/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Posters A3",
+        "quantitat": 10,
+        "preu_unitari": 1.48,
+        "total": 14.8,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-26T10:21:58.426Z"
+  },
+  {
     "establiment": "LUPA",
     "tipus": "Supermercat",
     "data": "28/08/2026",
