@@ -1,5 +1,52 @@
 [
   {
+    "establiment": "DRUNI, S.A.",
+    "tipus": "Farmàcia/Cosmètica",
+    "data": "07/09/2026",
+    "adreca": "Av. Gran Via Juan Carlos I, 24, 26001 - Logroño",
+    "nif": "A46581666",
+    "telefon": "673192971",
+    "productes": [
+      {
+        "descripcio": "LTV INV DEO SP 35ML",
+        "quantitat": 1,
+        "preu_unitari": 1.49,
+        "total": 1.49,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ESS. GET BIG! LASHES",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "MPH CHAMPU CASPA",
+        "quantitat": 1,
+        "preu_unitari": 4.99,
+        "total": 4.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "DRN KIT VIA.",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BSA. PAP. P MCS 12",
+        "quantitat": 1,
+        "preu_unitari": 0.1,
+        "total": 0.1,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 11.56,
+    "saved_at": "2026-09-26T10:28:27.100Z"
+  },
+  {
     "establiment": "Ametller Origen",
     "tipus": "Supermercat",
     "data": "10/09/2026",
