@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Gasolina BP",
+    "tipus": "—",
+    "data": "13/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Diesel",
+        "quantitat": 1,
+        "preu_unitari": 60,
+        "total": 60,
+        "us": "Viatges"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T17:54:00.152Z"
+  },
+  {
     "establiment": "LIDL SUPERMERCADOS S.A.U.",
     "tipus": "—",
     "data": "8/09/2026",
