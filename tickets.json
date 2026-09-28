@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "GetYourGuide Excussio Marrakesh camells, quats, sopar",
+    "tipus": "—",
+    "data": "28/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "",
+        "quantitat": 1,
+        "preu_unitari": 75.64,
+        "total": 75.64,
+        "us": "Viatges"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T17:43:03.437Z"
+  },
+  {
     "establiment": "La frontera (Cadaques)",
     "tipus": "—",
     "data": "13/09/2026",
