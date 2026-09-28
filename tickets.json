@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "La frontera (Cadaques)",
+    "tipus": "—",
+    "data": "28/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "",
+        "quantitat": 1,
+        "preu_unitari": 9,
+        "total": 9,
+        "us": "Restauració"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T17:42:09.963Z"
+  },
+  {
     "establiment": "eSIM Rebolut",
     "tipus": "—",
     "data": "13/09/2026",
