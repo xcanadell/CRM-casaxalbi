@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "Bar Satorres ",
+    "tipus": "—",
+    "data": "28/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "birra",
+        "quantitat": 1,
+        "preu_unitari": 3,
+        "total": 3,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "kas",
+        "quantitat": 1,
+        "preu_unitari": 2.3,
+        "total": 2.3,
+        "us": "Restauració"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T17:25:21.099Z"
+  },
+  {
     "establiment": "Camping San Pere Pescador",
     "tipus": "Allotjament",
     "data": "11/09/2026",
