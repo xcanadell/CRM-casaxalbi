@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Libreria Salva",
+    "tipus": "—",
+    "data": "20/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Loteria",
+        "quantitat": 1,
+        "preu_unitari": 8,
+        "total": 8,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T17:37:08.966Z"
+  },
+  {
     "establiment": "BM Supermerctas",
     "tipus": "—",
     "data": "20/09/2026",
