@@ -1,7 +1,7 @@
 [
   {
     "establiment": "Despeses viatge Marroc Caixer 100+50",
-    "tipus": "—",
+    "tipus": "Varis",
     "data": "28/09/2026",
     "adreca": "",
     "nif": "",
@@ -22,8 +22,9 @@
         "us": "Viatges"
       }
     ],
-    "total": 0,
-    "saved_at": "2026-09-28T07:06:05.125Z"
+    "total": 150,
+    "saved_at": "2026-09-28T07:06:05.125Z",
+    "ambit": "Casa Xalbi"
   },
   {
     "establiment": "DRUNI, S.A.",
