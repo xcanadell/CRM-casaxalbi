@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "LIDL SUPERMERCADOS S.A.U.",
+    "tipus": "—",
+    "data": "28/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Varis",
+        "quantitat": 1,
+        "preu_unitari": 18.6,
+        "total": 18.6,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T17:47:32.399Z"
+  },
+  {
     "establiment": "Aldi (compra finde furgo)",
     "tipus": "—",
     "data": "11/09/2026",
