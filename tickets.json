@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "eSIM Rebolut",
+    "tipus": "—",
+    "data": "13/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "",
+        "quantitat": 1,
+        "preu_unitari": 5.99,
+        "total": 5.99,
+        "us": "Viatges"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T17:41:06.109Z"
+  },
+  {
     "establiment": "Infusio",
     "tipus": "—",
     "data": "17/09/2026",
