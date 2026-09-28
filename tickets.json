@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "El refugio",
+    "tipus": "—",
+    "data": "25/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Birres",
+        "quantitat": 1,
+        "preu_unitari": 3.6,
+        "total": 3.6,
+        "us": "Restauració"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T17:29:09.967Z"
+  },
+  {
     "establiment": "Deyan (Juan Leire)",
     "tipus": "—",
     "data": "25/09/2026",
