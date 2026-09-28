@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Bar Ubaga",
+    "tipus": "—",
+    "data": "28/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "birres",
+        "quantitat": 1,
+        "preu_unitari": 3,
+        "total": 3,
+        "us": "Restauració"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T17:35:20.137Z"
+  },
+  {
     "establiment": "iTunes publi insta",
     "tipus": "—",
     "data": "21/09/2026",
