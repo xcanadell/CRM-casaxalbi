@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "Despeses viatge Marroc Caixer 100+50",
+    "tipus": "—",
+    "data": "28/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Caixer ATM",
+        "quantitat": 1,
+        "preu_unitari": 100,
+        "total": 100,
+        "us": "Viatges"
+      },
+      {
+        "descripcio": "Caixer Bank de Marroc",
+        "quantitat": 1,
+        "preu_unitari": 50,
+        "total": 50,
+        "us": "Viatges"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T07:06:05.125Z"
+  },
+  {
     "establiment": "DRUNI, S.A.",
     "tipus": "Farmàcia/Cosmètica",
     "data": "07/09/2026",
