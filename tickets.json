@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Infusio",
+    "tipus": "—",
+    "data": "28/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "infusio",
+        "quantitat": 1,
+        "preu_unitari": 6.95,
+        "total": 6.95,
+        "us": "Viatges"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T17:40:19.975Z"
+  },
+  {
     "establiment": "Restaurant Maramia (Marroc)",
     "tipus": "—",
     "data": "17/09/2026",
