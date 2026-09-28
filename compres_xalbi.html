@@ -717,12 +717,6 @@ table.products td input.center{text-align:center} table.products td input.right{
       <div class="info-field" style="grid-column:1/-1"><label>Establiment</label><input class="editable shop-name-input" id="edit-nom" placeholder="Nom"></div>
       <div class="info-field"><label>Data</label><input class="editable" id="edit-data" placeholder="dd/mm/aaaa"></div>
       <div class="info-field"><label>Tipus</label><input class="editable" id="edit-tipus" placeholder="Supermercat..."></div>
-      <div class="info-field"><label>Àmbit</label><select class="editable" id="edit-ambit">
-        <option value="Casa Xalbi">🏡 Casa Xalbi</option>
-        <option value="Gastro XP">👨‍🍳 Gastro XP</option>
-        <option value="Cosmètica">🌿 Cosmètica</option>
-        <option value="Personal">👤 Personal</option>
-      </select></div>
       <div class="info-field" style="grid-column:1/-1"><label>Adreça</label><input class="editable" id="edit-adreca" placeholder="—"></div>
     </div>
     <div class="section-label">Productes</div>
@@ -1356,7 +1350,6 @@ function openEditModal(ri){
   document.getElementById('edit-nom').value=t.establiment||'';
   document.getElementById('edit-data').value=t.data||'';
   document.getElementById('edit-tipus').value=t.tipus||'';
-  document.getElementById('edit-ambit').value=t.ambit||'Casa Xalbi';
   document.getElementById('edit-adreca').value=t.adreca||'';
   const body=document.getElementById('edit-productsBody');
   body.innerHTML='';
@@ -1399,7 +1392,6 @@ async function saveEditTicket(){
     establiment:document.getElementById('edit-nom').value,
     data:document.getElementById('edit-data').value,
     tipus:document.getElementById('edit-tipus').value,
-    ambit:document.getElementById('edit-ambit').value,
     adreca:document.getElementById('edit-adreca').value,
     productes:prods,
     total:parseFloat(total.toFixed(2))
