@@ -66,15 +66,15 @@
     "mes": "2026-08",
     "concepte": "Iberdrola (electricitat)",
     "categoria": "Subministraments",
-    "import": 72.2,
-    "notes": "Pagat bizum xavi 2 sept"
-  },
-  {
-    "mes": "2026-08",
-    "concepte": "Iberdrola (electricitat)",
-    "categoria": "Subministraments",
     "import": 85.32,
     "notes": "Pagat el setembre"
+  },
+  {
+    "mes": "2026-07",
+    "concepte": "Iberdrola (electricitat)",
+    "categoria": "Subministraments",
+    "import": 72.2,
+    "notes": "Pagat bizum xavi 2 sept"
   },
   {
     "mes": "2026-07",
