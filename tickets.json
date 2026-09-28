@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "iTunes publi insta",
+    "tipus": "—",
+    "data": "21/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Publicitat",
+        "quantitat": 1,
+        "preu_unitari": 13.85,
+        "total": 13.85,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T17:34:30.997Z"
+  },
+  {
     "establiment": "Rioja Bar",
     "tipus": "—",
     "data": "23/09/2026",
