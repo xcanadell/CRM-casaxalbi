@@ -1,8 +1,8 @@
 [
   {
     "establiment": "Camping San Pere Pescador",
-    "tipus": "—",
-    "data": "28/09/2026",
+    "tipus": "Allotjament",
+    "data": "11/09/2026",
     "adreca": "",
     "nif": "",
     "telefon": "",
@@ -15,8 +15,9 @@
         "us": "Viatges"
       }
     ],
-    "total": 0,
-    "saved_at": "2026-09-28T07:07:18.387Z"
+    "total": 14,
+    "saved_at": "2026-09-28T07:07:18.387Z",
+    "ambit": "Personal"
   },
   {
     "establiment": "Despeses viatge Marroc Caixer 100+50",
