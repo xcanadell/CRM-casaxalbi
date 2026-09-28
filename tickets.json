@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Deyan (Juan Leire)",
+    "tipus": "—",
+    "data": "25/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Birres",
+        "quantitat": 4,
+        "preu_unitari": 2.5,
+        "total": 10,
+        "us": "Restauració"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T17:28:18.144Z"
+  },
+  {
     "establiment": "Disco Banus (Juan y Leire)",
     "tipus": "—",
     "data": "25/09/2026",
