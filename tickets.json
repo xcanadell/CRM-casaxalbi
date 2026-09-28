@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "BM Supermerctas",
+    "tipus": "—",
+    "data": "20/09/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Varis",
+        "quantitat": 1,
+        "preu_unitari": 22.94,
+        "total": 22.94,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-09-28T17:36:35.511Z"
+  },
+  {
     "establiment": "Bar Ubaga",
     "tipus": "—",
     "data": "20/09/2026",
