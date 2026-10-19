@@ -7,7 +7,7 @@
       {
         "nom": "Lucia Adri",
         "preu_menjar": 35,
-        "preu_beguda": 35,
+        "preu_beguda": 30,
         "preu_altres": 0,
         "plats": [],
         "vins": [],
@@ -17,7 +17,7 @@
       {
         "nom": "Adri Ezcaray",
         "preu_menjar": 35,
-        "preu_beguda": 35,
+        "preu_beguda": 30,
         "preu_altres": 0,
         "plats": [],
         "vins": [],
@@ -27,7 +27,7 @@
       {
         "nom": "Pare Adri",
         "preu_menjar": 35,
-        "preu_beguda": 35,
+        "preu_beguda": 30,
         "preu_altres": 0,
         "plats": [],
         "vins": [],
@@ -37,7 +37,7 @@
       {
         "nom": "Mare Adri",
         "preu_menjar": 35,
-        "preu_beguda": 35,
+        "preu_beguda": 30,
         "preu_altres": 0,
         "plats": [],
         "vins": [],
@@ -45,7 +45,7 @@
         "notes": ""
       }
     ],
-    "total": 280,
+    "total": 260,
     "hores_alba": 4,
     "hores_xavi": 4
   },
