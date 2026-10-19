@@ -1,5 +1,31 @@
 [
   {
+    "data": "2026-10-16",
+    "lloc": "Sopar Casa Xalbi",
+    "notes": "Dinar Adri, lucia y pares (amanida tomaquet, carbaça, carpacho gamba, porros, cap gamba, arros de carn, yogurt)",
+    "comensals": [
+      {
+        "nom": "Adri Ezcaray",
+        "preu_menjar": 35,
+        "preu_beguda": 29,
+        "preu_altres": 0,
+        "plats": [],
+        "vins": [],
+        "varios": [
+          {
+            "id": "va_25578dd2",
+            "qty": 1,
+            "preu_unit": 6
+          }
+        ],
+        "notes": ""
+      }
+    ],
+    "total": 64,
+    "hores_alba": 4,
+    "hores_xavi": 4
+  },
+  {
     "data": "2026-10-15",
     "lloc": "Sopar Casa Xalbi",
     "notes": "Cena a las 17:30 para 2 más el niño",
