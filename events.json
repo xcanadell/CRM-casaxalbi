@@ -1,5 +1,36 @@
 [
   {
+    "data": "2026-10-15",
+    "lloc": "Sopar Casa Xalbi",
+    "notes": "Cena a las 17:30 para 2 más el niño",
+    "comensals": [
+      {
+        "nom": "Holandesos casa rural",
+        "preu_menjar": 70,
+        "preu_beguda": 29,
+        "preu_altres": 10,
+        "plats": [],
+        "vins": [],
+        "varios": [
+          {
+            "id": "va_qbount8u",
+            "qty": 3,
+            "preu_unit": 2
+          },
+          {
+            "id": "va_5u2ole9n",
+            "qty": 1,
+            "preu_unit": 4
+          }
+        ],
+        "notes": ""
+      }
+    ],
+    "total": 109,
+    "hores_alba": 2,
+    "hores_xavi": 2
+  },
+  {
     "data": "2026-09-04",
     "lloc": "Sopar Casa Xalbi",
     "notes": "Sopar 3 parelles (una noia no veu alcohol) el Gerar i la Mireia (no paguen) comparteixen 2 postres per parella",
