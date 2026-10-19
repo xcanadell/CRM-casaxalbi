@@ -8,7 +8,7 @@
         "nom": "Holandesos casa rural",
         "preu_menjar": 70,
         "preu_beguda": 29,
-        "preu_altres": 10,
+        "preu_altres": 11,
         "plats": [],
         "vins": [],
         "varios": [
@@ -20,13 +20,13 @@
           {
             "id": "va_5u2ole9n",
             "qty": 1,
-            "preu_unit": 4
+            "preu_unit": 5
           }
         ],
         "notes": ""
       }
     ],
-    "total": 109,
+    "total": 110,
     "hores_alba": 2,
     "hores_xavi": 2
   },
