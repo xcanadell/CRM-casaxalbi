@@ -2082,5 +2082,19 @@
     "data_compra": "2026-11-04",
     "data_venda": "",
     "updated_at": "2026-11-08T17:37:14.872Z"
+  },
+  {
+    "id": "vi_2998oemt",
+    "nom": "Kiriki black",
+    "any": "2019",
+    "bodega": "Clos Lentiscus",
+    "tipus": "Vi negre",
+    "do": "Penedès",
+    "varietat": "Tempranillo, cariñena",
+    "cost": 17,
+    "pvp": 38,
+    "data_compra": "2026-01-08",
+    "data_venda": "",
+    "updated_at": "2026-11-08T17:40:21.820Z"
   }
 ]
