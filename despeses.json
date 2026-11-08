@@ -14,6 +14,20 @@
     "notes": "Pagament dia 08 via Bizum"
   },
   {
+    "mes": "2026-11",
+    "concepte": "Spotify",
+    "categoria": "Subscripcions",
+    "import": 16.99,
+    "notes": "Pagament dia 11"
+  },
+  {
+    "mes": "2026-11",
+    "concepte": "Canvas",
+    "categoria": "Subscripcions",
+    "import": 12.0,
+    "notes": "Pagat dia 26"
+  },
+  {
     "mes": "2026-10",
     "concepte": "Hipoteca",
     "categoria": "Habitatge",
@@ -40,6 +54,20 @@
     "categoria": "Subministraments",
     "import": 186.8,
     "notes": "Pagament dia 08 (IBI/Aigua/Escombraries)"
+  },
+  {
+    "mes": "2026-10",
+    "concepte": "Spotify",
+    "categoria": "Subscripcions",
+    "import": 16.99,
+    "notes": "Pagament dia 11"
+  },
+  {
+    "mes": "2026-10",
+    "concepte": "Canvas",
+    "categoria": "Subscripcions",
+    "import": 12.0,
+    "notes": "Pagat dia 26"
   },
   {
     "mes": "2026-09",
@@ -82,6 +110,20 @@
     "categoria": "Subministraments",
     "import": 85.32,
     "notes": "Pagament dia 22"
+  },
+  {
+    "mes": "2026-09",
+    "concepte": "Spotify",
+    "categoria": "Subscripcions",
+    "import": 16.99,
+    "notes": "Pagament dia 11"
+  },
+  {
+    "mes": "2026-09",
+    "concepte": "Canvas",
+    "categoria": "Subscripcions",
+    "import": 12.0,
+    "notes": "Pagat dia 26"
   },
   {
     "mes": "2026-08",
