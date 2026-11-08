@@ -1,5 +1,37 @@
 [
   {
+    "id": "pl_4wg7mqew",
+    "titol": "Calabaza braseada",
+    "descripcio": "Hummus de setas y niscalos salteados",
+    "ingredients": [
+      {
+        "nom": "calabaza",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0.1,
+        "cost_total": 0.1
+      },
+      {
+        "nom": "Niscalos",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 1.5,
+        "cost_total": 1.5
+      },
+      {
+        "nom": "Hummus",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0.4,
+        "cost_total": 0.4
+      }
+    ],
+    "cost_mp": 2,
+    "cost_prod": 0,
+    "cost_total": 2,
+    "updated_at": "2026-11-08T17:22:33.281Z"
+  },
+  {
     "id": "pl_ii86m6db",
     "titol": "Crema de setas y hierbas aromáticas",
     "descripcio": "Pak choi salteado y un toque cítrico",
