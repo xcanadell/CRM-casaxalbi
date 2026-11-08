@@ -1,5 +1,37 @@
 [
   {
+    "id": "pl_dpfyvnw8",
+    "titol": "Carpacho de boletus",
+    "descripcio": "Piñons, cema anisda y delicados matices ahumados",
+    "ingredients": [
+      {
+        "nom": "Boletus",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 2,
+        "cost_total": 2
+      },
+      {
+        "nom": "Pistachos",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0.1,
+        "cost_total": 0.1
+      },
+      {
+        "nom": "Crema anisada",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0.2,
+        "cost_total": 0.2
+      }
+    ],
+    "cost_mp": 2.3,
+    "cost_prod": 0,
+    "cost_total": 2.3,
+    "updated_at": "2026-11-08T17:20:08.342Z"
+  },
+  {
     "id": "pl_njuscvxu",
     "titol": "Cheese cake (formatge blau)",
     "descripcio": "",
