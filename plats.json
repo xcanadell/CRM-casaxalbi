@@ -1,5 +1,37 @@
 [
   {
+    "id": "pl_ii86m6db",
+    "titol": "Crema de setas y hierbas aromáticas",
+    "descripcio": "Pak choi salteado y un toque cítrico",
+    "ingredients": [
+      {
+        "nom": "Setas",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 2,
+        "cost_total": 2
+      },
+      {
+        "nom": "Pack choi",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0.3,
+        "cost_total": 0.3
+      },
+      {
+        "nom": "setas sitaques",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0.3,
+        "cost_total": 0.3
+      }
+    ],
+    "cost_mp": 2.6,
+    "cost_prod": 0,
+    "cost_total": 2.6,
+    "updated_at": "2026-11-08T17:21:33.211Z"
+  },
+  {
     "id": "pl_dpfyvnw8",
     "titol": "Carpacho de boletus",
     "descripcio": "Piñons, cema anisda y delicados matices ahumados",
