@@ -2110,5 +2110,19 @@
     "data_compra": "2026-11-04",
     "data_venda": "",
     "updated_at": "2026-11-08T17:42:52.354Z"
+  },
+  {
+    "id": "vi_n4gg2l10",
+    "nom": "Raventós i Blanc de Nit",
+    "any": "2023",
+    "bodega": "Raventós i Blanc",
+    "tipus": "Escumós",
+    "do": "Catalunnya",
+    "varietat": "49% Xarel·lo, 34% Macabeo, 12% Parellada, 5% Monastrell",
+    "cost": 22,
+    "pvp": 38,
+    "data_compra": "2026-02-08",
+    "data_venda": "",
+    "updated_at": "2026-11-08T17:45:16.597Z"
   }
 ]
