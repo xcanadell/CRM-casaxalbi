@@ -2068,5 +2068,19 @@
     "data_compra": "2026-07-30",
     "data_venda": "",
     "updated_at": "2026-08-20T10:31:28.324Z"
+  },
+  {
+    "id": "vi_a86db7qe",
+    "nom": "Terrers",
+    "any": "2020",
+    "bodega": "Recaredo",
+    "tipus": "Escumós",
+    "do": "Corpinnat",
+    "varietat": "",
+    "cost": 29.39,
+    "pvp": 38,
+    "data_compra": "2026-11-04",
+    "data_venda": "",
+    "updated_at": "2026-11-08T17:37:14.872Z"
   }
 ]
