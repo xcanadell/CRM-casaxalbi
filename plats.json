@@ -1,5 +1,30 @@
 [
   {
+    "id": "pl_hh2t4ek4",
+    "titol": "Lomo de bacaloa confitado",
+    "descripcio": "Garbancito del Maresme y salteados",
+    "ingredients": [
+      {
+        "nom": "Bacalao",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 4,
+        "cost_total": 4
+      },
+      {
+        "nom": "garbancito",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 0.1,
+        "cost_total": 0.1
+      }
+    ],
+    "cost_mp": 4.1,
+    "cost_prod": 0,
+    "cost_total": 4.1,
+    "updated_at": "2026-11-08T17:23:28.719Z"
+  },
+  {
     "id": "pl_4wg7mqew",
     "titol": "Calabaza braseada",
     "descripcio": "Hummus de setas y niscalos salteados",
