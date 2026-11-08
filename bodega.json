@@ -2124,5 +2124,19 @@
     "data_compra": "2026-02-08",
     "data_venda": "",
     "updated_at": "2026-11-08T17:45:16.597Z"
+  },
+  {
+    "id": "vi_p1cguc8g",
+    "nom": "Celler Kripta Franc Brut Reserva",
+    "any": "2022",
+    "bodega": "Celler Kripta-Agustí Torelló Mata",
+    "tipus": "Escumós",
+    "do": "Catalunnya",
+    "varietat": "43% Macabeo, 32% Parellada, 25% Xarel·lo",
+    "cost": 12,
+    "pvp": 38,
+    "data_compra": "2026-02-08",
+    "data_venda": "",
+    "updated_at": "2026-11-08T17:46:58.288Z"
   }
 ]
