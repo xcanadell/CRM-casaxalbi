@@ -1,5 +1,47 @@
 [
   {
+    "mes": "2026-11",
+    "concepte": "Hipoteca",
+    "categoria": "Habitatge",
+    "import": 471.95,
+    "notes": "PRES + REBUT UNIC MYBOX"
+  },
+  {
+    "mes": "2026-11",
+    "concepte": "Traster (lloguer)",
+    "categoria": "Habitatge",
+    "import": 60.0,
+    "notes": "Pagament dia 08 via Bizum"
+  },
+  {
+    "mes": "2026-10",
+    "concepte": "Hipoteca",
+    "categoria": "Habitatge",
+    "import": 471.95,
+    "notes": "PRES + REBUT UNIC MYBOX"
+  },
+  {
+    "mes": "2026-10",
+    "concepte": "Vodafone",
+    "categoria": "Subscripcions",
+    "import": 36.0,
+    "notes": "Pagament dia 29"
+  },
+  {
+    "mes": "2026-10",
+    "concepte": "Traster (lloguer)",
+    "categoria": "Habitatge",
+    "import": 60.0,
+    "notes": "Pagament dia 11 via Bizum"
+  },
+  {
+    "mes": "2026-10",
+    "concepte": "Ajuntament Ezcaray",
+    "categoria": "Subministraments",
+    "import": 186.8,
+    "notes": "Pagament dia 08 (IBI/Aigua/Escombraries)"
+  },
+  {
     "mes": "2026-09",
     "concepte": "Hipoteca",
     "categoria": "Habitatge",
@@ -35,6 +77,13 @@
     "notes": "PAgat dia 14"
   },
   {
+    "mes": "2026-09",
+    "concepte": "Iberdrola (electricitat)",
+    "categoria": "Subministraments",
+    "import": 85.32,
+    "notes": "Pagament dia 22"
+  },
+  {
     "mes": "2026-08",
     "concepte": "Vodafone",
     "categoria": "Subscripcions",
@@ -68,13 +117,6 @@
     "categoria": "Subscripcions",
     "import": 12,
     "notes": "pagat dia 26"
-  },
-  {
-    "mes": "2026-08",
-    "concepte": "Iberdrola (electricitat)",
-    "categoria": "Subministraments",
-    "import": 85.32,
-    "notes": "Pagat el setembre"
   },
   {
     "mes": "2026-07",
