@@ -2,9 +2,61 @@
   {
     "data": "2026-11-07",
     "lloc": "Sopar Casa Xalbi",
-    "notes": "Dinar micologic",
-    "comensals": [],
-    "total": 0,
+    "notes": "Dinar micologic 11 pax",
+    "comensals": [
+      {
+        "nom": "Ramon",
+        "preu_menjar": 300,
+        "preu_beguda": 340,
+        "preu_altres": 19,
+        "plats": [
+          "pl_b96ea1ho",
+          "pl_rnvjnkov",
+          "pl_hh2t4ek4",
+          "pl_4wg7mqew",
+          "pl_ii86m6db",
+          "pl_dpfyvnw8"
+        ],
+        "vins": [],
+        "varios": [
+          {
+            "id": "va_9295b42c",
+            "qty": 4,
+            "preu_unit": 4
+          },
+          {
+            "id": "va_4d80mpba",
+            "qty": 2,
+            "preu_unit": 1.5
+          }
+        ],
+        "notes": "6 menus a 50 euros y 4 maridatges 30 + 150 del magnum + 70 magnum"
+      },
+      {
+        "nom": "Edurne",
+        "preu_menjar": 265,
+        "preu_beguda": 150,
+        "preu_altres": 16,
+        "plats": [
+          "pl_b96ea1ho",
+          "pl_rnvjnkov",
+          "pl_hh2t4ek4",
+          "pl_4wg7mqew",
+          "pl_ii86m6db",
+          "pl_dpfyvnw8"
+        ],
+        "vins": [],
+        "varios": [
+          {
+            "id": "va_9295b42c",
+            "qty": 4,
+            "preu_unit": 4
+          }
+        ],
+        "notes": "5 menus a 50 euros y 5 maridatges a 30 + 15 propina"
+      }
+    ],
+    "total": 1090,
     "hores_alba": 6,
     "hores_xavi": 6
   },
