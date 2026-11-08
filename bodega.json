@@ -2138,5 +2138,19 @@
     "data_compra": "2026-02-08",
     "data_venda": "",
     "updated_at": "2026-11-08T17:46:58.288Z"
+  },
+  {
+    "id": "vi_agla061n",
+    "nom": "Nadal RNG 20 Reserva Nature Magnum",
+    "any": "1997",
+    "bodega": "Nadal",
+    "tipus": "Escumós",
+    "do": "",
+    "varietat": "Xarel·lo, Parellada y Macabeu",
+    "cost": 150,
+    "pvp": 150,
+    "data_compra": "2026-01-08",
+    "data_venda": "",
+    "updated_at": "2026-11-08T17:49:40.138Z"
   }
 ]
