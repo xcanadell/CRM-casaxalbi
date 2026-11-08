@@ -720,5 +720,16 @@
     "notes": "",
     "data_registre": "19/10/2026",
     "updated_at": "2026-10-19T08:07:35.035Z"
+  },
+  {
+    "nom": "Ramon",
+    "cognom": "",
+    "tel": "",
+    "email": "",
+    "poblacio": "",
+    "origen": "Família/Amics",
+    "notes": "",
+    "data_registre": "08/11/2026",
+    "updated_at": "2026-11-08T17:17:26.833Z"
   }
 ]
