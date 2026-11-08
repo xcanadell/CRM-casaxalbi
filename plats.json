@@ -1,5 +1,30 @@
 [
   {
+    "id": "pl_rnvjnkov",
+    "titol": "Canelón de carrillera de cerdo",
+    "descripcio": "Crema de castañas, niscalos y jugo de coccion",
+    "ingredients": [
+      {
+        "nom": "canelon",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 2,
+        "cost_total": 2
+      },
+      {
+        "nom": "setas",
+        "quantitat": 1,
+        "unitat": "g",
+        "cost_unitari": 1,
+        "cost_total": 1
+      }
+    ],
+    "cost_mp": 3,
+    "cost_prod": 0,
+    "cost_total": 3,
+    "updated_at": "2026-11-08T17:24:21.448Z"
+  },
+  {
     "id": "pl_hh2t4ek4",
     "titol": "Lomo de bacaloa confitado",
     "descripcio": "Garbancito del Maresme y salteados",
