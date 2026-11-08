@@ -2096,5 +2096,19 @@
     "data_compra": "2026-01-08",
     "data_venda": "",
     "updated_at": "2026-11-08T17:40:21.820Z"
+  },
+  {
+    "id": "vi_7vdiobbl",
+    "nom": "La montesa",
+    "any": "2021",
+    "bodega": "Bodegas Palacios Remondo",
+    "tipus": "Vi negre",
+    "do": "Rioja",
+    "varietat": "Garnacha tinta",
+    "cost": 15.3,
+    "pvp": 38,
+    "data_compra": "2026-11-04",
+    "data_venda": "",
+    "updated_at": "2026-11-08T17:42:52.354Z"
   }
 ]
