@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Bodegas Frontonio",
+    "tipus": "Renovación de suscripción",
+    "data": "15/11/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "THE GARAGE WINE CLUB",
+        "quantitat": 1,
+        "preu_unitari": 135,
+        "total": 135,
+        "us": "Gastro XP"
+      }
+    ],
+    "total": 135,
+    "saved_at": "2026-11-15T09:04:51.638Z"
+  },
+  {
     "establiment": "RAFA PASADAS SC",
     "tipus": "Carnisseria",
     "data": "03/11/2026",
