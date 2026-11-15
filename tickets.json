@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "LIBRERIA SALVA",
+    "tipus": "Libreria",
+    "data": "21/10/2026",
+    "adreca": "SANTIAGO LOPE,10 26280 - EZCARAY (LA RIOJA)",
+    "nif": "72793526K",
+    "telefon": "941354528",
+    "productes": [
+      {
+        "descripcio": "SOPORTE USB/E-MAIL/WHATSAPP",
+        "quantitat": 1,
+        "preu_unitari": 0.6,
+        "total": 0.6,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "COPIA A4 NORMAL B&N",
+        "quantitat": 12,
+        "preu_unitari": 0.2,
+        "total": 2.4,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "COPIA A4 NORMAL COLOR",
+        "quantitat": 28,
+        "preu_unitari": 0.7,
+        "total": 19.6,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 22.6,
+    "saved_at": "2026-11-15T08:56:43.777Z"
+  },
+  {
     "establiment": "Lupa",
     "tipus": "Supermercado",
     "data": "18/10/2026",
