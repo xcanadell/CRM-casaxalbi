@@ -1,5 +1,52 @@
 [
   {
+    "establiment": "Lupa",
+    "tipus": "Supermercado",
+    "data": "13/10/2026",
+    "adreca": "Ctra. Santo Domingo, L4 Ezcaray",
+    "nif": "A39050549",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "HARINA ALTEZA ESP.BIZCOCHO 1KG",
+        "quantitat": 1,
+        "preu_unitari": 1,
+        "total": 1,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "AZUCAR AZUCARERA KILO",
+        "quantitat": 1,
+        "preu_unitari": 0.99,
+        "total": 0.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "AJOS GRANEL",
+        "quantitat": 1,
+        "preu_unitari": 0.63,
+        "total": 0.63,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BEBIDA YOSOY AVENA BARISTA LT.",
+        "quantitat": 1,
+        "preu_unitari": 1.85,
+        "total": 1.85,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "MANTEQUILLA MARGUI PASTILLA 250 GR.",
+        "quantitat": 1,
+        "preu_unitari": 2.59,
+        "total": 2.59,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 7.66,
+    "saved_at": "2026-11-15T09:01:29.558Z"
+  },
+  {
     "establiment": "LUPA",
     "tipus": "Supermercado",
     "data": "18/10/2026",
