@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "BM",
+    "tipus": "Supermercat",
+    "data": "29/09/2022",
+    "adreca": "C/SAGASTILA 28 B, 26280 EZCARAY",
+    "nif": "B26516799",
+    "telefon": "900555300",
+    "productes": [
+      {
+        "descripcio": "RUBARBO-ARANDANO",
+        "quantitat": 1,
+        "preu_unitari": 32.42,
+        "total": 32.42,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAN HORN.CHAPATA",
+        "quantitat": 1,
+        "preu_unitari": 4.2,
+        "total": 4.2,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 36.62,
+    "saved_at": "2026-11-15T08:34:40.318Z"
+  },
+  {
     "establiment": "Druni",
     "tipus": "DRUNI, S.A.",
     "data": "21/10/2026",
