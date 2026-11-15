@@ -1,5 +1,45 @@
 [
   {
+    "establiment": "LUPA",
+    "tipus": "Bar/Restaurante",
+    "data": "16/08/2026",
+    "adreca": "Jerónimo Merced 118 11 St Domingo Calzada",
+    "nif": "11365634",
+    "telefon": "900200328",
+    "productes": [
+      {
+        "descripcio": "COLA DE ALTURA",
+        "quantitat": 1,
+        "preu_unitari": 11.99,
+        "total": 11.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "QUESO EL VENTERO LONCHAS 140GR",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "JAMON GRANDE LJ 2 KILOS",
+        "quantitat": 1,
+        "preu_unitari": 17.91,
+        "total": 17.91,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "COLA DE RAPE KILO",
+        "quantitat": 1,
+        "preu_unitari": 3.36,
+        "total": 3.36,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 36.24,
+    "saved_at": "2026-11-15T08:51:28.671Z"
+  },
+  {
     "establiment": "FRUTAS Y VERDURAS SAID",
     "tipus": "Fruteria",
     "data": "26/09/2026",
