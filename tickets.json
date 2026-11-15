@@ -1,5 +1,66 @@
 [
   {
+    "establiment": "FRUTAS Y VERDURAS SAID",
+    "tipus": "Fructeria",
+    "data": "24/10/2026",
+    "adreca": "C/ALFONSO PEÑA 68, S. DOMINGO DE LA CALZADA",
+    "nif": "1B082497N",
+    "telefon": "626313483",
+    "productes": [
+      {
+        "descripcio": "Producte 1",
+        "quantitat": 2.11,
+        "preu_unitari": 1.5,
+        "total": 3.17,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Producte 2",
+        "quantitat": 0.41,
+        "preu_unitari": 1.5,
+        "total": 0.62,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Producte 3",
+        "quantitat": 0.3,
+        "preu_unitari": 2.9,
+        "total": 0.87,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Producte 4",
+        "quantitat": 0.08,
+        "preu_unitari": 5.9,
+        "total": 0.47,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Producte 5",
+        "quantitat": 0.54,
+        "preu_unitari": 3.5,
+        "total": 1.89,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Producte 6",
+        "quantitat": 0.55,
+        "preu_unitari": 1.5,
+        "total": 0.83,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Producte 7",
+        "quantitat": 0.21,
+        "preu_unitari": 5.9,
+        "total": 1.24,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 18.09,
+    "saved_at": "2026-11-15T08:21:31.591Z"
+  },
+  {
     "establiment": "ADEMANDA",
     "tipus": "pasteleria artesana",
     "data": "14/11/2026",
