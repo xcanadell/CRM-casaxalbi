@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Binter",
+    "tipus": "—",
+    "data": "09/11/2026",
+    "adreca": "",
+    "nif": "",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "Viatge Fuerteventura",
+        "quantitat": 2,
+        "preu_unitari": 110,
+        "total": 220,
+        "us": "Viatges"
+      }
+    ],
+    "total": 0,
+    "saved_at": "2026-11-15T08:44:04.546Z"
+  },
+  {
     "establiment": "El Salón de la Sal",
     "tipus": "Restaurante",
     "data": "05/10/2026",
