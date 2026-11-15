@@ -1,7 +1,7 @@
 [
   {
     "establiment": "Lupa",
-    "tipus": "Bar/Restaurante",
+    "tipus": "Supermercado",
     "data": "24/10/2026",
     "adreca": "Rúa Santo Domingo, 64 Ezcurray",
     "nif": "B39905349",
@@ -12,14 +12,14 @@
         "quantitat": 1,
         "preu_unitari": 2.65,
         "total": 2.65,
-        "us": "Casa Xalbi"
+        "us": "Ús propi"
       },
       {
         "descripcio": "REBULO AL CORTE, KILO",
         "quantitat": 1,
         "preu_unitari": 1.33,
         "total": 1.33,
-        "us": "Casa Xalbi"
+        "us": "Ús propi"
       }
     ],
     "total": 3.98,
