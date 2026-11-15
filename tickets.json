@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "don Copión reprografía",
+    "tipus": "reprografía",
+    "data": "30/10/2026",
+    "adreca": "Gran Vía, 23 (Pasaje Gran Vía - República Argentina)",
+    "nif": "B-26215558",
+    "telefon": "941213716",
+    "productes": [
+      {
+        "descripcio": "Copias color",
+        "quantitat": 1,
+        "preu_unitari": 7.2,
+        "total": 7.2,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 21.8,
+    "saved_at": "2026-11-15T08:52:43.500Z"
+  },
+  {
     "establiment": "LUPA",
     "tipus": "Bar/Restaurante",
     "data": "16/08/2026",
