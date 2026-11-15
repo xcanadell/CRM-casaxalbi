@@ -1,5 +1,66 @@
 [
   {
+    "establiment": "FRUTAS Y VERDURAS SAID",
+    "tipus": "Fruteria",
+    "data": "26/09/2026",
+    "adreca": "C/ALFONSO PEÑA 68, S. DOMINGO DE LA CALZADA",
+    "nif": "I8082497N",
+    "telefon": "626313483",
+    "productes": [
+      {
+        "descripcio": "Producto 1",
+        "quantitat": 1.05,
+        "preu_unitari": 3,
+        "total": 3.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Producto 2",
+        "quantitat": 0.08,
+        "preu_unitari": 5.8,
+        "total": 0.46,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Producto 3",
+        "quantitat": 0.41,
+        "preu_unitari": 3.5,
+        "total": 1.44,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Producto 4",
+        "quantitat": 0.6,
+        "preu_unitari": 1,
+        "total": 0.6,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Producto 5",
+        "quantitat": 1.23,
+        "preu_unitari": 1.5,
+        "total": 1.85,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Producto 6",
+        "quantitat": 0.56,
+        "preu_unitari": 1.5,
+        "total": 0.84,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Producto 7",
+        "quantitat": 0.43,
+        "preu_unitari": 5.9,
+        "total": 2.54,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 20.48,
+    "saved_at": "2026-11-15T08:50:28.815Z"
+  },
+  {
     "establiment": "Lupa",
     "tipus": "Supermercat",
     "data": "04/09/2026",
