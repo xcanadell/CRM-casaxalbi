@@ -1,5 +1,101 @@
 [
   {
+    "establiment": "plusfrest de Lleida",
+    "tipus": "supermercat",
+    "data": "18/09/2026",
+    "adreca": "Francesc Salvans - 71, Terrassa",
+    "nif": "B-25008632",
+    "telefon": "(93)451.22.15",
+    "productes": [
+      {
+        "descripcio": "Cristalino Lle",
+        "quantitat": 1,
+        "preu_unitari": 2.6,
+        "total": 2.6,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Ales Ret",
+        "quantitat": 1,
+        "preu_unitari": 4.34,
+        "total": 4.34,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Beg Alpro Civa",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Mandonguilla",
+        "quantitat": 1,
+        "preu_unitari": 3.4,
+        "total": 3.4,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Mandonguilla",
+        "quantitat": 1,
+        "preu_unitari": 3.4,
+        "total": 3.4,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Figues Negres",
+        "quantitat": 0.346,
+        "preu_unitari": 5.99,
+        "total": 2.07,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Beg Alpro Civa",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Form. Alteza",
+        "quantitat": 1,
+        "preu_unitari": 0.97,
+        "total": 0.97,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Can. Casa Mas",
+        "quantitat": 1,
+        "preu_unitari": 6.25,
+        "total": 6.25,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Trunfos Pirin Oferta",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "Pa Frankfurt",
+        "quantitat": 1,
+        "preu_unitari": 2.12,
+        "total": 2.12,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Parking Minut",
+        "quantitat": 1,
+        "preu_unitari": -1.14,
+        "total": -1.14,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 31.58,
+    "saved_at": "2026-11-15T08:37:25.337Z"
+  },
+  {
     "establiment": "LEROY MERLIN LOGROÑO",
     "tipus": "Factura Simplificada",
     "data": "14/10/2026",
