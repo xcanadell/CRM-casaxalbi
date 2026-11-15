@@ -1,5 +1,66 @@
 [
   {
+    "establiment": "LUPA - La Vecindad de Confianza",
+    "tipus": "Charcuteria",
+    "data": "25/09/2026",
+    "adreca": "Pza. Santo Domingo, 64, Ezcarray",
+    "nif": "A39905034",
+    "telefon": "900200328",
+    "productes": [
+      {
+        "descripcio": "PAN KRISTAL CAMPESINO 225GR.PR",
+        "quantitat": 1,
+        "preu_unitari": 1.55,
+        "total": 1.55,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "QUESO ALTEZA RALL.HILO 200 GR.",
+        "quantitat": 1,
+        "preu_unitari": 1.25,
+        "total": 1.25,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CAFE FORTALEZA GRA.COLOMB.500G",
+        "quantitat": 1,
+        "preu_unitari": 11.99,
+        "total": 11.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CAFE FORTALEZA GRA.COLOMB.500G",
+        "quantitat": 1,
+        "preu_unitari": -3,
+        "total": -3,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BEBIDA ALPRO AVINA BARISTA LT.",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "COLGATE BLANQUEADOR",
+        "quantitat": 1,
+        "preu_unitari": 2.6,
+        "total": 2.6,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "TARJETA CLUB LUPA",
+        "quantitat": 1,
+        "preu_unitari": -3,
+        "total": -3,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 16.68,
+    "saved_at": "2026-11-15T08:48:08.165Z"
+  },
+  {
     "establiment": "La Pata Caliente ",
     "tipus": "Factura Simplificada",
     "data": "02/10/2025",
