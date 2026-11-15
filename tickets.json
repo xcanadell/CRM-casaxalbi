@@ -1,5 +1,52 @@
 [
   {
+    "establiment": "Lupa",
+    "tipus": "Supermercado",
+    "data": "18/10/2026",
+    "adreca": "Ctra. Santo Domingo, 64. Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "BOLSA LUPA RECICLABLE GRANDE",
+        "quantitat": 1,
+        "preu_unitari": 0.15,
+        "total": 0.15,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PAN REB.SEMILL&CEREALES 490 GR",
+        "quantitat": 1,
+        "preu_unitari": 1.92,
+        "total": 1.92,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BURRATA GRANAROLO FRESCA 1256R",
+        "quantitat": 1,
+        "preu_unitari": 1.95,
+        "total": 1.95,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "SALMON AHUMADO ",
+        "quantitat": 1,
+        "preu_unitari": 3.7,
+        "total": 3.7,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "AGUACATES",
+        "quantitat": 1,
+        "preu_unitari": 1.64,
+        "total": 1.64,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 9.36,
+    "saved_at": "2026-11-15T08:56:11.042Z"
+  },
+  {
     "establiment": "LIDL SUPERMERCADOS S.A.U.",
     "tipus": "Supermercado",
     "data": "26/10/2026",
