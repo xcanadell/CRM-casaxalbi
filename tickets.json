@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "LEROY MERLIN LOGROÑO",
+    "tipus": "Factura Simplificada",
+    "data": "14/10/2026",
+    "adreca": "Calle Prada Viejo, 26007 Logroño",
+    "nif": "B84818442",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "REV MADERA PINO NATURAL 9.5X200CM",
+        "quantitat": 2,
+        "preu_unitari": 17.98,
+        "total": 35.96,
+        "us": "Altres"
+      },
+      {
+        "descripcio": "SUPER GLUE-3 MINI TRIO 3X1GR",
+        "quantitat": 1,
+        "preu_unitari": 4.99,
+        "total": 4.99,
+        "us": "Altres"
+      }
+    ],
+    "total": 40.95,
+    "saved_at": "2026-11-15T08:36:01.685Z"
+  },
+  {
     "establiment": "SIPRADO S.L.",
     "tipus": "Bar/Restaurante",
     "data": "18/10/2026",
