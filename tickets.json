@@ -1,5 +1,52 @@
 [
   {
+    "establiment": "SIPRADO S.L.",
+    "tipus": "Bar/Restaurante",
+    "data": "18/10/2026",
+    "adreca": "C/ Prado, 18, 01005 Vitoria-Gasteiz",
+    "nif": "B01231505",
+    "telefon": "945-288676",
+    "productes": [
+      {
+        "descripcio": "PAN SERVICIO",
+        "quantitat": 2,
+        "preu_unitari": 1.9,
+        "total": 3.8,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "TARTAR DE BONITO",
+        "quantitat": 1,
+        "preu_unitari": 24.8,
+        "total": 24.8,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "BABY",
+        "quantitat": 1,
+        "preu_unitari": 7.9,
+        "total": 7.9,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "18/70 CAÑA",
+        "quantitat": 1,
+        "preu_unitari": 3.5,
+        "total": 3.5,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "CAMPILLO FB COPA",
+        "quantitat": 1,
+        "preu_unitari": 3.2,
+        "total": 3.2,
+        "us": "Restauració"
+      }
+    ],
+    "total": 43.2,
+    "saved_at": "2026-11-15T08:35:25.572Z"
+  },
+  {
     "establiment": "BM",
     "tipus": "Supermercat",
     "data": "29/09/2022",
