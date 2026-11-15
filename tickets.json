@@ -1,5 +1,24 @@
 [
   {
+    "establiment": "Druni",
+    "tipus": "DRUNI, S.A.",
+    "data": "21/10/2026",
+    "adreca": "Av. Gran Vía Juan Carlos I, 24, 26001 - LOGROÑO",
+    "nif": "A46581666",
+    "telefon": "673192971",
+    "productes": [
+      {
+        "descripcio": "MPH CHAMPU CASPA",
+        "quantitat": 1,
+        "preu_unitari": 4.99,
+        "total": 4.99,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 4.99,
+    "saved_at": "2026-11-15T08:33:07.122Z"
+  },
+  {
     "establiment": "Lupa",
     "tipus": "Supermercado",
     "data": "24/10/2026",
