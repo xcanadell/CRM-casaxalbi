@@ -1,5 +1,87 @@
 [
   {
+    "establiment": "Lupa",
+    "tipus": "Supermercat",
+    "data": "04/09/2026",
+    "adreca": "Rúa Santo Domingo, 64. Ezcaay",
+    "nif": "A39050549",
+    "telefon": "900 200 328",
+    "productes": [
+      {
+        "descripcio": "NARANJA MALLA 3 KILOS",
+        "quantitat": 1,
+        "preu_unitari": 6.99,
+        "total": 6.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PAN TRIG.SELIX TRI.CAP.PER.GR",
+        "quantitat": 1,
+        "preu_unitari": 1.71,
+        "total": 1.71,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "HOGAZA CENTENO 600 G HA.3800GRS",
+        "quantitat": 1,
+        "preu_unitari": 1.69,
+        "total": 1.69,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "SHITTAKE BANDEJA 200 GRS",
+        "quantitat": 1,
+        "preu_unitari": 2.68,
+        "total": 2.68,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "HIGO NEGRO",
+        "quantitat": 1,
+        "preu_unitari": 2.17,
+        "total": 2.17,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "HUEVO AV.PRECIADO CLASE 1. DOC.",
+        "quantitat": 1,
+        "preu_unitari": 3.04,
+        "total": 3.04,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PIZZA TARRADELAS CARBONAR.400",
+        "quantitat": 1,
+        "preu_unitari": 3.19,
+        "total": 3.19,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BEBIDA ALPRO AVENA BARISTA LT.",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BEBIDA ALPRO AVENA BARISTA LT.",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "GOMBATA GRANARULO FRESCA 125GR",
+        "quantitat": 1,
+        "preu_unitari": 2.25,
+        "total": 2.25,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 21.1,
+    "saved_at": "2026-11-15T08:49:37.704Z"
+  },
+  {
     "establiment": "LUPA - La Vecindad de Confianza",
     "tipus": "Charcuteria",
     "data": "25/09/2026",
