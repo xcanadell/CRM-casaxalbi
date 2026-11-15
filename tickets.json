@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "Lupa",
+    "tipus": "Supermercado",
+    "data": "14/11/2026",
+    "adreca": "Ulta Santo Domingo, 64 Ezcabay",
+    "nif": "03905049",
+    "telefon": "900200328",
+    "productes": [
+      {
+        "descripcio": "ULSSO ALTEZA BURGOS 1ARR.2X250",
+        "quantitat": 1,
+        "preu_unitari": 2.05,
+        "total": 2.05,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LECHE PASCUAL ENTERА 3X200 ML.",
+        "quantitat": 1,
+        "preu_unitari": 1.49,
+        "total": 1.49,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAPEL HTG.SELEX 1RL.CAP.PER.6R",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 5.53,
+    "saved_at": "2026-11-15T08:06:36.812Z"
+  },
+  {
     "establiment": "Gasolina BP",
     "tipus": "—",
     "data": "13/09/2026",
