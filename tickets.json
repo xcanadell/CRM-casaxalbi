@@ -1,5 +1,38 @@
 [
   {
+    "establiment": "LEROY MERLIN LOGROÑO",
+    "tipus": "Factura Simplificada",
+    "data": "21/10/2026",
+    "adreca": "Calle Prada Viejo, 26007 Logroño",
+    "nif": "B84818442",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "REV MADERA PINO NATURAL 9.5X200CM",
+        "quantitat": 1,
+        "preu_unitari": 17.98,
+        "total": 17.98,
+        "us": "Altres"
+      },
+      {
+        "descripcio": "2 TIRADOR INOX SQUARE 192MM NEGRO MATE",
+        "quantitat": 1,
+        "preu_unitari": 18.89,
+        "total": 18.89,
+        "us": "Altres"
+      },
+      {
+        "descripcio": "ADHES.MONT PATTEX NHC INVISIBLE 120GR",
+        "quantitat": 1,
+        "preu_unitari": 7.29,
+        "total": 7.29,
+        "us": "Altres"
+      }
+    ],
+    "total": 44.16,
+    "saved_at": "2026-11-15T09:02:01.023Z"
+  },
+  {
     "establiment": "Lupa",
     "tipus": "Supermercado",
     "data": "13/10/2026",
