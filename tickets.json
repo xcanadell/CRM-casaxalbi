@@ -1,5 +1,45 @@
 [
   {
+    "establiment": "RAFA PASADAS SC",
+    "tipus": "Carnisseria",
+    "data": "03/11/2026",
+    "adreca": "Mercado de abastos - Plaza Sta. Barbara, 01004 VITORIA ALAVA",
+    "nif": "J01541036",
+    "telefon": "945032255 -660988789",
+    "productes": [
+      {
+        "descripcio": "Canterelus",
+        "quantitat": 0.21,
+        "preu_unitari": 29,
+        "total": 6.09,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Niscalo",
+        "quantitat": 0.205,
+        "preu_unitari": 36,
+        "total": 7.38,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Edulls",
+        "quantitat": 0.375,
+        "preu_unitari": 44,
+        "total": 16.5,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "Bolsa Asa",
+        "quantitat": 1,
+        "preu_unitari": 0.1,
+        "total": 0.1,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 30.07,
+    "saved_at": "2026-11-15T09:02:33.048Z"
+  },
+  {
     "establiment": "LEROY MERLIN LOGROÑO",
     "tipus": "Factura Simplificada",
     "data": "21/10/2026",
