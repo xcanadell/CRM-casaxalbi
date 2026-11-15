@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "Lupa",
+    "tipus": "Bar/Restaurante",
+    "data": "24/10/2026",
+    "adreca": "Rúa Santo Domingo, 64 Ezcurray",
+    "nif": "B39905349",
+    "telefon": "900200326",
+    "productes": [
+      {
+        "descripcio": "SALSA BLUE DRAGON TERIYAKI 150",
+        "quantitat": 1,
+        "preu_unitari": 2.65,
+        "total": 2.65,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "REBULO AL CORTE, KILO",
+        "quantitat": 1,
+        "preu_unitari": 1.33,
+        "total": 1.33,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 3.98,
+    "saved_at": "2026-11-15T08:31:44.776Z"
+  },
+  {
     "establiment": "FRUTAS Y VERDURAS SAID",
     "tipus": "Fructeria",
     "data": "24/10/2026",
