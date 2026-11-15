@@ -1,5 +1,73 @@
 [
   {
+    "establiment": "BM",
+    "tipus": "Supermercat",
+    "data": "15/10/2026",
+    "adreca": "C/SAGASTIA 28 B, 26280 EZCARAY",
+    "nif": "B26516799",
+    "telefon": "900555300",
+    "productes": [
+      {
+        "descripcio": "ESPARRAGO TRIGUERO MANOJO",
+        "quantitat": 1,
+        "preu_unitari": 4.45,
+        "total": 4.45,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PORCINO PANCETA GRANEL KG",
+        "quantitat": 0.19,
+        "preu_unitari": 8.79,
+        "total": 1.67,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PORCINO COSTILLA TIRAS GRANE 12.55",
+        "quantitat": 0.45,
+        "preu_unitari": 12.55,
+        "total": 5.65,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "HUEVOS SUELO BM M DOCENA",
+        "quantitat": 1,
+        "preu_unitari": 2.85,
+        "total": 2.85,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ALCACHOFA BM 8/7 290G",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "CALDO AVECREM 12 PASTILLAS",
+        "quantitat": 1,
+        "preu_unitari": 1.85,
+        "total": 1.85,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ARROZ SOS PT.500 G",
+        "quantitat": 1,
+        "preu_unitari": 1.1,
+        "total": 1.1,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BOLSA CAMISETA 42X55 BM CAST",
+        "quantitat": 1,
+        "preu_unitari": 0.1,
+        "total": 0.1,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 19.66,
+    "saved_at": "2026-11-15T08:59:09.605Z"
+  },
+  {
     "establiment": "ADEMANDA",
     "tipus": "pastelería artesana",
     "data": "16/10/2026",
