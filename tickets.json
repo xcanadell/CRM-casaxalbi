@@ -1,5 +1,31 @@
 [
   {
+    "establiment": "ADEMANDA",
+    "tipus": "pasteleria artesana",
+    "data": "14/11/2026",
+    "adreca": "C/Marisa Sanchez nº2 Local 10, 26280 - Ezcaray - La Rioja",
+    "nif": "1317223I9",
+    "telefon": "941427554 - 635298342",
+    "productes": [
+      {
+        "descripcio": "PAN DE MAIZ",
+        "quantitat": 1,
+        "preu_unitari": 2.4,
+        "total": 2.4,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAN DE CENTENO",
+        "quantitat": 1,
+        "preu_unitari": 2.2,
+        "total": 2.2,
+        "us": "Casa Xalbi"
+      }
+    ],
+    "total": 4.8,
+    "saved_at": "2026-11-15T08:07:30.979Z"
+  },
+  {
     "establiment": "Lupa",
     "tipus": "Supermercado",
     "data": "14/11/2026",
