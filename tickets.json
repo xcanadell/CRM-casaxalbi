@@ -1,5 +1,80 @@
 [
   {
+    "establiment": "Lupa",
+    "tipus": "Supermercat",
+    "data": "13/10/2026",
+    "adreca": "Ctra Santo Domingo, 64 Ezcaray",
+    "nif": "A39050349",
+    "telefon": "900200328",
+    "productes": [
+      {
+        "descripcio": "BOLSA LUPA RECICLABLE GRANDE",
+        "quantitat": 1,
+        "preu_unitari": 0.15,
+        "total": 0.15,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PATATA LUGAREÑO 3 KILOS",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LECHE PASCUAL ENTERA 3X200 ML",
+        "quantitat": 1,
+        "preu_unitari": 1.49,
+        "total": 1.49,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BEBIDA ALPRO AVENA BARISTA LT",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "BEBIDA ALPRO AVENA BARISTA LT",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 0,0 TOST LT 33CL",
+        "quantitat": 1,
+        "preu_unitari": 0.86,
+        "total": 0.86,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 0,0 TOST LT 33CL",
+        "quantitat": 1,
+        "preu_unitari": 0.86,
+        "total": 0.86,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 0,0 TOST LT 33CL",
+        "quantitat": 1,
+        "preu_unitari": 0.86,
+        "total": 0.86,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CERVEZA MAHOU 5 ESTR LATA 33CL",
+        "quantitat": 1,
+        "preu_unitari": 6.88,
+        "total": 6.88,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 18.67,
+    "saved_at": "2026-11-15T08:57:59.676Z"
+  },
+  {
     "establiment": "ADEMANDA",
     "tipus": "pastelería artesana",
     "data": "15/10/2026",
