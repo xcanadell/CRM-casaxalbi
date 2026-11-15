@@ -1,5 +1,255 @@
 [
   {
+    "establiment": "LIDL SUPERMERCADOS S.A.U.",
+    "tipus": "Supermercado",
+    "data": "",
+    "adreca": "Avda. Sto. Domingo de la calzada, 26200 Haro",
+    "nif": "A60195278",
+    "telefon": "",
+    "productes": [
+      {
+        "descripcio": "BEBIDA AVENA BARISTA",
+        "quantitat": 1,
+        "preu_unitari": 6.9,
+        "total": 6.9,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "MEGA ROLLO RESISTENCIA",
+        "quantitat": 1,
+        "preu_unitari": 3.65,
+        "total": 3.65,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PROMO LIDL PLUS",
+        "quantitat": 1,
+        "preu_unitari": -0.76,
+        "total": -0.76,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MAHOU 5 ESTRELLAS",
+        "quantitat": 1,
+        "preu_unitari": 10.08,
+        "total": 10.08,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PAPEL HIGIENIC SUAVE",
+        "quantitat": 1,
+        "preu_unitari": 3.39,
+        "total": 3.39,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "COCA COLA",
+        "quantitat": 1,
+        "preu_unitari": 3,
+        "total": 3,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "LIMPIADOR CAL Y SUCI",
+        "quantitat": 1,
+        "preu_unitari": 1.59,
+        "total": 1.59,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "GEL WC CON LEJIA",
+        "quantitat": 1,
+        "preu_unitari": 0.89,
+        "total": 0.89,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ACEITE DE GIRASOL",
+        "quantitat": 2,
+        "preu_unitari": 1.84,
+        "total": 3.68,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MAHOU 0.0% TOSTADA",
+        "quantitat": 2,
+        "preu_unitari": 0.83,
+        "total": 1.66,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PERLAS PERFUME FRESC",
+        "quantitat": 1,
+        "preu_unitari": 2.99,
+        "total": 2.99,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "ACEITUNAS ALINADAS",
+        "quantitat": 1,
+        "preu_unitari": 3.29,
+        "total": 3.29,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "FILM TRANSPARENTE",
+        "quantitat": 1,
+        "preu_unitari": 2.49,
+        "total": 2.49,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PASTA PREMIUM",
+        "quantitat": 1,
+        "preu_unitari": 1.52,
+        "total": 1.52,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "NATA PARA COCINAR",
+        "quantitat": 1,
+        "preu_unitari": -0.23,
+        "total": -0.23,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "HARINA FINA DE MAIZ",
+        "quantitat": 1,
+        "preu_unitari": 2.95,
+        "total": 2.95,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "NATA PARA COCINAR",
+        "quantitat": 1,
+        "preu_unitari": 1.79,
+        "total": 1.79,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "CAMPESINOS",
+        "quantitat": 1,
+        "preu_unitari": 0.89,
+        "total": 0.89,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOSTADITAS ACEITUNA",
+        "quantitat": 1,
+        "preu_unitari": 1.79,
+        "total": 1.79,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PIZZA CARBONARA",
+        "quantitat": 1,
+        "preu_unitari": 2.69,
+        "total": 2.69,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "MACARRON",
+        "quantitat": 1,
+        "preu_unitari": 1.09,
+        "total": 1.09,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PROMO LIDL PLUS",
+        "quantitat": 1,
+        "preu_unitari": -0.16,
+        "total": -0.16,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "COCKTAIL",
+        "quantitat": 2,
+        "preu_unitari": 1.59,
+        "total": 3.18,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "REGA 10% ACEITE OLIV",
+        "quantitat": 1,
+        "preu_unitari": 0.69,
+        "total": 0.69,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "FIDEOS MIF",
+        "quantitat": 1,
+        "preu_unitari": 0.79,
+        "total": 0.79,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "FIDEOS UDON GRUESOS",
+        "quantitat": 1,
+        "preu_unitari": 0.99,
+        "total": 0.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ESPECIAS ASIATICAS",
+        "quantitat": 1,
+        "preu_unitari": 0.69,
+        "total": 0.69,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "BURRATA DE BUFALA",
+        "quantitat": 2,
+        "preu_unitari": 2.49,
+        "total": 4.98,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "MANTEQUILLA CON SAL",
+        "quantitat": 1,
+        "preu_unitari": 1.99,
+        "total": 1.99,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "ARROZ SOS",
+        "quantitat": 1,
+        "preu_unitari": 1.88,
+        "total": 1.88,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "TOMATE FRITO",
+        "quantitat": 1,
+        "preu_unitari": 1.19,
+        "total": 1.19,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "PROMO LIDL PLUS",
+        "quantitat": 1,
+        "preu_unitari": -0.24,
+        "total": -0.24,
+        "us": "Casa Xalbi"
+      },
+      {
+        "descripcio": "MOUS.PATO PEDRO XIM",
+        "quantitat": 1,
+        "preu_unitari": 2.69,
+        "total": 2.69,
+        "us": "Ús propi"
+      },
+      {
+        "descripcio": "PATE CAMPANA",
+        "quantitat": 1,
+        "preu_unitari": 2.29,
+        "total": 2.29,
+        "us": "Ús propi"
+      }
+    ],
+    "total": 74.64,
+    "saved_at": "2026-11-15T08:54:43.159Z"
+  },
+  {
     "establiment": "Don Copión reprografía",
     "tipus": "reprografía",
     "data": "30/10/2026",
