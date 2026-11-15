@@ -1,7 +1,7 @@
 [
   {
     "establiment": "Parking Aeropuerto T2 Madrid",
-    "tipus": "—",
+    "tipus": "Aparcament",
     "data": "11/11/2026",
     "adreca": "Madrid",
     "nif": "",
@@ -15,7 +15,7 @@
         "us": "Viatges"
       }
     ],
-    "total": 0,
+    "total": 33,
     "saved_at": "2026-11-15T08:45:12.364Z"
   },
   {
