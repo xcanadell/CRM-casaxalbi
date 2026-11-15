@@ -1,5 +1,59 @@
 [
   {
+    "establiment": "El Salón de la Sal",
+    "tipus": "Restaurante",
+    "data": "05/10/2026",
+    "adreca": "C/ Alcalá Galiano, 4, 35118",
+    "nif": "B76196724",
+    "telefon": "928 18 03 05",
+    "productes": [
+      {
+        "descripcio": "CAÑA",
+        "quantitat": 3,
+        "preu_unitari": 2.5,
+        "total": 7.5,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "PAN Y APERITIVO",
+        "quantitat": 2,
+        "preu_unitari": 1.5,
+        "total": 3,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "1/2 RAC. CROQUETAS PESCADO Y MARISCO",
+        "quantitat": 1,
+        "preu_unitari": 7.2,
+        "total": 7.2,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "1/2 RAC. PAPAS CON MOJO",
+        "quantitat": 1,
+        "preu_unitari": 5.5,
+        "total": 5.5,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "1/2 RAC. PUNTILLA DE CALAMAR",
+        "quantitat": 1,
+        "preu_unitari": 8.5,
+        "total": 8.5,
+        "us": "Restauració"
+      },
+      {
+        "descripcio": "CAFE SOLO",
+        "quantitat": 1,
+        "preu_unitari": 1.5,
+        "total": 1.5,
+        "us": "Restauració"
+      }
+    ],
+    "total": 33.2,
+    "saved_at": "2026-11-15T08:43:20.308Z"
+  },
+  {
     "establiment": "plusfrest de Lleida",
     "tipus": "supermercat",
     "data": "18/09/2026",
