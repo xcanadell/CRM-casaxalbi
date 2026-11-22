@@ -2667,15 +2667,18 @@
   {
     "nom": "Bodegas Olarra",
     "tipus": "Bodega",
+    "subtipus": "",
+    "prioritat": "",
+    "tel": "941235299",
+    "email": "exportacion@bodegasolarra.es",
     "direccio": "Avenida de Mendavia, 30, 26009 Logroño, La Rioja",
-    "cp": "26009",
+    "cp": "",
     "localitat": "Logroño",
     "provincia": "La Rioja",
-    "tel": "941235299",
     "web": "http://www.grupobodegasolarra.com",
-    "email": "exportacion@bodegasolarra.es",
-    "notes": "",
-    "data_registre": "26/08/2026"
+    "notes": "Visitada el 21/11/2026 https://gastroxp.es/visita-bodegas-olarra-logrono/",
+    "data_registre": "26/08/2026",
+    "updated_at": "2026-11-22T20:54:48.401Z"
   },
   {
     "nom": "Bodegas Olmaza",
